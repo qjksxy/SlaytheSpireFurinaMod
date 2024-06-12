@@ -1,0 +1,37 @@
+{
+  "ApinFurina:Strike": {
+    "NAME": "独舞之邀",
+    "DESCRIPTION": "造成 !D! 点伤害。根据当前始基力形态，添加一张灵息之刺或流涌之刃到手牌中。",
+    "UPGRADE_DESCRIPTION": "固有。 NL 造成 !D! 点伤害。"
+  },
+  "ApinFurina:ChargedAttack": {
+    "NAME": "独舞之邀·重击",
+    "DESCRIPTION": "对敌人造成 !D! 点伤害。添加一张圣俗杂座到手牌中。",
+    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 点伤害，并附属 furina_mod:芒性能量 。"
+  },
+  "ApinFurina:SpiritbreathThorn": {
+    "NAME": "灵息之刺",
+    "DESCRIPTION": "虚无 。 消耗 。对敌人造成 !D! 点伤害，并附属 furina_mod:芒性能量 。",
+    "UPGRADE_DESCRIPTION": "虚无 。 消耗 。对敌人造成 !D! 点伤害，并附属 furina_mod:芒性能量 。"
+  },
+  "ApinFurina:SurgingBlade": {
+    "NAME": "流涌之刃",
+    "DESCRIPTION": "虚无 。 消耗 。对敌人造成 !D! 点伤害，并附属 furina_mod:荒性能量 。",
+    "UPGRADE_DESCRIPTION": "虚无 。 消耗 。对敌人造成 !D! 点伤害，并附属 furina_mod:荒性能量 。"
+  },
+  "ApinFurina:SeatsSacredAndSecular": {
+    "NAME": "圣俗杂座",
+    "DESCRIPTION": "虚无 。 消耗 。切换自身的始基力属性。",
+    "UPGRADE_DESCRIPTION": "虚无 。 消耗 。切换自身的始基力属性。"
+  },
+  "ApinFurina:Cake": {
+    "NAME": "小蛋糕",
+    "DESCRIPTION": "恢复1+气氛值点生命值。",
+    "UPGRADE_DESCRIPTION": "固有。 NL 恢复1点生命值。"
+  },
+  "ApinFurina:ElementalBurst": {
+    "NAME": "万众狂欢",
+    "DESCRIPTION": "附属 furina_mod:普世欢腾 ，造成两点伤害。",
+    "UPGRADE_DESCRIPTION": "固有。 NL 恢复 !H! 点生命值。"
+  }
+}

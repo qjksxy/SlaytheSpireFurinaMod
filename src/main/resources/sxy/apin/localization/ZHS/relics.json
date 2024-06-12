@@ -1,0 +1,16 @@
+{
+  "ApinFurina:Traveling Doctor": {
+    "NAME": "游医的银莲",
+    "FLAVOR": "relics.json",
+    "DESCRIPTIONS": [
+      "每受到 #b3 次治疗时，恢复 #y1 点生命。"
+    ]
+  },
+  "ApinFurina:LittleCake": {
+    "NAME": "旅行者赠送的小蛋糕",
+    "FLAVOR": "relics.json",
+    "DESCRIPTIONS": [
+      "每场战斗开始时，回复 #y5 点生命。"
+    ]
+  }
+}

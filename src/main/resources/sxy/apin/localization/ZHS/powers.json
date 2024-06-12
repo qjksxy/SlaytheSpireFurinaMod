@@ -1,0 +1,44 @@
+{
+  "ApinFurina:UniversalRevelry": {
+    "NAME": "万众狂欢",
+    "DESCRIPTIONS": [
+      "每受到一次伤害或者治疗时获得一层气氛值。"
+    ]
+  },
+  "ApinFurina:Revelry": {
+    "NAME": "气氛值",
+    "DESCRIPTIONS": [
+      "提高指定类型伤害和治疗效果。"
+    ]
+  },
+  "ApinFurina:ElementEnergy": {
+    "NAME": "元素能量",
+    "DESCRIPTIONS": [
+      "用于部分技能牌打出时消耗。"
+    ]
+  },
+  "ApinFurina:Pneuma": {
+    "NAME": "始基力：芒",
+    "DESCRIPTIONS": [
+      "可以通过卡牌圣俗杂座切换为始基力：荒。"
+    ]
+  },
+  "ApinFurina:Ousia": {
+    "NAME": "始基力：荒",
+    "DESCRIPTIONS": [
+      "可以通过卡牌圣俗杂座切换为始基力：芒。"
+    ]
+  },
+  "ApinFurina:PneumaEmergy": {
+    "NAME": "芒性能量",
+    "DESCRIPTIONS": [
+      "通过引发芒荒反应击晕敌人。"
+    ]
+  },
+  "ApinFurina:OusiaEmergy": {
+    "NAME": "荒性能量",
+    "DESCRIPTIONS": [
+      "通过引发芒荒反应击晕敌人。"
+    ]
+  }
+}
