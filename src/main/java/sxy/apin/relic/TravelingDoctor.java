@@ -13,6 +13,7 @@ public class TravelingDoctor extends CustomRelic {
     public static final String IMG_PATH = "sxy/apin/img/relic/crackedOrb.png";
     public static final int HEALTH_NUM = 1;
     private int healCount = 0;
+
     public TravelingDoctor() {
         super(ID, ImageMaster.loadImage(IMG_PATH), RelicTier.COMMON, LandingSound.SOLID);
     }
@@ -41,7 +42,7 @@ public class TravelingDoctor extends CustomRelic {
     @Override
     public int onPlayerHeal(int healAmount) {
         this.healCount++;
-        if(this.healCount >= 3) {
+        if (this.healCount >= 3) {
             this.healCount = 0;
             this.flash();
             this.addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));

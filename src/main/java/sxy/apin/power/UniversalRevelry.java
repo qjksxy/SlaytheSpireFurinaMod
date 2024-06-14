@@ -90,7 +90,7 @@ public class UniversalRevelry extends AbstractPower {
 
     @Override
     public int onHeal(int healAmount) {
-        if(this.owner.isPlayer && this.owner.currentHealth < this.owner.maxHealth && healAmount > 0) {
+        if (this.owner.isPlayer && this.owner.currentHealth < this.owner.maxHealth && healAmount > 0) {
             // 能力闪烁一下
             this.flash();
             AbstractPlayer player = AbstractDungeon.player;

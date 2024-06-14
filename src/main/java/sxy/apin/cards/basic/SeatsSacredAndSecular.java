@@ -14,15 +14,16 @@ public class SeatsSacredAndSecular extends CustomCard {
     public static final String ID = FurinaHelper.makeCardID(SeatsSacredAndSecular.class.getSimpleName());
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID); // 从游戏系统读取本地化资源
     private static final String NAME = CARD_STRINGS.NAME;
+    private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final String IMG_PATH = "sxy/apin/img/cards/Strike.png";
     // -2费不显示能量图标（如诅咒卡状态卡等），-1费为X费（旋风斩等）。
     private static final int COST = 0;
-    private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final CardType TYPE = CardType.ATTACK;
     private static final CardColor COLOR = FURINA_BLUE;
     private static final CardRarity RARITY = CardRarity.BASIC;
     // 是否指向敌人
     private static final CardTarget TARGET = CardTarget.SELF;
+
     public SeatsSacredAndSecular() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.exhaust = true;

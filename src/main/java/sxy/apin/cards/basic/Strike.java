@@ -21,15 +21,16 @@ public class Strike extends CustomCard {
     public static final String ID = FurinaHelper.makeCardID(Strike.class.getSimpleName());
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID); // 从游戏系统读取本地化资源
     private static final String NAME = CARD_STRINGS.NAME;
+    private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final String IMG_PATH = "sxy/apin/img/cards/Strike.png";
     // -2费不显示能量图标（如诅咒卡状态卡等），-1费为X费（旋风斩等）。
     private static final int COST = 1;
-    private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final CardType TYPE = CardType.ATTACK;
     private static final CardColor COLOR = FURINA_BLUE;
     private static final CardRarity RARITY = CardRarity.BASIC;
     // 是否指向敌人
     private static final CardTarget TARGET = CardTarget.ENEMY;
+
     public Strike() {
         // 为了命名规范修改了变量名。这些参数具体的作用见下方
         // CardType：有 ATTACK, SKILL, POWER, STATUS, CURSE 五种，分别代表攻击，技能，能力，状态，诅咒五种卡牌类型。

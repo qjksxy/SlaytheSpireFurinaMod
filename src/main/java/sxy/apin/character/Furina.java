@@ -6,6 +6,7 @@ import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -19,14 +20,18 @@ import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import sxy.apin.cards.basic.ChargedAttack;
+import sxy.apin.cards.basic.Dodge;
 import sxy.apin.cards.basic.Strike;
 import sxy.apin.cards.common.Cake;
 import sxy.apin.cards.common.ElementalBurst;
 import sxy.apin.modcore.FurinaCore;
+import sxy.apin.power.ElementEnergy;
 import sxy.apin.power.Ousia;
 import sxy.apin.power.Pneuma;
+import sxy.apin.power.Revelry;
 import sxy.apin.relic.LittleCake;
 import sxy.apin.relic.TravelingDoctor;
 
@@ -37,7 +42,7 @@ import static sxy.apin.character.Furina.Enums.FURINA_CLASS;
 
 public class Furina extends CustomPlayer {
     // 火堆的人物立绘（行动前）
-    private static final String MY_CHARACTER_SHOULDER_1 = "sxy/apin/img/char/shoulder1.png";
+    private static final String MY_CHARACTER_SHOULDER_1 = "sxy/apin/img/char/shoulder.png";
     // 火堆的人物立绘（行动后）
     private static final String MY_CHARACTER_SHOULDER_2 = "sxy/apin/img/char/shoulder2.png";
     // 人物死亡图像
@@ -91,15 +96,79 @@ public class Furina extends CustomPlayer {
 
     }
 
+    // 芙宁娜特有能力：切换始基力形态
+    public static void switchArkhe() {
+        AbstractPlayer player = AbstractDungeon.player;
+        if (player.hasPower(Pneuma.POWER_ID)) {
+            AbstractDungeon.actionManager.addToBottom(
+                    new RemoveSpecificPowerAction(player, player, Pneuma.POWER_ID)
+            );
+            AbstractDungeon.actionManager.addToBottom(
+                    new ApplyPowerAction(player, player,
+                            new Ousia(player), 0)
+            );
+        } else if (player.hasPower(Ousia.POWER_ID)) {
+            AbstractDungeon.actionManager.addToBottom(
+                    new RemoveSpecificPowerAction(player, player, Ousia.POWER_ID)
+            );
+            AbstractDungeon.actionManager.addToBottom(
+                    new ApplyPowerAction(player, player,
+                            new Pneuma(player), 0)
+            );
+        } else {
+            AbstractDungeon.actionManager.addToBottom(
+                    new ApplyPowerAction(player, player,
+                            new Ousia(player), 0)
+            );
+        }
+    }
+
+    public static void consumeRevelry(int amount) {
+        AbstractPlayer player = AbstractDungeon.player;
+        if (player.hasPower(Revelry.POWER_ID)) {
+            AbstractPower revelry = player.getPower(Revelry.POWER_ID);
+            revelry.flash();
+            AbstractDungeon.actionManager.addToBottom(
+                    new ReducePowerAction(player, player, Revelry.POWER_ID, amount)
+            );
+        }
+    }
+
+    public static void gainRevelry(int amount) {
+        AbstractPlayer player = AbstractDungeon.player;
+        AbstractDungeon.actionManager.addToBottom(
+                new ApplyPowerAction(player, player, new Revelry(player, amount), amount)
+        );
+    }
+
+    public static int getRevelry() {
+        AbstractPlayer player = AbstractDungeon.player;
+        int revelry = 0;
+        if (player.hasPower(Revelry.POWER_ID)) {
+            revelry = player.getPower(Revelry.POWER_ID).amount;
+        }
+        return revelry;
+    }
+
+    public static void gainElementEnergy(int amount) {
+        AbstractPlayer player = AbstractDungeon.player;
+        AbstractDungeon.actionManager.addToBottom(
+                new ApplyPowerAction(player, player,
+                        new ElementEnergy(player, amount))
+        );
+    }
+
     // 初始卡组的ID，可直接写或引用变量
     public ArrayList<String> getStartingDeck() {
         ArrayList<String> retVal = new ArrayList<>();
-        for (int x = 0; x < 3; x++) {
-            retVal.add(Strike.ID);
-        }
+        retVal.add(Strike.ID);
+        retVal.add(Strike.ID);
+        retVal.add(ChargedAttack.ID);
+        retVal.add(Dodge.ID);
+        retVal.add(Dodge.ID);
+        retVal.add(Dodge.ID);
         retVal.add(Cake.ID);
         retVal.add(ElementalBurst.ID);
-        retVal.add(ChargedAttack.ID);
         return retVal;
     }
 
@@ -241,32 +310,5 @@ public class Furina extends CustomPlayer {
 
         @SpireEnum(name = "FURINA_BLUE_")
         public static CardLibrary.LibraryType FURINA_LIBRARY;
-    }
-
-    // 芙宁娜特有能力：切换始基力形态
-    public static void switchArkhe() {
-        AbstractPlayer player = AbstractDungeon.player;
-        if (player.hasPower(Pneuma.POWER_ID)) {
-            AbstractDungeon.actionManager.addToBottom(
-                    new RemoveSpecificPowerAction(player, player, Pneuma.POWER_ID)
-            );
-            AbstractDungeon.actionManager.addToBottom(
-                    new ApplyPowerAction(player, player,
-                            new Ousia(player), 0)
-            );
-        } else if (player.hasPower(Ousia.POWER_ID)) {
-            AbstractDungeon.actionManager.addToBottom(
-                    new RemoveSpecificPowerAction(player, player, Ousia.POWER_ID)
-            );
-            AbstractDungeon.actionManager.addToBottom(
-                    new ApplyPowerAction(player, player,
-                            new Pneuma(player), 0)
-            );
-        } else {
-            AbstractDungeon.actionManager.addToBottom(
-                    new ApplyPowerAction(player, player,
-                            new Ousia(player), 0)
-            );
-        }
     }
 }

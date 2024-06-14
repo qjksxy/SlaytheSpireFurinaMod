@@ -6,8 +6,13 @@
   },
   "ApinFurina:ChargedAttack": {
     "NAME": "独舞之邀·重击",
-    "DESCRIPTION": "对敌人造成 !D! 点伤害。添加一张圣俗杂座到手牌中。",
-    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 点伤害，并附属 furina_mod:芒性能量 。"
+    "DESCRIPTION": "对敌人造成 !D! + furina_mod:气氛值 点伤害。添加一张圣俗杂座到手牌中。",
+    "UPGRADE_DESCRIPTION": "对敌人造成 !D! + furina_mod:气氛值 点伤害，并附属 furina_mod:芒性能量 。"
+  },
+  "ApinFurina:Dodge": {
+    "NAME": "闪避",
+    "DESCRIPTION": "获得4点 格挡 。",
+    "UPGRADE_DESCRIPTION": "获得8点 格挡 。"
   },
   "ApinFurina:SpiritbreathThorn": {
     "NAME": "灵息之刺",
@@ -25,13 +30,128 @@
     "UPGRADE_DESCRIPTION": "虚无 。 消耗 。切换自身的始基力属性。"
   },
   "ApinFurina:Cake": {
-    "NAME": "小蛋糕",
-    "DESCRIPTION": "恢复1+气氛值点生命值。",
-    "UPGRADE_DESCRIPTION": "固有。 NL 恢复1点生命值。"
+    "NAME": "蛋糕",
+    "DESCRIPTION": "恢复2点生命值。",
+    "UPGRADE_DESCRIPTION": "恢复3点生命值。"
+  },
+  "ApinFurina:DailyLimitCake": {
+    "NAME": "每日限定蛋糕",
+    "DESCRIPTION": "虚无 。 消耗 。获得 1 点元素能量。恢复 furina_mod:气氛值 /2点生命值2次。消耗1点 furina_mod:气氛值 。",
+    "UPGRADE_DESCRIPTION": "虚无 。 消耗 。获得 1 点元素能量。恢复 furina_mod:气氛值 /2点生命值3次。"
+  },
+  "ApinFurina:LaLettreAFocalors": {
+    "NAME": "致水神",
+    "DESCRIPTION": "恢复2+ furina_mod:气氛值 点生命值。",
+    "UPGRADE_DESCRIPTION": "恢复3+ furina_mod:气氛值 点生命值2次。"
+  },
+  "ApinFurina:PourLaJustice": {
+    "NAME": "普茹斯蒂司",
+    "DESCRIPTION": "回合结束时受到 1 点伤害 2 次，并在下回合开始时受到 2 点治疗 3 次。",
+    "UPGRADE_DESCRIPTION": "回合结束时受到 1 点伤害 3 次，并在下回合开始时受到 2 点治疗 5 次。"
   },
   "ApinFurina:ElementalBurst": {
     "NAME": "万众狂欢",
-    "DESCRIPTION": "附属 furina_mod:普世欢腾 ，造成两点伤害。",
-    "UPGRADE_DESCRIPTION": "固有。 NL 恢复 !H! 点生命值。"
+    "DESCRIPTION": "附属 !M! 层 furina_mod:普世欢腾 ，造成两点伤害。",
+    "UPGRADE_DESCRIPTION": "附属 !M! 层 furina_mod:普世欢腾 ，造成两点伤害。"
+  },
+  "ApinFurina:Judge": {
+    "NAME": "审判",
+    "DESCRIPTION": "若敌人当前生命值多于你，则其获得 !M! 层 易伤 。否则，自己受到1点伤害 !M! 次。",
+    "UPGRADE_DESCRIPTION": "若敌人当前生命值多于你，则其获得 !M! 层 易伤 。否则，自己受到1点伤害 !M! 次。"
+  },
+  "ApinFurina:Performance": {
+    "NAME": "演出",
+    "DESCRIPTION": "当前 furina_mod:气氛值 提升50%。",
+    "UPGRADE_DESCRIPTION": "当前 furina_mod:气氛值 提升100%。"
+  },
+  "ApinFurina:PassingOfJudgment": {
+    "NAME": "裁定之时",
+    "DESCRIPTION": "获得 !M! 层 无实体 与 !M! 层 人工制品 。",
+    "UPGRADE_DESCRIPTION": "获得 !M! 层 无实体 与 !M! 层 人工制品 。"
+  },
+  "ApinFurina:永世领唱": {
+    "NAME": "永世领唱",
+    "DESCRIPTION": "每回合结束时，获得 !M! 层 furina_mod:气氛值 。",
+    "UPGRADE_DESCRIPTION": "每回合结束时，获得 !M! 层 furina_mod:气氛值 。"
+  },
+  "ApinFurina:无尽圆舞": {
+    "NAME": "永世领唱",
+    "DESCRIPTION": "你每受到1次治疗后，总是额外获得 !M! 点治疗。",
+    "UPGRADE_DESCRIPTION": "你每受到1次治疗后，总是额外获得 !M! 点治疗。"
+  },
+  "ApinFurina:不休独舞": {
+  "NAME": "不休独舞",
+  "DESCRIPTION": "",
+  "UPGRADE_DESCRIPTION": "你每受到1次治疗后，总是额外获得 !M! 点治疗。"
+},
+  "ApinFurina:OperaEpiclese": {
+    "NAME": "欧庇克莱歌剧院",
+    "DESCRIPTION": "场上每有1名敌人，你获得 !M! 点 furina_mod:气氛值 。",
+    "UPGRADE_DESCRIPTION": "场上每有1名敌人，你获得 !M! 点 furina_mod:气氛值 。"
+  },
+  "ApinFurina:FountainOfLucine": {
+    "NAME": "露景泉",
+    "DESCRIPTION": "场上每有1名敌人，你获得 !M! 点治疗1次。",
+    "UPGRADE_DESCRIPTION": "场上每有1名敌人，你获得 !M! 点治疗1次。"
+  },
+  "ApinFurina:PalaisMermonia": {
+    "NAME": "沫芒宫",
+    "DESCRIPTION": "每回合开始时，获得一张每日限定蛋糕。",
+    "UPGRADE_DESCRIPTION": "抽两张牌。每回合开始时，获得一张每日限定蛋糕。"
+  },
+  "ApinFurina:MaisonGardiennage": {
+    "NAME": "执律庭",
+    "DESCRIPTION": "场上每有1名敌人，你摸 !M! 张牌 。",
+    "UPGRADE_DESCRIPTION": "场上每有1名敌人，你摸 !M! 张牌 。"
+  },
+  "ApinFurina:FortressOfMeropide": {
+    "NAME": "梅洛彼得堡",
+    "DESCRIPTION": "给予所有敌人 !M! 层 易伤 和 虚弱 。",
+    "UPGRADE_DESCRIPTION": "给予所有敌人 !M! 层 易伤 和 虚弱 。"
+  },
+  "ApinFurina:Erinnyes": {
+    "NAME": "伊黎耶岛",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": "场上每有1名敌人，你获得 1 次 !M! 点治疗。"
+  },
+  "ApinFurina:CourtOfFontaine": {
+    "NAME": "枫丹廷",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": "场上每有1名敌人，你获得 1 次 !M! 点治疗。"
+  },
+  "ApinFurina:Fontaine": {
+    "NAME": "枫丹",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": "场上每有1名敌人，你获得 1 次 !M! 点治疗。"
+  },
+  "ApinFurina:WeepingWillowOfTheLake": {
+    "NAME": "湖中垂柳",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": "场上每有1名敌人，你获得 1 次 !M! 点治疗。"
+  },
+  "ApinFurina:戏剧": {
+    "NAME": "戏剧",
+    "DESCRIPTION": "下 !M! 次受到伤害后，你回复伤害值一半的生命值。",
+    "UPGRADE_DESCRIPTION": "下 !M! 次受到伤害后，你回复伤害值一半的生命值。"
+  },
+  "ApinFurina:「戏剧感」": {
+    "NAME": "「戏剧感」",
+    "DESCRIPTION": "你受到伤害后，回复等同于 furina_mod:气氛值  30% 的生命值。",
+    "UPGRADE_DESCRIPTION": "你受到伤害后，回复等同于 furina_mod:气氛值  50% 的生命值。"
+  },
+  "ApinFurina:欢愉": {
+    "NAME": "欢愉",
+    "DESCRIPTION": " !M! 回合 furina_mod:气氛值 获取点数翻倍。",
+    "UPGRADE_DESCRIPTION": " !M! 回合 furina_mod:气氛值 获取点数翻倍。"
+  },
+  "ApinFurina:Tour": {
+    "NAME": "巡演",
+    "DESCRIPTION": " 消耗 。获得 !M! 层 乱战 。",
+    "UPGRADE_DESCRIPTION": "获得 !M! 层 乱战 。"
+  },
+  "ApinFurina:落幕": {
+    "NAME": "落幕",
+    "DESCRIPTION": "失去所有气氛值，对自身造成 !M! × furina_mod:气氛值 的治疗，对全体敌人造成 !M! × furina_mod:气氛值 的伤害。",
+    "UPGRADE_DESCRIPTION": "失去所有气氛值，对自身造成 !M! × furina_mod:气氛值 的治疗，对全体敌人造成 !M! × furina_mod:气氛值 的伤害。"
   }
 }

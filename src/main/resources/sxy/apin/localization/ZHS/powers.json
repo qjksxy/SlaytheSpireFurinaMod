@@ -40,5 +40,11 @@
     "DESCRIPTIONS": [
       "通过引发芒荒反应击晕敌人。"
     ]
+  },
+  "ApinFurina:PalaisMermoniaPower": {
+    "NAME": "沫芒宫",
+    "DESCRIPTIONS": [
+      "每回合开始时，将一张每日限定蛋糕加入手牌中。"
+    ]
   }
 }

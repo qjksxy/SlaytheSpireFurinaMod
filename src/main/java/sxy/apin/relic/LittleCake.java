@@ -12,6 +12,7 @@ import sxy.apin.helper.FurinaHelper;
 public class LittleCake extends CustomRelic {
     public static final String ID = FurinaHelper.makeRelicID(LittleCake.class.getSimpleName());
     public static final String IMG_PATH = "sxy/apin/img/relic/crackedOrb.png";
+
     public LittleCake() {
         super(ID, ImageMaster.loadImage(IMG_PATH), RelicTier.COMMON, LandingSound.SOLID);
     }

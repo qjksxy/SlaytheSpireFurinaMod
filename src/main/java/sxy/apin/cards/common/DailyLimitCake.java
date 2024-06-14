@@ -7,12 +7,15 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.AbstractPower;
+import sxy.apin.character.Furina;
 import sxy.apin.helper.FurinaHelper;
+import sxy.apin.power.Revelry;
 
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
 
-public class Cake extends CustomCard {
-    public static final String ID = FurinaHelper.makeCardID(Cake.class.getSimpleName());
+public class DailyLimitCake extends CustomCard {
+    public static final String ID = FurinaHelper.makeCardID(DailyLimitCake.class.getSimpleName());
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID); // 从游戏系统读取本地化资源
     private static final String NAME = CARD_STRINGS.NAME;
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
@@ -24,29 +27,46 @@ public class Cake extends CustomCard {
     private static final CardRarity RARITY = CardRarity.COMMON;
     // 是否指向敌人
     private static final CardTarget TARGET = CardTarget.SELF;
+    private int count = 2;
 
-    public Cake() {
+    public DailyLimitCake() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseHeal = 2;
+        this.baseHeal = 1;
         this.tags.add(CardTags.HEALING);
+        this.exhaust = true;
+        this.isEthereal = true;
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
-            this.upgradeName(); // 卡牌名字变为绿色并添加“+”，且标为升级过的卡牌，之后不能再升级。
-            this.updateCost(-1);
-            this.baseHeal = 3;
+            this.upgradeName();
+            this.count = 3;
         }
-        // 加上以下两行就能使用UPGRADE_DESCRIPTION了（如果你写了的话）
         this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
         this.initializeDescription();
     }
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        AbstractDungeon.actionManager.addToBottom(
-                new HealAction(abstractPlayer, abstractPlayer, this.baseHeal)
-        );
+        Furina.gainElementEnergy(1);
+        int extraHealth = 0;
+        if (abstractPlayer.hasPower(Revelry.POWER_ID)) {
+            AbstractPower revelry = abstractPlayer.getPower(Revelry.POWER_ID);
+            if (revelry.amount > 0) {
+                extraHealth += revelry.amount;
+                revelry.flash();
+            }
+        }
+        extraHealth = extraHealth / 2;
+        for (int i = 0; i < this.count; i++) {
+            AbstractDungeon.actionManager.addToBottom(
+                    new HealAction(abstractPlayer, abstractPlayer, extraHealth)
+            );
+        }
+        if (this.upgraded) {
+            return;
+        }
+        Furina.consumeRevelry(1);
     }
 }
