@@ -47,6 +47,9 @@ public class ElementalSkill extends CustomCard {
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         int arkhe = Furina.getArkhe();
+        if (arkhe == Furina.ERROR) {
+            return;
+        }
         if (arkhe == Furina.OUSIA) {
             AbstractDungeon.actionManager.addToBottom(
                     new ApplyPowerAction(abstractPlayer, abstractPlayer,

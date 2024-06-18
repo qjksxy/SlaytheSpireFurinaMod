@@ -42,6 +42,7 @@ import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
 import static sxy.apin.character.Furina.Enums.FURINA_CLASS;
 
 public class Furina extends CustomPlayer {
+    public static final int ERROR = -1;
     // 荒
     public static final int OUSIA = 0;
     // 芒
@@ -108,6 +109,9 @@ public class Furina extends CustomPlayer {
      */
     public static int getArkhe() {
         AbstractPlayer player = AbstractDungeon.player;
+        if (player == null) {
+            return ERROR;
+        }
         int arkhe = Furina.OUSIA;
         if (player.hasPower(Pneuma.POWER_ID)) {
             arkhe = Furina.PNEUMA;
@@ -124,6 +128,9 @@ public class Furina extends CustomPlayer {
     // 芙宁娜特有能力：切换始基力形态
     public static void switchArkhe() {
         AbstractPlayer player = AbstractDungeon.player;
+        if (player == null) {
+            return;
+        }
         if (player.hasPower(Pneuma.POWER_ID)) {
             AbstractDungeon.actionManager.addToBottom(
                     new RemoveSpecificPowerAction(player, player, Pneuma.POWER_ID)
@@ -150,6 +157,9 @@ public class Furina extends CustomPlayer {
 
     public static void consumeRevelry(int amount) {
         AbstractPlayer player = AbstractDungeon.player;
+        if (player == null) {
+            return;
+        }
         if (player.hasPower(Revelry.POWER_ID)) {
             AbstractPower revelry = player.getPower(Revelry.POWER_ID);
             revelry.flash();
@@ -161,6 +171,9 @@ public class Furina extends CustomPlayer {
 
     public static void gainRevelry(int amount) {
         AbstractPlayer player = AbstractDungeon.player;
+        if (player == null) {
+            return;
+        }
         AbstractDungeon.actionManager.addToBottom(
                 new ApplyPowerAction(player, player, new Revelry(player, amount), amount)
         );
@@ -168,6 +181,9 @@ public class Furina extends CustomPlayer {
 
     public static int getRevelry() {
         AbstractPlayer player = AbstractDungeon.player;
+        if (player == null) {
+            return ERROR;
+        }
         int revelry = 0;
         if (player.hasPower(Revelry.POWER_ID)) {
             revelry = player.getPower(Revelry.POWER_ID).amount;
@@ -177,6 +193,9 @@ public class Furina extends CustomPlayer {
 
     public static void gainElementEnergy(int amount) {
         AbstractPlayer player = AbstractDungeon.player;
+        if (player == null) {
+            return;
+        }
         AbstractDungeon.actionManager.addToBottom(
                 new ApplyPowerAction(player, player,
                         new ElementEnergy(player, amount))

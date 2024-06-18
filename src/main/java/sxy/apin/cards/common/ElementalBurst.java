@@ -57,14 +57,14 @@ public class ElementalBurst extends CustomCard {
             if (!p.hasPower(ElementEnergy.POWER_ID)) {
                 return false;
             }
-            return p.getPower(ElementEnergy.POWER_ID).amount >= 6;
+            return p.getPower(ElementEnergy.POWER_ID).amount >= 5;
         }
     }
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         AbstractDungeon.actionManager.addToBottom(
-                new ReducePowerAction(abstractPlayer, abstractPlayer, ElementEnergy.POWER_ID, 6)
+                new ReducePowerAction(abstractPlayer, abstractPlayer, ElementEnergy.POWER_ID, 5)
         );
         AbstractDungeon.actionManager.addToBottom(
                 new ApplyPowerAction(abstractPlayer, abstractPlayer,

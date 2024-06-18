@@ -1,8 +1,8 @@
 {
   "ApinFurina:Strike": {
     "NAME": "独舞之邀",
-    "DESCRIPTION": "造成 !D! 点伤害。获得 1 点 furina_mod:元素能量 。根据当前始基力形态，添加一张灵息之刺或流涌之刃到手牌中。",
-    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。获得 1 点 furina_mod:元素能量 。根据当前始基力形态，添加一张灵息之刺或流涌之刃到手牌中。"
+    "DESCRIPTION": "造成 !D! 点伤害。获得 1 点 furina_mod:元素能量 。根据当前 furina_mod:始基力形态 ，添加一张灵息之刺或流涌之刃到手牌中。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。获得 1 点 furina_mod:元素能量 。根据当前 furina_mod:始基力形态 ，添加一张灵息之刺或流涌之刃到手牌中。"
   },
   "ApinFurina:ChargedAttack": {
     "NAME": "独舞之邀·重击",

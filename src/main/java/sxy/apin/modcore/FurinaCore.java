@@ -15,7 +15,11 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import sxy.apin.cards.basic.*;
 import sxy.apin.cards.common.*;
+import sxy.apin.cards.rare.Erinnyes;
+import sxy.apin.cards.rare.PalaisMermonia;
 import sxy.apin.cards.rare.PassingOfJudgment;
+import sxy.apin.cards.rare.PourLaJustice;
+import sxy.apin.cards.uncommon.FortressOfMeropide;
 import sxy.apin.cards.uncommon.FountainOfLucine;
 import sxy.apin.cards.uncommon.MaisonGardiennage;
 import sxy.apin.cards.uncommon.OperaEpiclese;
@@ -97,17 +101,22 @@ public class FurinaCore implements EditCardsSubscriber, EditStringsSubscriber, E
         BaseMod.addCard(new Cake());
         BaseMod.addCard(new DailyLimitCake());
         BaseMod.addCard(new ElementalBurst());
+        BaseMod.addCard(new ElementalSkill());
         BaseMod.addCard(new Judge());
         BaseMod.addCard(new LaLettreAFocalors());
         BaseMod.addCard(new Performance());
 
         // UNCOMMON
+        BaseMod.addCard(new FortressOfMeropide());
         BaseMod.addCard(new FountainOfLucine());
         BaseMod.addCard(new MaisonGardiennage());
         BaseMod.addCard(new OperaEpiclese());
 
         // RARE
+        BaseMod.addCard(new Erinnyes());
+        BaseMod.addCard(new PalaisMermonia());
         BaseMod.addCard(new PassingOfJudgment());
+        BaseMod.addCard(new PourLaJustice());
     }
 
     @Override

@@ -46,5 +46,29 @@
     "DESCRIPTIONS": [
       "每回合开始时，将一张每日限定蛋糕加入手牌中。"
     ]
+  },
+  "ApinFurina:ErinnyesPower": {
+    "NAME": "伊黎耶岛",
+    "DESCRIPTIONS": [
+      "每回合开始时，恢复生命值。"
+    ]
+  },
+  "ApinFurina:PourLaJusticePower": {
+    "NAME": "普茹斯蒂司",
+    "DESCRIPTIONS": [
+      "回合结束时受到 1 点伤害 2 次，并在下回合开始时受到 2 点治疗 3 次。"
+    ]
+  },
+  "ApinFurina:SalonMembers": {
+    "NAME": "沙龙成员",
+    "DESCRIPTIONS": [
+      "回合结束时，对最近敌人造成 10 点伤害。若生命值高于50%，则额外造成 furina:气氛值 / 2 的伤害，并对自身造成 1 点伤害。"
+    ]
+  },
+  "ApinFurina:SingerOfManyWaters": {
+    "NAME": "众水的歌者",
+    "DESCRIPTIONS": [
+      "回合结束时恢复 3 点生命，若生命值低于 50%，则额外恢复 furina:气氛值 / 5 的生命。"
+    ]
   }
 }
