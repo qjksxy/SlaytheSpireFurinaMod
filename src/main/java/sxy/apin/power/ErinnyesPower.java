@@ -1,8 +1,7 @@
 package sxy.apin.power;
 
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
+import com.megacrit.cardcrawl.actions.common.HealAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -12,23 +11,19 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import sxy.apin.helper.FurinaHelper;
 
-public class Pneuma extends AbstractPower {
-    // 能力的ID
-    public static final String POWER_ID = FurinaHelper.makePowerID(Pneuma.class.getSimpleName());
-    // 能力的本地化字段
+public class ErinnyesPower extends AbstractPower {
+    public static final String POWER_ID = FurinaHelper.makePowerID(ErinnyesPower.class.getSimpleName());
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
-    // 能力的名称
     private static final String NAME = powerStrings.NAME;
-    // 能力的描述
     private static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
-
-    public Pneuma(AbstractCreature owner) {
+    private int mod = 0;
+    public ErinnyesPower(AbstractCreature owner, int mod) {
         this.name = NAME;
         this.ID = POWER_ID;
         this.owner = owner;
         this.type = PowerType.BUFF;
         this.amount = -1;
-        // 添加一大一小两张能力图
+        this.mod = mod;
         String path128 = "sxy/apin/img/powers/Example84.png";
         String path48 = "sxy/apin/img/powers/Example32.png";
         this.region128 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path128), 0, 0, 84, 84);
@@ -37,23 +32,27 @@ public class Pneuma extends AbstractPower {
         this.updateDescription();
     }
 
-    // 能力在更新时如何修改描述
     public void updateDescription() {
         this.description = DESCRIPTIONS[0];
     }
+    @Override
+    public void stackPower(int stackAmount) {
+        return;
+    }
 
     @Override
-    public void onInitialApplication() {
+    public void atStartOfTurn() {
+        int heal = 0;
         AbstractPlayer player = AbstractDungeon.player;
-        if (player.hasPower(SalonMembers.POWER_ID)) {
-            int amount = player.getPower(SalonMembers.POWER_ID).amount;
-            AbstractDungeon.actionManager.addToBottom(
-                    new ApplyPowerAction(player, player,
-                            new SingerOfManyWaters(player, amount), amount)
-            );
-            AbstractDungeon.actionManager.addToBottom(
-                    new RemoveSpecificPowerAction(player, player, SalonMembers.POWER_ID)
-            );
+        heal = player.maxHealth - player.currentHealth;
+        heal = heal / 10;
+        if (mod == 1) {
+            heal = player.maxHealth / 10;
         }
+        AbstractDungeon.actionManager.addToBottom(
+                new HealAction(AbstractDungeon.player, AbstractDungeon.player, heal)
+        );
     }
+
+
 }

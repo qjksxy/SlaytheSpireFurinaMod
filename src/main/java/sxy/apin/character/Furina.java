@@ -27,6 +27,7 @@ import sxy.apin.cards.basic.Dodge;
 import sxy.apin.cards.basic.Strike;
 import sxy.apin.cards.common.Cake;
 import sxy.apin.cards.common.ElementalBurst;
+import sxy.apin.cards.common.ElementalSkill;
 import sxy.apin.modcore.FurinaCore;
 import sxy.apin.power.ElementEnergy;
 import sxy.apin.power.Ousia;
@@ -41,6 +42,11 @@ import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
 import static sxy.apin.character.Furina.Enums.FURINA_CLASS;
 
 public class Furina extends CustomPlayer {
+    // 荒
+    public static final int OUSIA = 0;
+    // 芒
+    public static final int PNEUMA = 1;
+
     // 火堆的人物立绘（行动前）
     private static final String MY_CHARACTER_SHOULDER_1 = "sxy/apin/img/char/shoulder.png";
     // 火堆的人物立绘（行动后）
@@ -95,6 +101,25 @@ public class Furina extends CustomPlayer {
 
 
     }
+
+    /**
+     * 获取芙宁娜当前的始基力形态
+     * @return
+     */
+    public static int getArkhe() {
+        AbstractPlayer player = AbstractDungeon.player;
+        int arkhe = Furina.OUSIA;
+        if (player.hasPower(Pneuma.POWER_ID)) {
+            arkhe = Furina.PNEUMA;
+        } else if (!player.hasPower(Ousia.POWER_ID)) {
+            AbstractDungeon.actionManager.addToBottom(
+                    new ApplyPowerAction(player, player,
+                            new Ousia(player), 0)
+            );
+        }
+        return arkhe;
+    }
+
 
     // 芙宁娜特有能力：切换始基力形态
     public static void switchArkhe() {
@@ -163,11 +188,15 @@ public class Furina extends CustomPlayer {
         ArrayList<String> retVal = new ArrayList<>();
         retVal.add(Strike.ID);
         retVal.add(Strike.ID);
+        retVal.add(Strike.ID);
+        retVal.add(ChargedAttack.ID);
         retVal.add(ChargedAttack.ID);
         retVal.add(Dodge.ID);
         retVal.add(Dodge.ID);
         retVal.add(Dodge.ID);
         retVal.add(Cake.ID);
+        retVal.add(ElementalSkill.ID);
+        retVal.add(ElementalSkill.ID);
         retVal.add(ElementalBurst.ID);
         return retVal;
     }

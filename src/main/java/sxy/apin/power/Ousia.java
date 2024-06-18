@@ -1,13 +1,20 @@
 package sxy.apin.power;
 
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import sxy.apin.helper.FurinaHelper;
 
+/**
+ * 荒-沙龙成员
+ */
 public class Ousia extends AbstractPower {
     // 能力的ID
     public static final String POWER_ID = FurinaHelper.makePowerID(Ousia.class.getSimpleName());
@@ -36,5 +43,20 @@ public class Ousia extends AbstractPower {
     // 能力在更新时如何修改描述
     public void updateDescription() {
         this.description = DESCRIPTIONS[0];
+    }
+
+    @Override
+    public void onInitialApplication() {
+        AbstractPlayer player = AbstractDungeon.player;
+        if (player.hasPower(SingerOfManyWaters.POWER_ID)) {
+            int amount = player.getPower(SingerOfManyWaters.POWER_ID).amount;
+            AbstractDungeon.actionManager.addToBottom(
+                    new ApplyPowerAction(player, player,
+                            new SalonMembers(player, amount), amount)
+            );
+            AbstractDungeon.actionManager.addToBottom(
+                    new RemoveSpecificPowerAction(player, player, SingerOfManyWaters.POWER_ID)
+            );
+        }
     }
 }

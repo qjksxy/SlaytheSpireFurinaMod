@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import sxy.apin.character.Furina;
 import sxy.apin.helper.FurinaHelper;
 
 public class OusiaEmergy extends AbstractPower {
@@ -70,6 +71,7 @@ public class OusiaEmergy extends AbstractPower {
             AbstractDungeon.actionManager.addToBottom(
                     new ReducePowerAction(target, AbstractDungeon.player, OusiaEmergy.POWER_ID, min_amout)
             );
+            Furina.gainElementEnergy(min_amout);
         }
     }
 }
