@@ -19,10 +19,7 @@ import sxy.apin.cards.rare.Erinnyes;
 import sxy.apin.cards.rare.PalaisMermonia;
 import sxy.apin.cards.rare.PassingOfJudgment;
 import sxy.apin.cards.rare.PourLaJustice;
-import sxy.apin.cards.uncommon.FortressOfMeropide;
-import sxy.apin.cards.uncommon.FountainOfLucine;
-import sxy.apin.cards.uncommon.MaisonGardiennage;
-import sxy.apin.cards.uncommon.OperaEpiclese;
+import sxy.apin.cards.uncommon.*;
 import sxy.apin.character.Furina;
 import sxy.apin.helper.FurinaHelper;
 import sxy.apin.relic.LittleCake;
@@ -107,10 +104,13 @@ public class FurinaCore implements EditCardsSubscriber, EditStringsSubscriber, E
         BaseMod.addCard(new Performance());
 
         // UNCOMMON
+        BaseMod.addCard(new Fontatine());
         BaseMod.addCard(new FortressOfMeropide());
         BaseMod.addCard(new FountainOfLucine());
         BaseMod.addCard(new MaisonGardiennage());
         BaseMod.addCard(new OperaEpiclese());
+        BaseMod.addCard(new Tour());
+        BaseMod.addCard(new WeepingWillowOfTheLake());
 
         // RARE
         BaseMod.addCard(new Erinnyes());
