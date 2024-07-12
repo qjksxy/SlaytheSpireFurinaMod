@@ -1,6 +1,7 @@
 package sxy.apin.power;
 
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -71,7 +72,13 @@ public class OusiaEmergy extends AbstractPower {
             AbstractDungeon.actionManager.addToBottom(
                     new ReducePowerAction(target, AbstractDungeon.player, OusiaEmergy.POWER_ID, min_amout)
             );
+            if (min_amout <= 0) {
+                return;
+            }
             Furina.gainElementEnergy(min_amout);
+            AbstractDungeon.actionManager.addToBottom(
+                    new GainEnergyAction(1)
+            );
         }
     }
 }

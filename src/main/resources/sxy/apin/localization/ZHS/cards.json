@@ -159,24 +159,24 @@
     "DESCRIPTION": "失去所有气氛值，对自身造成 !M! × furina_mod:气氛值 的治疗，对全体敌人造成 !M! × furina_mod:气氛值 的伤害。",
     "UPGRADE_DESCRIPTION": "失去所有气氛值，对自身造成 !M! × furina_mod:气氛值 的治疗，对全体敌人造成 !M! × furina_mod:气氛值 的伤害。"
   },
-  "ApinFurina:众水": {
+  "ApinFurina:AllWaters": {
     "NAME": "众水",
-    "DESCRIPTION": "失去所有气氛值，对自身造成 !M! × furina_mod:气氛值 的治疗，对全体敌人造成 !M! × furina_mod:气氛值 的伤害。",
-    "UPGRADE_DESCRIPTION": "失去所有气氛值，对自身造成 !M! × furina_mod:气氛值 的治疗，对全体敌人造成 !M! × furina_mod:气氛值 的伤害。"
+    "DESCRIPTION": " 消耗 。提高 !M! 点生命值上限。",
+    "UPGRADE_DESCRIPTION": " 消耗 。提高 !M! 点生命值上限。"
   },
-  "ApinFurina:众方": {
+  "ApinFurina:AllKindreds": {
     "NAME": "众方",
-    "DESCRIPTION": "失去所有气氛值，对自身造成 !M! × furina_mod:气氛值 的治疗，对全体敌人造成 !M! × furina_mod:气氛值 的伤害。",
-    "UPGRADE_DESCRIPTION": "失去所有气氛值，对自身造成 !M! × furina_mod:气氛值 的治疗，对全体敌人造成 !M! × furina_mod:气氛值 的伤害。"
+    "DESCRIPTION": "抽 !M! 张牌。每回合开始额外抽取 !M! 张牌。",
+    "UPGRADE_DESCRIPTION": "抽 !M! 张牌。每回合开始额外抽取 !M! 张牌。"
   },
-  "ApinFurina:众民": {
+  "ApinFurina:AllPeople": {
     "NAME": "众民",
-    "DESCRIPTION": "失去所有气氛值，对自身造成 !M! × furina_mod:气氛值 的治疗，对全体敌人造成 !M! × furina_mod:气氛值 的伤害。",
-    "UPGRADE_DESCRIPTION": "失去所有气氛值，对自身造成 !M! × furina_mod:气氛值 的治疗，对全体敌人造成 !M! × furina_mod:气氛值 的伤害。"
+    "DESCRIPTION": "对所有敌人附属当前 furina_mod:始基力形态 对应的 furina_mod:芒荒能量 。获得 !M! 层水。",
+    "UPGRADE_DESCRIPTION": "对所有敌人附属当前 furina_mod:始基力形态 对应的 furina_mod:芒荒能量 。获得 !M! 层水。"
   },
-  "ApinFurina:众律法": {
+  "ApinFurina:AllLaws": {
     "NAME": "众律法",
-    "DESCRIPTION": "失去所有气氛值，对自身造成 !M! × furina_mod:气氛值 的治疗，对全体敌人造成 !M! × furina_mod:气氛值 的伤害。",
-    "UPGRADE_DESCRIPTION": "失去所有气氛值，对自身造成 !M! × furina_mod:气氛值 的治疗，对全体敌人造成 !M! × furina_mod:气氛值 的伤害。"
+    "DESCRIPTION": "失去所有 furina_mod:气氛值 ，恢复 furina_mod:气氛值 点生命，对全体敌人造成X倍 furina_mod:气氛值 的伤害。",
+    "UPGRADE_DESCRIPTION": "失去所有 furina_mod:气氛值 ，恢复X倍 furina_mod:气氛值  点生命，对全体敌人造成X倍 furina_mod:气氛值 的伤害。"
   }
 }
