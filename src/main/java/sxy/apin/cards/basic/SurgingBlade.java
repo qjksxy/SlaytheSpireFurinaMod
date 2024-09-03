@@ -23,7 +23,7 @@ public class SurgingBlade extends CustomCard {
     private static final String IMG_PATH = "sxy/apin/img/cards/Strike.png";
     // -2费不显示能量图标（如诅咒卡状态卡等），-1费为X费（旋风斩等）。
     private static final int COST = 0;
-    private static final CardType TYPE = CardType.ATTACK;
+    private static final CardType TYPE = CardType.SKILL;
     private static final CardColor COLOR = FURINA_BLUE;
     private static final CardRarity RARITY = CardRarity.BASIC;
     // 是否指向敌人

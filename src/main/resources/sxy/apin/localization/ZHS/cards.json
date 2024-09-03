@@ -74,21 +74,21 @@
     "DESCRIPTION": "获得 !M! 层 无实体 与 !M! 层 人工制品 。",
     "UPGRADE_DESCRIPTION": "获得 !M! 层 无实体 与 !M! 层 人工制品 。"
   },
-  "ApinFurina:永世领唱": {
+  "ApinFurina:PerpetualMuseOfChansons": {
     "NAME": "永世领唱",
     "DESCRIPTION": "每回合结束时，获得 !M! 层 furina_mod:气氛值 。",
     "UPGRADE_DESCRIPTION": "每回合结束时，获得 !M! 层 furina_mod:气氛值 。"
   },
-  "ApinFurina:无尽圆舞": {
+  "ApinFurina:PerpetualMuseOfRondeaux": {
     "NAME": "无尽圆舞",
     "DESCRIPTION": "你每受到1次治疗后，总是额外获得 !M! 点治疗。",
     "UPGRADE_DESCRIPTION": "你每受到1次治疗后，总是额外获得 !M! 点治疗。"
   },
-  "ApinFurina:不休独舞": {
-  "NAME": "不休独舞",
-  "DESCRIPTION": "",
-  "UPGRADE_DESCRIPTION": "你每受到1次治疗后，总是额外获得 !M! 点治疗。"
-},
+  "ApinFurina:EndlessSoloOfSolitude": {
+    "NAME": "不休独舞",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": "你每受到1次治疗后，总是额外获得 !M! 点治疗。"
+  },
   "ApinFurina:OperaEpiclese": {
     "NAME": "欧庇克莱歌剧院",
     "DESCRIPTION": "场上每有1名敌人，你获得 !M! 点 furina_mod:气氛值 。",
@@ -119,7 +119,6 @@
     "DESCRIPTION": "消耗 。每回合开始时，回复已损失生命值 10% 的生命。不可叠加。",
     "UPGRADE_DESCRIPTION": "消耗 。每回合开始时，回复生命上限 10% 的生命。不可叠加。"
   },
-  
   "ApinFurina:CourtOfFontaine": {
     "NAME": "枫丹廷",
     "DESCRIPTION": "",
@@ -135,27 +134,22 @@
     "DESCRIPTION": "若手牌数量不多于 5，则抽 3 张牌。",
     "UPGRADE_DESCRIPTION": "若手牌数量不多于 6，则抽 4 张牌。"
   },
-  "ApinFurina:戏剧": {
+  "ApinFurina:Drama": {
     "NAME": "戏剧",
-    "DESCRIPTION": "下 !M! 次受到伤害后，你回复伤害值一半的生命值。",
-    "UPGRADE_DESCRIPTION": "下 !M! 次受到伤害后，你回复伤害值一半的生命值。"
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
   },
-  "ApinFurina:「戏剧感」": {
+  "ApinFurina:SenseOfDrama": {
     "NAME": "「戏剧感」",
-    "DESCRIPTION": "你受到伤害后，回复等同于 furina_mod:气氛值  30% 的生命值。",
-    "UPGRADE_DESCRIPTION": "你受到伤害后，回复等同于 furina_mod:气氛值  50% 的生命值。"
-  },
-  "ApinFurina:欢愉": {
-    "NAME": "欢愉",
-    "DESCRIPTION": " !M! 回合 furina_mod:气氛值 获取点数翻倍。",
-    "UPGRADE_DESCRIPTION": " !M! 回合 furina_mod:气氛值 获取点数翻倍。"
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
   },
   "ApinFurina:Tour": {
     "NAME": "巡演",
     "DESCRIPTION": " 消耗 。获得 !M! 层 乱战 。",
     "UPGRADE_DESCRIPTION": "获得 !M! 层 乱战 。"
   },
-  "ApinFurina:落幕": {
+  "ApinFurina:CurtainFalls": {
     "NAME": "落幕",
     "DESCRIPTION": "失去所有气氛值，对自身造成 !M! × furina_mod:气氛值 的治疗，对全体敌人造成 !M! × furina_mod:气氛值 的伤害。",
     "UPGRADE_DESCRIPTION": "失去所有气氛值，对自身造成 !M! × furina_mod:气氛值 的治疗，对全体敌人造成 !M! × furina_mod:气氛值 的伤害。"
@@ -179,5 +173,180 @@
     "NAME": "众律法",
     "DESCRIPTION": "失去所有 furina_mod:气氛值 ，回复 furina_mod:气氛值 点生命，对全体敌人造成X倍 furina_mod:气氛值 的伤害。",
     "UPGRADE_DESCRIPTION": "失去所有 furina_mod:气氛值 ，回复X倍 furina_mod:气氛值  点生命，对全体敌人造成X倍 furina_mod:气氛值 的伤害。"
+  },
+  "ApinFurina:FontinaliaMousse": {
+    "NAME": "千灵慕斯",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
+  },
+  "ApinFurina:Frozen": {
+    "NAME": "冻结",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
+  },
+  "ApinFurina:Swirl": {
+    "NAME": "扩散",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
+  },
+  "ApinFurina:Crystalize": {
+    "NAME": "结晶",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
+  },
+  "ApinFurina:Melt": {
+    "NAME": "融化",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
+  },
+  "ApinFurina:Vaporize": {
+    "NAME": "蒸发",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
+  },
+  "ApinFurina:Bloom": {
+    "NAME": "绽放",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
+  },
+  "ApinFurina:WolfFang": {
+    "NAME": "狼牙",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
+  },
+  "ApinFurina:TheDockhandsAssistant": {
+    "NAME": "船坞长剑",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
+  },
+  "ApinFurina:FleuveCendreFerryman": {
+    "NAME": "灰河渡手",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
+  },
+  "ApinFurina:KeyOfKhajNisut": {
+    "NAME": "圣显之钥",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
+  },
+  "ApinFurina:PrimordialJadeCutter": {
+    "NAME": "磐岩结绿",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
+  },
+  "ApinFurina:UrakuMisugiri": {
+    "NAME": "有乐御簾切",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
+  },
+  "ApinFurina:LightOfFoliarIncision": {
+    "NAME": "裁叶萃光",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
+  },
+  "ApinFurina:MistsplitterReforged": {
+    "NAME": "雾切之回光",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
+  },
+  "ApinFurina:Order": {
+    "NAME": "秩序",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
+  },
+  "ApinFurina:Equity": {
+    "NAME": "公平",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
+  },
+  "ApinFurina:Justice": {
+    "NAME": "正义",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
+  },
+  "ApinFurina:SlowingWater": {
+    "NAME": "迟滞之水",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
+  },
+  "ApinFurina:SoothingWater": {
+    "NAME": "愈疗之水",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
+  },
+  "ApinFurina:WovenWaters": {
+    "NAME": "交织之水",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
+  },
+  "ApinFurina:MelusineSupport": {
+    "NAME": "美露莘的声援",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
+  },
+  "ApinFurina:WaterAndJustice": {
+    "NAME": "水与正义",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
+  },
+  "ApinFurina:SplendorOfTranquilWaters": {
+    "NAME": "静水流涌之辉",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
+  },
+  "ApinFurina:CoronatedPrimaDonna": {
+    "NAME": "冠笄伶优",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
+  },
+  "ApinFurina:DewsFirstGlimmerAtDaybreak": {
+    "NAME": "晨露浮光之初",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
+  },
+  "ApinFurina:PeripateticPeregrination": {
+    "NAME": "四季的悠游",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
+  },
+  "ApinFurina:LeSouvenirAvecLeCrepuscule": {
+    "NAME": "时暮的思眷",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
+  },
+  "ApinFurina:GymnopediesOfLune": {
+    "NAME": "淡月之舞",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
+  },
+  "ApinFurina:LoveIsARebelliousBird": {
+    "NAME": "爱是难驯鸟",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
+  },
+  "ApinFurina:MySecretIsHiddenWithinMe": {
+    "NAME": "秘密藏心间",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
+  },
+  "ApinFurina:INowKnowItIs": {
+    "NAME": "我已有觉察",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
+  },
+  "ApinFurina:AWomanAdapts": {
+    "NAME": "女人皆善变",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
+  },
+  "ApinFurina:WhoDweltInTheNetherworld": {
+    "NAME": "若非处幽冥",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
+  },
+  "ApinFurina:HearMe": {
+    "NAME": "诸君听我颂",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
   }
 }
