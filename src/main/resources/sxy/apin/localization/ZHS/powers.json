@@ -70,5 +70,11 @@
     "DESCRIPTIONS": [
       "回合结束时恢复 3 点生命，若生命值低于 50%，则额外恢复 furina:气氛值 / 5 的生命。"
     ]
+  },
+  "ApinFurina:FrozenPower": {
+    "NAME": "冻结",
+    "DESCRIPTIONS": [
+      "本回合不消耗气氛值。"
+    ]
   }
 }

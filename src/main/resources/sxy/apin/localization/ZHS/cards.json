@@ -67,7 +67,7 @@
   "ApinFurina:Performance": {
     "NAME": "演出",
     "DESCRIPTION": "当前 furina_mod:气氛值 提升10%。",
-    "UPGRADE_DESCRIPTION": "当前 furina_mod:气氛值 提升20%。"
+    "UPGRADE_DESCRIPTION": "当前 furina_mod:气氛值 提升15%。"
   },
   "ApinFurina:PassingOfJudgment": {
     "NAME": "裁定之时",
@@ -181,18 +181,18 @@
   },
   "ApinFurina:Frozen": {
     "NAME": "冻结",
-    "DESCRIPTION": "",
-    "UPGRADE_DESCRIPTION": ""
+    "DESCRIPTION": "对敌人造成 !M! 点伤害。本回合不消耗气氛值。",
+    "UPGRADE_DESCRIPTION": "对敌人造成 !M! 点伤害。本回合不消耗气氛值。"
   },
   "ApinFurina:Swirl": {
     "NAME": "扩散",
-    "DESCRIPTION": "",
-    "UPGRADE_DESCRIPTION": ""
+    "DESCRIPTION": "对所有敌人造成 !M! 伤害。",
+    "UPGRADE_DESCRIPTION": "对所有敌人造成 !M! 伤害。"
   },
   "ApinFurina:Crystalize": {
     "NAME": "结晶",
-    "DESCRIPTION": "",
-    "UPGRADE_DESCRIPTION": ""
+    "DESCRIPTION": "对敌人造成 !M! 点伤害。获得 5 点护盾。",
+    "UPGRADE_DESCRIPTION": "对敌人造成 !M! 点伤害。获得 8 点护盾。"
   },
   "ApinFurina:Melt": {
     "NAME": "融化",
@@ -201,8 +201,8 @@
   },
   "ApinFurina:Vaporize": {
     "NAME": "蒸发",
-    "DESCRIPTION": "",
-    "UPGRADE_DESCRIPTION": ""
+    "DESCRIPTION": "对敌人造成 !M! 点伤害。",
+    "UPGRADE_DESCRIPTION": "对敌人造成 !M! 点伤害。"
   },
   "ApinFurina:Bloom": {
     "NAME": "绽放",
@@ -211,13 +211,13 @@
   },
   "ApinFurina:WolfFang": {
     "NAME": "狼牙",
-    "DESCRIPTION": "",
-    "UPGRADE_DESCRIPTION": ""
+    "DESCRIPTION": "5伤  获得2气氛值",
+    "UPGRADE_DESCRIPTION": "8伤  获得2气氛值"
   },
   "ApinFurina:TheDockhandsAssistant": {
     "NAME": "船坞长剑",
-    "DESCRIPTION": "",
-    "UPGRADE_DESCRIPTION": ""
+    "DESCRIPTION": "5伤  2元素能量",
+    "UPGRADE_DESCRIPTION": "5伤  2元素能量"
   },
   "ApinFurina:FleuveCendreFerryman": {
     "NAME": "灰河渡手",

@@ -29,10 +29,7 @@ import sxy.apin.cards.common.Cake;
 import sxy.apin.cards.common.ElementalBurst;
 import sxy.apin.cards.common.ElementalSkill;
 import sxy.apin.modcore.FurinaCore;
-import sxy.apin.power.ElementEnergy;
-import sxy.apin.power.Ousia;
-import sxy.apin.power.Pneuma;
-import sxy.apin.power.Revelry;
+import sxy.apin.power.*;
 import sxy.apin.relic.LittleCake;
 import sxy.apin.relic.TravelingDoctor;
 
@@ -157,7 +154,7 @@ public class Furina extends CustomPlayer {
 
     public static void consumeRevelry(int amount) {
         AbstractPlayer player = AbstractDungeon.player;
-        if (player == null) {
+        if (player == null || player.hasPower(FrozenPower.POWER_ID)) {
             return;
         }
         if (player.hasPower(Revelry.POWER_ID)) {
