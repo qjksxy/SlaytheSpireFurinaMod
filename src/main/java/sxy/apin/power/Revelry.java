@@ -56,12 +56,12 @@ public class Revelry extends AbstractPower {
             this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, this.ID));
         }
 
-        if (this.amount >= 999) {
-            this.amount = 999;
+        if (this.amount >= 30) {
+            this.amount = 30;
         }
 
-        if (this.amount <= -999) {
-            this.amount = -999;
+        if (this.amount <= 0) {
+            this.amount = 0;
         }
 
     }
