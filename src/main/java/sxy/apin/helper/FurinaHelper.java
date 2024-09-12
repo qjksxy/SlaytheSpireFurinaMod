@@ -4,11 +4,14 @@ import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+
+import java.util.ArrayList;
 
 public class FurinaHelper {
     public static final String MOD_ID = "ApinFurina";
@@ -46,5 +49,24 @@ public class FurinaHelper {
         );
     }
 
+    public static ArrayList<AbstractCard> getHandCards() {
+        return AbstractDungeon.player.hand.group;
+    }
+
+    public static ArrayList<AbstractCard> getDrawPile() {
+        return AbstractDungeon.player.drawPile.group;
+    }
+
+    public static ArrayList<AbstractCard> getDiscardPile() {
+        return AbstractDungeon.player.discardPile.group;
+    }
+
+    public static ArrayList<AbstractCard> getExhaustPile() {
+        return AbstractDungeon.player.exhaustPile.group;
+    }
+
+    public static void getE() {
+
+    }
 
 }

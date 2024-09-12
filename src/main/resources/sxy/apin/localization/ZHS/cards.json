@@ -194,10 +194,10 @@
     "DESCRIPTION": "对敌人造成 !M! 点伤害。获得 5 点护盾。",
     "UPGRADE_DESCRIPTION": "对敌人造成 !M! 点伤害。获得 8 点护盾。"
   },
-  "ApinFurina:Melt": {
-    "NAME": "融化",
-    "DESCRIPTION": "",
-    "UPGRADE_DESCRIPTION": ""
+  "ApinFurina:ElectroCharged": {
+    "NAME": "感电",
+    "DESCRIPTION": "对敌人造成 !M！ 点伤害，并附属感电。",
+    "UPGRADE_DESCRIPTION": "对敌人造成 !M！ 点伤害，并附属感电。"
   },
   "ApinFurina:Vaporize": {
     "NAME": "蒸发",
@@ -321,32 +321,32 @@
   },
   "ApinFurina:LoveIsARebelliousBird": {
     "NAME": "爱是难驯鸟",
-    "DESCRIPTION": "",
-    "UPGRADE_DESCRIPTION": ""
-  },
-  "ApinFurina:MySecretIsHiddenWithinMe": {
-    "NAME": "秘密藏心间",
-    "DESCRIPTION": "",
-    "UPGRADE_DESCRIPTION": ""
-  },
-  "ApinFurina:INowKnowItIs": {
-    "NAME": "我已有觉察",
-    "DESCRIPTION": "",
-    "UPGRADE_DESCRIPTION": ""
+    "DESCRIPTION": "气氛值上限提升到50。",
+    "UPGRADE_DESCRIPTION": "气氛值上限提升到50。"
   },
   "ApinFurina:AWomanAdapts": {
     "NAME": "女人皆善变",
-    "DESCRIPTION": "",
-    "UPGRADE_DESCRIPTION": ""
+    "DESCRIPTION": "打出万众狂欢时，获得 10 点气氛值。获得气氛值时 60% 概率额外获得 1 点。",
+    "UPGRADE_DESCRIPTION": "打出万众狂欢时，获得 10 点气氛值。获得气氛值时 90% 概率额外获得 1 点。"
+  },
+  "ApinFurina:MySecretIsHiddenWithinMe": {
+    "NAME": "秘密藏心间",
+    "DESCRIPTION": "万众狂欢生效期间，气氛值层数视为 140%。",
+    "UPGRADE_DESCRIPTION": "万众狂欢生效期间，气氛值层数视为 180%。"
   },
   "ApinFurina:WhoDweltInTheNetherworld": {
     "NAME": "若非处幽冥",
-    "DESCRIPTION": "",
-    "UPGRADE_DESCRIPTION": ""
+    "DESCRIPTION": "孤心沙龙提供的元素能量+1。",
+    "UPGRADE_DESCRIPTION": "孤心沙龙提供的元素能量+1。50%概率额外+1。"
+  },
+  "ApinFurina:INowKnowItIs": {
+    "NAME": "我已有觉察",
+    "DESCRIPTION": "孤心沙龙造成的伤害和治疗量提升50%。",
+    "UPGRADE_DESCRIPTION": "孤心沙龙造成的伤害和治疗量提升70%。"
   },
   "ApinFurina:HearMe": {
     "NAME": "诸君听我颂",
-    "DESCRIPTION": "",
-    "UPGRADE_DESCRIPTION": ""
+    "DESCRIPTION": "释放孤心沙龙的回合内，普通攻击（含重击）造成的伤害提升。提升值为生命上限的30%，并额外获得4层气氛值。",
+    "UPGRADE_DESCRIPTION": "释放孤心沙龙的回合内，普通攻击（含重击）造成的伤害提升。提升值为生命上限的40%。，并额外获得10层气氛值。"
   }
 }
