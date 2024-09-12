@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import sxy.apin.character.Furina;
 import sxy.apin.helper.FurinaHelper;
 import sxy.apin.power.SalonMembers;
-import sxy.apin.power.SingerOfManyWaters;
+import sxy.apin.power.SingerOfManyWatersPower;
 
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
 
@@ -58,7 +58,7 @@ public class ElementalSkill extends CustomCard {
         } else {
             AbstractDungeon.actionManager.addToBottom(
                     new ApplyPowerAction(abstractPlayer, abstractPlayer,
-                            new SingerOfManyWaters(abstractPlayer, magicNumber), magicNumber)
+                            new SingerOfManyWatersPower(abstractPlayer, magicNumber), magicNumber)
             );
         }
         Furina.gainElementEnergy(magicNumber);

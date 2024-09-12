@@ -48,14 +48,14 @@ public class Ousia extends AbstractPower {
     @Override
     public void onInitialApplication() {
         AbstractPlayer player = AbstractDungeon.player;
-        if (player.hasPower(SingerOfManyWaters.POWER_ID)) {
-            int amount = player.getPower(SingerOfManyWaters.POWER_ID).amount;
+        if (player.hasPower(SingerOfManyWatersPower.POWER_ID)) {
+            int amount = player.getPower(SingerOfManyWatersPower.POWER_ID).amount;
             AbstractDungeon.actionManager.addToBottom(
                     new ApplyPowerAction(player, player,
                             new SalonMembers(player, amount), amount)
             );
             AbstractDungeon.actionManager.addToBottom(
-                    new RemoveSpecificPowerAction(player, player, SingerOfManyWaters.POWER_ID)
+                    new RemoveSpecificPowerAction(player, player, SingerOfManyWatersPower.POWER_ID)
             );
         }
     }

@@ -14,9 +14,9 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import sxy.apin.character.Furina;
 import sxy.apin.helper.FurinaHelper;
 
-public class SingerOfManyWaters extends AbstractPower {
+public class SingerOfManyWatersPower extends AbstractPower {
     // 能力的ID
-    public static final String POWER_ID = FurinaHelper.makePowerID(SingerOfManyWaters.class.getSimpleName());
+    public static final String POWER_ID = FurinaHelper.makePowerID(SingerOfManyWatersPower.class.getSimpleName());
     // 能力的本地化字段
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     // 能力的名称
@@ -24,7 +24,7 @@ public class SingerOfManyWaters extends AbstractPower {
     // 能力的描述
     private static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
-    public SingerOfManyWaters(AbstractCreature owner, int amount) {
+    public SingerOfManyWatersPower(AbstractCreature owner, int amount) {
         this.name = NAME;
         this.ID = POWER_ID;
         this.owner = owner;
@@ -66,7 +66,7 @@ public class SingerOfManyWaters extends AbstractPower {
         int revelry = Furina.getRevelry();
         AbstractPlayer player = AbstractDungeon.player;
         AbstractDungeon.actionManager.addToBottom(
-                new ReducePowerAction(player, player, SingerOfManyWaters.POWER_ID, 1)
+                new ReducePowerAction(player, player, SingerOfManyWatersPower.POWER_ID, 1)
         );
         AbstractDungeon.actionManager.addToBottom(
                 new HealAction(player, player, 3)

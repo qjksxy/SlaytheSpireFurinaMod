@@ -49,7 +49,7 @@ public class Pneuma extends AbstractPower {
             int amount = player.getPower(SalonMembers.POWER_ID).amount;
             AbstractDungeon.actionManager.addToBottom(
                     new ApplyPowerAction(player, player,
-                            new SingerOfManyWaters(player, amount), amount)
+                            new SingerOfManyWatersPower(player, amount), amount)
             );
             AbstractDungeon.actionManager.addToBottom(
                     new RemoveSpecificPowerAction(player, player, SalonMembers.POWER_ID)
