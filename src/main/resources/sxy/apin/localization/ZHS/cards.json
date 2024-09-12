@@ -86,8 +86,8 @@
   },
   "ApinFurina:EndlessSoloOfSolitude": {
     "NAME": "不休独舞",
-    "DESCRIPTION": "",
-    "UPGRADE_DESCRIPTION": "你每受到1次治疗后，总是额外获得 !M! 点治疗。"
+    "DESCRIPTION": "获得 3 层再生。",
+    "UPGRADE_DESCRIPTION": "获得 3 层再生。"
   },
   "ApinFurina:OperaEpiclese": {
     "NAME": "欧庇克莱歌剧院",
