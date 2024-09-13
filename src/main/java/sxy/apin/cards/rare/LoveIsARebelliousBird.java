@@ -26,6 +26,7 @@ public class LoveIsARebelliousBird extends CustomCard {
 
     public LoveIsARebelliousBird() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
+        this.exhaust = true;
     }
 
     @Override

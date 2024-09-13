@@ -29,6 +29,7 @@ public class INowKnowItIs extends CustomCard {
 
     public INowKnowItIs() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
+        this.exhaust = true;
     }
 
     @Override
