@@ -64,18 +64,27 @@ public class SingerOfManyWatersPower extends AbstractPower {
     @Override
     public void atEndOfTurn(boolean isPlayer) {
         int revelry = Furina.getRevelry();
+        INowKnowItIsPower power = (INowKnowItIsPower) FurinaHelper.getPower(INowKnowItIsPower.POWER_ID);
+        double factor = 1.0;
+        if (power != null) {
+            if (power.isUpgraded()) {
+                factor = 1.5;
+            } else {
+                factor = 1.7;
+            }
+        }
         AbstractPlayer player = AbstractDungeon.player;
         AbstractDungeon.actionManager.addToBottom(
                 new ReducePowerAction(player, player, SingerOfManyWatersPower.POWER_ID, 1)
         );
         AbstractDungeon.actionManager.addToBottom(
-                new HealAction(player, player, 3)
+                new HealAction(player, player, (int) (5 * factor))
         );
         if (AbstractDungeon.player.currentHealth > AbstractDungeon.player.maxHealth / 2) {
             return;
         }
         AbstractDungeon.actionManager.addToBottom(
-                new HealAction(player, player, revelry / 5)
+                new HealAction(player, player, (int) (revelry * factor / 2))
         );
         Furina.consumeRevelry(1);
     }

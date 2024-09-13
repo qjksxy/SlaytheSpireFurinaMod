@@ -65,6 +65,16 @@ public class SalonMembers extends AbstractPower {
     @Override
     public void atEndOfTurn(boolean isPlayer) {
         int revelry = Furina.getRevelry();
+        INowKnowItIsPower power = (INowKnowItIsPower) FurinaHelper.getPower(INowKnowItIsPower.POWER_ID);
+        double factor = 1.0;
+        if (power != null) {
+            if (power.isUpgraded()) {
+                factor = 1.5;
+            } else {
+                factor = 1.7;
+            }
+        }
+
         AbstractMonster mon = null;
         for (AbstractMonster monster : AbstractDungeon.getCurrRoom().monsters.monsters) {
             if (!monster.escaped && !monster.isDying && monster.currentHealth > 0) {
@@ -78,7 +88,7 @@ public class SalonMembers extends AbstractPower {
             );
             AbstractDungeon.actionManager.addToBottom(
                     new DamageAction(mon,
-                            new DamageInfo(AbstractDungeon.player, 10, DamageInfo.DamageType.NORMAL))
+                            new DamageInfo(AbstractDungeon.player, (int) (10 * factor), DamageInfo.DamageType.NORMAL))
             );
         }
         if (AbstractDungeon.player.currentHealth < AbstractDungeon.player.maxHealth / 2) {
@@ -93,11 +103,7 @@ public class SalonMembers extends AbstractPower {
         if (mon != null) {
             AbstractDungeon.actionManager.addToBottom(
                     new DamageAction(mon,
-                            new DamageInfo(AbstractDungeon.player, revelry / 2, DamageInfo.DamageType.NORMAL))
-            );
-            AbstractDungeon.actionManager.addToBottom(
-                    new DamageAction(AbstractDungeon.player,
-                            new DamageInfo(AbstractDungeon.player, 1, DamageInfo.DamageType.NORMAL))
+                            new DamageInfo(AbstractDungeon.player, (int) (revelry * factor / 2), DamageInfo.DamageType.NORMAL))
             );
         }
         Furina.consumeRevelry(1);

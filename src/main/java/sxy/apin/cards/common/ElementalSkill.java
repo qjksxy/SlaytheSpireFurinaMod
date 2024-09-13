@@ -9,8 +9,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import sxy.apin.character.Furina;
 import sxy.apin.helper.FurinaHelper;
-import sxy.apin.power.SalonMembers;
-import sxy.apin.power.SingerOfManyWatersPower;
+import sxy.apin.power.*;
 
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
 
@@ -61,6 +60,37 @@ public class ElementalSkill extends CustomCard {
                             new SingerOfManyWatersPower(abstractPlayer, magicNumber), magicNumber)
             );
         }
-        Furina.gainElementEnergy(magicNumber);
+
+        if (!FurinaHelper.hasPower(WhoDweltInTheNetherworldPower.POWER_ID)) {
+            Furina.gainElementEnergy(magicNumber);
+        } else {
+            WhoDweltInTheNetherworldPower power =
+                    (WhoDweltInTheNetherworldPower) FurinaHelper.getPower(WhoDweltInTheNetherworldPower.POWER_ID);
+            assert power != null;
+            if (power.isUpgrade()) {
+                Furina.gainElementEnergy(magicNumber + 2);
+            } else {
+                Furina.gainElementEnergy(magicNumber + 1);
+            }
+        }
+
+        HearMePower power = (HearMePower) FurinaHelper.getPower(HearMePower.POWER_ID);
+        if (power != null) {
+            if (FurinaHelper.hasPower(CenterOfAttentionPower.POWER_ID)) {
+                CenterOfAttentionPower centerOfAttentionPower =
+                        (CenterOfAttentionPower) FurinaHelper.getPower(CenterOfAttentionPower.POWER_ID);
+                assert centerOfAttentionPower != null;
+                if (centerOfAttentionPower.isUpgraded()) {
+                    return;
+                }
+                if (power.isUpgraded()) {
+                    centerOfAttentionPower.upgrade();
+                }
+            } else {
+                FurinaHelper.applyPower(abstractPlayer, abstractPlayer,
+                        new CenterOfAttentionPower(abstractPlayer, 1, power.isUpgraded()), 1);
+            }
+
+        }
     }
 }

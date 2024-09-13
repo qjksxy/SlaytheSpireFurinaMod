@@ -28,6 +28,7 @@ import sxy.apin.cards.basic.Strike;
 import sxy.apin.cards.common.Cake;
 import sxy.apin.cards.common.ElementalBurst;
 import sxy.apin.cards.common.ElementalSkill;
+import sxy.apin.helper.FurinaHelper;
 import sxy.apin.modcore.FurinaCore;
 import sxy.apin.power.*;
 import sxy.apin.relic.LittleCake;
@@ -167,9 +168,14 @@ public class Furina extends CustomPlayer {
     }
 
     public static void gainRevelry(int amount) {
-        AbstractPlayer player = AbstractDungeon.player;
+        AbstractPlayer player = FurinaHelper.getPlayer();
         if (player == null) {
             return;
+        }
+        if (FurinaHelper.hasPower(AWomanAdaptsPower.POWER_ID)) {
+            if (FurinaHelper.getRandomFloat() < 0.6) {
+                amount += 1;
+            }
         }
         AbstractDungeon.actionManager.addToBottom(
                 new ApplyPowerAction(player, player, new Revelry(player, amount), amount)
@@ -184,6 +190,14 @@ public class Furina extends CustomPlayer {
         int revelry = 0;
         if (player.hasPower(Revelry.POWER_ID)) {
             revelry = player.getPower(Revelry.POWER_ID).amount;
+        }
+        MySecretIsHiddenWithinMePower power = (MySecretIsHiddenWithinMePower) FurinaHelper.getPower(MySecretIsHiddenWithinMePower.POWER_ID);
+        if (power != null) {
+            if (power.isUpgraded()) {
+                revelry = (int) (revelry * 1.8);
+            } else {
+                revelry = (int) (revelry * 1.4);
+            }
         }
         return revelry;
     }
@@ -229,10 +243,10 @@ public class Furina extends CustomPlayer {
         return new CharSelectInfo(
                 characterStrings.NAMES[0], // 人物名字
                 characterStrings.TEXT[0], // 人物介绍
-                75, // 当前血量
-                75, // 最大血量
+                180, // 当前血量
+                180, // 最大血量
                 0, // 初始充能球栏位
-                99, // 初始携带金币
+                200, // 初始携带金币
                 5, // 每回合抽牌数量
                 this, // 别动
                 this.getStartingRelics(), // 初始遗物

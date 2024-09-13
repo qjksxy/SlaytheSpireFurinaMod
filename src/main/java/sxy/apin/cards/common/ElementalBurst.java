@@ -10,7 +10,9 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import sxy.apin.character.Furina;
 import sxy.apin.helper.FurinaHelper;
+import sxy.apin.power.AWomanAdaptsPower;
 import sxy.apin.power.ElementEnergy;
 import sxy.apin.power.UniversalRevelry;
 
@@ -74,5 +76,8 @@ public class ElementalBurst extends CustomCard {
                 new DamageAction(abstractMonster,
                         new DamageInfo(abstractPlayer, damage, DamageInfo.DamageType.NORMAL))
         );
+        if (FurinaHelper.hasPower(AWomanAdaptsPower.POWER_ID)) {
+            Furina.gainRevelry(10);
+        }
     }
 }
