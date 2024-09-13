@@ -34,10 +34,30 @@
     "DESCRIPTION": "回复2点生命值。",
     "UPGRADE_DESCRIPTION": "回复3点生命值。"
   },
-  "ApinFurina:DailyLimitCake": {
-    "NAME": "每日限定蛋糕",
-    "DESCRIPTION": "虚无 。 消耗 。获得 1 点 furina_mod:元素能量 。回复 furina_mod:气氛值 /2点生命值2次。消耗1点 furina_mod:气氛值 。",
-    "UPGRADE_DESCRIPTION": "虚无 。 消耗 。获得 1 点 furina_mod:元素能量 。回复 furina_mod:气氛值 /2点生命值3次。"
+  "ApinFurina:Blubberbeast": {
+    "NAME": "膨膨兽",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
+  },
+  "ApinFurina:ArmoredCrab": {
+    "NAME": "重甲蟹",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
+  },
+  "ApinFurina:BubblySeahorse": {
+    "NAME": "泡泡海马",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
+  },
+  "ApinFurina:BallOctopus": {
+    "NAME": "球球章鱼",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
+  },
+  "ApinFurina:OratriceMecaniquedAnalyseCardinale": {
+    "NAME": "谕示裁定枢机",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
   },
   "ApinFurina:LaLettreAFocalors": {
     "NAME": "致水神",
@@ -58,16 +78,6 @@
     "NAME": "万众狂欢",
     "DESCRIPTION": "消耗 6 点 furina_mod:元素能量 。附属 !M! 层 furina_mod:普世欢腾 ，造成两点伤害。",
     "UPGRADE_DESCRIPTION": "消耗 6 点 furina_mod:元素能量 。附属 !M! 层 furina_mod:普世欢腾 ，造成两点伤害。"
-  },
-  "ApinFurina:Judge": {
-    "NAME": "审判",
-    "DESCRIPTION": "若敌人当前生命值多于你，则其获得 !M! 层 易伤 。否则，自己受到1点伤害 !M! 次。",
-    "UPGRADE_DESCRIPTION": "若敌人当前生命值多于你，则其获得 !M! 层 易伤 。否则，自己受到1点伤害 !M! 次。"
-  },
-  "ApinFurina:Performance": {
-    "NAME": "演出",
-    "DESCRIPTION": "当前 furina_mod:气氛值 提升10%。",
-    "UPGRADE_DESCRIPTION": "当前 furina_mod:气氛值 提升15%。"
   },
   "ApinFurina:PassingOfJudgment": {
     "NAME": "裁定之时",
@@ -101,8 +111,8 @@
   },
   "ApinFurina:PalaisMermonia": {
     "NAME": "沫芒宫",
-    "DESCRIPTION": "每回合开始时，获得一张每日限定蛋糕。",
-    "UPGRADE_DESCRIPTION": "抽两张牌。每回合开始时，获得一张每日限定蛋糕。"
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
   },
   "ApinFurina:MaisonGardiennage": {
     "NAME": "执律庭",
@@ -133,26 +143,6 @@
     "NAME": "湖中垂柳",
     "DESCRIPTION": "若手牌数量不多于 5，则抽 3 张牌。",
     "UPGRADE_DESCRIPTION": "若手牌数量不多于 6，则抽 4 张牌。"
-  },
-  "ApinFurina:Drama": {
-    "NAME": "戏剧",
-    "DESCRIPTION": "",
-    "UPGRADE_DESCRIPTION": ""
-  },
-  "ApinFurina:SenseOfDrama": {
-    "NAME": "「戏剧感」",
-    "DESCRIPTION": "",
-    "UPGRADE_DESCRIPTION": ""
-  },
-  "ApinFurina:Tour": {
-    "NAME": "巡演",
-    "DESCRIPTION": " 消耗 。获得 !M! 层 乱战 。",
-    "UPGRADE_DESCRIPTION": "获得 !M! 层 乱战 。"
-  },
-  "ApinFurina:CurtainFalls": {
-    "NAME": "落幕",
-    "DESCRIPTION": "失去所有气氛值，对自身造成 !M! × furina_mod:气氛值 的治疗，对全体敌人造成 !M! × furina_mod:气氛值 的伤害。",
-    "UPGRADE_DESCRIPTION": "失去所有气氛值，对自身造成 !M! × furina_mod:气氛值 的治疗，对全体敌人造成 !M! × furina_mod:气氛值 的伤害。"
   },
   "ApinFurina:AllWaters": {
     "NAME": "众水",
@@ -304,6 +294,21 @@
     "DESCRIPTION": "随机触发1种效果：抽1张牌；回复3点生命；消耗1点生命；在手牌中增加1张稀有牌。",
     "UPGRADE_DESCRIPTION": "随机触发1种效果：抽1张牌；回复3点生命；消耗1点生命；在手牌中增加1张稀有牌。"
   },
+  "ApinFurina:EndlessWaltz": {
+    "NAME": "停不了的圆舞",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
+  },
+  "ApinFurina:UnheardConfession": {
+    "NAME": "无人听的自白",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
+  },
+  "ApinFurina:TheSeaIsMyStage": {
+    "NAME": "瀚海亦舞台",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
+  },
   "ApinFurina:WaterAndJustice": {
     "NAME": "水与正义",
     "DESCRIPTION": "对敌人造成当前气氛值 25% 的伤害，回复当前气氛值 15% 的生命。",
@@ -373,5 +378,35 @@
     "NAME": "诸君听我颂",
     "DESCRIPTION": "释放孤心沙龙的回合内，普通攻击（含重击）造成的伤害提升。提升值为生命上限的10%，并额外获得4层气氛值。 消耗 。",
     "UPGRADE_DESCRIPTION": "释放孤心沙龙的回合内，普通攻击（含重击）造成的伤害提升。提升值为生命上限的15%，并额外获得10层气氛值。 消耗 。"
+  },
+  "ApinFurina:Judge": {
+    "NAME": "审判",
+    "DESCRIPTION": "若敌人当前生命值多于你，则其获得 !M! 层 易伤 。否则，自己受到1点伤害 !M! 次。",
+    "UPGRADE_DESCRIPTION": "若敌人当前生命值多于你，则其获得 !M! 层 易伤 。否则，自己受到1点伤害 !M! 次。"
+  },
+  "ApinFurina:Performance": {
+    "NAME": "演出",
+    "DESCRIPTION": "当前 furina_mod:气氛值 提升10%。",
+    "UPGRADE_DESCRIPTION": "当前 furina_mod:气氛值 提升15%。"
+  },
+  "ApinFurina:Drama": {
+    "NAME": "戏剧",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
+  },
+  "ApinFurina:SenseOfDrama": {
+    "NAME": "「戏剧感」",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
+  },
+  "ApinFurina:Tour": {
+    "NAME": "巡演",
+    "DESCRIPTION": " 消耗 。获得 !M! 层 乱战 。",
+    "UPGRADE_DESCRIPTION": "获得 !M! 层 乱战 。"
+  },
+  "ApinFurina:CurtainFalls": {
+    "NAME": "落幕",
+    "DESCRIPTION": "失去所有气氛值，对自身造成 !M! × furina_mod:气氛值 的治疗，对全体敌人造成 !M! × furina_mod:气氛值 的伤害。",
+    "UPGRADE_DESCRIPTION": "失去所有气氛值，对自身造成 !M! × furina_mod:气氛值 的治疗，对全体敌人造成 !M! × furina_mod:气氛值 的伤害。"
   }
 }
