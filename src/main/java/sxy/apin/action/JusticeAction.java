@@ -48,6 +48,8 @@ public class JusticeAction extends AbstractGameAction {
                 }
                 AbstractDungeon.player.hand.refreshHandLayout();
                 AbstractDungeon.handCardSelectScreen.wereCardsRetrieved = true;
+                // TODO 核验此处 isDone
+                this.isDone = true;
             }
             this.tickDuration();
         }

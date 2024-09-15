@@ -12,6 +12,9 @@ import sxy.apin.helper.FurinaHelper;
 
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
 
+/**
+ * 磐岩结绿 2费  10伤  基于生命上限的 4% 额外造成伤害。
+ */
 public class PrimordialJadeCutter extends CustomCard {
     public static final String ID = FurinaHelper.makeCardID(PrimordialJadeCutter.class.getSimpleName());
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -42,7 +45,6 @@ public class PrimordialJadeCutter extends CustomCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-
         int maxHealth = FurinaHelper.getPlayer().maxHealth;
         int exDamage = (int) (maxHealth * 0.04);
         AbstractDungeon.actionManager.addToBottom(

@@ -10,10 +10,11 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import sxy.apin.helper.FurinaHelper;
 
-import java.util.Random;
-
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
 
+/**
+ * 裁叶萃光 2费  10伤  有50%的概率造成双倍伤害。
+ */
 public class LightOfFoliarIncision extends CustomCard {
     public static final String ID = FurinaHelper.makeCardID(LightOfFoliarIncision.class.getSimpleName());
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -45,8 +46,7 @@ public class LightOfFoliarIncision extends CustomCard {
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         int tempDamage = damage;
-        Random random = new Random();
-        float v = random.nextFloat();
+        double v = FurinaHelper.getRandomFloat();
         if (v < 0.5) {
             tempDamage *= 2;
         }

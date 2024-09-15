@@ -13,6 +13,9 @@ import sxy.apin.helper.FurinaHelper;
 
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
 
+/**
+ * 雾切之回光 2费  10伤  此牌重复打出时，额外造成 4 点伤害。
+ */
 public class MistsplitterReforged extends CustomCard {
     public static final String ID = FurinaHelper.makeCardID(MistsplitterReforged.class.getSimpleName());
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -28,8 +31,8 @@ public class MistsplitterReforged extends CustomCard {
     public MistsplitterReforged() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.damage = this.baseDamage = 10;
-        this.baseMagicNumber = 2;
-        this.magicNumber = 2;
+        this.baseMagicNumber = 5;
+        this.magicNumber = 5;
         this.tags.add(CardTags.STRIKE);
     }
 

@@ -13,6 +13,9 @@ import sxy.apin.helper.FurinaHelper;
 
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
 
+/**
+ * 有乐御簾切  2费  10伤  获得 3 点气氛值。
+ */
 public class UrakuMisugiri extends CustomCard {
     public static final String ID = FurinaHelper.makeCardID(UrakuMisugiri.class.getSimpleName());
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
