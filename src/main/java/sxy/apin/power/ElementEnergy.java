@@ -9,6 +9,9 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import sxy.apin.helper.FurinaHelper;
 
+/**
+ * 元素能量：用于部分技能牌打出时消耗。
+ */
 public class ElementEnergy extends AbstractPower {
     // 能力的ID
     public static final String POWER_ID = FurinaHelper.makePowerID(ElementEnergy.class.getSimpleName());

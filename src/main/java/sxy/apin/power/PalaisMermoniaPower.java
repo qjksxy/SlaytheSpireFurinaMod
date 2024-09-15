@@ -11,6 +11,9 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import sxy.apin.cards.common.DailyLimitCake;
 import sxy.apin.helper.FurinaHelper;
 
+/**
+ * 沫芒宫 ？？？
+ */
 public class PalaisMermoniaPower extends AbstractPower {
     // 能力的ID
     public static final String POWER_ID = FurinaHelper.makePowerID(PalaisMermoniaPower.class.getSimpleName());

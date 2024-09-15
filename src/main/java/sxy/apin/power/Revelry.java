@@ -12,6 +12,9 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import sxy.apin.helper.FurinaHelper;
 
+/**
+ * 气氛值  提升指定类型伤害和治疗效果
+ */
 public class Revelry extends AbstractPower {
     // 能力的ID
     public static final String POWER_ID = FurinaHelper.makePowerID(Revelry.class.getSimpleName());

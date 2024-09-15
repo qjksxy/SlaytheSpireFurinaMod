@@ -8,6 +8,9 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import sxy.apin.helper.FurinaHelper;
 
+/**
+ * 秘密藏心间 万众狂欢生效期间，气氛值层数视为 140%。
+ */
 public class MySecretIsHiddenWithinMePower extends AbstractPower {
     // 能力的ID
     public static final String POWER_ID = FurinaHelper.makePowerID(MySecretIsHiddenWithinMePower.class.getSimpleName());

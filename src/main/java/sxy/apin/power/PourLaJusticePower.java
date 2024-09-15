@@ -13,6 +13,9 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import sxy.apin.helper.FurinaHelper;
 
+/**
+ * 普茹斯蒂司 回合结束时受到 1 点伤害 2 次，并在下回合开始时受到 2 点治疗 3 次。
+ */
 public class PourLaJusticePower extends AbstractPower {
     public static final String POWER_ID = FurinaHelper.makePowerID(PourLaJusticePower.class.getSimpleName());
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);

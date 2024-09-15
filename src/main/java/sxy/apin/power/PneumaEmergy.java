@@ -12,6 +12,9 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import sxy.apin.character.Furina;
 import sxy.apin.helper.FurinaHelper;
 
+/**
+ * 芒性能量 通过引发芒荒反应击晕敌人。
+ */
 public class PneumaEmergy extends AbstractPower {
     // 能力的ID
     public static final String POWER_ID = FurinaHelper.makePowerID(PneumaEmergy.class.getSimpleName());

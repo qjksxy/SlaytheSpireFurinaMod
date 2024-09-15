@@ -8,6 +8,9 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import sxy.apin.helper.FurinaHelper;
 
+/**
+ * 女人皆善变 打出万众狂欢时，获得 10 点气氛值。获得气氛值时 60% 概率额外获得 1 点。 消耗 。
+ */
 public class AWomanAdaptsPower extends AbstractPower {
     // 能力的ID
     public static final String POWER_ID = FurinaHelper.makePowerID(AWomanAdaptsPower.class.getSimpleName());

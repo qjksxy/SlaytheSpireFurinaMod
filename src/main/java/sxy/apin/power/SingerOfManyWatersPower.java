@@ -14,6 +14,9 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import sxy.apin.character.Furina;
 import sxy.apin.helper.FurinaHelper;
 
+/**
+ * 众水的歌者 回合结束时恢复 3 点生命，若生命值低于 50%，则额外恢复 furina:气氛值 / 5 的生命。
+ */
 public class SingerOfManyWatersPower extends AbstractPower {
     // 能力的ID
     public static final String POWER_ID = FurinaHelper.makePowerID(SingerOfManyWatersPower.class.getSimpleName());

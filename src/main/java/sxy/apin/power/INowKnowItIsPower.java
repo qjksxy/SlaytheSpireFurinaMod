@@ -8,6 +8,9 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import sxy.apin.helper.FurinaHelper;
 
+/**
+ * 我已有觉察 孤心沙龙造成的伤害和治疗量提升50%。
+ */
 public class INowKnowItIsPower extends AbstractPower {
     // 能力的ID
     public static final String POWER_ID = FurinaHelper.makePowerID(INowKnowItIsPower.class.getSimpleName());

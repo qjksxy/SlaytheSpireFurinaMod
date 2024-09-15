@@ -11,6 +11,9 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import sxy.apin.helper.FurinaHelper;
 
+/**
+ * 伊黎耶岛 每回合开始时，恢复生命值。
+ */
 public class ErinnyesPower extends AbstractPower {
     public static final String POWER_ID = FurinaHelper.makePowerID(ErinnyesPower.class.getSimpleName());
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);

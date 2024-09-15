@@ -12,6 +12,9 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import sxy.apin.helper.FurinaHelper;
 
+/**
+ * 始基力：芒 可以通过卡牌圣俗杂座切换为始基力：荒。
+ */
 public class Pneuma extends AbstractPower {
     // 能力的ID
     public static final String POWER_ID = FurinaHelper.makePowerID(Pneuma.class.getSimpleName());

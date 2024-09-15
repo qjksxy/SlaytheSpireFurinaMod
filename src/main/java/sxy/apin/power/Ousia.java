@@ -13,7 +13,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import sxy.apin.helper.FurinaHelper;
 
 /**
- * 荒-沙龙成员
+ * 始基力：荒 可以通过卡牌圣俗杂座切换为始基力：芒。
  */
 public class Ousia extends AbstractPower {
     // 能力的ID

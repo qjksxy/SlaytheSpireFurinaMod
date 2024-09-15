@@ -15,6 +15,9 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import sxy.apin.character.Furina;
 import sxy.apin.helper.FurinaHelper;
 
+/**
+ * 沙龙成员 回合结束时，对最近敌人造成 10 点伤害。若生命值高于50%，则额外造成 furina:气氛值 / 2 的伤害，并对自身造成 1 点伤害。
+ */
 public class SalonMembers extends AbstractPower {
     // 能力的ID
     public static final String POWER_ID = FurinaHelper.makePowerID(SalonMembers.class.getSimpleName());

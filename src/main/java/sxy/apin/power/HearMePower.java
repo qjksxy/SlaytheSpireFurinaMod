@@ -8,6 +8,9 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import sxy.apin.helper.FurinaHelper;
 
+/**
+ * 诸君听我颂 释放孤心沙龙的回合内，普通攻击（含重击）造成的伤害提升。提升值为生命上限的10%，并额外获得4层气氛值。
+ */
 public class HearMePower extends AbstractPower {
     // 能力的ID
     public static final String POWER_ID = FurinaHelper.makePowerID(HearMePower.class.getSimpleName());

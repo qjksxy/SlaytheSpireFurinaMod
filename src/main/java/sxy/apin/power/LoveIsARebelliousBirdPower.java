@@ -8,6 +8,9 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import sxy.apin.helper.FurinaHelper;
 
+/**
+ * 爱是难驯鸟 气氛值上限提升到50。
+ */
 public class LoveIsARebelliousBirdPower extends AbstractPower {
     // 能力的ID
     public static final String POWER_ID = FurinaHelper.makePowerID(LoveIsARebelliousBirdPower.class.getSimpleName());

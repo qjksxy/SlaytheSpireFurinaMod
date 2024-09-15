@@ -8,6 +8,9 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import sxy.apin.helper.FurinaHelper;
 
+/**
+ * 若非处幽冥 孤心沙龙提供的元素能量+1。 消耗 。
+ */
 public class WhoDweltInTheNetherworldPower extends AbstractPower {
     // 能力的ID
     public static final String POWER_ID = FurinaHelper.makePowerID(WhoDweltInTheNetherworldPower.class.getSimpleName());
