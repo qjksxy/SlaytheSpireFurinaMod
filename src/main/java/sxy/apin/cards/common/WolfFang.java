@@ -1,11 +1,9 @@
 package sxy.apin.cards.common;
 
 import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import sxy.apin.character.Furina;
@@ -13,6 +11,9 @@ import sxy.apin.helper.FurinaHelper;
 
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
 
+/**
+ * 狼牙 1费  5伤  获得2气氛值。
+ */
 public class WolfFang extends CustomCard {
     public static final String ID = FurinaHelper.makeCardID(WolfFang.class.getSimpleName());
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -27,7 +28,7 @@ public class WolfFang extends CustomCard {
 
     public WolfFang() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.damage = this.baseDamage = 5;
+        this.damage = this.baseDamage = 6;
         this.tags.add(CardTags.STRIKE);
     }
 
@@ -43,11 +44,7 @@ public class WolfFang extends CustomCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        AbstractDungeon.actionManager.addToBottom(
-                new DamageAction(abstractMonster,
-                        new DamageInfo(abstractPlayer, damage, DamageInfo.DamageType.NORMAL)
-                )
-        );
+        FurinaHelper.damage(abstractMonster, abstractPlayer, this.damage, DamageInfo.DamageType.NORMAL);
         Furina.gainRevelry(2);
     }
 }

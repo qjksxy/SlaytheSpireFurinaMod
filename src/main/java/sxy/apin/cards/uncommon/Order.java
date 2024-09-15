@@ -13,6 +13,9 @@ import sxy.apin.helper.FurinaHelper;
 
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
 
+/**
+ * 秩序 0费  4伤  抽1张牌。
+ */
 public class Order extends CustomCard {
     public static final String ID = FurinaHelper.makeCardID(Order.class.getSimpleName());
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);

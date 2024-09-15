@@ -2,6 +2,7 @@ package sxy.apin.cards.common;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -10,6 +11,9 @@ import sxy.apin.helper.FurinaHelper;
 
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
 
+/**
+ * 结晶 对敌人造成伤害，获得格挡。
+ */
 public class Crystalize extends CustomCard {
     public static final String ID = FurinaHelper.makeCardID(Crystalize.class.getSimpleName());
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -24,7 +28,7 @@ public class Crystalize extends CustomCard {
 
     public Crystalize() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.damage = this.baseDamage = 2;
+        this.damage = this.baseDamage = 5;
         this.baseBlock = 5;
         this.block = 5;
         this.tags.add(CardTags.STARTER_DEFEND);
@@ -35,7 +39,7 @@ public class Crystalize extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeDamage(1);
+            this.upgradeDamage(3);
             this.upgradeBlock(3);
         }
         this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
@@ -44,6 +48,7 @@ public class Crystalize extends CustomCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
+        FurinaHelper.damage(abstractMonster, abstractPlayer, this.damage, DamageInfo.DamageType.NORMAL);
         FurinaHelper.addToBottom(new GainBlockAction(abstractPlayer, abstractPlayer, this.block));
     }
 }

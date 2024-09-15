@@ -26,7 +26,7 @@ public class Swirl extends CustomCard {
 
     public Swirl() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.damage = this.baseDamage = 4;
+        this.damage = this.baseDamage = 5;
         this.isMultiDamage = true;
         this.tags.add(CardTags.STRIKE);
     }

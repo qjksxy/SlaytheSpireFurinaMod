@@ -8,10 +8,14 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import sxy.apin.action.JusticeAction;
 import sxy.apin.helper.FurinaHelper;
 
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
 
+/**
+ * 正义 0费  4伤  将1张牌放入抽牌堆。
+ */
 public class Justice extends CustomCard {
     public static final String ID = FurinaHelper.makeCardID(Justice.class.getSimpleName());
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -49,6 +53,6 @@ public class Justice extends CustomCard {
                         new DamageInfo(abstractPlayer, damage, DamageInfo.DamageType.NORMAL)
                 )
         );
-        // TODO 将 1 张牌加入抽牌堆
+        FurinaHelper.addToBottom(new JusticeAction());
     }
 }

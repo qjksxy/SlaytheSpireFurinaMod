@@ -9,11 +9,11 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import sxy.apin.helper.FurinaHelper;
 
 /**
- * 6 命  普攻增伤能力
+ * 感电
  */
-public class CenterOfAttentionPower extends AbstractPower {
+public class ElectroChargedPower extends AbstractPower {
     // 能力的ID
-    public static final String POWER_ID = FurinaHelper.makePowerID(CenterOfAttentionPower.class.getSimpleName());
+    public static final String POWER_ID = FurinaHelper.makePowerID(ElectroChargedPower.class.getSimpleName());
     // 能力的本地化字段
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     // 能力的名称
@@ -23,13 +23,12 @@ public class CenterOfAttentionPower extends AbstractPower {
 
     private boolean upgraded;
 
-    public CenterOfAttentionPower(AbstractCreature owner, int amount, boolean upgraded) {
+    public ElectroChargedPower(AbstractCreature owner, int amount) {
         this.name = NAME;
         this.ID = POWER_ID;
         this.owner = owner;
-        this.type = PowerType.BUFF;
+        this.type = PowerType.DEBUFF;
         this.amount = amount;
-        this.upgraded = upgraded;
         // 添加一大一小两张能力图
         String path128 = "sxy/apin/img/powers/Example84.png";
         String path48 = "sxy/apin/img/powers/Example32.png";
@@ -41,23 +40,18 @@ public class CenterOfAttentionPower extends AbstractPower {
 
     @Override
     public void stackPower(int stackAmount) {
-    }
-
-    @Override
-    public void atEndOfTurn(boolean isPlayer) {
-        FurinaHelper.removePlayerPower(this.ID);
+        if (this.amount == -1) {
+            return;
+        }
+        this.fontScale = 8.0F;
+        this.amount += stackAmount;
+        if (this.amount >= 999) {
+            this.amount = 999;
+        }
     }
 
     // 能力在更新时如何修改描述
     public void updateDescription() {
         this.description = DESCRIPTIONS[0];
-    }
-
-    public boolean isUpgraded() {
-        return upgraded;
-    }
-
-    public void upgrade() {
-        this.upgraded = true;
     }
 }

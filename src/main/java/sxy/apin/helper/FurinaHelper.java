@@ -4,12 +4,14 @@ import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
 import java.util.ArrayList;
@@ -51,6 +53,17 @@ public class FurinaHelper {
         AbstractDungeon.actionManager.addToBottom(
                 new RemoveSpecificPowerAction(player, player, powerID)
         );
+    }
+
+    public static void reducePlayerPower(String powerID, int amount) {
+        AbstractPlayer player = getPlayer();
+        AbstractDungeon.actionManager.addToBottom(
+                new ReducePowerAction(player, player, powerID, amount)
+        );
+    }
+
+    public static ArrayList<AbstractMonster> getMonsters() {
+        return AbstractDungeon.getCurrRoom().monsters.monsters;
     }
 
     public static void damage(AbstractCreature target, AbstractCreature source, int baseDamage, DamageInfo.DamageType type) {

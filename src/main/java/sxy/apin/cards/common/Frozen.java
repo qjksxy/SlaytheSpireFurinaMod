@@ -1,6 +1,7 @@
 package sxy.apin.cards.common;
 
 import basemod.abstracts.CustomCard;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -10,6 +11,9 @@ import sxy.apin.power.FrozenPower;
 
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
 
+/**
+ * 冻结 对敌人造成伤害。本回合不消耗气氛值。
+ */
 public class Frozen extends CustomCard {
     public static final String ID = FurinaHelper.makeCardID(Frozen.class.getSimpleName());
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -24,7 +28,7 @@ public class Frozen extends CustomCard {
 
     public Frozen() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.damage = this.baseDamage = 2;
+        this.damage = this.baseDamage = 5;
         this.tags.add(CardTags.STRIKE);
     }
 
@@ -32,7 +36,7 @@ public class Frozen extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeDamage(1);
+            this.upgradeDamage(3);
         }
         this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
         this.initializeDescription();
@@ -40,6 +44,7 @@ public class Frozen extends CustomCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
+        FurinaHelper.damage(abstractMonster, abstractPlayer, this.damage, DamageInfo.DamageType.NORMAL);
         FurinaHelper.applyPower(abstractPlayer, abstractPlayer,
                 new FrozenPower(abstractPlayer, 1), 1);
     }

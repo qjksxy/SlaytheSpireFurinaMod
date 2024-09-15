@@ -2,6 +2,7 @@ package sxy.apin.cards.uncommon;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.defect.DiscardPileToHandAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -12,6 +13,9 @@ import sxy.apin.helper.FurinaHelper;
 
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
 
+/**
+ * 公平 0费  4伤  将1张弃牌堆中的牌加入手牌。
+ */
 public class Equity extends CustomCard {
     public static final String ID = FurinaHelper.makeCardID(Equity.class.getSimpleName());
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -50,5 +54,8 @@ public class Equity extends CustomCard {
                 )
         );
         // TODO 将1张牌从弃牌堆加入手牌
+        FurinaHelper.addToBottom(
+                new DiscardPileToHandAction(this.magicNumber)
+        );
     }
 }
