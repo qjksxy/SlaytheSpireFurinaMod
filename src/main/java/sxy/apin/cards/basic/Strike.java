@@ -1,7 +1,6 @@
 package sxy.apin.cards.basic;
 
 import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -13,8 +12,6 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import sxy.apin.character.Furina;
 import sxy.apin.helper.FurinaHelper;
 import sxy.apin.power.CenterOfAttentionPower;
-import sxy.apin.power.ElementEnergy;
-import sxy.apin.power.Pneuma;
 
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
 
@@ -39,7 +36,7 @@ public class Strike extends CustomCard {
         // CardRarity：有 BASIC, SPECIAL, COMMON, UNCOMMON, RARE, CURSE 六种，分别代表不同的卡牌稀有度
         // CardTarget：有 ENEMY, ALL_ENEMY, SELF, NONE, SELF_AND_ENEMY, ALL，分别代表单个敌人，所有敌人，自身，无，自身和敌人，所有，六种卡牌目标。
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.damage = this.baseDamage = 4;
+        this.damage = this.baseDamage = 5;
         this.tags.add(CardTags.STARTER_STRIKE);
         this.tags.add(CardTags.STRIKE);
     }
@@ -79,11 +76,8 @@ public class Strike extends CustomCard {
                         )
                 )
         );
-        AbstractDungeon.actionManager.addToBottom(
-                new ApplyPowerAction(abstractPlayer, abstractPlayer,
-                        new ElementEnergy(abstractPlayer, 1), 1)
-        );
-        if (abstractPlayer.hasPower(Pneuma.POWER_ID)) {
+        Furina.gainElementEnergy(1);
+        if (Furina.getArkhe() == Furina.PNEUMA) {
             AbstractDungeon.actionManager.addToBottom(
                     new MakeTempCardInHandAction(new SpiritbreathThorn(), 1)
             );
@@ -92,7 +86,5 @@ public class Strike extends CustomCard {
                     new MakeTempCardInHandAction(new SurgingBlade(), 1)
             );
         }
-
-
     }
 }

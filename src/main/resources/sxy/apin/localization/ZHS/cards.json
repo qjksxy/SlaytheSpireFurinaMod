@@ -9,6 +9,116 @@
     "DESCRIPTION": "对敌人造成 !D! + furina_mod:气氛值 点伤害。获得 1 点 furina_mod:元素能量 。添加一张圣俗杂座到手牌中。",
     "UPGRADE_DESCRIPTION": "对敌人造成 !D! + furina_mod:气氛值 点伤害。获得 1 点 furina_mod:元素能量 。添加一张圣俗杂座到手牌中。"
   },
+  "ApinFurina:Frozen": {
+    "NAME": "冻结",
+    "DESCRIPTION": "对敌人造成 !M! 点伤害。本回合不消耗气氛值。",
+    "UPGRADE_DESCRIPTION": "对敌人造成 !M! 点伤害。本回合不消耗气氛值。"
+  },
+  "ApinFurina:Crystalize": {
+    "NAME": "结晶",
+    "DESCRIPTION": "对敌人造成 !M! 点伤害。获得 5 点护盾。",
+    "UPGRADE_DESCRIPTION": "对敌人造成 !M! 点伤害。获得 8 点护盾。"
+  },
+  "ApinFurina:Swirl": {
+    "NAME": "扩散",
+    "DESCRIPTION": "对所有敌人造成 !M! 伤害。",
+    "UPGRADE_DESCRIPTION": "对所有敌人造成 !M! 伤害。"
+  },
+  "ApinFurina:ElectroCharged": {
+    "NAME": "感电",
+    "DESCRIPTION": "对敌人造成 !M！ 点伤害，并附属感电。",
+    "UPGRADE_DESCRIPTION": "对敌人造成 !M！ 点伤害，并附属感电。"
+  },
+  "ApinFurina:Bloom": {
+    "NAME": "绽放",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
+  },
+  "ApinFurina:Vaporize": {
+    "NAME": "蒸发",
+    "DESCRIPTION": "对敌人造成 !M! 点伤害。",
+    "UPGRADE_DESCRIPTION": "对敌人造成 !M! 点伤害。"
+  },
+  "ApinFurina:WolfFang": {
+    "NAME": "狼牙",
+    "DESCRIPTION": "5伤  获得2气氛值",
+    "UPGRADE_DESCRIPTION": "8伤  获得2气氛值"
+  },
+  "ApinFurina:TheDockhandsAssistant": {
+    "NAME": "船坞长剑",
+    "DESCRIPTION": "5伤  2元素能量",
+    "UPGRADE_DESCRIPTION": "5伤  2元素能量"
+  },
+  "ApinFurina:FleuveCendreFerryman": {
+    "NAME": "灰河渡手",
+    "DESCRIPTION": "5伤 获得1气氛值 1能量",
+    "UPGRADE_DESCRIPTION": "5伤 获得1气氛值 1能量"
+  },
+  "ApinFurina:Order": {
+    "NAME": "秩序",
+    "DESCRIPTION": "0费  4伤  抽1张牌",
+    "UPGRADE_DESCRIPTION": "0费  4伤  抽1张牌"
+  },
+  "ApinFurina:Equity": {
+    "NAME": "公平",
+    "DESCRIPTION": "0费  4伤  将1张弃牌堆中的牌加入手牌",
+    "UPGRADE_DESCRIPTION": "0费  4伤  将1张弃牌堆中的牌加入手牌"
+  },
+  "ApinFurina:Justice": {
+    "NAME": "正义",
+    "DESCRIPTION": "0费  4伤  将1张牌放入抽牌堆",
+    "UPGRADE_DESCRIPTION": "0费  4伤  将1张牌放入抽牌堆"
+  },
+  "ApinFurina:KeyOfKhajNisut": {
+    "NAME": "圣显之钥",
+    "DESCRIPTION": "2费  10伤  斩杀时，永久获得 2 点生命上限。",
+    "UPGRADE_DESCRIPTION": "2费  10伤  斩杀时，永久获得 2 点生命上限。"
+  },
+  "ApinFurina:UrakuMisugiri": {
+    "NAME": "有乐御簾切",
+    "DESCRIPTION": "2费  10伤  获得 3 点气氛值",
+    "UPGRADE_DESCRIPTION": "2费  10伤  获得 3 点气氛值"
+  },
+  "ApinFurina:PrimordialJadeCutter": {
+    "NAME": "磐岩结绿",
+    "DESCRIPTION": "2费  10伤  基于生命上限的 4% 额外造成伤害",
+    "UPGRADE_DESCRIPTION": "2费  10伤  基于生命上限的 4% 额外造成伤害"
+  },
+  "ApinFurina:LightOfFoliarIncision": {
+    "NAME": "裁叶萃光",
+    "DESCRIPTION": "2费  10伤  有50%的概率造成双倍伤害",
+    "UPGRADE_DESCRIPTION": "2费  10伤  有50%的概率造成双倍伤害"
+  },
+  "ApinFurina:MistsplitterReforged": {
+    "NAME": "雾切之回光",
+    "DESCRIPTION": "2费  10伤  此牌重复打出时，额外造成 2 点伤害。",
+    "UPGRADE_DESCRIPTION": "2费  10伤  此牌重复打出时，额外造成 2 点伤害。"
+  },
+  "ApinFurina:EndlessWaltz": {
+    "NAME": "停不了的圆舞",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
+  },
+  "ApinFurina:UnheardConfession": {
+    "NAME": "无人听的自白",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
+  },
+  "ApinFurina:TheSeaIsMyStage": {
+    "NAME": "瀚海亦舞台",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
+  },
+  "ApinFurina:WaterAndJustice": {
+    "NAME": "水与正义",
+    "DESCRIPTION": "对敌人造成当前气氛值 25% 的伤害，回复当前气氛值 15% 的生命。",
+    "UPGRADE_DESCRIPTION": "对敌人造成当前气氛值 25% 的伤害，回复当前气氛值 15% 的生命。"
+  },
+  "ApinFurina:SplendorOfTranquilWaters": {
+    "NAME": "静水流涌之辉",
+    "DESCRIPTION": "对敌人造成 10 + 当前气氛值的伤害。",
+    "UPGRADE_DESCRIPTION": "对敌人造成 10 + 当前气氛值的伤害。"
+  },
   "ApinFurina:Dodge": {
     "NAME": "闪避",
     "DESCRIPTION": "获得4点 格挡 。",
@@ -28,11 +138,6 @@
     "NAME": "圣俗杂座",
     "DESCRIPTION": "虚无 。 消耗 。切换自身的始基力属性。",
     "UPGRADE_DESCRIPTION": "虚无 。 消耗 。切换自身的始基力属性。"
-  },
-  "ApinFurina:Cake": {
-    "NAME": "蛋糕",
-    "DESCRIPTION": "回复2点生命值。",
-    "UPGRADE_DESCRIPTION": "回复3点生命值。"
   },
   "ApinFurina:Blubberbeast": {
     "NAME": "膨膨兽",
@@ -59,15 +164,15 @@
     "DESCRIPTION": "",
     "UPGRADE_DESCRIPTION": ""
   },
-  "ApinFurina:LaLettreAFocalors": {
-    "NAME": "致水神",
-    "DESCRIPTION": "回复2+ furina_mod:气氛值 点生命值。",
-    "UPGRADE_DESCRIPTION": "回复3+ furina_mod:气氛值 点生命值2次。"
+  "ApinFurina:Cake": {
+    "NAME": "蛋糕",
+    "DESCRIPTION": "回复2点生命值。",
+    "UPGRADE_DESCRIPTION": "回复3点生命值。"
   },
-  "ApinFurina:PourLaJustice": {
-    "NAME": "普茹斯蒂司",
-    "DESCRIPTION": "回合结束时受到 1 点伤害 2 次，并在下回合开始时受到 2 点治疗 3 次。",
-    "UPGRADE_DESCRIPTION": "回合结束时受到 1 点伤害 4 次，并在下回合开始时受到 2 点治疗 6 次。"
+  "ApinFurina:FontinaliaMousse": {
+    "NAME": "千灵慕斯",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": ""
   },
   "ApinFurina:ElementalSkill": {
     "NAME": "孤心沙龙",
@@ -78,181 +183,6 @@
     "NAME": "万众狂欢",
     "DESCRIPTION": "消耗 6 点 furina_mod:元素能量 。附属 !M! 层 furina_mod:普世欢腾 ，造成两点伤害。",
     "UPGRADE_DESCRIPTION": "消耗 6 点 furina_mod:元素能量 。附属 !M! 层 furina_mod:普世欢腾 ，造成两点伤害。"
-  },
-  "ApinFurina:PassingOfJudgment": {
-    "NAME": "裁定之时",
-    "DESCRIPTION": "获得 !M! 层 无实体 与 !M! 层 人工制品 。",
-    "UPGRADE_DESCRIPTION": "获得 !M! 层 无实体 与 !M! 层 人工制品 。"
-  },
-  "ApinFurina:PerpetualMuseOfChansons": {
-    "NAME": "永世领唱",
-    "DESCRIPTION": "每回合结束时，获得 !M! 层 furina_mod:气氛值 。",
-    "UPGRADE_DESCRIPTION": "每回合结束时，获得 !M! 层 furina_mod:气氛值 。"
-  },
-  "ApinFurina:PerpetualMuseOfRondeaux": {
-    "NAME": "无尽圆舞",
-    "DESCRIPTION": "你每受到1次治疗后，总是额外获得 !M! 点治疗。",
-    "UPGRADE_DESCRIPTION": "你每受到1次治疗后，总是额外获得 !M! 点治疗。"
-  },
-  "ApinFurina:EndlessSoloOfSolitude": {
-    "NAME": "不休独舞",
-    "DESCRIPTION": "获得 3 层再生。",
-    "UPGRADE_DESCRIPTION": "获得 3 层再生。"
-  },
-  "ApinFurina:OperaEpiclese": {
-    "NAME": "欧庇克莱歌剧院",
-    "DESCRIPTION": "场上每有1名敌人，你获得 !M! 点 furina_mod:气氛值 。",
-    "UPGRADE_DESCRIPTION": "场上每有1名敌人，你获得 !M! 点 furina_mod:气氛值 。"
-  },
-  "ApinFurina:FountainOfLucine": {
-    "NAME": "露景泉",
-    "DESCRIPTION": "场上每有1名敌人，你获得 !M! 点治疗1次。",
-    "UPGRADE_DESCRIPTION": "场上每有1名敌人，你获得 !M! 点治疗1次。"
-  },
-  "ApinFurina:PalaisMermonia": {
-    "NAME": "沫芒宫",
-    "DESCRIPTION": "",
-    "UPGRADE_DESCRIPTION": ""
-  },
-  "ApinFurina:MaisonGardiennage": {
-    "NAME": "执律庭",
-    "DESCRIPTION": "场上每有1名敌人，你摸 !M! 张牌 。",
-    "UPGRADE_DESCRIPTION": "场上每有1名敌人，你摸 !M! 张牌 。"
-  },
-  "ApinFurina:FortressOfMeropide": {
-    "NAME": "梅洛彼得堡",
-    "DESCRIPTION": "给予所有敌人 !M! 层 易伤 和 虚弱 。",
-    "UPGRADE_DESCRIPTION": "给予所有敌人 !M! 层 易伤 和 虚弱 。"
-  },
-  "ApinFurina:Erinnyes": {
-    "NAME": "伊黎耶岛",
-    "DESCRIPTION": "消耗 。每回合开始时，回复已损失生命值 10% 的生命。不可叠加。",
-    "UPGRADE_DESCRIPTION": "消耗 。每回合开始时，回复生命上限 10% 的生命。不可叠加。"
-  },
-  "ApinFurina:CourtOfFontaine": {
-    "NAME": "枫丹廷",
-    "DESCRIPTION": "",
-    "UPGRADE_DESCRIPTION": "场上每有1名敌人，你获得 1 次 !M! 点治疗。"
-  },
-  "ApinFurina:Fontaine": {
-    "NAME": "枫丹",
-    "DESCRIPTION": "抽 !M! 张牌，回复 !M! 点生命，消耗 1 张牌。",
-    "UPGRADE_DESCRIPTION": "抽 !M! 张牌，回复 !M! 点生命，消耗 1 张牌。"
-  },
-  "ApinFurina:WeepingWillowOfTheLake": {
-    "NAME": "湖中垂柳",
-    "DESCRIPTION": "若手牌数量不多于 5，则抽 3 张牌。",
-    "UPGRADE_DESCRIPTION": "若手牌数量不多于 6，则抽 4 张牌。"
-  },
-  "ApinFurina:AllWaters": {
-    "NAME": "众水",
-    "DESCRIPTION": " 消耗 。提高 !M! 点生命值上限。",
-    "UPGRADE_DESCRIPTION": " 消耗 。提高 !M! 点生命值上限。"
-  },
-  "ApinFurina:AllKindreds": {
-    "NAME": "众方",
-    "DESCRIPTION": "抽 !M! 张牌。每回合开始额外抽取 !M! 张牌。",
-    "UPGRADE_DESCRIPTION": "抽 !M! 张牌。每回合开始额外抽取 !M! 张牌。"
-  },
-  "ApinFurina:AllPeople": {
-    "NAME": "众民",
-    "DESCRIPTION": "对所有敌人附属当前 furina_mod:始基力形态 对应的 furina_mod:芒荒能量 。获得 !M! 层水。",
-    "UPGRADE_DESCRIPTION": "对所有敌人附属当前 furina_mod:始基力形态 对应的 furina_mod:芒荒能量 。获得 !M! 层水。"
-  },
-  "ApinFurina:AllLaws": {
-    "NAME": "众律法",
-    "DESCRIPTION": "失去所有 furina_mod:气氛值 ，回复 furina_mod:气氛值 点生命，对全体敌人造成X倍 furina_mod:气氛值 的伤害。",
-    "UPGRADE_DESCRIPTION": "失去所有 furina_mod:气氛值 ，回复X倍 furina_mod:气氛值  点生命，对全体敌人造成X倍 furina_mod:气氛值 的伤害。"
-  },
-  "ApinFurina:FontinaliaMousse": {
-    "NAME": "千灵慕斯",
-    "DESCRIPTION": "",
-    "UPGRADE_DESCRIPTION": ""
-  },
-  "ApinFurina:Frozen": {
-    "NAME": "冻结",
-    "DESCRIPTION": "对敌人造成 !M! 点伤害。本回合不消耗气氛值。",
-    "UPGRADE_DESCRIPTION": "对敌人造成 !M! 点伤害。本回合不消耗气氛值。"
-  },
-  "ApinFurina:Swirl": {
-    "NAME": "扩散",
-    "DESCRIPTION": "对所有敌人造成 !M! 伤害。",
-    "UPGRADE_DESCRIPTION": "对所有敌人造成 !M! 伤害。"
-  },
-  "ApinFurina:Crystalize": {
-    "NAME": "结晶",
-    "DESCRIPTION": "对敌人造成 !M! 点伤害。获得 5 点护盾。",
-    "UPGRADE_DESCRIPTION": "对敌人造成 !M! 点伤害。获得 8 点护盾。"
-  },
-  "ApinFurina:ElectroCharged": {
-    "NAME": "感电",
-    "DESCRIPTION": "对敌人造成 !M！ 点伤害，并附属感电。",
-    "UPGRADE_DESCRIPTION": "对敌人造成 !M！ 点伤害，并附属感电。"
-  },
-  "ApinFurina:Vaporize": {
-    "NAME": "蒸发",
-    "DESCRIPTION": "对敌人造成 !M! 点伤害。",
-    "UPGRADE_DESCRIPTION": "对敌人造成 !M! 点伤害。"
-  },
-  "ApinFurina:Bloom": {
-    "NAME": "绽放",
-    "DESCRIPTION": "",
-    "UPGRADE_DESCRIPTION": ""
-  },
-  "ApinFurina:WolfFang": {
-    "NAME": "狼牙",
-    "DESCRIPTION": "5伤  获得2气氛值",
-    "UPGRADE_DESCRIPTION": "8伤  获得2气氛值"
-  },
-  "ApinFurina:TheDockhandsAssistant": {
-    "NAME": "船坞长剑",
-    "DESCRIPTION": "5伤  2元素能量",
-    "UPGRADE_DESCRIPTION": "5伤  2元素能量"
-  },
-  "ApinFurina:FleuveCendreFerryman": {
-    "NAME": "灰河渡手",
-    "DESCRIPTION": "5伤 获得1气氛值 1能量",
-    "UPGRADE_DESCRIPTION": "5伤 获得1气氛值 1能量"
-  },
-  "ApinFurina:KeyOfKhajNisut": {
-    "NAME": "圣显之钥",
-    "DESCRIPTION": "2费  10伤  斩杀时，永久获得 2 点生命上限。",
-    "UPGRADE_DESCRIPTION": "2费  10伤  斩杀时，永久获得 2 点生命上限。"
-  },
-  "ApinFurina:PrimordialJadeCutter": {
-    "NAME": "磐岩结绿",
-    "DESCRIPTION": "2费  10伤  基于生命上限的 4% 额外造成伤害",
-    "UPGRADE_DESCRIPTION": "2费  10伤  基于生命上限的 4% 额外造成伤害"
-  },
-  "ApinFurina:UrakuMisugiri": {
-    "NAME": "有乐御簾切",
-    "DESCRIPTION": "2费  10伤  获得 3 点气氛值",
-    "UPGRADE_DESCRIPTION": "2费  10伤  获得 3 点气氛值"
-  },
-  "ApinFurina:LightOfFoliarIncision": {
-    "NAME": "裁叶萃光",
-    "DESCRIPTION": "2费  10伤  有50%的概率造成双倍伤害",
-    "UPGRADE_DESCRIPTION": "2费  10伤  有50%的概率造成双倍伤害"
-  },
-  "ApinFurina:MistsplitterReforged": {
-    "NAME": "雾切之回光",
-    "DESCRIPTION": "2费  10伤  此牌重复打出时，额外造成 2 点伤害。",
-    "UPGRADE_DESCRIPTION": "2费  10伤  此牌重复打出时，额外造成 2 点伤害。"
-  },
-  "ApinFurina:Order": {
-    "NAME": "秩序",
-    "DESCRIPTION": "0费  4伤  抽1张牌",
-    "UPGRADE_DESCRIPTION": "0费  4伤  抽1张牌"
-  },
-  "ApinFurina:Equity": {
-    "NAME": "公平",
-    "DESCRIPTION": "0费  4伤  将1张弃牌堆中的牌加入手牌",
-    "UPGRADE_DESCRIPTION": "0费  4伤  将1张弃牌堆中的牌加入手牌"
-  },
-  "ApinFurina:Justice": {
-    "NAME": "正义",
-    "DESCRIPTION": "0费  4伤  将1张牌放入抽牌堆",
-    "UPGRADE_DESCRIPTION": "0费  4伤  将1张牌放入抽牌堆"
   },
   "ApinFurina:SlowingWater": {
     "NAME": "迟滞之水",
@@ -294,35 +224,65 @@
     "DESCRIPTION": "随机触发1种效果：抽1张牌；回复3点生命；消耗1点生命；在手牌中增加1张稀有牌。",
     "UPGRADE_DESCRIPTION": "随机触发1种效果：抽1张牌；回复3点生命；消耗1点生命；在手牌中增加1张稀有牌。"
   },
-  "ApinFurina:EndlessWaltz": {
-    "NAME": "停不了的圆舞",
+  "ApinFurina:Fontaine": {
+    "NAME": "枫丹",
+    "DESCRIPTION": "抽 !M! 张牌，回复 !M! 点生命，消耗 1 张牌。",
+    "UPGRADE_DESCRIPTION": "抽 !M! 张牌，回复 !M! 点生命，消耗 1 张牌。"
+  },
+  "ApinFurina:CourtOfFontaine": {
+    "NAME": "枫丹廷",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": "场上每有1名敌人，你获得 1 次 !M! 点治疗。"
+  },
+  "ApinFurina:FountainOfLucine": {
+    "NAME": "露景泉",
+    "DESCRIPTION": "场上每有1名敌人，你获得 !M! 点治疗1次。",
+    "UPGRADE_DESCRIPTION": "场上每有1名敌人，你获得 !M! 点治疗1次。"
+  },
+  "ApinFurina:MaisonGardiennage": {
+    "NAME": "执律庭",
+    "DESCRIPTION": "场上每有1名敌人，你摸 !M! 张牌 。",
+    "UPGRADE_DESCRIPTION": "场上每有1名敌人，你摸 !M! 张牌 。"
+  },
+  "ApinFurina:PalaisMermonia": {
+    "NAME": "沫芒宫",
     "DESCRIPTION": "",
     "UPGRADE_DESCRIPTION": ""
   },
-  "ApinFurina:UnheardConfession": {
-    "NAME": "无人听的自白",
-    "DESCRIPTION": "",
-    "UPGRADE_DESCRIPTION": ""
+  "ApinFurina:WeepingWillowOfTheLake": {
+    "NAME": "湖中垂柳",
+    "DESCRIPTION": "若手牌数量不多于 5，则抽 3 张牌。",
+    "UPGRADE_DESCRIPTION": "若手牌数量不多于 6，则抽 4 张牌。"
   },
-  "ApinFurina:TheSeaIsMyStage": {
-    "NAME": "瀚海亦舞台",
-    "DESCRIPTION": "",
-    "UPGRADE_DESCRIPTION": ""
+  "ApinFurina:Erinnyes": {
+    "NAME": "伊黎耶岛",
+    "DESCRIPTION": "消耗 。每回合开始时，回复已损失生命值 10% 的生命。不可叠加。",
+    "UPGRADE_DESCRIPTION": "消耗 。每回合开始时，回复生命上限 10% 的生命。不可叠加。"
   },
-  "ApinFurina:WaterAndJustice": {
-    "NAME": "水与正义",
-    "DESCRIPTION": "对敌人造成当前气氛值 25% 的伤害，回复当前气氛值 15% 的生命。",
-    "UPGRADE_DESCRIPTION": "对敌人造成当前气氛值 25% 的伤害，回复当前气氛值 15% 的生命。"
+  "ApinFurina:FortressOfMeropide": {
+    "NAME": "梅洛彼得堡",
+    "DESCRIPTION": "给予所有敌人 !M! 层 易伤 和 虚弱 。",
+    "UPGRADE_DESCRIPTION": "给予所有敌人 !M! 层 易伤 和 虚弱 。"
   },
-  "ApinFurina:SplendorOfTranquilWaters": {
-    "NAME": "静水流涌之辉",
-    "DESCRIPTION": "对敌人造成 10 + 当前气氛值的伤害。",
-    "UPGRADE_DESCRIPTION": "对敌人造成 10 + 当前气氛值的伤害。"
+  "ApinFurina:OperaEpiclese": {
+    "NAME": "欧庇克莱歌剧院",
+    "DESCRIPTION": "场上每有1名敌人，你获得 !M! 点 furina_mod:气氛值 。",
+    "UPGRADE_DESCRIPTION": "场上每有1名敌人，你获得 !M! 点 furina_mod:气氛值 。"
   },
-  "ApinFurina:CoronatedPrimaDonna": {
-    "NAME": "冠笄伶优",
-    "DESCRIPTION": "升级所有手牌。",
-    "UPGRADE_DESCRIPTION": "升级所有手牌。"
+  "ApinFurina:LaLettreAFocalors": {
+    "NAME": "致水神",
+    "DESCRIPTION": "回复2+ furina_mod:气氛值 点生命值。",
+    "UPGRADE_DESCRIPTION": "回复3+ furina_mod:气氛值 点生命值2次。"
+  },
+  "ApinFurina:PassingOfJudgment": {
+    "NAME": "裁定之时",
+    "DESCRIPTION": "获得 !M! 层 无实体 与 !M! 层 人工制品 。",
+    "UPGRADE_DESCRIPTION": "获得 !M! 层 无实体 与 !M! 层 人工制品 。"
+  },
+  "ApinFurina:PourLaJustice": {
+    "NAME": "普茹斯蒂司",
+    "DESCRIPTION": "回合结束时受到 1 点伤害 2 次，并在下回合开始时受到 2 点治疗 3 次。",
+    "UPGRADE_DESCRIPTION": "回合结束时受到 1 点伤害 4 次，并在下回合开始时受到 2 点治疗 6 次。"
   },
   "ApinFurina:DewsFirstGlimmerAtDaybreak": {
     "NAME": "晨露浮光之初",
@@ -344,10 +304,65 @@
     "DESCRIPTION": "当前气氛值翻倍。",
     "UPGRADE_DESCRIPTION": "当前气氛值翻倍。"
   },
+  "ApinFurina:Banquet": {
+    "NAME": "欢宴",
+    "DESCRIPTION": "气氛值提升至最大值。",
+    "UPGRADE_DESCRIPTION": "气氛值提升至最大值。"
+  },
+  "ApinFurina:LaVaguelette": {
+    "NAME": "轻涟",
+    "DESCRIPTION": "抽牌至手牌上限。",
+    "UPGRADE_DESCRIPTION": "抽牌至手牌上限。"
+  },
+  "ApinFurina:TheLittleOceanid": {
+    "NAME": "水的女儿",
+    "DESCRIPTION": "消耗 5 生命，获得 2 能量。",
+    "UPGRADE_DESCRIPTION": "消耗 5 生命，获得 2 能量。"
+  },
+  "ApinFurina:CoronatedPrimaDonna": {
+    "NAME": "冠笄伶优",
+    "DESCRIPTION": "升级所有手牌。",
+    "UPGRADE_DESCRIPTION": "升级所有手牌。"
+  },
   "ApinFurina:VarunadaLazuriteGemstone": {
     "NAME": "涤净青金",
     "DESCRIPTION": "消耗任意张手牌。",
     "UPGRADE_DESCRIPTION": "消耗任意张手牌。"
+  },
+  "ApinFurina:AllWaters": {
+    "NAME": "众水",
+    "DESCRIPTION": " 消耗 。提高 !M! 点生命值上限。",
+    "UPGRADE_DESCRIPTION": " 消耗 。提高 !M! 点生命值上限。"
+  },
+  "ApinFurina:AllKindreds": {
+    "NAME": "众方",
+    "DESCRIPTION": "抽 !M! 张牌。每回合开始额外抽取 !M! 张牌。",
+    "UPGRADE_DESCRIPTION": "抽 !M! 张牌。每回合开始额外抽取 !M! 张牌。"
+  },
+  "ApinFurina:AllPeople": {
+    "NAME": "众民",
+    "DESCRIPTION": "对所有敌人附属当前 furina_mod:始基力形态 对应的 furina_mod:芒荒能量 。获得 !M! 层水。",
+    "UPGRADE_DESCRIPTION": "对所有敌人附属当前 furina_mod:始基力形态 对应的 furina_mod:芒荒能量 。获得 !M! 层水。"
+  },
+  "ApinFurina:AllLaws": {
+    "NAME": "众律法",
+    "DESCRIPTION": "失去所有 furina_mod:气氛值 ，回复 furina_mod:气氛值 点生命，对全体敌人造成X倍 furina_mod:气氛值 的伤害。",
+    "UPGRADE_DESCRIPTION": "失去所有 furina_mod:气氛值 ，回复X倍 furina_mod:气氛值  点生命，对全体敌人造成X倍 furina_mod:气氛值 的伤害。"
+  },
+  "ApinFurina:PerpetualMuseOfChansons": {
+    "NAME": "永世领唱",
+    "DESCRIPTION": "每回合结束时，获得 !M! 层 furina_mod:气氛值 。",
+    "UPGRADE_DESCRIPTION": "每回合结束时，获得 !M! 层 furina_mod:气氛值 。"
+  },
+  "ApinFurina:PerpetualMuseOfRondeaux": {
+    "NAME": "无尽圆舞",
+    "DESCRIPTION": "你每受到1次治疗后，总是额外获得 !M! 点治疗。",
+    "UPGRADE_DESCRIPTION": "你每受到1次治疗后，总是额外获得 !M! 点治疗。"
+  },
+  "ApinFurina:EndlessSoloOfSolitude": {
+    "NAME": "不休独舞",
+    "DESCRIPTION": "获得 3 层再生。",
+    "UPGRADE_DESCRIPTION": "获得 3 层再生。"
   },
   "ApinFurina:LoveIsARebelliousBird": {
     "NAME": "爱是难驯鸟",

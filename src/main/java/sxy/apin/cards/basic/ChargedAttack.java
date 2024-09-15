@@ -1,7 +1,6 @@
 package sxy.apin.cards.basic;
 
 import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -13,7 +12,6 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import sxy.apin.character.Furina;
 import sxy.apin.helper.FurinaHelper;
 import sxy.apin.power.CenterOfAttentionPower;
-import sxy.apin.power.ElementEnergy;
 
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
 
@@ -41,7 +39,7 @@ public class ChargedAttack extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeDamage(4);
+            this.upgradeDamage(3);
         }
         this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
         this.initializeDescription();
@@ -50,6 +48,7 @@ public class ChargedAttack extends CustomCard {
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         int revelry = Furina.getRevelry();
+        // 6命额外伤害
         int extraDamage = 0;
         CenterOfAttentionPower power = (CenterOfAttentionPower) FurinaHelper.getPower(CenterOfAttentionPower.POWER_ID);
         if (power != null) {
@@ -68,10 +67,7 @@ public class ChargedAttack extends CustomCard {
                 )
         );
         Furina.consumeRevelry(1);
-        AbstractDungeon.actionManager.addToBottom(
-                new ApplyPowerAction(abstractPlayer, abstractPlayer,
-                        new ElementEnergy(abstractPlayer, 1), 1)
-        );
+        Furina.gainElementEnergy(1);
         AbstractDungeon.actionManager.addToBottom(
                 new MakeTempCardInHandAction(new SeatsSacredAndSecular(), 1)
         );
