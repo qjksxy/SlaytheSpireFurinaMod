@@ -15,10 +15,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import sxy.apin.cards.basic.*;
 import sxy.apin.cards.common.*;
-import sxy.apin.cards.rare.Erinnyes;
-import sxy.apin.cards.rare.PalaisMermonia;
-import sxy.apin.cards.rare.PassingOfJudgment;
-import sxy.apin.cards.rare.PourLaJustice;
+import sxy.apin.cards.rare.*;
 import sxy.apin.cards.uncommon.*;
 import sxy.apin.character.Furina;
 import sxy.apin.helper.FurinaHelper;
@@ -95,28 +92,55 @@ public class FurinaCore implements EditCardsSubscriber, EditStringsSubscriber, E
         BaseMod.addCard(new SurgingBlade());
 
         // COMMON
+        BaseMod.addCard(new Bloom());
         BaseMod.addCard(new Cake());
-        BaseMod.addCard(new DailyLimitCake());
+        BaseMod.addCard(new Crystalize());
+        BaseMod.addCard(new ElectroCharged());
         BaseMod.addCard(new ElementalBurst());
         BaseMod.addCard(new ElementalSkill());
+        BaseMod.addCard(new FleuveCendreFerryman());
+        BaseMod.addCard(new FontinaliaMousse());
+        BaseMod.addCard(new Frozen());
         BaseMod.addCard(new Judge());
-        BaseMod.addCard(new LaLettreAFocalors());
-        BaseMod.addCard(new Performance());
+        BaseMod.addCard(new Swirl());
+        BaseMod.addCard(new TheDockhandsAssistant());
+        BaseMod.addCard(new Vaporize());
+        BaseMod.addCard(new WolfFang());
 
         // UNCOMMON
+        BaseMod.addCard(new AllWaters());
+        BaseMod.addCard(new Equity());
         BaseMod.addCard(new Fontatine());
         BaseMod.addCard(new FortressOfMeropide());
         BaseMod.addCard(new FountainOfLucine());
+        BaseMod.addCard(new Justice());
+        BaseMod.addCard(new KeyOfKhajNisut());
+        BaseMod.addCard(new LaLettreAFocalors());
+        BaseMod.addCard(new LightOfFoliarIncision());
         BaseMod.addCard(new MaisonGardiennage());
+        BaseMod.addCard(new MistsplitterReforged());
         BaseMod.addCard(new OperaEpiclese());
-        BaseMod.addCard(new Tour());
+        BaseMod.addCard(new Order());
+        BaseMod.addCard(new PrimordialJadeCutter());
+        BaseMod.addCard(new WeepingWillowOfTheLake());
         BaseMod.addCard(new WeepingWillowOfTheLake());
 
         // RARE
+        BaseMod.addCard(new AWomanAdapts());
+        BaseMod.addCard(new EndlessWaltz());
         BaseMod.addCard(new Erinnyes());
+        BaseMod.addCard(new HearMe());
+        BaseMod.addCard(new INowKnowItIs());
+        BaseMod.addCard(new LoveIsARebelliousBird());
+        BaseMod.addCard(new MySecretIsHiddenWithinMe());
         BaseMod.addCard(new PalaisMermonia());
         BaseMod.addCard(new PassingOfJudgment());
         BaseMod.addCard(new PourLaJustice());
+        BaseMod.addCard(new SplendorOfTranquilWaters());
+        BaseMod.addCard(new TheSeaIsMyStage());
+        BaseMod.addCard(new UnheardConfession());
+        BaseMod.addCard(new WaterAndJustice());
+        BaseMod.addCard(new WhoDweltInTheNetherworld());
     }
 
     @Override

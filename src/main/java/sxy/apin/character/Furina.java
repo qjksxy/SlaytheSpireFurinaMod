@@ -364,10 +364,10 @@ public class Furina extends CustomPlayer {
         @SpireEnum
         public static PlayerClass FURINA_CLASS;
 
-        @SpireEnum(name = "FURINA_BLUE_")
+        @SpireEnum(name = "FURINA_BLUE")
         public static AbstractCard.CardColor FURINA_BLUE;
 
-        @SpireEnum(name = "FURINA_BLUE_")
+        @SpireEnum(name = "FURINA_BLUE")
         public static CardLibrary.LibraryType FURINA_LIBRARY;
     }
 }
