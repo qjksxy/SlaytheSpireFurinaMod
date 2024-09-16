@@ -11,6 +11,9 @@ import sxy.apin.helper.FurinaHelper;
 
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
 
+/**
+ * 闪避 获得 4点 格挡 。
+ */
 public class Dodge extends CustomCard {
     public static final String ID = FurinaHelper.makeCardID(Dodge.class.getSimpleName());
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID); // 从游戏系统读取本地化资源

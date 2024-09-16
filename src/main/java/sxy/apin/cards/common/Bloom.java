@@ -45,7 +45,7 @@ public class Bloom extends CustomCard {
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         FurinaHelper.damage(abstractMonster, abstractPlayer, this.damage, DamageInfo.DamageType.NORMAL);
-        FurinaHelper.applyPower(abstractPlayer, abstractPlayer,
+        FurinaHelper.applyPower(abstractMonster, abstractPlayer,
                 new BloomPower(abstractMonster, 1), 1);
     }
 }
