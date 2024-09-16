@@ -11,33 +11,33 @@
   },
   "ApinFurina:Frozen": {
     "NAME": "冻结",
-    "DESCRIPTION": "对敌人造成 !M! 点伤害。本回合不消耗气氛值。",
-    "UPGRADE_DESCRIPTION": "对敌人造成 !M! 点伤害。本回合不消耗气氛值。"
+    "DESCRIPTION": "对敌人造成 !D! 点伤害。本回合不消耗气氛值。",
+    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 点伤害。本回合不消耗气氛值。"
   },
   "ApinFurina:Crystalize": {
     "NAME": "结晶",
-    "DESCRIPTION": "对敌人造成 !M! 点伤害。获得 5 点护盾。",
-    "UPGRADE_DESCRIPTION": "对敌人造成 !M! 点伤害。获得 8 点护盾。"
+    "DESCRIPTION": "对敌人造成 !D! 点伤害。获得 5 点护盾。",
+    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 点伤害。获得 8 点护盾。"
   },
   "ApinFurina:Swirl": {
     "NAME": "扩散",
-    "DESCRIPTION": "对所有敌人造成 !M! 伤害。",
-    "UPGRADE_DESCRIPTION": "对所有敌人造成 !M! 伤害。"
+    "DESCRIPTION": "对所有敌人造成 !D! 伤害。",
+    "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 伤害。"
   },
   "ApinFurina:ElectroCharged": {
     "NAME": "感电",
-    "DESCRIPTION": "对敌人造成 !M！ 点伤害，并附属感电。",
-    "UPGRADE_DESCRIPTION": "对敌人造成 !M！ 点伤害，并附属感电。"
+    "DESCRIPTION": "对敌人造成 !D！ 点伤害，并附属感电。",
+    "UPGRADE_DESCRIPTION": "对敌人造成 !D！ 点伤害，并附属感电。"
   },
   "ApinFurina:Bloom": {
     "NAME": "绽放",
-    "DESCRIPTION": "",
-    "UPGRADE_DESCRIPTION": ""
+    "DESCRIPTION": "对敌人造成 !D! 伤害，回合结束时对全体敌人造成 5 伤害。",
+    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 伤害，回合结束时对全体敌人造成 5 伤害。"
   },
   "ApinFurina:Vaporize": {
     "NAME": "蒸发",
-    "DESCRIPTION": "对敌人造成 !M! 点伤害。",
-    "UPGRADE_DESCRIPTION": "对敌人造成 !M! 点伤害。"
+    "DESCRIPTION": "对敌人造成 !D! 点伤害。",
+    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 点伤害。"
   },
   "ApinFurina:WolfFang": {
     "NAME": "狼牙",
@@ -96,28 +96,28 @@
   },
   "ApinFurina:EndlessWaltz": {
     "NAME": "停不了的圆舞",
-    "DESCRIPTION": "",
-    "UPGRADE_DESCRIPTION": ""
+    "DESCRIPTION": "对敌人造成当前气氛值 60% 的伤害。抽1张牌。",
+    "UPGRADE_DESCRIPTION": "对敌人造成当前气氛值 60% 的伤害。抽1张牌。"
   },
   "ApinFurina:UnheardConfession": {
     "NAME": "无人听的自白",
-    "DESCRIPTION": "",
-    "UPGRADE_DESCRIPTION": ""
+    "DESCRIPTION": "对全体敌人造成当前气氛值 80% 的伤害。消耗1张牌。",
+    "UPGRADE_DESCRIPTION": "对全体敌人造成当前气氛值 80% 的伤害。至多消耗1张牌。"
   },
   "ApinFurina:TheSeaIsMyStage": {
     "NAME": "瀚海亦舞台",
-    "DESCRIPTION": "",
-    "UPGRADE_DESCRIPTION": ""
+    "DESCRIPTION": "对敌人造成当前气氛值 50% 的伤害，给予 !M! 层易伤和脆弱。",
+    "UPGRADE_DESCRIPTION": "对敌人造成当前气氛值 50% 的伤害，给予 !M! 层易伤和脆弱。"
   },
   "ApinFurina:WaterAndJustice": {
     "NAME": "水与正义",
-    "DESCRIPTION": "对敌人造成当前气氛值 25% 的伤害，回复当前气氛值 15% 的生命。",
-    "UPGRADE_DESCRIPTION": "对敌人造成当前气氛值 25% 的伤害，回复当前气氛值 15% 的生命。"
+    "DESCRIPTION": "对敌人造成当前气氛值 50% 的伤害，回复当前气氛值 30% 的生命。",
+    "UPGRADE_DESCRIPTION": "对敌人造成当前气氛值 50% 的伤害，回复当前气氛值 30% 的生命。"
   },
   "ApinFurina:SplendorOfTranquilWaters": {
     "NAME": "静水流涌之辉",
-    "DESCRIPTION": "对敌人造成 10 + 当前气氛值的伤害。",
-    "UPGRADE_DESCRIPTION": "对敌人造成 10 + 当前气氛值的伤害。"
+    "DESCRIPTION": "对敌人造成当前气氛值的伤害。",
+    "UPGRADE_DESCRIPTION": "对敌人造成当前气氛值 120% 的伤害。"
   },
   "ApinFurina:Dodge": {
     "NAME": "闪避",

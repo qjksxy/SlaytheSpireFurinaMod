@@ -47,7 +47,7 @@ public class ChargedAttack extends CustomCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        int revelry = Furina.getRevelry();
+        // int revelry = Furina.getRevelry();
         // 6命额外伤害
         int extraDamage = 0;
         CenterOfAttentionPower power = (CenterOfAttentionPower) FurinaHelper.getPower(CenterOfAttentionPower.POWER_ID);
@@ -63,7 +63,7 @@ public class ChargedAttack extends CustomCard {
 
         AbstractDungeon.actionManager.addToBottom(
                 new DamageAction(abstractMonster,
-                        new DamageInfo(abstractPlayer, damage + revelry + extraDamage, DamageInfo.DamageType.NORMAL)
+                        new DamageInfo(abstractPlayer, damage + extraDamage, DamageInfo.DamageType.NORMAL)
                 )
         );
         Furina.consumeRevelry(1);
