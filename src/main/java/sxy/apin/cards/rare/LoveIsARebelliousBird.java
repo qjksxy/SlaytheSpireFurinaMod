@@ -12,6 +12,9 @@ import sxy.apin.power.LoveIsARebelliousBirdPower;
 
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
 
+/**
+ * 爱是难驯鸟 气氛值上限提升到50。 消耗 。
+ */
 public class LoveIsARebelliousBird extends CustomCard {
     public static final String ID = FurinaHelper.makeCardID(LoveIsARebelliousBird.class.getSimpleName());
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -43,7 +46,7 @@ public class LoveIsARebelliousBird extends CustomCard {
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         AbstractDungeon.actionManager.addToBottom(
                 new ApplyPowerAction(abstractPlayer, abstractPlayer,
-                        new LoveIsARebelliousBirdPower(abstractPlayer, 1), 1)
+                        new LoveIsARebelliousBirdPower(abstractPlayer, 1), 0)
         );
     }
 }

@@ -54,7 +54,7 @@ public class WhoDweltInTheNetherworld extends CustomCard {
         }
         AbstractDungeon.actionManager.addToBottom(
                 new ApplyPowerAction(abstractPlayer, abstractPlayer,
-                        new WhoDweltInTheNetherworldPower(abstractPlayer, 1, upgraded), 1)
+                        new WhoDweltInTheNetherworldPower(abstractPlayer, 1, upgraded), 0)
         );
     }
 }

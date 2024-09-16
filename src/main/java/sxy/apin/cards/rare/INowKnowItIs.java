@@ -55,7 +55,7 @@ public class INowKnowItIs extends CustomCard {
         }
         AbstractDungeon.actionManager.addToBottom(
                 new ApplyPowerAction(abstractPlayer, abstractPlayer,
-                        new INowKnowItIsPower(abstractPlayer, 1, upgraded), 1)
+                        new INowKnowItIsPower(abstractPlayer, 1, upgraded), 0)
         );
     }
 }

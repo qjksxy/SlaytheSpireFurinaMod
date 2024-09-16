@@ -46,7 +46,7 @@ public class AWomanAdapts extends CustomCard {
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         AbstractDungeon.actionManager.addToBottom(
                 new ApplyPowerAction(abstractPlayer, abstractPlayer,
-                        new LoveIsARebelliousBirdPower(abstractPlayer, 1), 1)
+                        new LoveIsARebelliousBirdPower(abstractPlayer, 1), 0)
         );
     }
 }
