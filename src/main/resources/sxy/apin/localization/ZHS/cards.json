@@ -141,18 +141,18 @@
   },
   "ApinFurina:Blubberbeast": {
     "NAME": "膨膨兽",
-    "DESCRIPTION": "",
-    "UPGRADE_DESCRIPTION": ""
+    "DESCRIPTION": "消耗5生命，抽 !M! 张牌。",
+    "UPGRADE_DESCRIPTION": "消耗5生命，抽 !M! 张牌。"
   },
   "ApinFurina:ArmoredCrab": {
     "NAME": "重甲蟹",
-    "DESCRIPTION": "",
-    "UPGRADE_DESCRIPTION": ""
+    "DESCRIPTION": "消耗1张牌，抽 !M! 张牌。",
+    "UPGRADE_DESCRIPTION": "消耗1张牌，抽 !M! 张牌。"
   },
   "ApinFurina:BubblySeahorse": {
     "NAME": "泡泡海马",
-    "DESCRIPTION": "",
-    "UPGRADE_DESCRIPTION": ""
+    "DESCRIPTION": "随机生成 1 张技能牌加入手牌。此技能牌费用为0，打出时消耗。",
+    "UPGRADE_DESCRIPTION": "随机生成 1 张技能牌加入手牌。此技能牌费用为0，打出时消耗。"
   },
   "ApinFurina:BallOctopus": {
     "NAME": "球球章鱼",
