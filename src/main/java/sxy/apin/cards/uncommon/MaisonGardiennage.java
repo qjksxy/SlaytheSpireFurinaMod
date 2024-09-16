@@ -11,6 +11,9 @@ import sxy.apin.helper.FurinaHelper;
 
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
 
+/**
+ * 执律庭 场上每有1名敌人，你摸 !M! 张牌 。
+ */
 public class MaisonGardiennage extends CustomCard {
     public static final String ID = FurinaHelper.makeCardID(MaisonGardiennage.class.getSimpleName());
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -25,7 +28,7 @@ public class MaisonGardiennage extends CustomCard {
 
     public MaisonGardiennage() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.magicNumber = this.baseMagicNumber = 2;
+        this.magicNumber = this.baseMagicNumber = 1;
         this.tags.add(CardTags.STRIKE);
     }
 
@@ -34,7 +37,6 @@ public class MaisonGardiennage extends CustomCard {
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeMagicNumber(1);
-            this.updateCost(-1);
         }
         this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
         this.initializeDescription();
@@ -44,7 +46,7 @@ public class MaisonGardiennage extends CustomCard {
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         int monNum = 0;
         for (AbstractMonster mon : AbstractDungeon.getCurrRoom().monsters.monsters) {
-            if (!mon.isDying && mon.currentHealth > 0 && !mon.escaped) {
+            if (!mon.isDeadOrEscaped()) {
                 monNum++;
             }
         }

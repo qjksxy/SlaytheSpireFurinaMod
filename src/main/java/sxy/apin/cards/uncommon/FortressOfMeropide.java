@@ -14,6 +14,9 @@ import sxy.apin.helper.FurinaHelper;
 
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
 
+/**
+ * 梅洛彼得堡 给予所有敌人 !M! 层 易伤 和 虚弱 。
+ */
 public class FortressOfMeropide extends CustomCard {
     public static final String ID = FurinaHelper.makeCardID(FortressOfMeropide.class.getSimpleName());
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -29,7 +32,6 @@ public class FortressOfMeropide extends CustomCard {
     public FortressOfMeropide() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.magicNumber = this.baseMagicNumber = 2;
-        this.tags.add(CardTags.STRIKE);
     }
 
     @Override

@@ -11,6 +11,9 @@ import sxy.apin.helper.FurinaHelper;
 
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
 
+/**
+ * 露景泉
+ */
 public class FountainOfLucine extends CustomCard {
     public static final String ID = FurinaHelper.makeCardID(FountainOfLucine.class.getSimpleName());
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -33,7 +36,7 @@ public class FountainOfLucine extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(2);
+            this.upgradeMagicNumber(1);
         }
         this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
         this.initializeDescription();
@@ -43,7 +46,7 @@ public class FountainOfLucine extends CustomCard {
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         int monNum = 0;
         for (AbstractMonster mon : AbstractDungeon.getCurrRoom().monsters.monsters) {
-            if (!mon.isDying && mon.currentHealth > 0 && !mon.escaped) {
+            if (!mon.isDeadOrEscaped()) {
                 monNum++;
             }
         }

@@ -1,37 +1,32 @@
-package sxy.apin.cards.uncommon;
+package sxy.apin.cards.rare;
 
 import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.actions.common.HealAction;
+import com.megacrit.cardcrawl.actions.common.ExhaustAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import sxy.apin.character.Furina;
 import sxy.apin.helper.FurinaHelper;
 
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
 
 /**
- * 致水神 回复2+ furina_mod:气氛值 点生命值。
+ * 涤净青金  消耗任意张手牌。
  */
-public class LaLettreAFocalors extends CustomCard {
-    public static final String ID = FurinaHelper.makeCardID(LaLettreAFocalors.class.getSimpleName());
-    private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID); // 从游戏系统读取本地化资源
+public class VarunadaLazuriteGemstone extends CustomCard {
+    public static final String ID = FurinaHelper.makeCardID(VarunadaLazuriteGemstone.class.getSimpleName());
+    private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final String NAME = CARD_STRINGS.NAME;
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final String IMG_PATH = "sxy/apin/img/cards/Strike.png";
     private static final int COST = 3;
     private static final CardType TYPE = CardType.SKILL;
     private static final CardColor COLOR = FURINA_BLUE;
-    private static final CardRarity RARITY = CardRarity.UNCOMMON;
-    // 是否指向敌人
+    private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;
 
-    public LaLettreAFocalors() {
+    public VarunadaLazuriteGemstone() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseHeal = 2;
-        this.tags.add(CardTags.HEALING);
     }
 
     @Override
@@ -46,10 +41,6 @@ public class LaLettreAFocalors extends CustomCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        int extraHealth = Furina.getRevelry();
-        AbstractDungeon.actionManager.addToBottom(
-                new HealAction(abstractPlayer, abstractPlayer, this.baseHeal + extraHealth)
-        );
-        Furina.consumeRevelry(1);
+        FurinaHelper.addToBottom(new ExhaustAction(10, false, true, true));
     }
 }

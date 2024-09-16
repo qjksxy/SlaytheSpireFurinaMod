@@ -11,6 +11,9 @@ import sxy.apin.helper.FurinaHelper;
 
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
 
+/**
+ * 欧庇克莱歌剧院 场上每有1名敌人，你获得 !M! 点 furina_mod:气氛值 。
+ */
 public class OperaEpiclese extends CustomCard {
     public static final String ID = FurinaHelper.makeCardID(OperaEpiclese.class.getSimpleName());
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -25,7 +28,7 @@ public class OperaEpiclese extends CustomCard {
 
     public OperaEpiclese() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.magicNumber = this.baseMagicNumber = 1;
+        this.magicNumber = this.baseMagicNumber = 2;
     }
 
     @Override
@@ -42,7 +45,7 @@ public class OperaEpiclese extends CustomCard {
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         int monNum = 0;
         for (AbstractMonster mon : AbstractDungeon.getCurrRoom().monsters.monsters) {
-            if (!mon.isDying && mon.currentHealth > 0 && !mon.escaped) {
+            if (!mon.isDeadOrEscaped()) {
                 monNum++;
             }
         }
