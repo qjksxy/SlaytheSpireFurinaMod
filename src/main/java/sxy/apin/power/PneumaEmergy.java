@@ -54,7 +54,6 @@ public class PneumaEmergy extends AbstractPower {
         if (this.amount >= 5) {
             this.amount = 5;
         }
-
     }
 
     @Override

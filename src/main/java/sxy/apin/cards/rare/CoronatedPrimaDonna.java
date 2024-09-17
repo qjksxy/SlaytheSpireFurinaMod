@@ -1,22 +1,20 @@
 package sxy.apin.cards.rare;
 
 import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.unique.ArmamentsAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import sxy.apin.helper.FurinaHelper;
-import sxy.apin.power.PourLaJusticePower;
 
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
 
 /**
- * 普茹斯蒂司 本回合每打出1张卡牌，回复1生命。
+ * 冠笄伶优  升级所有手牌。
  */
-public class PourLaJustice extends CustomCard {
-    public static final String ID = FurinaHelper.makeCardID(PourLaJustice.class.getSimpleName());
+public class CoronatedPrimaDonna extends CustomCard {
+    public static final String ID = FurinaHelper.makeCardID(CoronatedPrimaDonna.class.getSimpleName());
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final String NAME = CARD_STRINGS.NAME;
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
@@ -27,7 +25,7 @@ public class PourLaJustice extends CustomCard {
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;
 
-    public PourLaJustice() {
+    public CoronatedPrimaDonna() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
     }
 
@@ -37,16 +35,12 @@ public class PourLaJustice extends CustomCard {
             this.upgradeName();
             this.updateCost(-1);
         }
-        this.upgradeMagicNumber(1);
         this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
         this.initializeDescription();
     }
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        AbstractDungeon.actionManager.addToBottom(
-                new ApplyPowerAction(abstractPlayer, abstractPlayer,
-                        new PourLaJusticePower(abstractPlayer, 1), 1)
-        );
+        FurinaHelper.addToBottom(new ArmamentsAction(true));
     }
 }

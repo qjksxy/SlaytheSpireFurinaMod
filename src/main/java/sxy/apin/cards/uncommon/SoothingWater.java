@@ -1,22 +1,21 @@
-package sxy.apin.cards.rare;
+package sxy.apin.cards.uncommon;
 
 import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.HealAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import sxy.apin.character.Furina;
 import sxy.apin.helper.FurinaHelper;
-import sxy.apin.power.PourLaJusticePower;
 
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
 
 /**
- * 普茹斯蒂司 本回合每打出1张卡牌，回复1生命。
+ * 愈疗之水 恢复 !M! 生命，获得 2 气氛值，获得 2 元素能量。
  */
-public class PourLaJustice extends CustomCard {
-    public static final String ID = FurinaHelper.makeCardID(PourLaJustice.class.getSimpleName());
+public class SoothingWater extends CustomCard {
+    public static final String ID = FurinaHelper.makeCardID(SoothingWater.class.getSimpleName());
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final String NAME = CARD_STRINGS.NAME;
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
@@ -24,29 +23,32 @@ public class PourLaJustice extends CustomCard {
     private static final int COST = 1;
     private static final CardType TYPE = CardType.SKILL;
     private static final CardColor COLOR = FURINA_BLUE;
-    private static final CardRarity RARITY = CardRarity.RARE;
+    private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
 
-    public PourLaJustice() {
+    public SoothingWater() {
+        // 为了命名规范修改了变量名。这些参数具体的作用见下方
+        // CardType：有 ATTACK, SKILL, POWER, STATUS, CURSE 五种，分别代表攻击，技能，能力，状态，诅咒五种卡牌类型。
+        // CardRarity：有 BASIC, SPECIAL, COMMON, UNCOMMON, RARE, CURSE 六种，分别代表不同的卡牌稀有度
+        // CardTarget：有 ENEMY, ALL_ENEMY, SELF, NONE, SELF_AND_ENEMY, ALL，分别代表单个敌人，所有敌人，自身，无，自身和敌人，所有，六种卡牌目标。
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
+        this.magicNumber = this.baseMagicNumber = 3;
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.updateCost(-1);
+            this.upgradeMagicNumber(5);
         }
-        this.upgradeMagicNumber(1);
         this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
         this.initializeDescription();
     }
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        AbstractDungeon.actionManager.addToBottom(
-                new ApplyPowerAction(abstractPlayer, abstractPlayer,
-                        new PourLaJusticePower(abstractPlayer, 1), 1)
-        );
+        FurinaHelper.addToBottom(new HealAction(abstractPlayer, abstractPlayer, this.magicNumber));
+        Furina.gainRevelry(2);
+        Furina.gainElementEnergy(2);
     }
 }

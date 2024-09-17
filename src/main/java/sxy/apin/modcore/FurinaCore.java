@@ -16,6 +16,7 @@ import org.apache.logging.log4j.Logger;
 import sxy.apin.cards.basic.*;
 import sxy.apin.cards.common.*;
 import sxy.apin.cards.rare.*;
+import sxy.apin.cards.uncommon.Erinnyes;
 import sxy.apin.cards.uncommon.*;
 import sxy.apin.character.Furina;
 import sxy.apin.helper.FurinaHelper;
@@ -110,6 +111,7 @@ public class FurinaCore implements EditCardsSubscriber, EditStringsSubscriber, E
         // UNCOMMON
         BaseMod.addCard(new AllWaters());
         BaseMod.addCard(new Equity());
+        BaseMod.addCard(new Erinnyes());
         BaseMod.addCard(new Fontatine());
         BaseMod.addCard(new FortressOfMeropide());
         BaseMod.addCard(new FountainOfLucine());
@@ -128,7 +130,6 @@ public class FurinaCore implements EditCardsSubscriber, EditStringsSubscriber, E
         // RARE
         BaseMod.addCard(new AWomanAdapts());
         BaseMod.addCard(new EndlessWaltz());
-        BaseMod.addCard(new Erinnyes());
         BaseMod.addCard(new HearMe());
         BaseMod.addCard(new INowKnowItIs());
         BaseMod.addCard(new LoveIsARebelliousBird());

@@ -1,23 +1,19 @@
 package sxy.apin.power;
 
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
-import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import sxy.apin.character.Furina;
 import sxy.apin.helper.FurinaHelper;
 
 /**
- * 荒性能量 通过引发芒荒反应击晕敌人。
+ * 永世领唱 每持有 10 点气氛值，会心造成的伤害提升50%。
  */
-public class OusiaEmergy extends AbstractPower {
+public class PerpetualMuseOfChansonsPower extends AbstractPower {
     // 能力的ID
-    public static final String POWER_ID = FurinaHelper.makePowerID(OusiaEmergy.class.getSimpleName());
+    public static final String POWER_ID = FurinaHelper.makePowerID(PerpetualMuseOfChansonsPower.class.getSimpleName());
     // 能力的本地化字段
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     // 能力的名称
@@ -25,12 +21,11 @@ public class OusiaEmergy extends AbstractPower {
     // 能力的描述
     private static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
-    public OusiaEmergy(AbstractCreature owner) {
+    public PerpetualMuseOfChansonsPower(AbstractCreature owner) {
         this.name = NAME;
         this.ID = POWER_ID;
         this.owner = owner;
         this.type = PowerType.DEBUFF;
-        this.amount = 1;
         // 添加一大一小两张能力图
         String path128 = "sxy/apin/img/powers/Example84.png";
         String path48 = "sxy/apin/img/powers/Example32.png";
@@ -51,32 +46,8 @@ public class OusiaEmergy extends AbstractPower {
         }
         this.fontScale = 8.0F;
         this.amount += stackAmount;
-        if (this.amount >= 5) {
-            this.amount = 5;
-        }
-    }
-
-    @Override
-    public void onInitialApplication() {
-        AbstractCreature target = this.owner;
-        if (target.hasPower(PneumaEmergy.POWER_ID)) {
-            int min_amout = target.getPower(PneumaEmergy.POWER_ID).amount;
-            if (this.amount < min_amout) {
-                min_amout = this.amount;
-            }
-            AbstractDungeon.actionManager.addToBottom(
-                    new ReducePowerAction(target, AbstractDungeon.player, PneumaEmergy.POWER_ID, min_amout)
-            );
-            AbstractDungeon.actionManager.addToBottom(
-                    new ReducePowerAction(target, AbstractDungeon.player, OusiaEmergy.POWER_ID, min_amout)
-            );
-            if (min_amout <= 0) {
-                return;
-            }
-            Furina.gainElementEnergy(min_amout);
-            AbstractDungeon.actionManager.addToBottom(
-                    new GainEnergyAction(1)
-            );
+        if (this.amount >= 999) {
+            this.amount = 999;
         }
     }
 }
