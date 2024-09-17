@@ -20,13 +20,12 @@ public class AllPeoplePower extends AbstractPower {
     private static final String NAME = powerStrings.NAME;
     // 能力的描述
     private static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
-    private int count = 0;
 
     public AllPeoplePower(AbstractCreature owner) {
         this.name = NAME;
         this.ID = POWER_ID;
         this.owner = owner;
-        this.type = PowerType.DEBUFF;
+        this.type = PowerType.BUFF;
         this.amount = 1;
         // 添加一大一小两张能力图
         String path128 = "sxy/apin/img/powers/Example84.png";
@@ -51,13 +50,5 @@ public class AllPeoplePower extends AbstractPower {
         if (this.amount >= 999) {
             this.amount = 999;
         }
-    }
-
-    public int getCount() {
-        return this.count;
-    }
-
-    public void stackCount(int count) {
-        this.count += count;
     }
 }

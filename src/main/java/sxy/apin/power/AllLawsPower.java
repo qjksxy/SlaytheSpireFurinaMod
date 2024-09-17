@@ -25,7 +25,7 @@ public class AllLawsPower extends AbstractPower {
         this.name = NAME;
         this.ID = POWER_ID;
         this.owner = owner;
-        this.type = PowerType.DEBUFF;
+        this.type = PowerType.BUFF;
         this.amount = 1;
         // 添加一大一小两张能力图
         String path128 = "sxy/apin/img/powers/Example84.png";

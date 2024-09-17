@@ -85,7 +85,7 @@ public class Revelry extends AbstractPower {
         if (kindredsPower != null) {
             kindredsPower.stackPower(1);
             if (kindredsPower.getCount() >= 3) {
-                kindredsPower.stackPower(-3);
+                kindredsPower.stackCount(-3);
             }
             kindredsPower.flash();
             FurinaHelper.addToBottom(new DrawCardAction(1));
