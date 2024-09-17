@@ -196,8 +196,8 @@
   },
   "ApinFurina:WovenWaters": {
     "NAME": "交织之水",
-    "DESCRIPTION": "本回合每打出一张攻击牌，则获得 !M! 元素能量。",
-    "UPGRADE_DESCRIPTION": "本回合每打出一张攻击牌，则获得 !M! 元素能量。"
+    "DESCRIPTION": "本回合每打出一张攻击牌，则获得1元素能量。",
+    "UPGRADE_DESCRIPTION": "本回合每打出一张攻击牌，则获得1元素能量。"
   },
   "ApinFurina:SingerOfManyWaters": {
     "NAME": "众水的歌者",
@@ -291,8 +291,8 @@
   },
   "ApinFurina:PeripateticPeregrination": {
     "NAME": "四季的悠游",
-    "DESCRIPTION": "消耗 。回复当前气氛值点生命。。",
-    "UPGRADE_DESCRIPTION": "消耗 。回复当前气氛值点生命。。"
+    "DESCRIPTION": "消耗 。回复当前气氛值点生命。",
+    "UPGRADE_DESCRIPTION": "消耗 。回复当前气氛值点生命。"
   },
   "ApinFurina:LeSouvenirAvecLeCrepuscule": {
     "NAME": "时暮的思眷",
@@ -316,8 +316,8 @@
   },
   "ApinFurina:TheLittleOceanid": {
     "NAME": "水的女儿",
-    "DESCRIPTION": "消耗5生命，获得2能量。",
-    "UPGRADE_DESCRIPTION": "消耗5生命，获得2能量。"
+    "DESCRIPTION": "消耗5生命，获得 !M! 能量。",
+    "UPGRADE_DESCRIPTION": "消耗5生命，获得 !M! 能量。"
   },
   "ApinFurina:CoronatedPrimaDonna": {
     "NAME": "冠笄伶优",

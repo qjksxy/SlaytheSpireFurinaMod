@@ -13,7 +13,7 @@ import sxy.apin.power.WovenWatersPower;
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
 
 /**
- * 普茹斯蒂司 本回合每打出1张卡牌，回复1生命。
+ * 交织之水 本回合每打出一张攻击牌，则获得 1元素能量。
  */
 public class WovenWaters extends CustomCard {
     public static final String ID = FurinaHelper.makeCardID(WovenWaters.class.getSimpleName());
