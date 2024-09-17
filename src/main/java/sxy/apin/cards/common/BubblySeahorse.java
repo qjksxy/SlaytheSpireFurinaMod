@@ -6,11 +6,12 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import sxy.apin.helper.FurinaHelper;
+import sxy.apin.power.Dewdrop;
 
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
 
 /**
- * 泡泡海马 随机生成 1 张技能牌加入手牌。此技能牌费用为0，打出时消耗。
+ * 泡泡海马 获得 1 层珠露。
  */
 public class BubblySeahorse extends CustomCard {
     public static final String ID = FurinaHelper.makeCardID(BubblySeahorse.class.getSimpleName());
@@ -32,6 +33,7 @@ public class BubblySeahorse extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
+            this.updateCost(-1);
         }
         this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
         this.initializeDescription();
@@ -39,6 +41,6 @@ public class BubblySeahorse extends CustomCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-
+        FurinaHelper.applyPower(abstractPlayer, abstractPlayer, new Dewdrop(abstractPlayer, 1), 1);
     }
 }

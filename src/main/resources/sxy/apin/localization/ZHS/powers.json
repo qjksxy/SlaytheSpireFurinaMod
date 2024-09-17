@@ -77,7 +77,7 @@
       "回合结束时，对最近敌人造成 10 点伤害。若生命值高于50%，则额外造成 50% furina:气氛值 的伤害。"
     ]
   },
-  "ApinFurina:SingerOfManyWaters": {
+  "ApinFurina:SingerOfManyWatersPower": {
     "NAME": "众水的歌者",
     "DESCRIPTIONS": [
       "回合结束时恢复 5 点生命，若生命值低于 50%，则额外恢复 50% furina:气氛值 的生命。"
@@ -92,7 +92,7 @@
   "ApinFurina:LoveIsARebelliousBirdPower": {
     "NAME": "爱是难驯鸟",
     "DESCRIPTIONS": [
-      "气氛值上限提升到50。。"
+      "气氛值上限提升到50。"
     ]
   },
   "ApinFurina:AWomanAdaptsPower": {

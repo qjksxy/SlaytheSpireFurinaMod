@@ -23,7 +23,7 @@ public class PalaisMermonia extends CustomCard {
     private static final int COST = 1;
     private static final CardType TYPE = CardType.SKILL;
     private static final CardColor COLOR = FURINA_BLUE;
-    private static final CardRarity RARITY = CardRarity.RARE;
+    private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
 
     public PalaisMermonia() {

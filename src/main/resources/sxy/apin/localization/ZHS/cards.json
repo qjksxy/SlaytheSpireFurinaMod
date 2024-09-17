@@ -26,8 +26,8 @@
   },
   "ApinFurina:ElectroCharged": {
     "NAME": "感电",
-    "DESCRIPTION": "对敌人造成 !D！点伤害，并附属感电。",
-    "UPGRADE_DESCRIPTION": "对敌人造成 !D！点伤害，并附属感电。"
+    "DESCRIPTION": "对敌人造成 !D! 点伤害，并附属感电。",
+    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 点伤害，并附属感电。"
   },
   "ApinFurina:Bloom": {
     "NAME": "绽放",
@@ -56,8 +56,8 @@
   },
   "ApinFurina:Order": {
     "NAME": "秩序",
-    "DESCRIPTION": "造成 !D! 点伤害，抽1张牌。",
-    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，抽1张牌。"
+    "DESCRIPTION": "造成 !D! 点伤害，抽!M!张牌。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，抽!M!张牌。"
   },
   "ApinFurina:Equity": {
     "NAME": "公平",
@@ -166,8 +166,8 @@
   },
   "ApinFurina:Cake": {
     "NAME": "蛋糕",
-    "DESCRIPTION": "回复 !H! 点生命值。",
-    "UPGRADE_DESCRIPTION": "回复 !H! 点生命值。"
+    "DESCRIPTION": "回复5点生命值。",
+    "UPGRADE_DESCRIPTION": "回复5点生命值。"
   },
   "ApinFurina:FontinaliaMousse": {
     "NAME": "千灵慕斯",
@@ -186,8 +186,8 @@
   },
   "ApinFurina:SlowingWater": {
     "NAME": "迟滞之水",
-    "DESCRIPTION": "回合结束时，如果剩余能量未使用，则下一回合获得1能量。",
-    "UPGRADE_DESCRIPTION": "回合结束时，如果剩余能量未使用，则下一回合获得1能量。"
+    "DESCRIPTION": "回合结束时，如果剩余能量未使用，则下一回合获得 !M! 能量。",
+    "UPGRADE_DESCRIPTION": "回合结束时，如果剩余能量未使用，则下一回合获得 !M! 能量。"
   },
   "ApinFurina:SoothingWater": {
     "NAME": "愈疗之水",
@@ -224,7 +224,7 @@
     "DESCRIPTION": "随机触发1种效果：抽1张牌；回复3点生命；消耗1点生命；将抽牌堆中的1张攻击牌加入手牌。",
     "UPGRADE_DESCRIPTION": "随机触发1种效果：抽1张牌；回复3点生命；消耗1点生命；将抽牌堆中的1张攻击牌加入手牌。"
   },
-  "ApinFurina:Fontaine": {
+  "ApinFurina:Fontatine": {
     "NAME": "枫丹",
     "DESCRIPTION": "抽 !M! 张牌，回复 !M! 点生命，消耗 1 张牌。",
     "UPGRADE_DESCRIPTION": "抽 !M! 张牌，回复 !M! 点生命，消耗 1 张牌。"
@@ -272,7 +272,7 @@
   "ApinFurina:LaLettreAFocalors": {
     "NAME": "致水神",
     "DESCRIPTION": "回复2+ furina_mod:气氛值 点生命值。",
-    "UPGRADE_DESCRIPTION": "回复3+ furina_mod:气氛值 点生命值2次。"
+    "UPGRADE_DESCRIPTION": "回复2+ furina_mod:气氛值 点生命值。"
   },
   "ApinFurina:PassingOfJudgment": {
     "NAME": "裁定之时",

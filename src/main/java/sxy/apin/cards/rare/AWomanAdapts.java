@@ -8,7 +8,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import sxy.apin.helper.FurinaHelper;
-import sxy.apin.power.LoveIsARebelliousBirdPower;
+import sxy.apin.power.AWomanAdaptsPower;
 
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
 
@@ -46,7 +46,7 @@ public class AWomanAdapts extends CustomCard {
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         AbstractDungeon.actionManager.addToBottom(
                 new ApplyPowerAction(abstractPlayer, abstractPlayer,
-                        new LoveIsARebelliousBirdPower(abstractPlayer, 1), 0)
+                        new AWomanAdaptsPower(abstractPlayer, 1), 0)
         );
     }
 }
