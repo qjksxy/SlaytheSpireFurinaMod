@@ -26,7 +26,7 @@ public class Swirl extends CustomCard {
 
     public Swirl() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.damage = this.baseDamage = 5;
+        this.damage = this.baseDamage = 8;
         this.isMultiDamage = true;
         this.tags.add(CardTags.STRIKE);
     }
@@ -35,7 +35,7 @@ public class Swirl extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeDamage(3);
+            this.upgradeDamage(5);
         }
         this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
         this.initializeDescription();

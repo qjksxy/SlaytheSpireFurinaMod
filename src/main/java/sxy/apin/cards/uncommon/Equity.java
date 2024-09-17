@@ -53,9 +53,7 @@ public class Equity extends CustomCard {
                         new DamageInfo(abstractPlayer, damage, DamageInfo.DamageType.NORMAL)
                 )
         );
-        // TODO 将1张牌从弃牌堆加入手牌
-        FurinaHelper.addToBottom(
-                new DiscardPileToHandAction(this.magicNumber)
+        FurinaHelper.addToBottom(new DiscardPileToHandAction(this.magicNumber)
         );
     }
 }
