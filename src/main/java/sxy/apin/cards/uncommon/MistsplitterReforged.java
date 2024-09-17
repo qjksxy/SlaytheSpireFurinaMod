@@ -14,7 +14,7 @@ import sxy.apin.helper.FurinaHelper;
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
 
 /**
- * 雾切之回光 2费  10伤  此牌重复打出时，额外造成 4 点伤害。
+ * 雾切之回光 2费  10伤  此牌重复打出时，额外造成 5 点伤害。
  */
 public class MistsplitterReforged extends CustomCard {
     public static final String ID = FurinaHelper.makeCardID(MistsplitterReforged.class.getSimpleName());
