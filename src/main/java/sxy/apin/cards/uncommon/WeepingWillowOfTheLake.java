@@ -14,6 +14,9 @@ import java.util.ArrayList;
 
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
 
+/**
+ * 湖中垂柳 若手牌数量不多于 !M! ，则抽 3 张牌。
+ */
 public class WeepingWillowOfTheLake extends CustomCard {
     public static final String ID = FurinaHelper.makeCardID(WeepingWillowOfTheLake.class.getSimpleName());
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -28,12 +31,15 @@ public class WeepingWillowOfTheLake extends CustomCard {
 
     public WeepingWillowOfTheLake() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
+        this.magicNumber = 3;
+        this.baseMagicNumber = 3;
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
+            this.upgradeMagicNumber(3);
         }
         this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
         this.initializeDescription();
@@ -43,19 +49,10 @@ public class WeepingWillowOfTheLake extends CustomCard {
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         ArrayList<AbstractCard> group = AbstractDungeon.player.hand.group;
         int size = group.size();
-        if (upgraded) {
-            if (size <= 6) {
-                AbstractDungeon.actionManager.addToBottom(
-                        new DrawCardAction(abstractPlayer, 4)
-                );
-            }
-        } else {
-            if (size <= 5) {
-                AbstractDungeon.actionManager.addToBottom(
-                        new DrawCardAction(abstractPlayer, 3)
-                );
-            }
-
+        if (size <= this.magicNumber) {
+            AbstractDungeon.actionManager.addToBottom(
+                    new DrawCardAction(abstractPlayer, 3)
+            );
         }
     }
 }
