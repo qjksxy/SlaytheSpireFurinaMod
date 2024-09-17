@@ -93,7 +93,11 @@ public class FurinaCore implements EditCardsSubscriber, EditStringsSubscriber, E
         BaseMod.addCard(new SurgingBlade());
 
         // COMMON
+        BaseMod.addCard(new ArmoredCrab());
+        BaseMod.addCard(new BallOctopus());
         BaseMod.addCard(new Bloom());
+        BaseMod.addCard(new Blubberbeast());
+        BaseMod.addCard(new BubblySeahorse());
         BaseMod.addCard(new Cake());
         BaseMod.addCard(new Crystalize());
         BaseMod.addCard(new ElectroCharged());
@@ -102,44 +106,68 @@ public class FurinaCore implements EditCardsSubscriber, EditStringsSubscriber, E
         BaseMod.addCard(new FleuveCendreFerryman());
         BaseMod.addCard(new FontinaliaMousse());
         BaseMod.addCard(new Frozen());
-        BaseMod.addCard(new Judge());
+        BaseMod.addCard(new OratriceMecaniquedAnalyseCardinale());
         BaseMod.addCard(new Swirl());
         BaseMod.addCard(new TheDockhandsAssistant());
         BaseMod.addCard(new Vaporize());
         BaseMod.addCard(new WolfFang());
 
         // UNCOMMON
+        BaseMod.addCard(new AllKindreds());
+        BaseMod.addCard(new AllLaws());
+        BaseMod.addCard(new AllPeople());
         BaseMod.addCard(new AllWaters());
+        BaseMod.addCard(new CourtOfFontaine());
+        BaseMod.addCard(new EndlessSoloOfSolitude());
         BaseMod.addCard(new Equity());
         BaseMod.addCard(new Erinnyes());
         BaseMod.addCard(new Fontatine());
         BaseMod.addCard(new FortressOfMeropide());
         BaseMod.addCard(new FountainOfLucine());
+        BaseMod.addCard(new GentilhommeUsher());
         BaseMod.addCard(new Justice());
         BaseMod.addCard(new KeyOfKhajNisut());
         BaseMod.addCard(new LaLettreAFocalors());
         BaseMod.addCard(new LightOfFoliarIncision());
+        BaseMod.addCard(new MademoiselleCrabaletta());
         BaseMod.addCard(new MaisonGardiennage());
+        BaseMod.addCard(new MelusineSupport());
         BaseMod.addCard(new MistsplitterReforged());
         BaseMod.addCard(new OperaEpiclese());
         BaseMod.addCard(new Order());
+        BaseMod.addCard(new PalaisMermonia());
+        BaseMod.addCard(new PassingOfJudgment());
+        BaseMod.addCard(new PerpetualMuseOfChansons());
+        BaseMod.addCard(new PerpetualMuseOfRondeaux());
         BaseMod.addCard(new PrimordialJadeCutter());
+        BaseMod.addCard(new SingerOfManyWaters());
+        BaseMod.addCard(new SlowingWater());
+        BaseMod.addCard(new SoothingWater());
+        BaseMod.addCard(new SurintendanteChevalmarin());
+        BaseMod.addCard(new UrakuMisugiri());
         BaseMod.addCard(new WeepingWillowOfTheLake());
-        BaseMod.addCard(new WeepingWillowOfTheLake());
+        BaseMod.addCard(new WovenWaters());
 
         // RARE
         BaseMod.addCard(new AWomanAdapts());
+        BaseMod.addCard(new Banquet());
+        BaseMod.addCard(new CoronatedPrimaDonna());
+        BaseMod.addCard(new DewsFirstGlimmerAtDaybreak());
         BaseMod.addCard(new EndlessWaltz());
+        BaseMod.addCard(new GymnopediesOfLune());
         BaseMod.addCard(new HearMe());
         BaseMod.addCard(new INowKnowItIs());
+        BaseMod.addCard(new LaVaguelette());
+        BaseMod.addCard(new LeSouvenirAvecLeCrepuscule());
         BaseMod.addCard(new LoveIsARebelliousBird());
         BaseMod.addCard(new MySecretIsHiddenWithinMe());
-        BaseMod.addCard(new PalaisMermonia());
-        BaseMod.addCard(new PassingOfJudgment());
+        BaseMod.addCard(new PeripateticPeregrination());
         BaseMod.addCard(new PourLaJustice());
         BaseMod.addCard(new SplendorOfTranquilWaters());
+        BaseMod.addCard(new TheLittleOceanid());
         BaseMod.addCard(new TheSeaIsMyStage());
         BaseMod.addCard(new UnheardConfession());
+        BaseMod.addCard(new VarunadaLazuriteGemstone());
         BaseMod.addCard(new WaterAndJustice());
         BaseMod.addCard(new WhoDweltInTheNetherworld());
     }
