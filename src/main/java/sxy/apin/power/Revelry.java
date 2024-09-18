@@ -2,7 +2,6 @@ package sxy.apin.power;
 
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
-import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -37,21 +36,10 @@ public class Revelry extends AbstractPower {
         // 添加一大一小两张能力图
         String path128 = "sxy/apin/img/powers/Example84.png";
         String path48 = "sxy/apin/img/powers/Example32.png";
-        this.region128 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path128), 0, 0, 84, 84);
-        this.region48 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path48), 0, 0, 32, 32);
+        this.region128 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path128), 22, 22, 84, 84);
+        this.region48 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path48), 8, 8, 32, 32);
         // 首次添加能力更新描述
         this.updateDescription();
-    }
-
-    public static void consumeRevelry(AbstractPlayer abstractPlayer, int amount) {
-        if (!abstractPlayer.hasPower(Revelry.POWER_ID)) {
-            return;
-        }
-        AbstractPower revelry = abstractPlayer.getPower(Revelry.POWER_ID);
-        revelry.flash();
-        AbstractDungeon.actionManager.addToBottom(
-                new ReducePowerAction(abstractPlayer, abstractPlayer, Revelry.POWER_ID, amount)
-        );
     }
 
     @Override
@@ -92,7 +80,7 @@ public class Revelry extends AbstractPower {
         // 众民：获得1层
         AbstractPower peoplePower = FurinaHelper.getPower(AllPeoplePower.POWER_ID);
         if (peoplePower != null) {
-            AbstractMonster monster = AbstractDungeon.getMonsters().getRandomMonster((AbstractMonster) null, true, AbstractDungeon.cardRandomRng);
+            AbstractMonster monster = AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRandomRng);
             FurinaHelper.damage(monster, player, 5, DamageInfo.DamageType.NORMAL);
         }
         // 众律法：获得1层

@@ -37,8 +37,8 @@ public class CriticalBoost extends AbstractPower {
         // 添加一大一小两张能力图
         String path128 = "sxy/apin/img/powers/Example84.png";
         String path48 = "sxy/apin/img/powers/Example32.png";
-        this.region128 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path128), 0, 0, 84, 84);
-        this.region48 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path48), 0, 0, 32, 32);
+        this.region128 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path128), 22, 22, 84, 84);
+        this.region48 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path48), 8, 8, 32, 32);
         // 首次添加能力更新描述
         this.updateDescription();
     }
@@ -98,6 +98,7 @@ public class CriticalBoost extends AbstractPower {
             double fac = 1.0;
             if (FurinaHelper.getPower(PerpetualMuseOfChansonsPower.POWER_ID) != null) {
                 int revelry = Furina.getRevelry();
+                //noinspection RedundantCast
                 fac += (int) (revelry / 10) * 0.5;
             }
             FurinaHelper.damage(mon, FurinaHelper.getPlayer(), (int) (this.amount * fac), DamageInfo.DamageType.NORMAL);

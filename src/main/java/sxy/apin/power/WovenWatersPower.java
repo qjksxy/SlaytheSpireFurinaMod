@@ -28,8 +28,8 @@ public class WovenWatersPower extends AbstractPower {
         // 添加一大一小两张能力图
         String path128 = "sxy/apin/img/powers/Example84.png";
         String path48 = "sxy/apin/img/powers/Example32.png";
-        this.region128 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path128), 0, 0, 84, 84);
-        this.region48 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path48), 0, 0, 32, 32);
+        this.region128 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path128), 22, 22, 84, 84);
+        this.region48 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path48), 8, 8, 32, 32);
         // 首次添加能力更新描述
         this.updateDescription();
     }
