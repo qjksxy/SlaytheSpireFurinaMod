@@ -68,7 +68,7 @@
   "ApinFurina:SalonMembers": {
     "NAME": "沙龙成员",
     "DESCRIPTIONS": [
-      "回合结束时，对最近敌人造成 10 点伤害。若生命值高于50%，则额外造成50%气氛 的伤害。"
+      "回合结束时，对最近敌人造成 10 点伤害。若生命值高于50%，则额外造成50%气氛值的伤害。"
     ]
   },
   "ApinFurina:SingerOfManyWatersPower": {
