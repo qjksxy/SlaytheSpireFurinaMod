@@ -60,7 +60,7 @@ public class SlowingWaterPower extends AbstractPower {
         if (this.flag && this.amount > 0) {
             FurinaHelper.addToBottom(new GainEnergyAction(this.amount));
         }
-        FurinaHelper.reducePlayerPower(this.ID, 1);
+        FurinaHelper.removePlayerPower(this.ID);
     }
 
     @Override

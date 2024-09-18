@@ -41,23 +41,23 @@
   },
   "ApinFurina:WolfFang": {
     "NAME": "狼牙",
-    "DESCRIPTION": "对敌人造成 !D! 点伤害。获得2 furina_mod:气氛值 ",
-    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 点伤害。获得2 furina_mod:气氛值 "
+    "DESCRIPTION": "对敌人造成 !D! 点伤害。获得2 furina_mod:气氛值 。",
+    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 点伤害。获得2 furina_mod:气氛值 。"
   },
   "ApinFurina:TheDockhandsAssistant": {
     "NAME": "船坞长剑",
-    "DESCRIPTION": "对敌人造成 !D! 点伤害。获得2元素能量",
-    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 点伤害。获得2元素能量"
+    "DESCRIPTION": "对敌人造成 !D! 点伤害。获得2 furina_mod:元素能量 。",
+    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 点伤害。获得2 furina_mod:元素能量 。"
   },
   "ApinFurina:FleuveCendreFerryman": {
     "NAME": "灰河渡手",
-    "DESCRIPTION": "对敌人造成 !D! 点伤害。获得1 furina_mod:气氛值 和1能量",
-    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 点伤害。获得1 furina_mod:气氛值 和1能量"
+    "DESCRIPTION": "对敌人造成 !D! 点伤害。获得1 furina_mod:气氛值 和1能量。",
+    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 点伤害。获得1 furina_mod:气氛值 和1能量。"
   },
   "ApinFurina:Order": {
     "NAME": "秩序",
-    "DESCRIPTION": "造成 !D! 点伤害，抽!M!张牌。",
-    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，抽!M!张牌。"
+    "DESCRIPTION": "造成 !D! 点伤害，抽 !M! 张牌。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，抽 !M! 张牌。"
   },
   "ApinFurina:Equity": {
     "NAME": "公平",
@@ -66,8 +66,8 @@
   },
   "ApinFurina:Justice": {
     "NAME": "正义",
-    "DESCRIPTION": "造成 !D! 点伤害，将1张牌放入抽牌堆",
-    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，将1张牌放入抽牌堆"
+    "DESCRIPTION": "造成 !D! 点伤害，将1张牌放入抽牌堆。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，将1张牌放入抽牌堆。"
   },
   "ApinFurina:KeyOfKhajNisut": {
     "NAME": "圣显之钥",
@@ -76,18 +76,18 @@
   },
   "ApinFurina:UrakuMisugiri": {
     "NAME": "有乐御簾切",
-    "DESCRIPTION": "造成 !D! 点伤害，获得3点 furina_mod:气氛值 ",
-    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，获得3点 furina_mod:气氛值 "
+    "DESCRIPTION": "造成 !D! 点伤害，获得3点 furina_mod:气氛值 。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，获得3点 furina_mod:气氛值 。"
   },
   "ApinFurina:PrimordialJadeCutter": {
     "NAME": "磐岩结绿",
-    "DESCRIPTION": "造成 !D! 点伤害，基于生命上限的4%额外造成伤害",
-    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，基于生命上限的4%额外造成伤害"
+    "DESCRIPTION": "造成 !D! 点伤害，基于生命上限的4%额外造成伤害。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，基于生命上限的4%额外造成伤害。"
   },
   "ApinFurina:LightOfFoliarIncision": {
     "NAME": "裁叶萃光",
-    "DESCRIPTION": "造成 !D! 点伤害，有50%的概率造成双倍伤害",
-    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，有50%的概率造成双倍伤害"
+    "DESCRIPTION": "造成 !D! 点伤害，有50%的概率造成双倍伤害。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，有50%的概率造成双倍伤害。"
   },
   "ApinFurina:MistsplitterReforged": {
     "NAME": "雾切之回光",
@@ -111,8 +111,8 @@
   },
   "ApinFurina:WaterAndJustice": {
     "NAME": "水与正义",
-    "DESCRIPTION": "对敌人造成当前 furina_mod:气氛值 50%的伤害，回复当前 furina_mod:气氛值  30% 的生命。",
-    "UPGRADE_DESCRIPTION": "对敌人造成当前 furina_mod:气氛值 50%的伤害，回复当前 furina_mod:气氛值  30% 的生命。"
+    "DESCRIPTION": "对敌人造成当前 furina_mod:气氛值 50%的伤害，回复当前 furina_mod:气氛值 30%的生命。",
+    "UPGRADE_DESCRIPTION": "对敌人造成当前 furina_mod:气氛值 50%的伤害，回复当前 furina_mod:气氛值 30%的生命。"
   },
   "ApinFurina:SplendorOfTranquilWaters": {
     "NAME": "静水流涌之辉",
@@ -191,13 +191,13 @@
   },
   "ApinFurina:SoothingWater": {
     "NAME": "愈疗之水",
-    "DESCRIPTION": "恢复 !M! 生命，获得 !M!  furina_mod:气氛值 ，获得 !M! 元素能量。",
-    "UPGRADE_DESCRIPTION": "恢复 !M! 生命，获得 !M!  furina_mod:气氛值 ，获得 !M! 元素能量。"
+    "DESCRIPTION": "恢复 !M! 生命，获得 !M! furina_mod:气氛值 ，获得 !M! furina_mod:元素能量 。",
+    "UPGRADE_DESCRIPTION": "恢复 !M! 生命，获得 !M! furina_mod:气氛值 ，获得 !M! furina_mod:元素能量 。"
   },
   "ApinFurina:WovenWaters": {
     "NAME": "交织之水",
-    "DESCRIPTION": "本回合每打出一张攻击牌，则获得1元素能量。",
-    "UPGRADE_DESCRIPTION": "本回合每打出一张攻击牌，则获得1元素能量。"
+    "DESCRIPTION": "本回合每打出一张攻击牌，则获得1 furina_mod:元素能量 。",
+    "UPGRADE_DESCRIPTION": "本回合每打出一张攻击牌，则获得1 furina_mod:元素能量 。"
   },
   "ApinFurina:SingerOfManyWaters": {
     "NAME": "众水的歌者",
@@ -216,8 +216,8 @@
   },
   "ApinFurina:MademoiselleCrabaletta": {
     "NAME": "谢贝蕾妲小姐",
-    "DESCRIPTION": "消耗 !M! 生命，获得 !M!  furina_mod:气氛值 。",
-    "UPGRADE_DESCRIPTION": "消耗 !M! 生命，获得 !M!  furina_mod:气氛值 。"
+    "DESCRIPTION": "消耗 !M! 生命，获得 !M! furina_mod:气氛值 。",
+    "UPGRADE_DESCRIPTION": "消耗 !M! 生命，获得 !M! furina_mod:气氛值 。"
   },
   "ApinFurina:MelusineSupport": {
     "NAME": "美露莘的声援",
@@ -246,18 +246,18 @@
   },
   "ApinFurina:PalaisMermonia": {
     "NAME": "沫芒宫",
-    "DESCRIPTION": "消耗 1 张牌，回复 5 生命。",
-    "UPGRADE_DESCRIPTION": "消耗 1 张牌，回复 5 生命。"
+    "DESCRIPTION": "消耗 1 张牌，回复5+50% furina_mod:气氛值 生命。",
+    "UPGRADE_DESCRIPTION": "消耗 1 张牌，回复5+50% furina_mod:气氛值 生命。"
   },
   "ApinFurina:WeepingWillowOfTheLake": {
     "NAME": "湖中垂柳",
-    "DESCRIPTION": "若手牌数量不多于 !M! ，则抽 3 张牌。",
-    "UPGRADE_DESCRIPTION": "若手牌数量不多于 !M! ，则抽 3 张牌。"
+    "DESCRIPTION": "若手牌数量不多于 !M! ，则抽3张牌。",
+    "UPGRADE_DESCRIPTION": "若手牌数量不多于 !M! ，则抽3张牌。"
   },
   "ApinFurina:Erinnyes": {
     "NAME": "伊黎耶岛",
-    "DESCRIPTION": "消耗 3  furina_mod:气氛值 ，抽 !M! 张牌。",
-    "UPGRADE_DESCRIPTION": "消耗 3  furina_mod:气氛值 ，抽 !M! 张牌。"
+    "DESCRIPTION": "消耗3 furina_mod:气氛值 ，抽 !M! 张牌。",
+    "UPGRADE_DESCRIPTION": "消耗3 furina_mod:气氛值 ，抽 !M! 张牌。"
   },
   "ApinFurina:FortressOfMeropide": {
     "NAME": "梅洛彼得堡",
@@ -276,8 +276,8 @@
   },
   "ApinFurina:PassingOfJudgment": {
     "NAME": "裁定之时",
-    "DESCRIPTION": "随机获得 1 层会心/战意/珠露。",
-    "UPGRADE_DESCRIPTION": "随机获得 1 层会心/战意/珠露。"
+    "DESCRIPTION": "获得1层 furina_mod:会心 和 furina_mod:战意 和 furina_mod:珠露。",
+    "UPGRADE_DESCRIPTION": "获得1层 furina_mod:会心 和 furina_mod:战意 和 furina_mod:珠露。"
   },
   "ApinFurina:PourLaJustice": {
     "NAME": "普茹斯蒂司",
@@ -291,8 +291,8 @@
   },
   "ApinFurina:PeripateticPeregrination": {
     "NAME": "四季的悠游",
-    "DESCRIPTION": "消耗 。回复当前 furina_mod:气氛值 点生命。",
-    "UPGRADE_DESCRIPTION": "消耗 。回复当前 furina_mod:气氛值 点生命。"
+    "DESCRIPTION": "消耗 。回复 furina_mod:气氛值 点生命。",
+    "UPGRADE_DESCRIPTION": "消耗 。回复 furina_mod:气氛值 点生命2次2。"
   },
   "ApinFurina:LeSouvenirAvecLeCrepuscule": {
     "NAME": "时暮的思眷",
@@ -306,8 +306,8 @@
   },
   "ApinFurina:Banquet": {
     "NAME": "欢宴",
-    "DESCRIPTION": " furina_mod:气氛值 提升至最大值。",
-    "UPGRADE_DESCRIPTION": " furina_mod:气氛值 提升至最大值。"
+    "DESCRIPTION": "消耗 。 furina_mod:气氛值 提升至最大值。",
+    "UPGRADE_DESCRIPTION": "消耗 。 furina_mod:气氛值 提升至最大值。"
   },
   "ApinFurina:LaVaguelette": {
     "NAME": "轻涟",
@@ -366,8 +366,8 @@
   },
   "ApinFurina:LoveIsARebelliousBird": {
     "NAME": "爱是难驯鸟",
-    "DESCRIPTION": " furina_mod:气氛值 上限提升到50。 消耗 。",
-    "UPGRADE_DESCRIPTION": " furina_mod:气氛值 上限提升到50。 消耗 。"
+    "DESCRIPTION": "消耗 。 furina_mod:气氛值 上限提升到50。",
+    "UPGRADE_DESCRIPTION": "消耗 。 furina_mod:气氛值 上限提升到50。"
   },
   "ApinFurina:AWomanAdapts": {
     "NAME": "女人皆善变",
@@ -381,8 +381,8 @@
   },
   "ApinFurina:WhoDweltInTheNetherworld": {
     "NAME": "若非处幽冥",
-    "DESCRIPTION": "消耗 。孤心沙龙提供的元素能量+1。",
-    "UPGRADE_DESCRIPTION": "消耗 。孤心沙龙提供的元素能量+2。"
+    "DESCRIPTION": "消耗 。每回合开始阶段获得1点 furina_mod:元素能量 。",
+    "UPGRADE_DESCRIPTION": "消耗 。每回合开始阶段获得1点 furina_mod:元素能量 。"
   },
   "ApinFurina:INowKnowItIs": {
     "NAME": "我已有觉察",

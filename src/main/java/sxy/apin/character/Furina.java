@@ -82,7 +82,7 @@ public class Furina extends CustomPlayer {
 
         // 初始化你的人物，如果你的人物只有一张图，那么第一个参数填写你人物图片的路径。
         this.initializeClass(
-                "sxy/apin/img/char/character.png", // 人物图片
+                "sxy/apin/img/char/character_2.png", // 人物图片
                 MY_CHARACTER_SHOULDER_2, MY_CHARACTER_SHOULDER_1,
                 CORPSE_IMAGE, // 人物死亡图像
                 this.getLoadout(),

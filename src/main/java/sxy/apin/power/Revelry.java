@@ -1,8 +1,6 @@
 package sxy.apin.power;
 
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.DamageRandomEnemyAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
@@ -13,6 +11,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.PowerStrings;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import sxy.apin.helper.FurinaHelper;
 
@@ -93,9 +92,8 @@ public class Revelry extends AbstractPower {
         // 众民：获得1层
         AbstractPower peoplePower = FurinaHelper.getPower(AllPeoplePower.POWER_ID);
         if (peoplePower != null) {
-            FurinaHelper.addToBottom(new DamageRandomEnemyAction(
-                    new DamageInfo(player, 5, DamageInfo.DamageType.NORMAL),
-                    AbstractGameAction.AttackEffect.NONE));
+            AbstractMonster monster = AbstractDungeon.getMonsters().getRandomMonster((AbstractMonster) null, true, AbstractDungeon.cardRandomRng);
+            FurinaHelper.damage(monster, player, 5, DamageInfo.DamageType.NORMAL);
         }
         // 众律法：获得1层
         AbstractPower lawsPower = FurinaHelper.getPower(AllLawsPower.POWER_ID);

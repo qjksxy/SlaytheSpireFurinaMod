@@ -29,7 +29,7 @@ public class ElementalSkill extends CustomCard {
     public ElementalSkill() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseMagicNumber = 2;
-        this.magicNumber = this.baseMagicNumber;
+        this.magicNumber = 2;
     }
 
     @Override
@@ -61,18 +61,7 @@ public class ElementalSkill extends CustomCard {
             );
         }
 
-        if (!FurinaHelper.hasPower(WhoDweltInTheNetherworldPower.POWER_ID)) {
-            Furina.gainElementEnergy(magicNumber);
-        } else {
-            WhoDweltInTheNetherworldPower power =
-                    (WhoDweltInTheNetherworldPower) FurinaHelper.getPower(WhoDweltInTheNetherworldPower.POWER_ID);
-            assert power != null;
-            if (power.isUpgrade()) {
-                Furina.gainElementEnergy(magicNumber + 2);
-            } else {
-                Furina.gainElementEnergy(magicNumber + 1);
-            }
-        }
+        Furina.gainElementEnergy(magicNumber);
 
         HearMePower power = (HearMePower) FurinaHelper.getPower(HearMePower.POWER_ID);
         if (power != null) {

@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import sxy.apin.character.Furina;
 import sxy.apin.helper.FurinaHelper;
 
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
@@ -47,7 +48,8 @@ public class PalaisMermonia extends CustomCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
+        int revelry = Furina.getRevelry();
         FurinaHelper.addToBottom(new ExhaustAction(1, false, false, false));
-        FurinaHelper.addToBottom(new HealAction(abstractPlayer, abstractPlayer, 5));
+        FurinaHelper.addToBottom(new HealAction(abstractPlayer, abstractPlayer, 5 + revelry / 2));
     }
 }

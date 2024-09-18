@@ -20,7 +20,7 @@ public class PeripateticPeregrination extends CustomCard {
     private static final String NAME = CARD_STRINGS.NAME;
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final String IMG_PATH = "sxy/apin/img/cards/Strike.png";
-    private static final int COST = 3;
+    private static final int COST = 2;
     private static final CardType TYPE = CardType.SKILL;
     private static final CardColor COLOR = FURINA_BLUE;
     private static final CardRarity RARITY = CardRarity.RARE;
@@ -35,7 +35,6 @@ public class PeripateticPeregrination extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.updateCost(-1);
         }
         this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
         this.initializeDescription();
@@ -45,5 +44,8 @@ public class PeripateticPeregrination extends CustomCard {
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         int revelry = Furina.getRevelry();
         FurinaHelper.addToBottom(new HealAction(abstractPlayer, abstractPlayer, revelry));
+        if (this.upgraded) {
+            FurinaHelper.addToBottom(new HealAction(abstractPlayer, abstractPlayer, revelry));
+        }
     }
 }

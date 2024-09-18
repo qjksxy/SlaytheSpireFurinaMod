@@ -28,7 +28,7 @@ public class FountainOfLucine extends CustomCard {
 
     public FountainOfLucine() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.magicNumber = this.baseMagicNumber = 2;
+        this.magicNumber = this.baseMagicNumber = 5;
         this.tags.add(CardTags.STRIKE);
     }
 
@@ -36,7 +36,7 @@ public class FountainOfLucine extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(1);
+            this.upgradeMagicNumber(2);
         }
         this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
         this.initializeDescription();

@@ -6,10 +6,11 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import sxy.apin.character.Furina;
 import sxy.apin.helper.FurinaHelper;
 
 /**
- * 若非处幽冥 孤心沙龙提供的元素能量+1。 消耗 。
+ * 若非处幽冥 消耗 。回合开始阶段获得 !M! 点 furina_mod:元素能量 。
  */
 public class WhoDweltInTheNetherworldPower extends AbstractPower {
     // 能力的ID
@@ -21,15 +22,12 @@ public class WhoDweltInTheNetherworldPower extends AbstractPower {
     // 能力的描述
     private static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
-    private boolean upgrade;
-
-    public WhoDweltInTheNetherworldPower(AbstractCreature owner, int amount, boolean upgrade) {
+    public WhoDweltInTheNetherworldPower(AbstractCreature owner, int amount) {
         this.name = NAME;
         this.ID = POWER_ID;
         this.owner = owner;
         this.type = PowerType.BUFF;
         this.amount = amount;
-        this.upgrade = upgrade;
         // 添加一大一小两张能力图
         String path128 = "sxy/apin/img/powers/Example84.png";
         String path48 = "sxy/apin/img/powers/Example32.png";
@@ -43,16 +41,14 @@ public class WhoDweltInTheNetherworldPower extends AbstractPower {
     public void stackPower(int stackAmount) {
     }
 
+    @Override
+    public void atStartOfTurn() {
+        Furina.gainElementEnergy(this.amount);
+    }
+
     // 能力在更新时如何修改描述
     public void updateDescription() {
         this.description = DESCRIPTIONS[0];
     }
 
-    public boolean isUpgrade() {
-        return upgrade;
-    }
-
-    public void upgrade() {
-        this.upgrade = true;
-    }
 }

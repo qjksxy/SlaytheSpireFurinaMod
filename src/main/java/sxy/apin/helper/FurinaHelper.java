@@ -66,6 +66,21 @@ public class FurinaHelper {
         return AbstractDungeon.getCurrRoom().monsters.monsters;
     }
 
+    public static AbstractMonster getRandomMonster() {
+        return AbstractDungeon.getMonsters().getRandomMonster((AbstractMonster) null, true, AbstractDungeon.cardRandomRng);
+    }
+
+    public static AbstractMonster getNearestMonster() {
+        ArrayList<AbstractMonster> monsters = getMonsters();
+        AbstractMonster mon = null;
+        for (AbstractMonster monster : monsters) {
+            if (!monster.isDeadOrEscaped() && monster.currentHealth > 0) {
+                mon = monster;
+            }
+        }
+        return mon;
+    }
+
     public static void damage(AbstractCreature target, AbstractCreature source, int baseDamage, DamageInfo.DamageType type) {
         AbstractDungeon.actionManager.addToBottom(new DamageAction(target, new DamageInfo(source, baseDamage, type))
         );

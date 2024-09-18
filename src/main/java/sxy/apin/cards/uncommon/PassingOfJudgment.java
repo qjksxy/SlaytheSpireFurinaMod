@@ -47,13 +47,8 @@ public class PassingOfJudgment extends CustomCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        double random = FurinaHelper.getRandomFloat();
-        if (random < 0.34) {
-            FurinaHelper.applyPower(abstractPlayer, abstractPlayer, new Grit(abstractPlayer, 1), 1);
-        } else if (random < 0.67) {
-            FurinaHelper.applyPower(abstractPlayer, abstractPlayer, new CriticalBoost(abstractPlayer, 1), 1);
-        } else {
-            FurinaHelper.applyPower(abstractPlayer, abstractPlayer, new Dewdrop(abstractPlayer, 1), 1);
-        }
+        FurinaHelper.applyPower(abstractPlayer, abstractPlayer, new Grit(abstractPlayer, 1), 1);
+        FurinaHelper.applyPower(abstractPlayer, abstractPlayer, new CriticalBoost(abstractPlayer, 1), 1);
+        FurinaHelper.applyPower(abstractPlayer, abstractPlayer, new Dewdrop(abstractPlayer, 1), 1);
     }
 }
