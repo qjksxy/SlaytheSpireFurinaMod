@@ -30,6 +30,7 @@ import static sxy.apin.character.Furina.Enums.FURINA_CLASS;
 @SpireInitializer
 public class FurinaCore implements EditCardsSubscriber, EditStringsSubscriber, EditCharactersSubscriber,
         EditRelicsSubscriber, EditKeywordsSubscriber {
+    @SuppressWarnings("unused")
     public static final Logger logger = LogManager.getLogger(FurinaCore.class.getSimpleName());
     public static final Color MY_COLOR = FurinaHelper.MY_COLOR;
     // 人物选择界面按钮的图片
@@ -61,6 +62,7 @@ public class FurinaCore implements EditCardsSubscriber, EditStringsSubscriber, E
     }
 
     // 注解需要调用的方法，必须写
+    @SuppressWarnings("unused")
     public static void initialize() {
         new FurinaCore();
     }
@@ -179,6 +181,9 @@ public class FurinaCore implements EditCardsSubscriber, EditStringsSubscriber, E
         BaseMod.addKeyword("furina_mod", "气氛值", new String[]{"气氛值"}, "提高部分伤害或治疗效果。如无特殊说明每生效1次消耗1层。");
         BaseMod.addKeyword("furina_mod", "元素能量", new String[]{"元素能量"}, "特定牌打出需要消耗一定的元素能量。");
         BaseMod.addKeyword("furina_mod", "始基力", new String[]{"始基力", "始基力形态", "芒荒形态"}, "芙宁娜拥有荒芒两种始基力形态，可通过特定牌切换自身的始基力形态。部分牌在不同始基力形态下有不同效果。");
+        BaseMod.addKeyword("furina_mod", "会心", new String[]{"会心"}, "每打出一张攻击牌获得1层会心，受到一次伤害消除2层会心。回合结束时对最近敌人造成会心层数的伤害。");
+        BaseMod.addKeyword("furina_mod", "珠露", new String[]{"珠露"}, "每受到1点治疗累计1层珠露。回合开始时，若珠露层数大于生命上限的10%，珠露破碎，对敌方全体造成珠露层数的伤害。");
+        BaseMod.addKeyword("furina_mod", "战意", new String[]{"战意"}, "每受到伤害或治疗时，获得1层战意。回合开始阶段，获得战意层数的护盾，并消耗一半的层数。");
     }
 
     @Override
