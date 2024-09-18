@@ -103,7 +103,6 @@ public class Furina extends CustomPlayer {
 
     /**
      * 获取芙宁娜当前的始基力形态
-     * @return
      */
     public static int getArkhe() {
         AbstractPlayer player = AbstractDungeon.player;
@@ -220,8 +219,6 @@ public class Furina extends CustomPlayer {
         retVal.add(Strike.ID);
         retVal.add(Strike.ID);
         retVal.add(ChargedAttack.ID);
-        retVal.add(ChargedAttack.ID);
-        retVal.add(Dodge.ID);
         retVal.add(Dodge.ID);
         retVal.add(Dodge.ID);
         retVal.add(Cake.ID);
@@ -367,7 +364,7 @@ public class Furina extends CustomPlayer {
         @SpireEnum(name = "FURINA_BLUE")
         public static AbstractCard.CardColor FURINA_BLUE;
 
-        @SpireEnum(name = "FURINA_BLUE")
+        @SpireEnum(name = "FURINA_BLUE") @SuppressWarnings("useless")
         public static CardLibrary.LibraryType FURINA_LIBRARY;
     }
 }

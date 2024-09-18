@@ -55,7 +55,7 @@ public class PerpetualMuseOfRondeauxPower extends AbstractPower {
     @Override
     public void atStartOfTurn() {
         if (owner.currentHealth < owner.maxHealth / 2) {
-            FurinaHelper.applyPower(owner, owner, new Grit(owner, 15), 15);
+            FurinaHelper.applyPower(owner, owner, new Grit(owner, 16), 16);
         }
     }
 }

@@ -60,6 +60,7 @@ public class SalonMembers extends AbstractPower {
         }
 
     }
+
     // 能力在更新时如何修改描述
     public void updateDescription() {
         this.description = DESCRIPTIONS[0];
@@ -97,18 +98,18 @@ public class SalonMembers extends AbstractPower {
         if (AbstractDungeon.player.currentHealth < AbstractDungeon.player.maxHealth / 2) {
             return;
         }
-        for (AbstractMonster monster : AbstractDungeon.getCurrRoom().monsters.monsters) {
-            if (!monster.escaped && !monster.isDying && monster.currentHealth > 0) {
-                mon = monster;
-                break;
-            }
+        if (revelry < 1) {
+            return;
         }
-        if (mon != null) {
-            AbstractDungeon.actionManager.addToBottom(
-                    new DamageAction(mon,
-                            new DamageInfo(AbstractDungeon.player, (int) (revelry * factor / 2), DamageInfo.DamageType.NORMAL))
-            );
+        mon = FurinaHelper.getNearestMonster();
+        if (mon == null) {
+            return;
         }
-        Furina.consumeRevelry(1);
+        AbstractDungeon.actionManager.addToBottom(
+                new DamageAction(mon,
+                        new DamageInfo(AbstractDungeon.player,
+                                (int) (revelry * factor / 2),
+                                DamageInfo.DamageType.NORMAL))
+        );
     }
 }

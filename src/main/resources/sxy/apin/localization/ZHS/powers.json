@@ -50,19 +50,13 @@
   "ApinFurina:Grit": {
     "NAME": "战意",
     "DESCRIPTIONS": [
-      "每受到伤害或治疗时，获得1层战意。受到伤害时，每消耗3层战意减少一点伤害。"
+      "每受到伤害或治疗时，获得1层战意。回合开始阶段，获得战意层数的护盾，并消耗一半的层数。"
     ]
   },
   "ApinFurina:Dewdrop": {
     "NAME": "珠露",
     "DESCRIPTIONS": [
       "每受到1点治疗累计1层珠露。回合开始时，若珠露层数大于生命上限的10%，珠露破碎，对敌方全体造成珠露层数的伤害。"
-    ]
-  },
-  "ApinFurina:ErinnyesPower": {
-    "NAME": "伊黎耶岛",
-    "DESCRIPTIONS": [
-      "每回合开始时，恢复生命值。"
     ]
   },
   "ApinFurina:PourLaJusticePower": {
@@ -74,13 +68,13 @@
   "ApinFurina:SalonMembers": {
     "NAME": "沙龙成员",
     "DESCRIPTIONS": [
-      "回合结束时，对最近敌人造成 10 点伤害。若生命值高于50%，则额外造成 50% furina:气氛值 的伤害。"
+      "回合结束时，对最近敌人造成 10 点伤害。若生命值高于50%，则额外造成50% furina:气氛值 的伤害。"
     ]
   },
   "ApinFurina:SingerOfManyWatersPower": {
     "NAME": "众水的歌者",
     "DESCRIPTIONS": [
-      "回合结束时恢复 5 点生命，若生命值低于 50%，则额外恢复 50% furina:气氛值 的生命。"
+      "回合结束时恢复5点生命，若生命值低于50%，则额外恢复50% furina:气氛值 的生命。"
     ]
   },
   "ApinFurina:FrozenPower": {
@@ -98,13 +92,13 @@
   "ApinFurina:AWomanAdaptsPower": {
     "NAME": "女人皆善变",
     "DESCRIPTIONS": [
-      "打出万众狂欢时，获得 10 点气氛值。获得气氛值时 60% 概率额外获得 1 点。"
+      "打出万众狂欢时，获得10点气氛值。获得气氛值时60%概率额外获得1点。"
     ]
   },
   "ApinFurina:MySecretIsHiddenWithinMePower": {
     "NAME": "秘密藏心间",
     "DESCRIPTIONS": [
-      "万众狂欢生效期间，气氛值层数视为 140%。"
+      "万众狂欢生效期间，气氛值层数视为140%。"
     ]
   },
   "ApinFurina:WhoDweltInTheNetherworldPower": {
@@ -146,31 +140,31 @@
   "ApinFurina:AllPeoplePower": {
     "NAME": "众民",
     "DESCRIPTIONS": [
-      "每当你获得气氛值时，对随机敌人造成 5 点伤害。"
+      "每当你获得气氛值时，对随机敌人造成5点伤害。"
     ]
   },
   "ApinFurina:AllLawsPower": {
     "NAME": "众律法",
     "DESCRIPTIONS": [
-      "每当你获得气氛值时，随机获得 1 层会心/战意/珠露。"
+      "每当你获得气氛值时，随机获得1层会心/战意/珠露。"
     ]
   },
   "ApinFurina:PerpetualMuseOfChansonsPower": {
     "NAME": "永世领唱",
     "DESCRIPTIONS": [
-      "消耗。每持有 10 点气氛值，会心造成的伤害提升50%。"
+      "消耗。每持有10点气氛值，会心造成的伤害提升50%。"
     ]
   },
   "ApinFurina:PerpetualMuseOfRondeauxPower": {
     "NAME": "无尽圆舞",
     "DESCRIPTIONS": [
-      "消耗。回合开始时，若当前生命值低于50%，则获得 15 层战意。"
+      "消耗。回合开始时，若当前生命值低于50%，则获得16层战意。"
     ]
   },
   "ApinFurina:EndlessSoloOfSolitudePower": {
     "NAME": "不休独舞",
     "DESCRIPTIONS": [
-      "消耗。回合开始时，对 珠露 进行充能，充能值为当前生命值的10%。"
+      "回合开始时，对珠露进行充能，充能值为当前生命值的10%。"
     ]
   },
   "ApinFurina:SlowingWaterPower": {
@@ -182,7 +176,7 @@
   "ApinFurina:WovenWatersPower": {
     "NAME": "交织之水",
     "DESCRIPTIONS": [
-      "本回合每打出一张攻击牌，则获得 !M! 元素能量。"
+      "本回合每打出一张攻击牌，则获得1元素能量。"
     ]
   }
 }

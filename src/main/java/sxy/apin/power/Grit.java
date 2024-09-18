@@ -1,7 +1,9 @@
 package sxy.apin.power;
 
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
@@ -69,13 +71,9 @@ public class Grit extends AbstractPower {
     }
 
     @Override
-    public float atDamageReceive(float damage, DamageInfo.DamageType damageType) {
-        int buff = this.amount / 3;
-        buff = buff < damage ? buff : (int)damage;
-        this.amount -= buff * 3;
-        if (this.amount <= 0) {
-            this.amount = 1;
-        }
-        return damage - buff;
+    public void atStartOfTurn() {
+        AbstractPlayer player = FurinaHelper.getPlayer();
+        FurinaHelper.addToBottom(new GainBlockAction(player, player, this.amount));
+        this.amount = this.amount / 2;
     }
 }

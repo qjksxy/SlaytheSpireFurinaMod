@@ -201,18 +201,18 @@
   },
   "ApinFurina:SingerOfManyWaters": {
     "NAME": "众水的歌者",
-    "DESCRIPTION": "获得 !M! 点治疗，!M! 层珠露。",
-    "UPGRADE_DESCRIPTION": "获得 !M! 点治疗，!M! 层珠露。"
+    "DESCRIPTION": "获得 !M! 点治疗，!M! 层 furina_mod:珠露 。",
+    "UPGRADE_DESCRIPTION": "获得 !M! 点治疗，!M! 层 furina_mod:珠露 。"
   },
   "ApinFurina:GentilhommeUsher": {
     "NAME": "乌瑟勋爵",
-    "DESCRIPTION": "获得 !M! 层会心。",
-    "UPGRADE_DESCRIPTION": "获得 !M! 层会心。"
+    "DESCRIPTION": "获得 !M! 层 furina_mod:会心 。",
+    "UPGRADE_DESCRIPTION": "获得 !M! 层 furina_mod:会心 。"
   },
   "ApinFurina:SurintendanteChevalmarin": {
     "NAME": "海薇玛夫人",
-    "DESCRIPTION": "获得 !M! 层战意。",
-    "UPGRADE_DESCRIPTION": "获得 !M! 层战意。"
+    "DESCRIPTION": "获得 !M! 层 furina_mod:战意 。",
+    "UPGRADE_DESCRIPTION": "获得 !M! 层 furina_mod:战意 。"
   },
   "ApinFurina:MademoiselleCrabaletta": {
     "NAME": "谢贝蕾妲小姐",
@@ -346,23 +346,23 @@
   },
   "ApinFurina:AllLaws": {
     "NAME": "众律法",
-    "DESCRIPTION": "消耗 。每当你获得 furina_mod:气氛值 时，随机获得 1 层会心/战意/珠露。",
-    "UPGRADE_DESCRIPTION": "消耗 。每当你获得 furina_mod:气氛值 时，随机获得 1 层会心/战意/珠露。"
+    "DESCRIPTION": "消耗 。每当你获得 furina_mod:气氛值 时，随机获得 1 层 furina_mod:会心 / furina_mod:战意 / furina_mod:珠露 。",
+    "UPGRADE_DESCRIPTION": "消耗 。每当你获得 furina_mod:气氛值 时，随机获得 1 层 furina_mod:会心 / furina_mod:战意 / furina_mod:珠露 。"
   },
   "ApinFurina:PerpetualMuseOfChansons": {
     "NAME": "永世领唱",
-    "DESCRIPTION": "消耗 。每持有 10 点 furina_mod:气氛值 ，会心造成的伤害提升50%。",
-    "UPGRADE_DESCRIPTION": "消耗 。每持有 10 点 furina_mod:气氛值 ，会心造成的伤害提升50%。"
+    "DESCRIPTION": "消耗 。每持有 10 点 furina_mod:气氛值 ， furina_mod:会心 造成的伤害提升50%。",
+    "UPGRADE_DESCRIPTION": "消耗 。每持有 10 点 furina_mod:气氛值 ， furina_mod:会心 造成的伤害提升50%。"
   },
   "ApinFurina:PerpetualMuseOfRondeaux": {
     "NAME": "无尽圆舞",
-    "DESCRIPTION": "消耗 。回合开始时，若当前生命值低于50%，则获得 15 层战意。",
-    "UPGRADE_DESCRIPTION": "消耗 。回合开始时，若当前生命值低于50%，则获得 15 层战意。"
+    "DESCRIPTION": "消耗 。回合开始时，若当前生命值低于50%，则获得 15 层 furina_mod:战意 。",
+    "UPGRADE_DESCRIPTION": "消耗 。回合开始时，若当前生命值低于50%，则获得 15 层 furina_mod:战意 。"
   },
   "ApinFurina:EndlessSoloOfSolitude": {
     "NAME": "不休独舞",
-    "DESCRIPTION": "消耗 。回合开始时，对 珠露 进行充能，充能值为当前生命值的10%。",
-    "UPGRADE_DESCRIPTION": "消耗 。回合开始时，对 珠露 进行充能，充能值为当前生命值的10%。"
+    "DESCRIPTION": "消耗 。回合开始时，对 furina_mod:珠露 进行充能，充能值为当前生命值的10%。",
+    "UPGRADE_DESCRIPTION": "消耗 。回合开始时，对 furina_mod:珠露 进行充能，充能值为当前生命值的10%。"
   },
   "ApinFurina:LoveIsARebelliousBird": {
     "NAME": "爱是难驯鸟",
