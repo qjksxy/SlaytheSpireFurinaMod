@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import sxy.apin.helper.FurinaHelper;
 
 /**
- * 无尽圆舞 消耗。回合开始时，若当前生命值低于50%，则获得 15 层战意。
+ * 无尽圆舞 消耗。回合开始时，若当前生命值低于50%，则获得 12 层战意。
  */
 public class PerpetualMuseOfRondeauxPower extends AbstractPower {
     // 能力的ID
@@ -55,7 +55,7 @@ public class PerpetualMuseOfRondeauxPower extends AbstractPower {
     @Override
     public void atStartOfTurn() {
         if (owner.currentHealth < owner.maxHealth / 2) {
-            FurinaHelper.applyPower(owner, owner, new Grit(owner, 16), 16);
+            FurinaHelper.applyPower(owner, owner, new Grit(owner, 12), 12);
         }
     }
 }

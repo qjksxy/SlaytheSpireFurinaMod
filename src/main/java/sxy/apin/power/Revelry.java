@@ -81,7 +81,7 @@ public class Revelry extends AbstractPower {
         AbstractPower peoplePower = FurinaHelper.getPower(AllPeoplePower.POWER_ID);
         if (peoplePower != null) {
             AbstractMonster monster = AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRandomRng);
-            FurinaHelper.damage(monster, player, 5, DamageInfo.DamageType.NORMAL);
+            FurinaHelper.damage(monster, player, 5 * peoplePower.amount, DamageInfo.DamageType.NORMAL);
         }
         // 众律法：获得1层
         AbstractPower lawsPower = FurinaHelper.getPower(AllLawsPower.POWER_ID);

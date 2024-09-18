@@ -68,13 +68,13 @@
   "ApinFurina:SalonMembers": {
     "NAME": "沙龙成员",
     "DESCRIPTIONS": [
-      "回合结束时，对最近敌人造成 10 点伤害。若生命值高于50%，则额外造成50% furina:气氛值 的伤害。"
+      "回合结束时，对最近敌人造成 10 点伤害。若生命值高于50%，则额外造成50%气氛 的伤害。"
     ]
   },
   "ApinFurina:SingerOfManyWatersPower": {
     "NAME": "众水的歌者",
     "DESCRIPTIONS": [
-      "回合结束时恢复5点生命，若生命值低于50%，则额外恢复50% furina:气氛值 的生命。"
+      "回合结束时恢复5点生命，若生命值低于50%，则额外恢复50%气氛值的生命。"
     ]
   },
   "ApinFurina:FrozenPower": {

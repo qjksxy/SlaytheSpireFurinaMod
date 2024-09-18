@@ -11,7 +11,7 @@ import sxy.apin.power.PerpetualMuseOfRondeauxPower;
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
 
 /**
- * 无尽圆舞 消耗 。回合开始时，若当前生命值低于50%，则获得 15 层战意。
+ * 无尽圆舞 消耗 。回合开始时，若当前生命值低于50%，则获得 12 层战意。
  */
 public class PerpetualMuseOfRondeaux extends CustomCard {
     public static final String ID = FurinaHelper.makeCardID(PerpetualMuseOfRondeaux.class.getSimpleName());
@@ -46,6 +46,6 @@ public class PerpetualMuseOfRondeaux extends CustomCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        FurinaHelper.applyPower(abstractPlayer, abstractPlayer, new PerpetualMuseOfRondeauxPower(abstractPlayer, 1), this.magicNumber);
+        FurinaHelper.applyPower(abstractPlayer, abstractPlayer, new PerpetualMuseOfRondeauxPower(abstractPlayer, 1), 1);
     }
 }

@@ -53,7 +53,8 @@ public class Equity extends CustomCard {
                         new DamageInfo(abstractPlayer, damage, DamageInfo.DamageType.NORMAL)
                 )
         );
-        FurinaHelper.addToBottom(new DiscardPileToHandAction(this.magicNumber)
-        );
+        if (!FurinaHelper.getDiscardPile().isEmpty()) {
+            FurinaHelper.addToBottom(new DiscardPileToHandAction(this.magicNumber));
+        }
     }
 }
