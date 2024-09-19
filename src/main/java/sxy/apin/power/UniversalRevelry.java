@@ -15,7 +15,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import sxy.apin.helper.FurinaHelper;
 
 /**
- * 万众狂欢：每受到一次伤害或者治疗时获得一层气氛值
+ * 万众狂欢：每受到一次伤害或者治疗时获得2层气氛值
  */
 public class UniversalRevelry extends AbstractPower {
     // 能力的ID
@@ -81,7 +81,7 @@ public class UniversalRevelry extends AbstractPower {
             AbstractPlayer player = AbstractDungeon.player;
             // 给玩家添加一层气氛值
             this.addToTop(new ApplyPowerAction(player, player,
-                    new Revelry(player, 1), 1));
+                    new Revelry(player, 3), 3));
         }
         // 如果该能力不会修改受到伤害的数值，按原样返回即可
         return damageAmount;
@@ -95,9 +95,8 @@ public class UniversalRevelry extends AbstractPower {
             AbstractPlayer player = AbstractDungeon.player;
             // 给玩家添加一层气氛值
             this.addToTop(new ApplyPowerAction(player, player,
-                    new Revelry(player, 1), 1));
+                    new Revelry(player, 3), 3));
         }
-
         return healAmount;
     }
 

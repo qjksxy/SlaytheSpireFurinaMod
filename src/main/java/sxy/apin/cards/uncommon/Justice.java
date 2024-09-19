@@ -22,7 +22,7 @@ public class Justice extends CustomCard {
     private static final String NAME = CARD_STRINGS.NAME;
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final String IMG_PATH = "sxy/apin/img/cards/Strike.png";
-    private static final int COST = 0;
+    private static final int COST = 2;
     private static final CardType TYPE = CardType.ATTACK;
     private static final CardColor COLOR = FURINA_BLUE;
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
@@ -30,9 +30,8 @@ public class Justice extends CustomCard {
 
     public Justice() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.damage = this.baseDamage = 4;
-        this.magicNumber = 1;
-        this.baseMagicNumber = 1;
+        this.damage = this.baseDamage = 12;
+        this.updateCost(-1);
         this.tags.add(CardTags.STRIKE);
     }
 

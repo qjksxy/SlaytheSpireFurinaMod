@@ -24,7 +24,7 @@ public class ElementalBurst extends CustomCard {
     private static final String NAME = CARD_STRINGS.NAME;
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final String IMG_PATH = "sxy/apin/img/cards/Strike.png";
-    private static final int COST = 2;
+    private static final int COST = 1;
     private static final CardType TYPE = CardType.SKILL;
     private static final CardColor COLOR = FURINA_BLUE;
     private static final CardRarity RARITY = CardRarity.COMMON;
@@ -35,7 +35,7 @@ public class ElementalBurst extends CustomCard {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseMagicNumber = 2;
         this.magicNumber = 2;
-        this.baseDamage = 2;
+        this.baseDamage = 4;
     }
 
     @Override

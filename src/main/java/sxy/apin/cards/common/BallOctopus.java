@@ -12,7 +12,7 @@ import sxy.apin.helper.FurinaHelper;
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
 
 /**
- * 球球章鱼 消耗 5 生命，将 1 张弃牌堆中的牌加入手牌。
+ * 球球章鱼 消耗8生命，将1张弃牌堆中的牌加入手牌。
  */
 public class BallOctopus extends CustomCard {
     public static final String ID = FurinaHelper.makeCardID(BallOctopus.class.getSimpleName());
@@ -44,7 +44,19 @@ public class BallOctopus extends CustomCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        FurinaHelper.damage(abstractPlayer, abstractPlayer, 5, DamageInfo.DamageType.NORMAL);
-        FurinaHelper.addToBottom(new DiscardPileToHandAction(this.magicNumber));
+        if (this.upgraded) {
+            FurinaHelper.damage(abstractPlayer, abstractPlayer, 12, DamageInfo.DamageType.NORMAL);
+        } else {
+            FurinaHelper.damage(abstractPlayer, abstractPlayer, 8, DamageInfo.DamageType.NORMAL);
+        }
+
+        if (FurinaHelper.getDiscardPile().isEmpty()) {
+            return;
+        }
+        if (FurinaHelper.getDiscardPile().size() == 1) {
+            FurinaHelper.addToBottom(new DiscardPileToHandAction(1));
+        } else {
+            FurinaHelper.addToBottom(new DiscardPileToHandAction(this.magicNumber));
+        }
     }
 }

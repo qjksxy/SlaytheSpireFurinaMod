@@ -39,6 +39,7 @@ public class ChargedAttack extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
+            this.updateCost(-1);
             this.upgradeDamage(3);
         }
         this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;

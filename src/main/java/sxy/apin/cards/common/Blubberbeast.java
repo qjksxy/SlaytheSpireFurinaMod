@@ -28,8 +28,8 @@ public class Blubberbeast extends CustomCard {
 
     public Blubberbeast() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseMagicNumber = 1;
-        this.magicNumber = 1;
+        this.baseMagicNumber = 2;
+        this.magicNumber = 2;
     }
 
     @Override
@@ -44,7 +44,7 @@ public class Blubberbeast extends CustomCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        FurinaHelper.damage(abstractPlayer, abstractPlayer, 5, DamageInfo.DamageType.NORMAL);
+        FurinaHelper.damage(abstractPlayer, abstractPlayer, 8, DamageInfo.DamageType.NORMAL);
         FurinaHelper.addToBottom(new DrawCardAction(this.magicNumber));
     }
 }

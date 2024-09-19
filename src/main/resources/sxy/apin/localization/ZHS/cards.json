@@ -141,8 +141,8 @@
   },
   "ApinFurina:Blubberbeast": {
     "NAME": "膨膨兽",
-    "DESCRIPTION": "消耗5生命，抽 !M! 张牌。",
-    "UPGRADE_DESCRIPTION": "消耗5生命，抽 !M! 张牌。"
+    "DESCRIPTION": "消耗8生命，抽 !M! 张牌。",
+    "UPGRADE_DESCRIPTION": "消耗8生命，抽 !M! 张牌。"
   },
   "ApinFurina:ArmoredCrab": {
     "NAME": "重甲蟹",
@@ -156,8 +156,8 @@
   },
   "ApinFurina:BallOctopus": {
     "NAME": "球球章鱼",
-    "DESCRIPTION": "消耗5生命，将 !M! 张弃牌堆中的牌加入手牌。",
-    "UPGRADE_DESCRIPTION": "消耗5生命，将 !M! 张弃牌堆中的牌加入手牌。"
+    "DESCRIPTION": "消耗8生命，将 !M! 张弃牌堆中的牌加入手牌。",
+    "UPGRADE_DESCRIPTION": "消耗12生命，将 !M! 张弃牌堆中的牌加入手牌。"
   },
   "ApinFurina:OratriceMecaniquedAnalyseCardinale": {
     "NAME": "谕示裁定枢机",

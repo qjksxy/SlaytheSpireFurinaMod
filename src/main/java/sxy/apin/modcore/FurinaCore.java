@@ -176,7 +176,7 @@ public class FurinaCore implements EditCardsSubscriber, EditStringsSubscriber, E
 
     @Override
     public void receiveEditKeywords() {
-        BaseMod.addKeyword("furina_mod", "普世欢腾", new String[]{"普世欢腾"}, "受到伤害或治疗时获得一层 #y气氛值 。");
+        BaseMod.addKeyword("furina_mod", "普世欢腾", new String[]{"普世欢腾"}, "受到伤害或治疗时获得3层 #y气氛值 。");
         BaseMod.addKeyword("furina_mod", "芒荒能量", new String[]{"芒荒能量", "芒性能量", "荒性能量"}, "同时具有芒性能量和荒性能量时会引发芒荒过载：给予玩家1点能量和 #y元素能量 。");
         BaseMod.addKeyword("furina_mod", "气氛值", new String[]{"气氛值"}, "提高部分伤害或治疗效果。如无特殊说明每生效1次消耗1层。");
         BaseMod.addKeyword("furina_mod", "元素能量", new String[]{"元素能量"}, "特定牌打出需要消耗一定的元素能量。");
