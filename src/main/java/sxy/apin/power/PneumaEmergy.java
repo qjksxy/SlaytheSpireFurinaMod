@@ -2,6 +2,7 @@ package sxy.apin.power;
 
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -31,8 +32,8 @@ public class PneumaEmergy extends AbstractPower {
         this.type = PowerType.DEBUFF;
         this.amount = 1;
         // 添加一大一小两张能力图
-        String path128 = "sxy/apin/img/powers/Example84.png";
-        String path48 = "sxy/apin/img/powers/Example32.png";
+        String path128 = "sxy/apin/img/powers/power_128/power_raw_64.png";
+        String path48 = "sxy/apin/img/powers/power_48/power_raw_64.png";
         this.region128 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path128), 22, 22, 84, 84);
         this.region48 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path48), 8, 8, 32, 32);
         // 首次添加能力更新描述
@@ -58,6 +59,7 @@ public class PneumaEmergy extends AbstractPower {
     @Override
     public void onInitialApplication() {
         AbstractCreature target = this.owner;
+        AbstractPlayer player = FurinaHelper.getPlayer();
         if (target.hasPower(OusiaEmergy.POWER_ID)) {
             int min_amout = target.getPower(OusiaEmergy.POWER_ID).amount;
             if (this.amount < min_amout) {
@@ -74,13 +76,13 @@ public class PneumaEmergy extends AbstractPower {
             }
             Furina.gainElementEnergy(min_amout);
             if (!FurinaHelper.hasPower(CriticalBoost.POWER_ID)) {
-                FurinaHelper.applyPower(owner, owner, new CriticalBoost(owner, 1), 1);
+                FurinaHelper.applyPower(player, player, new CriticalBoost(player, 1), 1);
             } else if (!FurinaHelper.hasPower(Dewdrop.POWER_ID)) {
-                FurinaHelper.applyPower(owner, owner, new Dewdrop(owner, 1), 1);
+                FurinaHelper.applyPower(player, player, new Dewdrop(player, 1), 1);
             } else if (!FurinaHelper.hasPower(Grit.POWER_ID)) {
-                FurinaHelper.applyPower(owner, owner, new Dewdrop(owner, 1), 1);
+                FurinaHelper.applyPower(player, player, new Dewdrop(player, 1), 1);
             } else {
-                FurinaHelper.applyPower(owner, owner, new CriticalBoost(owner, 1), 1);
+                FurinaHelper.applyPower(player, player, new CriticalBoost(player, 1), 1);
             }
         }
     }

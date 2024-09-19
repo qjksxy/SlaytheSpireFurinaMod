@@ -32,8 +32,8 @@ public class Dewdrop extends AbstractPower {
         this.type = PowerType.BUFF;
         this.amount = amount;
         // 添加一大一小两张能力图
-        String path128 = "sxy/apin/img/powers/Example84.png";
-        String path48 = "sxy/apin/img/powers/Example32.png";
+        String path128 = "sxy/apin/img/powers/power_128/power_raw_84.png";
+        String path48 = "sxy/apin/img/powers/power_48/power_raw_84.png";
         this.region128 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path128), 22, 22, 84, 84);
         this.region48 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path48), 8, 8, 32, 32);
         // 首次添加能力更新描述

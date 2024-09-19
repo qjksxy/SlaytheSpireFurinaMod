@@ -119,10 +119,22 @@
       "释放孤心沙龙的回合内，普通攻击（含重击）造成的伤害提升。提升值为生命上限的10%，并额外获得4层气氛值。"
     ]
   },
+  "ApinFurina:CenterOfAttentionPower": {
+    "NAME": "共举爱之杯！",
+    "DESCRIPTIONS": [
+      "本回合普通攻击（含重击）造成的伤害提升。提升值为生命上限的10%，并额外获得4层气氛值。"
+    ]
+  },
   "ApinFurina:ElectroChargedPower": {
     "NAME": "感电",
     "DESCRIPTIONS": [
       "会受到连锁的感电伤害。"
+    ]
+  },
+  "ApinFurina:BloomPower": {
+    "NAME": "草原核",
+    "DESCRIPTIONS": [
+      "回合结束时造成 5 点群伤。"
     ]
   },
   "ApinFurina:AllWatersPower": {
