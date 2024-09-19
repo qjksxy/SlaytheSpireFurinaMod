@@ -66,8 +66,8 @@
   },
   "ApinFurina:Justice": {
     "NAME": "正义",
-    "DESCRIPTION": "造成 !D! 点伤害，将1张牌放入抽牌堆。",
-    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，将1张牌放入抽牌堆。"
+    "DESCRIPTION": "造成 !D! 点伤害，将1张牌放入抽牌堆底部。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，将1张牌放入抽牌堆底部。"
   },
   "ApinFurina:KeyOfKhajNisut": {
     "NAME": "圣显之钥",
