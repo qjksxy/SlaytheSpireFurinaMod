@@ -13,7 +13,7 @@ import sxy.apin.helper.FurinaHelper;
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
 
 /**
- * 停不了的圆舞 对敌人造成当前气氛值 60% 的伤害。抽1张牌。
+ * 停不了的圆舞 对敌人造成当前 furina_mod:气氛值  70% 的伤害。抽1张牌。
  */
 public class EndlessWaltz extends CustomCard {
     public static final String ID = FurinaHelper.makeCardID(EndlessWaltz.class.getSimpleName());
@@ -21,7 +21,7 @@ public class EndlessWaltz extends CustomCard {
     private static final String NAME = CARD_STRINGS.NAME;
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final String IMG_PATH = "sxy/apin/img/cards/Strike.png";
-    private static final int COST = 2;
+    private static final int COST = 1;
     private static final CardType TYPE = CardType.ATTACK;
     private static final CardColor COLOR = FURINA_BLUE;
     private static final CardRarity RARITY = CardRarity.RARE;
@@ -35,7 +35,6 @@ public class EndlessWaltz extends CustomCard {
     @Override
     public void upgrade() {
         if (!this.upgraded) {
-            this.updateCost(-1);
             this.upgradeName();
         }
         this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
@@ -44,8 +43,12 @@ public class EndlessWaltz extends CustomCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        int revelry = Furina.getRevelry();
-        int damage = (int) (revelry * 0.6);
+        int damage = Furina.getRevelry();
+        if (this.upgraded) {
+            damage = (int) (damage * 0.7);
+        } else {
+            damage = (int) (damage * 0.9);
+        }
         FurinaHelper.damage(abstractMonster, abstractPlayer, damage, DamageInfo.DamageType.NORMAL);
         FurinaHelper.addToBottom(new DrawCardAction(1));
     }

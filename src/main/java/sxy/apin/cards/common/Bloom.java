@@ -20,7 +20,7 @@ public class Bloom extends CustomCard {
     private static final String NAME = CARD_STRINGS.NAME;
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final String IMG_PATH = "sxy/apin/img/cards/Strike.png";
-    private static final int COST = 1;
+    private static final int COST = 2;
     private static final CardType TYPE = CardType.ATTACK;
     private static final CardColor COLOR = FURINA_BLUE;
     private static final CardRarity RARITY = CardRarity.COMMON;
@@ -28,7 +28,7 @@ public class Bloom extends CustomCard {
 
     public Bloom() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.damage = this.baseDamage = 2;
+        this.damage = this.baseDamage = 8;
         this.tags.add(CardTags.STRIKE);
     }
 
@@ -36,7 +36,7 @@ public class Bloom extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeDamage(3);
+            this.upgradeDamage(4);
         }
         this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
         this.initializeDescription();
@@ -45,7 +45,7 @@ public class Bloom extends CustomCard {
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         FurinaHelper.damage(abstractMonster, abstractPlayer, this.damage, DamageInfo.DamageType.NORMAL);
-        FurinaHelper.applyPower(abstractMonster, abstractPlayer,
-                new BloomPower(abstractMonster, 1), 1);
+        FurinaHelper.applyPower(abstractPlayer, abstractPlayer,
+                new BloomPower(abstractPlayer, 1), 1);
     }
 }

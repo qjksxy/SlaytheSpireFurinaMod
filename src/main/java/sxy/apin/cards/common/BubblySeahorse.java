@@ -11,7 +11,7 @@ import sxy.apin.power.Dewdrop;
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
 
 /**
- * 泡泡海马 获得 8 层珠露。
+ * 泡泡海马 获得 !M! 层珠露。
  */
 public class BubblySeahorse extends CustomCard {
     public static final String ID = FurinaHelper.makeCardID(BubblySeahorse.class.getSimpleName());
@@ -27,13 +27,15 @@ public class BubblySeahorse extends CustomCard {
 
     public BubblySeahorse() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
+        this.baseMagicNumber = 9;
+        this.magicNumber = 9;
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.updateCost(-1);
+            this.upgradeMagicNumber(3);
         }
         this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
         this.initializeDescription();

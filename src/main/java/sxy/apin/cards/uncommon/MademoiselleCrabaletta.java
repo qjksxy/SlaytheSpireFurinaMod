@@ -46,6 +46,17 @@ public class MademoiselleCrabaletta extends CustomCard {
     }
 
     @Override
+    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
+        boolean canUse = super.canUse(p, m);
+        this.cantUseMessage = "只能在始基力：荒形态打出";
+        if (!canUse) {
+            return false;
+        } else {
+            return Furina.getArkhe() == Furina.OUSIA;
+        }
+    }
+
+    @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         FurinaHelper.damage(abstractPlayer, abstractPlayer, this.magicNumber, DamageInfo.DamageType.NORMAL);
         Furina.gainRevelry(this.magicNumber);

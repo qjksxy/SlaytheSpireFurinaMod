@@ -13,7 +13,7 @@ import sxy.apin.helper.FurinaHelper;
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
 
 /**
- * 无人听的自白 对全体敌人造成当前气氛值 80% 的伤害。消耗1张牌。
+ * 无人听的自白 对全体敌人造成当前 furina_mod:气氛值  80%的伤害。消耗1张牌。
  */
 public class UnheardConfession extends CustomCard {
     public static final String ID = FurinaHelper.makeCardID(UnheardConfession.class.getSimpleName());
@@ -35,7 +35,6 @@ public class UnheardConfession extends CustomCard {
     @Override
     public void upgrade() {
         if (!this.upgraded) {
-            this.updateCost(-1);
             this.upgradeName();
         }
         this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
@@ -44,8 +43,12 @@ public class UnheardConfession extends CustomCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        int revelry = Furina.getRevelry();
-        int damage = (int) (revelry * 0.8);
+        int damage = Furina.getRevelry();
+        if (this.upgraded) {
+            damage = (int) (damage * 0.6);
+        } else {
+            damage = (int) (damage * 0.5);
+        }
         FurinaHelper.damage(abstractMonster, abstractPlayer, damage, DamageInfo.DamageType.NORMAL);
         FurinaHelper.addToBottom(new ExhaustAction(1, this.upgraded));
     }

@@ -147,6 +147,8 @@ public class FurinaCore implements EditCardsSubscriber, EditStringsSubscriber, E
         BaseMod.addCard(new SoothingWater());
         BaseMod.addCard(new SurintendanteChevalmarin());
         BaseMod.addCard(new UrakuMisugiri());
+        BaseMod.addCard(new VarunadaLazuriteGemstone());
+        BaseMod.addCard(new WaterAndJustice());
         BaseMod.addCard(new WeepingWillowOfTheLake());
         BaseMod.addCard(new WovenWaters());
 
@@ -169,8 +171,6 @@ public class FurinaCore implements EditCardsSubscriber, EditStringsSubscriber, E
         BaseMod.addCard(new TheLittleOceanid());
         BaseMod.addCard(new TheSeaIsMyStage());
         BaseMod.addCard(new UnheardConfession());
-        BaseMod.addCard(new VarunadaLazuriteGemstone());
-        BaseMod.addCard(new WaterAndJustice());
         BaseMod.addCard(new WhoDweltInTheNetherworld());
     }
 

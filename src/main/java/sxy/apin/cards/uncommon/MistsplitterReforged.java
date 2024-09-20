@@ -14,7 +14,7 @@ import sxy.apin.helper.FurinaHelper;
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
 
 /**
- * 雾切之回光 2费  10伤  此牌重复打出时，额外造成 5 点伤害。
+ * 雾切之回光 对敌人造成 !D! 点伤害。此牌重复打出时，额外造成5点伤害。
  */
 public class MistsplitterReforged extends CustomCard {
     public static final String ID = FurinaHelper.makeCardID(MistsplitterReforged.class.getSimpleName());
@@ -22,7 +22,7 @@ public class MistsplitterReforged extends CustomCard {
     private static final String NAME = CARD_STRINGS.NAME;
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final String IMG_PATH = "sxy/apin/img/cards/Strike.png";
-    private static final int COST = 2;
+    private static final int COST = 3;
     private static final CardType TYPE = CardType.ATTACK;
     private static final CardColor COLOR = FURINA_BLUE;
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
@@ -30,7 +30,7 @@ public class MistsplitterReforged extends CustomCard {
 
     public MistsplitterReforged() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.damage = this.baseDamage = 10;
+        this.damage = this.baseDamage = 15;
         this.baseMagicNumber = 5;
         this.magicNumber = 5;
         this.tags.add(CardTags.STRIKE);

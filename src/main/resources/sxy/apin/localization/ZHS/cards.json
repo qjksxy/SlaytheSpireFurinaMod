@@ -16,8 +16,8 @@
   },
   "ApinFurina:Crystalize": {
     "NAME": "结晶",
-    "DESCRIPTION": "对敌人造成 !D! 点伤害。获得 5 点 格挡 。",
-    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 点伤害。获得 8 点 格挡 。"
+    "DESCRIPTION": "对敌人造成 !D! 点伤害。获得5点 格挡 。",
+    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 点伤害。获得10点 格挡 。"
   },
   "ApinFurina:Swirl": {
     "NAME": "扩散",
@@ -31,8 +31,8 @@
   },
   "ApinFurina:Bloom": {
     "NAME": "绽放",
-    "DESCRIPTION": "对敌人造成 !D! 伤害，回合结束时对全体敌人造成 5 伤害。",
-    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 伤害，回合结束时对全体敌人造成 5 伤害。"
+    "DESCRIPTION": "对敌人造成 !D! 伤害，生成草原核：回合结束阶段对全体敌人造成5点伤害。",
+    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 伤害，生成草原核：回合结束阶段对全体敌人造成5点伤害。"
   },
   "ApinFurina:Vaporize": {
     "NAME": "蒸发",
@@ -41,8 +41,8 @@
   },
   "ApinFurina:WolfFang": {
     "NAME": "狼牙",
-    "DESCRIPTION": "对敌人造成 !D! 点伤害。获得2 furina_mod:气氛值 。",
-    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 点伤害。获得2 furina_mod:气氛值 。"
+    "DESCRIPTION": "对敌人造成 !D! 点伤害。获得 !M! furina_mod:气氛值 。",
+    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 点伤害。获得 !M! furina_mod:气氛值 。"
   },
   "ApinFurina:TheDockhandsAssistant": {
     "NAME": "船坞长剑",
@@ -51,8 +51,8 @@
   },
   "ApinFurina:FleuveCendreFerryman": {
     "NAME": "灰河渡手",
-    "DESCRIPTION": "对敌人造成 !D! 点伤害。获得1 furina_mod:气氛值 和1能量。",
-    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 点伤害。获得1 furina_mod:气氛值 和1能量。"
+    "DESCRIPTION": "对敌人造成 !D! 点伤害。获得1 furina_mod:气氛值 和1 furina_mod:元素能量 。",
+    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 点伤害。获得1 furina_mod:气氛值 和1 furina_mod:元素能量 。"
   },
   "ApinFurina:Order": {
     "NAME": "秩序",
@@ -69,6 +69,11 @@
     "DESCRIPTION": "造成 !D! 点伤害，将1张牌放入抽牌堆底部。",
     "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，将1张牌放入抽牌堆底部。"
   },
+  "ApinFurina:WaterAndJustice": {
+    "NAME": "水与正义",
+    "DESCRIPTION": "对敌人造成当前 furina_mod:气氛值 60%的伤害，回复当前 furina_mod:气氛值 30%的生命。",
+    "UPGRADE_DESCRIPTION": "对敌人造成当前 furina_mod:气氛值 80%的伤害，回复当前 furina_mod:气氛值 30%的生命。"
+  },
   "ApinFurina:KeyOfKhajNisut": {
     "NAME": "圣显之钥",
     "DESCRIPTION": "造成 !D! 点伤害，斩杀时，永久获得2点生命上限。",
@@ -81,8 +86,8 @@
   },
   "ApinFurina:PrimordialJadeCutter": {
     "NAME": "磐岩结绿",
-    "DESCRIPTION": "造成 !D! 点伤害，基于生命上限的4%额外造成伤害。",
-    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，基于生命上限的4%额外造成伤害。"
+    "DESCRIPTION": "造成 !D! 点伤害，基于生命上限的5%额外造成伤害。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，基于生命上限的5%额外造成伤害。"
   },
   "ApinFurina:LightOfFoliarIncision": {
     "NAME": "裁叶萃光",
@@ -96,8 +101,8 @@
   },
   "ApinFurina:EndlessWaltz": {
     "NAME": "停不了的圆舞",
-    "DESCRIPTION": "对敌人造成当前 furina_mod:气氛值 60%的伤害。抽1张牌。",
-    "UPGRADE_DESCRIPTION": "对敌人造成当前 furina_mod:气氛值 60%的伤害。抽1张牌。"
+    "DESCRIPTION": "对敌人造成当前 furina_mod:气氛值 70%的伤害。抽1张牌。",
+    "UPGRADE_DESCRIPTION": "对敌人造成当前 furina_mod:气氛值 90%的伤害。抽1张牌。"
   },
   "ApinFurina:UnheardConfession": {
     "NAME": "无人听的自白",
@@ -109,19 +114,14 @@
     "DESCRIPTION": "对敌人造成当前 furina_mod:气氛值 50%的伤害，给予 !M! 层易伤和脆弱。",
     "UPGRADE_DESCRIPTION": "对敌人造成当前 furina_mod:气氛值 50%的伤害，给予 !M! 层易伤和脆弱。"
   },
-  "ApinFurina:WaterAndJustice": {
-    "NAME": "水与正义",
-    "DESCRIPTION": "对敌人造成当前 furina_mod:气氛值 50%的伤害，回复当前 furina_mod:气氛值 30%的生命。",
-    "UPGRADE_DESCRIPTION": "对敌人造成当前 furina_mod:气氛值 50%的伤害，回复当前 furina_mod:气氛值 30%的生命。"
-  },
   "ApinFurina:SplendorOfTranquilWaters": {
     "NAME": "静水流涌之辉",
-    "DESCRIPTION": "对敌人造成当前 furina_mod:气氛值 的伤害。",
-    "UPGRADE_DESCRIPTION": "对敌人造成当前 furina_mod:气氛值 120%的伤害。"
+    "DESCRIPTION": "对敌人造成当前 furina_mod:气氛值 150%的伤害。",
+    "UPGRADE_DESCRIPTION": "对敌人造成当前 furina_mod:气氛值 150%的伤害。"
   },
   "ApinFurina:Dodge": {
     "NAME": "闪避",
-    "DESCRIPTION": "获得4点 格挡 。",
+    "DESCRIPTION": "获得6点 格挡 。",
     "UPGRADE_DESCRIPTION": "获得8点 格挡 。"
   },
   "ApinFurina:SpiritbreathThorn": {
@@ -201,23 +201,23 @@
   },
   "ApinFurina:SingerOfManyWaters": {
     "NAME": "众水的歌者",
-    "DESCRIPTION": "获得 !M! 点治疗，!M! 层 furina_mod:珠露 。",
-    "UPGRADE_DESCRIPTION": "获得 !M! 点治疗，!M! 层 furina_mod:珠露 。"
+    "DESCRIPTION": "在 #y始基力：芒 形态打出：获得 !M! 点治疗，!M! 层 furina_mod:珠露 。",
+    "UPGRADE_DESCRIPTION": "在 #y始基力：芒 形态打出：获得 !M! 点治疗，!M! 层 furina_mod:珠露 。"
   },
   "ApinFurina:GentilhommeUsher": {
     "NAME": "乌瑟勋爵",
-    "DESCRIPTION": "获得 !M! 层 furina_mod:会心 。",
-    "UPGRADE_DESCRIPTION": "获得 !M! 层 furina_mod:会心 。"
+    "DESCRIPTION": "在 #y始基力：荒 形态打出：获得 !M! 层 furina_mod:会心 。",
+    "UPGRADE_DESCRIPTION": "在 #y始基力：荒 形态打出：获得 !M! 层 furina_mod:会心 。"
   },
   "ApinFurina:SurintendanteChevalmarin": {
     "NAME": "海薇玛夫人",
-    "DESCRIPTION": "获得 !M! 层 furina_mod:战意 。",
-    "UPGRADE_DESCRIPTION": "获得 !M! 层 furina_mod:战意 。"
+    "DESCRIPTION": "在 #y始基力：荒 形态打出：获得 !M! 层 furina_mod:战意 。",
+    "UPGRADE_DESCRIPTION": "在 #y始基力：荒 形态打出：获得 !M! 层 furina_mod:战意 。"
   },
   "ApinFurina:MademoiselleCrabaletta": {
     "NAME": "谢贝蕾妲小姐",
-    "DESCRIPTION": "减少 !M! 生命，获得 !M! furina_mod:气氛值 。",
-    "UPGRADE_DESCRIPTION": "减少 !M! 生命，获得 !M! furina_mod:气氛值 。"
+    "DESCRIPTION": "在 #y始基力：荒 形态打出：减少 !M! 生命，获得 !M! furina_mod:气氛值 。",
+    "UPGRADE_DESCRIPTION": "在 #y始基力：荒 形态打出：减少 !M! 生命，获得 !M! furina_mod:气氛值 。"
   },
   "ApinFurina:MelusineSupport": {
     "NAME": "美露莘的声援",
@@ -279,6 +279,11 @@
     "DESCRIPTION": "获得1层 furina_mod:会心 和 furina_mod:战意 和 furina_mod:珠露 。",
     "UPGRADE_DESCRIPTION": "获得1层 furina_mod:会心 和 furina_mod:战意 和 furina_mod:珠露 。"
   },
+  "ApinFurina:VarunadaLazuriteGemstone": {
+    "NAME": "涤净青金",
+    "DESCRIPTION": "消耗 。消耗任意张手牌。",
+    "UPGRADE_DESCRIPTION": "消耗任意张手牌。"
+  },
   "ApinFurina:PourLaJustice": {
     "NAME": "普茹斯蒂司",
     "DESCRIPTION": "本回合每打出1张卡牌，回复1生命。",
@@ -324,15 +329,10 @@
     "DESCRIPTION": "升级所有手牌。",
     "UPGRADE_DESCRIPTION": "升级所有手牌。"
   },
-  "ApinFurina:VarunadaLazuriteGemstone": {
-    "NAME": "涤净青金",
-    "DESCRIPTION": "消耗任意张手牌。",
-    "UPGRADE_DESCRIPTION": "消耗任意张手牌。"
-  },
   "ApinFurina:AllWaters": {
     "NAME": "众水",
     "DESCRIPTION": "消耗 。每当你获得5次 furina_mod:气氛值 时，便在下回合获得1能量。",
-    "UPGRADE_DESCRIPTION": "消耗 。每当你获得5次 furina_mod:气氛值 时，便在下回合获得1能量。"
+    "UPGRADE_DESCRIPTION": "消耗 。每当你获得4次 furina_mod:气氛值 时，便在下回合获得1能量。"
   },
   "ApinFurina:AllKindreds": {
     "NAME": "众方",
@@ -391,7 +391,7 @@
   },
   "ApinFurina:HearMe": {
     "NAME": "诸君听我颂",
-    "DESCRIPTION": "消耗 。释放孤心沙龙的回合内，普通攻击（含重击）造成的伤害提升。提升值为生命上限的10%，并额外获得4层 furina_mod:气氛值 。",
-    "UPGRADE_DESCRIPTION": "消耗 。释放孤心沙龙的回合内，普通攻击（含重击）造成的伤害提升。提升值为生命上限的15%，并额外获得10层 furina_mod:气氛值 。"
+    "DESCRIPTION": "消耗 。释放孤心沙龙的回合内，独舞之邀（含重击）造成的伤害提升。提升值为生命上限的10%，并额外获得4层 furina_mod:气氛值 。",
+    "UPGRADE_DESCRIPTION": "消耗 。释放孤心沙龙的回合内，独舞之邀（含重击）造成的伤害提升。提升值为生命上限的15%，并额外获得10层 furina_mod:气氛值 。"
   }
 }

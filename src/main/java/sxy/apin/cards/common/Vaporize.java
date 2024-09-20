@@ -19,8 +19,7 @@ public class Vaporize extends CustomCard {
     private static final String NAME = CARD_STRINGS.NAME;
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final String IMG_PATH = "sxy/apin/img/cards/Strike.png";
-    // -2费不显示能量图标（如诅咒卡状态卡等），-1费为X费（旋风斩等）。
-    private static final int COST = 1;
+    private static final int COST = 2;
     private static final CardType TYPE = CardType.ATTACK;
     private static final CardColor COLOR = FURINA_BLUE;
     private static final CardRarity RARITY = CardRarity.COMMON;
@@ -33,7 +32,7 @@ public class Vaporize extends CustomCard {
         // CardRarity：有 BASIC, SPECIAL, COMMON, UNCOMMON, RARE, CURSE 六种，分别代表不同的卡牌稀有度
         // CardTarget：有 ENEMY, ALL_ENEMY, SELF, NONE, SELF_AND_ENEMY, ALL，分别代表单个敌人，所有敌人，自身，无，自身和敌人，所有，六种卡牌目标。
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.damage = this.baseDamage = 12;
+        this.damage = this.baseDamage = 15;
         this.tags.add(CardTags.STARTER_STRIKE);
         this.tags.add(CardTags.STRIKE);
     }
@@ -42,7 +41,7 @@ public class Vaporize extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName(); // 卡牌名字变为绿色并添加“+”，且标为升级过的卡牌，之后不能再升级。
-            this.upgradeDamage(6); // 将该卡牌的伤害提高3点。
+            this.upgradeDamage(5); // 将该卡牌的伤害提高3点。
         }
         // 加上以下两行就能使用UPGRADE_DESCRIPTION了（如果你写了的话）
         this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;

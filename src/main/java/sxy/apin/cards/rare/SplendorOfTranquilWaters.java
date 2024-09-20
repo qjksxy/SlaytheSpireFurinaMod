@@ -20,7 +20,7 @@ public class SplendorOfTranquilWaters extends CustomCard {
     private static final String NAME = CARD_STRINGS.NAME;
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final String IMG_PATH = "sxy/apin/img/cards/Strike.png";
-    private static final int COST = 2;
+    private static final int COST = 3;
     private static final CardType TYPE = CardType.ATTACK;
     private static final CardColor COLOR = FURINA_BLUE;
     private static final CardRarity RARITY = CardRarity.RARE;
@@ -44,10 +44,7 @@ public class SplendorOfTranquilWaters extends CustomCard {
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         int revelry = Furina.getRevelry();
-        int damage = (int) (revelry);
-        if (this.upgraded) {
-            damage = (int) (revelry * 1.2);
-        }
+        int damage = (int) (revelry * 1.5);
         FurinaHelper.damage(abstractMonster, abstractPlayer, damage, DamageInfo.DamageType.NORMAL);
     }
 }

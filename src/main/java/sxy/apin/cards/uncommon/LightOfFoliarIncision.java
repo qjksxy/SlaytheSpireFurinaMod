@@ -13,7 +13,7 @@ import sxy.apin.helper.FurinaHelper;
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
 
 /**
- * 裁叶萃光 2费  10伤  有50%的概率造成双倍伤害。
+ * 裁叶萃光 对敌人造成 !D! 点伤害。有50%的概率造成双倍伤害。
  */
 public class LightOfFoliarIncision extends CustomCard {
     public static final String ID = FurinaHelper.makeCardID(LightOfFoliarIncision.class.getSimpleName());
@@ -21,7 +21,7 @@ public class LightOfFoliarIncision extends CustomCard {
     private static final String NAME = CARD_STRINGS.NAME;
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final String IMG_PATH = "sxy/apin/img/cards/Strike.png";
-    private static final int COST = 2;
+    private static final int COST = 3;
     private static final CardType TYPE = CardType.ATTACK;
     private static final CardColor COLOR = FURINA_BLUE;
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
@@ -29,7 +29,7 @@ public class LightOfFoliarIncision extends CustomCard {
 
     public LightOfFoliarIncision() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.damage = this.baseDamage = 10;
+        this.damage = this.baseDamage = 15;
         this.tags.add(CardTags.STRIKE);
     }
 

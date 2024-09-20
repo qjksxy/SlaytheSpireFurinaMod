@@ -5,6 +5,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import sxy.apin.character.Furina;
 import sxy.apin.helper.FurinaHelper;
 import sxy.apin.power.CriticalBoost;
 
@@ -42,6 +43,17 @@ public class GentilhommeUsher extends CustomCard {
         }
         this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
         this.initializeDescription();
+    }
+
+    @Override
+    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
+        boolean canUse = super.canUse(p, m);
+        this.cantUseMessage = "只能在始基力：荒形态打出";
+        if (!canUse) {
+            return false;
+        } else {
+            return Furina.getArkhe() == Furina.OUSIA;
+        }
     }
 
     @Override

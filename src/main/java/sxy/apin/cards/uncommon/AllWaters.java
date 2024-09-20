@@ -38,7 +38,6 @@ public class AllWaters extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.updateCost(-1);
         }
         this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
         this.initializeDescription();
@@ -46,6 +45,6 @@ public class AllWaters extends CustomCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        FurinaHelper.applyPower(abstractPlayer, abstractPlayer, new AllWatersPower(abstractPlayer), this.magicNumber);
+        FurinaHelper.applyPower(abstractPlayer, abstractPlayer, new AllWatersPower(abstractPlayer, this.upgraded), 1);
     }
 }

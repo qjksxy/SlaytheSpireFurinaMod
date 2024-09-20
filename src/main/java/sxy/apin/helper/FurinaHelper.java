@@ -44,7 +44,7 @@ public class FurinaHelper {
 
     public static void applyPower(AbstractCreature target, AbstractCreature source, AbstractPower power, int stackAmount) {
         AbstractDungeon.actionManager.addToBottom(
-                new ApplyPowerAction(source, target, power, stackAmount)
+                new ApplyPowerAction(target, source, power, stackAmount)
         );
     }
 

@@ -23,7 +23,7 @@ public class KeyOfKhajNisutAction extends AbstractGameAction {
         if ((this.target.isDying || this.target.currentHealth <= 0) && !this.target.halfDead
                 && !this.target.hasPower("Minion")) {
             AbstractPlayer player = AbstractDungeon.player;
-            player.increaseMaxHp(2, true);
+            player.increaseMaxHp(3, true);
         }
         this.isDone = true;
     }

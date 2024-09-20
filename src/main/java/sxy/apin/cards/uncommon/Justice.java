@@ -14,7 +14,7 @@ import sxy.apin.helper.FurinaHelper;
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
 
 /**
- * 正义 0费  4伤  将1张牌放入抽牌堆。
+ * 正义 造成 !D! 点伤害，将1张牌放入抽牌堆底部。
  */
 public class Justice extends CustomCard {
     public static final String ID = FurinaHelper.makeCardID(Justice.class.getSimpleName());
@@ -39,7 +39,6 @@ public class Justice extends CustomCard {
         if (!this.upgraded) {
             this.upgradeName();
             this.updateCost(-1);
-            this.upgradeMagicNumber(1);
         }
         this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
         this.initializeDescription();

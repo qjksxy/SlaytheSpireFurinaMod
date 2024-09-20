@@ -1,42 +1,40 @@
-package sxy.apin.cards.rare;
+package sxy.apin.cards.uncommon;
 
 import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.actions.common.HealAction;
-import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.actions.common.ExhaustAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import sxy.apin.character.Furina;
 import sxy.apin.helper.FurinaHelper;
 
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
 
 /**
- * 水与正义 对敌人造成当前气氛值 50% 的伤害，回复当前气氛值 30% 的生命。
+ * 涤净青金  消耗 。消耗任意张手牌。
  */
-public class WaterAndJustice extends CustomCard {
-    public static final String ID = FurinaHelper.makeCardID(WaterAndJustice.class.getSimpleName());
+public class VarunadaLazuriteGemstone extends CustomCard {
+    public static final String ID = FurinaHelper.makeCardID(VarunadaLazuriteGemstone.class.getSimpleName());
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final String NAME = CARD_STRINGS.NAME;
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final String IMG_PATH = "sxy/apin/img/cards/Strike.png";
-    private static final int COST = 1;
-    private static final CardType TYPE = CardType.ATTACK;
+    private static final int COST = 2;
+    private static final CardType TYPE = CardType.SKILL;
     private static final CardColor COLOR = FURINA_BLUE;
-    private static final CardRarity RARITY = CardRarity.RARE;
-    private static final CardTarget TARGET = CardTarget.ENEMY;
+    private static final CardRarity RARITY = CardRarity.UNCOMMON;
+    private static final CardTarget TARGET = CardTarget.SELF;
 
-    public WaterAndJustice() {
+    public VarunadaLazuriteGemstone() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.tags.add(CardTags.STRIKE);
+        this.exhaustOnUseOnce = true;
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
-            this.updateCost(-1);
             this.upgradeName();
+            this.exhaustOnUseOnce = false;
         }
         this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
         this.initializeDescription();
@@ -44,10 +42,6 @@ public class WaterAndJustice extends CustomCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        int revelry = Furina.getRevelry();
-        int damage = (int) (revelry * 0.5);
-        int heal = (int) (revelry * 0.3);
-        FurinaHelper.damage(abstractMonster, abstractPlayer, damage, DamageInfo.DamageType.NORMAL);
-        FurinaHelper.addToBottom(new HealAction(abstractPlayer, abstractPlayer, heal));
+        FurinaHelper.addToBottom(new ExhaustAction(10, false, true, true));
     }
 }

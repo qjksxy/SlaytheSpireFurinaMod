@@ -41,9 +41,9 @@ import static sxy.apin.character.Furina.Enums.FURINA_CLASS;
 
 public class Furina extends CustomPlayer {
     public static final int ERROR = -1;
-    // 荒
+    // 荒--输出
     public static final int OUSIA = 0;
-    // 芒
+    // 芒--治疗
     public static final int PNEUMA = 1;
 
     // 火堆的人物立绘（行动前）

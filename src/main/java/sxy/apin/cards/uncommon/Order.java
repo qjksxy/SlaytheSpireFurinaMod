@@ -14,7 +14,7 @@ import sxy.apin.helper.FurinaHelper;
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
 
 /**
- * 秩序 0费  4伤  抽1张牌。
+ * 秩序 对敌人造成 !D! 点伤害。抽1张牌。
  */
 public class Order extends CustomCard {
     public static final String ID = FurinaHelper.makeCardID(Order.class.getSimpleName());
@@ -22,7 +22,7 @@ public class Order extends CustomCard {
     private static final String NAME = CARD_STRINGS.NAME;
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final String IMG_PATH = "sxy/apin/img/cards/Strike.png";
-    private static final int COST = 0;
+    private static final int COST = 2;
     private static final CardType TYPE = CardType.ATTACK;
     private static final CardColor COLOR = FURINA_BLUE;
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
@@ -30,7 +30,7 @@ public class Order extends CustomCard {
 
     public Order() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.damage = this.baseDamage = 4;
+        this.damage = this.baseDamage = 12;
         this.magicNumber = 1;
         this.baseMagicNumber = 1;
         this.tags.add(CardTags.STRIKE);

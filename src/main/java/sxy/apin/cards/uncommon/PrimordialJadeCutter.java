@@ -13,7 +13,7 @@ import sxy.apin.helper.FurinaHelper;
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
 
 /**
- * 磐岩结绿 2费  10伤  基于生命上限的 4% 额外造成伤害。
+ * 磐岩结绿 对敌人造成 !D! 点伤害。基于生命上限的 5% 额外造成伤害。
  */
 public class PrimordialJadeCutter extends CustomCard {
     public static final String ID = FurinaHelper.makeCardID(PrimordialJadeCutter.class.getSimpleName());
@@ -21,7 +21,7 @@ public class PrimordialJadeCutter extends CustomCard {
     private static final String NAME = CARD_STRINGS.NAME;
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final String IMG_PATH = "sxy/apin/img/cards/Strike.png";
-    private static final int COST = 2;
+    private static final int COST = 3;
     private static final CardType TYPE = CardType.ATTACK;
     private static final CardColor COLOR = FURINA_BLUE;
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
@@ -29,7 +29,7 @@ public class PrimordialJadeCutter extends CustomCard {
 
     public PrimordialJadeCutter() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.damage = this.baseDamage = 10;
+        this.damage = this.baseDamage = 15;
         this.tags.add(CardTags.STRIKE);
     }
 
@@ -46,7 +46,7 @@ public class PrimordialJadeCutter extends CustomCard {
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         int maxHealth = FurinaHelper.getPlayer().maxHealth;
-        int exDamage = (int) (maxHealth * 0.04);
+        int exDamage = (int) (maxHealth * 0.05);
         AbstractDungeon.actionManager.addToBottom(
                 new DamageAction(abstractMonster,
                         new DamageInfo(abstractPlayer, damage + exDamage, DamageInfo.DamageType.NORMAL)

@@ -29,8 +29,8 @@ public class CourtOfFontaine extends CustomCard {
 
     public CourtOfFontaine() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseMagicNumber = 2;
-        this.magicNumber = 2;
+        this.baseMagicNumber = 3;
+        this.magicNumber = 3;
     }
 
     @Override
