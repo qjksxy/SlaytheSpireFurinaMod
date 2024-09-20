@@ -61,8 +61,8 @@
   },
   "ApinFurina:Equity": {
     "NAME": "公平",
-    "DESCRIPTION": "造成 !D! 点伤害，将1张弃牌堆中的牌加入手牌。",
-    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，将1张弃牌堆中的牌加入手牌。"
+    "DESCRIPTION": "造成 !D! 点伤害，将 !M! 张弃牌堆中的牌加入手牌。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，将 !M! 张弃牌堆中的牌加入手牌。"
   },
   "ApinFurina:Justice": {
     "NAME": "正义",
@@ -142,7 +142,7 @@
   "ApinFurina:Blubberbeast": {
     "NAME": "膨膨兽",
     "DESCRIPTION": "消耗8生命，抽 !M! 张牌。",
-    "UPGRADE_DESCRIPTION": "消耗8生命，抽 !M! 张牌。"
+    "UPGRADE_DESCRIPTION": "消耗12生命，抽 !M! 张牌。"
   },
   "ApinFurina:ArmoredCrab": {
     "NAME": "重甲蟹",

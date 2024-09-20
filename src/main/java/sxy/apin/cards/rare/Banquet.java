@@ -27,7 +27,6 @@ public class Banquet extends CustomCard {
 
     public Banquet() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.updateCost(-1);
         this.exhaust = true;
     }
 
@@ -35,6 +34,7 @@ public class Banquet extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
+            this.updateCost(-1);
         }
         this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
         this.initializeDescription();

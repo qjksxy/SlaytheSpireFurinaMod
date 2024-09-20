@@ -50,6 +50,5 @@ public class LaLettreAFocalors extends CustomCard {
         AbstractDungeon.actionManager.addToBottom(
                 new HealAction(abstractPlayer, abstractPlayer, this.baseHeal + extraHealth)
         );
-        Furina.consumeRevelry(1);
     }
 }

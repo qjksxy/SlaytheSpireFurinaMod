@@ -14,7 +14,7 @@ import sxy.apin.helper.FurinaHelper;
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
 
 /**
- * 公平 0费  4伤  将1张弃牌堆中的牌加入手牌。
+ * 公平 0费  4伤  将 !M! 张弃牌堆中的牌加入手牌。
  */
 public class Equity extends CustomCard {
     public static final String ID = FurinaHelper.makeCardID(Equity.class.getSimpleName());

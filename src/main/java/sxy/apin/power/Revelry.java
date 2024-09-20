@@ -97,6 +97,16 @@ public class Revelry extends AbstractPower {
         }
     }
 
+    @Override
+    public void atEndOfTurn(boolean isPlayer) {
+        if (isPlayer) {
+            if (FurinaHelper.hasPower(FrozenPower.POWER_ID)) {
+                return;
+            }
+            this.amount -= this.amount / 10;
+        }
+    }
+
     // 能力在更新时如何修改描述
     public void updateDescription() {
         this.description = DESCRIPTIONS[0];

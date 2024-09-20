@@ -89,6 +89,5 @@ public class SingerOfManyWatersPower extends AbstractPower {
         AbstractDungeon.actionManager.addToBottom(
                 new HealAction(player, player, (int) (revelry * factor / 2))
         );
-        Furina.consumeRevelry(1);
     }
 }

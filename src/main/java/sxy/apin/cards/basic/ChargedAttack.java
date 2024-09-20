@@ -67,7 +67,6 @@ public class ChargedAttack extends CustomCard {
                         new DamageInfo(abstractPlayer, damage + extraDamage, DamageInfo.DamageType.NORMAL)
                 )
         );
-        Furina.consumeRevelry(1);
         Furina.gainElementEnergy(1);
         AbstractDungeon.actionManager.addToBottom(
                 new MakeTempCardInHandAction(new SeatsSacredAndSecular(), 1)
