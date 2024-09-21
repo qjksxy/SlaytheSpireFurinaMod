@@ -20,7 +20,7 @@ public class WhoDweltInTheNetherworld extends CustomCard {
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final String NAME = CARD_STRINGS.NAME;
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
-    private static final String IMG_PATH = "sxy/apin/img/cards/Strike.png";
+    private static final String IMG_PATH = "sxy/apin/img/cards/power/card_raw_91.png";
     private static final int COST = 0;
     private static final CardType TYPE = CardType.POWER;
     private static final CardColor COLOR = FURINA_BLUE;

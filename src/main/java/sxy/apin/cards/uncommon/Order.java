@@ -21,7 +21,7 @@ public class Order extends CustomCard {
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final String NAME = CARD_STRINGS.NAME;
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
-    private static final String IMG_PATH = "sxy/apin/img/cards/Strike.png";
+    private static final String IMG_PATH = "sxy/apin/img/cards/attack/card_raw_24.png";
     private static final int COST = 2;
     private static final CardType TYPE = CardType.ATTACK;
     private static final CardColor COLOR = FURINA_BLUE;

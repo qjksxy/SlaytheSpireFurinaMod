@@ -164,6 +164,7 @@ public class FurinaCore implements EditCardsSubscriber, EditStringsSubscriber, E
         BaseMod.addCard(new LaVaguelette());
         BaseMod.addCard(new LeSouvenirAvecLeCrepuscule());
         BaseMod.addCard(new LoveIsARebelliousBird());
+        BaseMod.addCard(new MemberOfTheCast());
         BaseMod.addCard(new MySecretIsHiddenWithinMe());
         BaseMod.addCard(new PeripateticPeregrination());
         BaseMod.addCard(new PourLaJustice());

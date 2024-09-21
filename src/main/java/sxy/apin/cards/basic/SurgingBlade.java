@@ -20,7 +20,7 @@ public class SurgingBlade extends CustomCard {
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID); // 从游戏系统读取本地化资源
     private static final String NAME = CARD_STRINGS.NAME;
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
-    private static final String IMG_PATH = "sxy/apin/img/cards/Strike.png";
+    private static final String IMG_PATH = "sxy/apin/img/cards/skill/card_raw_61.png";
     // -2费不显示能量图标（如诅咒卡状态卡等），-1费为X费（旋风斩等）。
     private static final int COST = 0;
     private static final CardType TYPE = CardType.SKILL;

@@ -201,23 +201,23 @@
   },
   "ApinFurina:SingerOfManyWaters": {
     "NAME": "众水的歌者",
-    "DESCRIPTION": "在 #y始基力：芒 形态打出：获得 !M! 点治疗，!M! 层 furina_mod:珠露 。",
-    "UPGRADE_DESCRIPTION": "在 #y始基力：芒 形态打出：获得 !M! 点治疗，!M! 层 furina_mod:珠露 。"
+    "DESCRIPTION": "在始基力：芒形态打出：获得 !M! 点治疗，!M! 层 furina_mod:珠露 。",
+    "UPGRADE_DESCRIPTION": "在始基力：芒形态打出：获得 !M! 点治疗，!M! 层 furina_mod:珠露 。"
   },
   "ApinFurina:GentilhommeUsher": {
     "NAME": "乌瑟勋爵",
-    "DESCRIPTION": "在 #y始基力：荒 形态打出：获得 !M! 层 furina_mod:会心 。",
-    "UPGRADE_DESCRIPTION": "在 #y始基力：荒 形态打出：获得 !M! 层 furina_mod:会心 。"
+    "DESCRIPTION": "在始基力：荒形态打出：获得 !M! 层 furina_mod:会心 。",
+    "UPGRADE_DESCRIPTION": "在始基力：荒形态打出：获得 !M! 层 furina_mod:会心 。"
   },
   "ApinFurina:SurintendanteChevalmarin": {
     "NAME": "海薇玛夫人",
-    "DESCRIPTION": "在 #y始基力：荒 形态打出：获得 !M! 层 furina_mod:战意 。",
-    "UPGRADE_DESCRIPTION": "在 #y始基力：荒 形态打出：获得 !M! 层 furina_mod:战意 。"
+    "DESCRIPTION": "在始基力：荒形态打出：获得 !M! 层 furina_mod:战意 。",
+    "UPGRADE_DESCRIPTION": "在始基力：荒形态打出：获得 !M! 层 furina_mod:战意 。"
   },
   "ApinFurina:MademoiselleCrabaletta": {
     "NAME": "谢贝蕾妲小姐",
-    "DESCRIPTION": "在 #y始基力：荒 形态打出：减少 !M! 生命，获得 !M! furina_mod:气氛值 。",
-    "UPGRADE_DESCRIPTION": "在 #y始基力：荒 形态打出：减少 !M! 生命，获得 !M! furina_mod:气氛值 。"
+    "DESCRIPTION": "在始基力：荒形态打出：减少 !M! 生命，获得 !M! furina_mod:气氛值 。",
+    "UPGRADE_DESCRIPTION": "在始基力：荒形态打出：减少 !M! 生命，获得 !M! furina_mod:气氛值 。"
   },
   "ApinFurina:MelusineSupport": {
     "NAME": "美露莘的声援",
@@ -363,6 +363,11 @@
     "NAME": "不休独舞",
     "DESCRIPTION": "消耗 。回合开始时，对 furina_mod:珠露 进行充能，充能值为当前生命值的10%。",
     "UPGRADE_DESCRIPTION": "消耗 。回合开始时，对 furina_mod:珠露 进行充能，充能值为当前生命值的10%。"
+  },
+  "ApinFurina:MemberOfTheCast": {
+    "NAME": "「戏中人」",
+    "DESCRIPTION": "获得1层无实体和人工制品。",
+    "UPGRADE_DESCRIPTION": "获得1层无实体和人工制品。"
   },
   "ApinFurina:LoveIsARebelliousBird": {
     "NAME": "爱是难驯鸟",

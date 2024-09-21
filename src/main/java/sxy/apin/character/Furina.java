@@ -240,8 +240,8 @@ public class Furina extends CustomPlayer {
         return new CharSelectInfo(
                 characterStrings.NAMES[0], // 人物名字
                 characterStrings.TEXT[0], // 人物介绍
-                180, // 当前血量
-                180, // 最大血量
+                120, // 当前血量
+                120, // 最大血量
                 0, // 初始充能球栏位
                 200, // 初始携带金币
                 5, // 每回合抽牌数量
