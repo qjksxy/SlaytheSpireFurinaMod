@@ -29,23 +29,42 @@ public class Bloom extends CustomCard {
     public Bloom() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.damage = this.baseDamage = 8;
+        this.magicNumber = 5;
+        this.baseMagicNumber = 5;
         this.tags.add(CardTags.STRIKE);
     }
 
     @Override
+    public boolean canUpgrade() {
+        return true;
+    }
+
+    @Override
     public void upgrade() {
-        if (!this.upgraded) {
-            this.upgradeName();
-            this.upgradeDamage(4);
-        }
-        this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
-        this.initializeDescription();
+        this.upgraded = true;
+        ++this.timesUpgraded;
+        this.name = NAME + "+" + this.timesUpgraded;
+        this.initializeTitle();
+        this.upgradeMagicNumber(2);
     }
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         FurinaHelper.damage(abstractMonster, abstractPlayer, this.damage, DamageInfo.DamageType.NORMAL);
-        FurinaHelper.applyPower(abstractPlayer, abstractPlayer,
-                new BloomPower(abstractPlayer, 1), 1);
+        BloomPower power = (BloomPower) FurinaHelper.getPower(BloomPower.POWER_ID);
+        if (power == null ) {
+            FurinaHelper.applyPower(abstractPlayer, abstractPlayer,
+                    new BloomPower(abstractPlayer, 1, this.magicNumber), 1);
+        } else {
+            if (power.damageValue > this.magicNumber) {
+                FurinaHelper.applyPower(abstractPlayer, abstractPlayer,
+                        new BloomPower(abstractPlayer, 1, this.magicNumber), 1);
+            } else {
+                FurinaHelper.removePlayerPower(BloomPower.POWER_ID);
+                FurinaHelper.applyPower(abstractPlayer, abstractPlayer,
+                        new BloomPower(abstractPlayer, 1, this.magicNumber), 1);
+            }
+        }
+
     }
 }

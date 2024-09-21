@@ -38,15 +38,19 @@ public class Vaporize extends CustomCard {
     }
 
     @Override
-    public void upgrade() {
-        if (!this.upgraded) {
-            this.upgradeName(); // 卡牌名字变为绿色并添加“+”，且标为升级过的卡牌，之后不能再升级。
-            this.upgradeDamage(5); // 将该卡牌的伤害提高3点。
-        }
-        // 加上以下两行就能使用UPGRADE_DESCRIPTION了（如果你写了的话）
-        this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
-        this.initializeDescription();
+    public boolean canUpgrade() {
+        return true;
     }
+
+    @Override
+    public void upgrade() {
+        this.upgraded = true;
+        ++this.timesUpgraded;
+        this.name = NAME + "+" + this.timesUpgraded;
+        this.initializeTitle();
+        this.upgradeDamage(5);
+    }
+
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         FurinaHelper.damage(abstractMonster, abstractPlayer, this.damage, DamageInfo.DamageType.NORMAL);

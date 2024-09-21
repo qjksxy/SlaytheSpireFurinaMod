@@ -32,18 +32,22 @@ public class ElectroCharged extends CustomCard {
 
     public ElectroCharged() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.damage = this.baseDamage = 9;
+        this.damage = this.baseDamage = 12;
         this.tags.add(CardTags.STRIKE);
     }
 
     @Override
+    public boolean canUpgrade() {
+        return true;
+    }
+
+    @Override
     public void upgrade() {
-        if (!this.upgraded) {
-            this.upgradeName();
-            this.upgradeDamage(3);
-        }
-        this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
-        this.initializeDescription();
+        this.upgraded = true;
+        ++this.timesUpgraded;
+        this.name = NAME + "+" + this.timesUpgraded;
+        this.initializeTitle();
+        this.upgradeDamage(4);
     }
 
     @Override

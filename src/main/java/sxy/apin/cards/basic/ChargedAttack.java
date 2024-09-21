@@ -30,7 +30,7 @@ public class ChargedAttack extends CustomCard {
 
     public ChargedAttack() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.damage = this.baseDamage = 3;
+        this.damage = this.baseDamage = 6;
         this.tags.add(CardTags.STARTER_STRIKE);
         this.tags.add(CardTags.STRIKE);
     }
@@ -40,7 +40,7 @@ public class ChargedAttack extends CustomCard {
         if (!this.upgraded) {
             this.upgradeName();
             this.updateCost(-1);
-            this.upgradeDamage(3);
+            this.upgradeDamage(2);
         }
         this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
         this.initializeDescription();

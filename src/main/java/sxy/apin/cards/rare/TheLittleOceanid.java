@@ -28,15 +28,15 @@ public class TheLittleOceanid extends CustomCard {
 
     public TheLittleOceanid() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.magicNumber = 2;
-        this.baseMagicNumber = 2;
+        this.magicNumber = 9;
+        this.baseMagicNumber = 9;
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(1);
+            this.upgradeMagicNumber(-3);
         }
         this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
         this.initializeDescription();
@@ -44,7 +44,7 @@ public class TheLittleOceanid extends CustomCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        FurinaHelper.damage(abstractPlayer, abstractPlayer, 5, DamageInfo.DamageType.NORMAL);
-        FurinaHelper.addToBottom(new GainEnergyAction(this.magicNumber));
+        FurinaHelper.damage(abstractPlayer, abstractPlayer, this.magicNumber, DamageInfo.DamageType.NORMAL);
+        FurinaHelper.addToBottom(new GainEnergyAction(1));
     }
 }

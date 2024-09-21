@@ -34,12 +34,18 @@ public class Frozen extends CustomCard {
 
     @Override
     public void upgrade() {
-        if (!this.upgraded) {
-            this.upgradeName();
-            this.upgradeDamage(3);
-        }
-        this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
-        this.initializeDescription();
+        this.upgraded = true;
+        ++this.timesUpgraded;
+        this.name = NAME + "+" + this.timesUpgraded;
+        this.initializeTitle();
+        this.upgradeDamage(4);
+//        this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
+//        this.initializeDescription();
+    }
+
+    @Override
+    public boolean canUpgrade() {
+        return true;
     }
 
     @Override

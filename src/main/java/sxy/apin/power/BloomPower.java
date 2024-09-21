@@ -26,12 +26,15 @@ public class BloomPower extends AbstractPower {
     // 能力的描述
     private static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
-    public BloomPower(AbstractCreature owner, int amount) {
+    public int damageValue;
+
+    public BloomPower(AbstractCreature owner, int amount, int damageValue) {
         this.name = NAME;
         this.ID = POWER_ID;
         this.owner = owner;
         this.type = PowerType.DEBUFF;
         this.amount = amount;
+        this.damageValue = damageValue;
         // 添加一大一小两张能力图
         String path128 = "sxy/apin/img/powers/power_128/power_raw_67.png";
         String path48 = "sxy/apin/img/powers/power_48/power_raw_67.png";
@@ -57,7 +60,7 @@ public class BloomPower extends AbstractPower {
     public void atEndOfTurn(boolean isPlayer) {
         FurinaHelper.addToBottom(new DamageAllEnemiesAction(
                 FurinaHelper.getPlayer(),
-                5,
+                this.damageValue,
                 DamageInfo.DamageType.NORMAL,
                 AbstractGameAction.AttackEffect.NONE));
         FurinaHelper.addToBottom(new ReducePowerAction(this.owner, this.owner, this.ID, 1));

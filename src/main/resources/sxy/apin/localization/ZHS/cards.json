@@ -11,33 +11,33 @@
   },
   "ApinFurina:Frozen": {
     "NAME": "冻结",
-    "DESCRIPTION": "对敌人造成 !D! 点伤害。本回合不消耗 furina_mod:气氛值 。",
-    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 点伤害。本回合不消耗 furina_mod:气氛值 。"
+    "DESCRIPTION": "对敌人造成 !D! 点伤害。本回合不消耗 furina_mod:气氛值 。可多次升级。",
+    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 点伤害。本回合不消耗 furina_mod:气氛值 。可多次升级。"
   },
   "ApinFurina:Crystalize": {
     "NAME": "结晶",
-    "DESCRIPTION": "对敌人造成 !D! 点伤害。获得5点 格挡 。",
-    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 点伤害。获得10点 格挡 。"
+    "DESCRIPTION": "对敌人造成 !D! 点伤害。获得5点 格挡 。可多次升级。",
+    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 点伤害。获得10点 格挡 。可多次升级。"
   },
   "ApinFurina:Swirl": {
     "NAME": "扩散",
-    "DESCRIPTION": "对所有敌人造成 !D! 伤害。",
-    "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 伤害。"
+    "DESCRIPTION": "对所有敌人造成 !D! 伤害。可多次升级。",
+    "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 伤害。可多次升级。"
   },
   "ApinFurina:ElectroCharged": {
     "NAME": "感电",
-    "DESCRIPTION": "对敌人造成 !D! 点伤害，并附属感电。",
-    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 点伤害，并附属感电。"
+    "DESCRIPTION": "对敌人造成 !D! 点伤害，并附属感电。可多次升级。",
+    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 点伤害，并附属感电。可多次升级。"
   },
   "ApinFurina:Bloom": {
     "NAME": "绽放",
-    "DESCRIPTION": "对敌人造成 !D! 伤害，生成草原核：回合结束阶段对全体敌人造成5点伤害。",
-    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 伤害，生成草原核：回合结束阶段对全体敌人造成5点伤害。"
+    "DESCRIPTION": "对敌人造成 !D! 伤害，生成草原核：回合结束阶段对全体敌人造成 !M! 点伤害。可多次升级。",
+    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 伤害，生成草原核：回合结束阶段对全体敌人造成 !M! 点伤害。可多次升级。"
   },
   "ApinFurina:Vaporize": {
     "NAME": "蒸发",
-    "DESCRIPTION": "对敌人造成 !D! 点伤害。",
-    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 点伤害。"
+    "DESCRIPTION": "对敌人造成 !D! 点伤害。可多次升级。",
+    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 点伤害。可多次升级。"
   },
   "ApinFurina:WolfFang": {
     "NAME": "狼牙",
@@ -321,8 +321,8 @@
   },
   "ApinFurina:TheLittleOceanid": {
     "NAME": "水的女儿",
-    "DESCRIPTION": "消耗5生命，获得 !M! 能量。",
-    "UPGRADE_DESCRIPTION": "消耗5生命，获得 !M! 能量。"
+    "DESCRIPTION": "消耗 !M! 生命，获得1能量。",
+    "UPGRADE_DESCRIPTION": "消耗 !M! 生命，获得1能量。"
   },
   "ApinFurina:CoronatedPrimaDonna": {
     "NAME": "冠笄伶优",
