@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import sxy.apin.cards.rare.HearMe;
 import sxy.apin.character.Furina;
 import sxy.apin.helper.FurinaHelper;
 
@@ -43,11 +44,12 @@ public class WaterAndJustice extends CustomCard {
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         int damage = Furina.getRevelry();
+        int extraDamage = HearMe.getExtraDamage();
         if (this.upgraded) {
             damage = (int) (damage * 0.6);
         } else {
             damage = (int) (damage * 0.8);
         }
-        FurinaHelper.damage(abstractMonster, abstractPlayer, damage, DamageInfo.DamageType.NORMAL);
+        FurinaHelper.damage(abstractMonster, abstractPlayer, damage + extraDamage, DamageInfo.DamageType.NORMAL);
     }
 }

@@ -74,6 +74,6 @@ public class Grit extends AbstractPower {
     public void atStartOfTurn() {
         AbstractPlayer player = FurinaHelper.getPlayer();
         FurinaHelper.addToBottom(new GainBlockAction(player, player, this.amount));
-        this.amount = this.amount / 2;
+        this.amount = this.amount * 2 / 3;
     }
 }

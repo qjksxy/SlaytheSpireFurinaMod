@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import sxy.apin.character.Furina;
 import sxy.apin.helper.FurinaHelper;
 import sxy.apin.power.WhoDweltInTheNetherworldPower;
 
@@ -29,16 +30,17 @@ public class WhoDweltInTheNetherworld extends CustomCard {
 
     public WhoDweltInTheNetherworld() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.exhaust = true;
-        this.baseMagicNumber = 2;
-        this.magicNumber = 2;
+        this.exhaustOnUseOnce = true;
+        this.isInnate = true;
+        this.baseMagicNumber = 4;
+        this.magicNumber = 4;
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(1);
+            this.upgradeMagicNumber(2);
         }
         this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
         this.initializeDescription();
@@ -46,6 +48,7 @@ public class WhoDweltInTheNetherworld extends CustomCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
+        Furina.gainElementEnergy(this.magicNumber);
         AbstractDungeon.actionManager.addToBottom(
                 new ApplyPowerAction(abstractPlayer, abstractPlayer,
                         new WhoDweltInTheNetherworldPower(abstractPlayer, this.magicNumber), 0)

@@ -48,9 +48,9 @@ public class TheSeaIsMyStage extends CustomCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        int revelry = Furina.getRevelry();
-        int damage = (int) (revelry * 0.5);
-        FurinaHelper.damage(abstractMonster, abstractPlayer, damage, DamageInfo.DamageType.NORMAL);
+        int damage = Furina.getRevelry();
+        int extraDamage = HearMe.getExtraDamage();
+        FurinaHelper.damage(abstractMonster, abstractPlayer, damage + extraDamage, DamageInfo.DamageType.NORMAL);
         FurinaHelper.addToBottom(new ApplyPowerAction(abstractMonster, abstractPlayer,
                 new WeakPower(abstractMonster, this.magicNumber, false)));
         FurinaHelper.addToBottom(new ApplyPowerAction(abstractMonster, abstractPlayer,

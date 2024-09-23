@@ -27,12 +27,12 @@ public class Revelry extends AbstractPower {
     // 能力的描述
     private static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
-    public Revelry(AbstractCreature owner, int Amount) {
+    public Revelry(AbstractCreature owner, int amount) {
         this.name = NAME;
         this.ID = POWER_ID;
         this.owner = owner;
         this.type = PowerType.BUFF;
-        this.amount = Amount;
+        this.amount = Math.min(amount, getAmountLimit());
         // 添加一大一小两张能力图
         String path128 = "sxy/apin/img/powers/power_128/power_raw_16.png";
         String path48 = "sxy/apin/img/powers/power_48/power_raw_16.png";
@@ -40,6 +40,18 @@ public class Revelry extends AbstractPower {
         this.region48 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path48), 8, 8, 32, 32);
         // 首次添加能力更新描述
         this.updateDescription();
+    }
+
+    public int getAmountLimit() {
+        LoveIsARebelliousBirdPower power = (LoveIsARebelliousBirdPower) FurinaHelper.getPower(LoveIsARebelliousBirdPower.POWER_ID);
+        if (power == null) {
+            return 30;
+        }
+        if (power.flag) {
+            return 60;
+        } else {
+            return 50;
+        }
     }
 
     @Override
@@ -50,17 +62,7 @@ public class Revelry extends AbstractPower {
         if (this.amount == 0) {
             this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, this.ID));
         }
-        if (player.hasPower(LoveIsARebelliousBirdPower.POWER_ID)) {
-            if (this.amount > 50) {
-                this.amount = 50;
-            }
-        } else if (this.amount >= 30) {
-            this.amount = 30;
-        }
-
-        if (this.amount <= 0) {
-            this.amount = 0;
-        }
+        this.amount = Math.min(this.amount, getAmountLimit());
 
         // 众水：获得1层
         AllWatersPower watersPower = (AllWatersPower) FurinaHelper.getPower(AllWatersPower.POWER_ID);
@@ -70,7 +72,7 @@ public class Revelry extends AbstractPower {
         // 众方：获得1层，累计 3 层抽牌
         AllKindredsPower kindredsPower = (AllKindredsPower) FurinaHelper.getPower(AllKindredsPower.POWER_ID);
         if (kindredsPower != null) {
-            kindredsPower.stackPower(1);
+            kindredsPower.stackCount(1);
             if (kindredsPower.getCount() >= 3) {
                 kindredsPower.stackCount(-3);
             }
@@ -81,7 +83,7 @@ public class Revelry extends AbstractPower {
         AbstractPower peoplePower = FurinaHelper.getPower(AllPeoplePower.POWER_ID);
         if (peoplePower != null) {
             AbstractMonster monster = AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRandomRng);
-            FurinaHelper.damage(monster, player, 5 * peoplePower.amount, DamageInfo.DamageType.NORMAL);
+            FurinaHelper.damage(monster, player, 5, DamageInfo.DamageType.NORMAL);
         }
         // 众律法：获得1层
         AbstractPower lawsPower = FurinaHelper.getPower(AllLawsPower.POWER_ID);

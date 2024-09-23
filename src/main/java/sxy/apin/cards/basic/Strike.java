@@ -9,9 +9,9 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import sxy.apin.cards.rare.HearMe;
 import sxy.apin.character.Furina;
 import sxy.apin.helper.FurinaHelper;
-import sxy.apin.power.CenterOfAttentionPower;
 
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
 
@@ -54,18 +54,7 @@ public class Strike extends CustomCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        int extraDamage = 0;
-        CenterOfAttentionPower power = (CenterOfAttentionPower) FurinaHelper.getPower(CenterOfAttentionPower.POWER_ID);
-        if (power != null) {
-            if (power.isUpgraded()) {
-                extraDamage = (int) (abstractPlayer.maxHealth * 0.15);
-                Furina.gainRevelry(10);
-            } else {
-                extraDamage = (int) (abstractPlayer.maxHealth * 0.1);
-                Furina.gainRevelry(4);
-            }
-        }
-
+        int extraDamage = HearMe.getExtraDamage();
         AbstractDungeon.actionManager.addToBottom(
                 new DamageAction(
                         abstractMonster,

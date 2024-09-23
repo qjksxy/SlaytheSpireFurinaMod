@@ -6,7 +6,6 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import sxy.apin.character.Furina;
 import sxy.apin.helper.FurinaHelper;
 
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
@@ -20,7 +19,7 @@ public class PeripateticPeregrination extends CustomCard {
     private static final String NAME = CARD_STRINGS.NAME;
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final String IMG_PATH = "sxy/apin/img/cards/skill/card_raw_72.png";
-    private static final int COST = 2;
+    private static final int COST = 0;
     private static final CardType TYPE = CardType.SKILL;
     private static final CardColor COLOR = FURINA_BLUE;
     private static final CardRarity RARITY = CardRarity.RARE;
@@ -35,6 +34,7 @@ public class PeripateticPeregrination extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
+            this.isInnate = true;
         }
         this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
         this.initializeDescription();
@@ -42,10 +42,7 @@ public class PeripateticPeregrination extends CustomCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        int revelry = Furina.getRevelry();
-        FurinaHelper.addToBottom(new HealAction(abstractPlayer, abstractPlayer, revelry));
-        if (this.upgraded) {
-            FurinaHelper.addToBottom(new HealAction(abstractPlayer, abstractPlayer, revelry));
-        }
+        int heal = abstractPlayer.maxHealth - abstractPlayer.currentHealth;
+        FurinaHelper.addToBottom(new HealAction(abstractPlayer, abstractPlayer, heal));
     }
 }

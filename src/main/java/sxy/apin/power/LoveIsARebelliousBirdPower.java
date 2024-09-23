@@ -20,13 +20,14 @@ public class LoveIsARebelliousBirdPower extends AbstractPower {
     private static final String NAME = powerStrings.NAME;
     // 能力的描述
     private static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
+    public boolean flag;
 
-    public LoveIsARebelliousBirdPower(AbstractCreature owner, int amount) {
+    public LoveIsARebelliousBirdPower(AbstractCreature owner, boolean flag) {
         this.name = NAME;
         this.ID = POWER_ID;
         this.owner = owner;
         this.type = PowerType.BUFF;
-        this.amount = amount;
+        this.flag = flag;
         // 添加一大一小两张能力图
         String path128 = "sxy/apin/img/powers/power_128/power_raw_76.png";
         String path48 = "sxy/apin/img/powers/power_48/power_raw_76.png";

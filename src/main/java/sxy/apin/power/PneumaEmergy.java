@@ -75,12 +75,12 @@ public class PneumaEmergy extends AbstractPower {
                 return;
             }
             Furina.gainElementEnergy(min_amout);
-            if (!FurinaHelper.hasPower(CriticalBoost.POWER_ID)) {
-                FurinaHelper.applyPower(player, player, new CriticalBoost(player, 1), 1);
-            } else if (!FurinaHelper.hasPower(Dewdrop.POWER_ID)) {
+            if (!FurinaHelper.hasPower(Dewdrop.POWER_ID)) {
                 FurinaHelper.applyPower(player, player, new Dewdrop(player, 1), 1);
             } else if (!FurinaHelper.hasPower(Grit.POWER_ID)) {
-                FurinaHelper.applyPower(player, player, new Dewdrop(player, 1), 1);
+                FurinaHelper.applyPower(player, player, new Grit(player, 1), 1);
+            } else if (!FurinaHelper.hasPower(CriticalBoost.POWER_ID)) {
+                FurinaHelper.applyPower(player, player, new CriticalBoost(player, 1), 1);
             } else {
                 FurinaHelper.applyPower(player, player, new CriticalBoost(player, 1), 1);
             }

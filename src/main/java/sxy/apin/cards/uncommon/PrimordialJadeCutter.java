@@ -21,7 +21,7 @@ public class PrimordialJadeCutter extends CustomCard {
     private static final String NAME = CARD_STRINGS.NAME;
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final String IMG_PATH = "sxy/apin/img/cards/attack/card_raw_40.png";
-    private static final int COST = 3;
+    private static final int COST = 2;
     private static final CardType TYPE = CardType.ATTACK;
     private static final CardColor COLOR = FURINA_BLUE;
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
@@ -29,7 +29,7 @@ public class PrimordialJadeCutter extends CustomCard {
 
     public PrimordialJadeCutter() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.damage = this.baseDamage = 15;
+        this.damage = this.baseDamage = 18;
         this.tags.add(CardTags.STRIKE);
     }
 

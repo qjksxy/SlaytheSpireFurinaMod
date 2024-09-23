@@ -46,7 +46,7 @@ public class LoveIsARebelliousBird extends CustomCard {
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         AbstractDungeon.actionManager.addToBottom(
                 new ApplyPowerAction(abstractPlayer, abstractPlayer,
-                        new LoveIsARebelliousBirdPower(abstractPlayer, 1), 0)
+                        new LoveIsARebelliousBirdPower(abstractPlayer, this.upgraded), 0)
         );
     }
 }

@@ -28,9 +28,9 @@ public class Crystalize extends CustomCard {
 
     public Crystalize() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.damage = this.baseDamage = 10;
-        this.baseBlock = 5;
-        this.block = 5;
+        this.damage = this.baseDamage = 9;
+        this.baseBlock = 6;
+        this.block = 6;
         this.tags.add(CardTags.STARTER_DEFEND);
         this.tags.add(CardTags.STRIKE);
     }
@@ -46,7 +46,7 @@ public class Crystalize extends CustomCard {
         ++this.timesUpgraded;
         this.name = NAME + "+" + this.timesUpgraded;
         this.initializeTitle();
-        this.upgradeBlock(5);
+        this.upgradeBlock(6);
     }
 
     @Override

@@ -44,12 +44,13 @@ public class UnheardConfession extends CustomCard {
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         int damage = Furina.getRevelry();
+        int extraDamage = HearMe.getExtraDamage();
         if (this.upgraded) {
             damage = (int) (damage * 0.6);
         } else {
             damage = (int) (damage * 0.5);
         }
-        FurinaHelper.damage(abstractMonster, abstractPlayer, damage, DamageInfo.DamageType.NORMAL);
+        FurinaHelper.damage(abstractMonster, abstractPlayer, damage + extraDamage, DamageInfo.DamageType.NORMAL);
         FurinaHelper.addToBottom(new ExhaustAction(1, this.upgraded));
     }
 }

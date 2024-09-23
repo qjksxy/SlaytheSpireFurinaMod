@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import sxy.apin.helper.FurinaHelper;
+import sxy.apin.power.CenterOfAttentionPower;
 import sxy.apin.power.HearMePower;
 
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
@@ -57,5 +58,20 @@ public class HearMe extends CustomCard {
                 new ApplyPowerAction(abstractPlayer, abstractPlayer,
                         new HearMePower(abstractPlayer, 1, upgraded), 0)
         );
+    }
+
+    public static int getExtraDamage() {
+        int extraDamage = 0;
+        int hp = FurinaHelper.getPlayer().maxHealth;
+        CenterOfAttentionPower power = (CenterOfAttentionPower) FurinaHelper.getPower(CenterOfAttentionPower.POWER_ID);
+        if (power == null) {
+            return extraDamage;
+        }
+        if (power.isUpgraded()) {
+            extraDamage = (int) (hp * 0.3);
+        } else {
+            extraDamage = (int) (hp * 0.25);
+        }
+        return extraDamage;
     }
 }

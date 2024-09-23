@@ -62,14 +62,14 @@ public class CriticalBoost extends AbstractPower {
     @Override
     public void onUseCard(AbstractCard card, UseCardAction action) {
         if (card.type == AbstractCard.CardType.ATTACK) {
-            this.amount++;
+            this.amount += 2;
             this.flash();
         }
     }
 
     @Override
     public void wasHPLost(DamageInfo info, int damageAmount) {
-        this.amount -= 2;
+        this.amount -= 3;
         this.flash();
         if (this.amount <= 0) {
             FurinaHelper.removePlayerPower(this.ID);

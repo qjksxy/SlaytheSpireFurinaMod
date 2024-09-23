@@ -31,8 +31,8 @@ public class Order extends CustomCard {
     public Order() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.damage = this.baseDamage = 12;
-        this.magicNumber = 1;
-        this.baseMagicNumber = 1;
+        this.magicNumber = 2;
+        this.baseMagicNumber = 2;
         this.tags.add(CardTags.STRIKE);
     }
 
@@ -40,6 +40,7 @@ public class Order extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
+            this.updateCost(-1);
             this.upgradeMagicNumber(1);
         }
         this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;

@@ -28,9 +28,9 @@ public class Bloom extends CustomCard {
 
     public Bloom() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.damage = this.baseDamage = 8;
-        this.magicNumber = 5;
-        this.baseMagicNumber = 5;
+        this.damage = this.baseDamage = 6;
+        this.magicNumber = 6;
+        this.baseMagicNumber = 6;
         this.tags.add(CardTags.STRIKE);
     }
 
@@ -45,7 +45,7 @@ public class Bloom extends CustomCard {
         ++this.timesUpgraded;
         this.name = NAME + "+" + this.timesUpgraded;
         this.initializeTitle();
-        this.upgradeMagicNumber(2);
+        this.upgradeMagicNumber(3);
     }
 
     @Override

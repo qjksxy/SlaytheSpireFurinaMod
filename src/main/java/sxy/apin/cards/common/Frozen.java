@@ -28,7 +28,7 @@ public class Frozen extends CustomCard {
 
     public Frozen() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.damage = this.baseDamage = 9;
+        this.damage = this.baseDamage = 12;
         this.tags.add(CardTags.STRIKE);
     }
 

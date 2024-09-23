@@ -1,6 +1,7 @@
 package sxy.apin.cards.rare;
 
 import basemod.abstracts.CustomCard;
+import com.megacrit.cardcrawl.actions.common.HealAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -20,7 +21,7 @@ public class SplendorOfTranquilWaters extends CustomCard {
     private static final String NAME = CARD_STRINGS.NAME;
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final String IMG_PATH = "sxy/apin/img/cards/attack/card_raw_71.png";
-    private static final int COST = 3;
+    private static final int COST = -1;
     private static final CardType TYPE = CardType.ATTACK;
     private static final CardColor COLOR = FURINA_BLUE;
     private static final CardRarity RARITY = CardRarity.RARE;
@@ -34,7 +35,6 @@ public class SplendorOfTranquilWaters extends CustomCard {
     @Override
     public void upgrade() {
         if (!this.upgraded) {
-            this.updateCost(-1);
             this.upgradeName();
         }
         this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
@@ -43,8 +43,17 @@ public class SplendorOfTranquilWaters extends CustomCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        int revelry = Furina.getRevelry();
-        int damage = (int) (revelry * 1.5);
-        FurinaHelper.damage(abstractMonster, abstractPlayer, damage, DamageInfo.DamageType.NORMAL);
+        int damage = Furina.getRevelry();
+        int energy = this.energyOnUse;
+        int extraDamage = HearMe.getExtraDamage();
+        if (this.upgraded) {
+            energy += 1;
+        }
+        FurinaHelper.damage(abstractMonster, abstractPlayer, damage * energy + extraDamage, DamageInfo.DamageType.NORMAL);
+        if (Furina.getArkhe() == Furina.OUSIA) {
+            FurinaHelper.addToBottom(new HealAction(abstractPlayer, abstractPlayer, damage));
+        } else {
+            FurinaHelper.damage(abstractMonster, abstractPlayer, damage, DamageInfo.DamageType.NORMAL);
+        }
     }
 }
