@@ -2,6 +2,7 @@ package sxy.apin.cards.rare;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.HealAction;
+import com.megacrit.cardcrawl.actions.unique.LoseEnergyAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -43,6 +44,7 @@ public class SplendorOfTranquilWaters extends CustomCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
+        FurinaHelper.addToBottom(new LoseEnergyAction(this.energyOnUse));
         int damage = Furina.getRevelry();
         int energy = this.energyOnUse;
         int extraDamage = HearMe.getExtraDamage();

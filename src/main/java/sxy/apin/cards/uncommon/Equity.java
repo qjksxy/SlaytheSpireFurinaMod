@@ -40,7 +40,7 @@ public class Equity extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeBaseCost(-1);
+            this.updateCost(-1);
             this.upgradeMagicNumber(1);
         }
         this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;

@@ -296,8 +296,8 @@
   },
   "ApinFurina:PeripateticPeregrination": {
     "NAME": "四季的悠游",
-    "DESCRIPTION": "消耗 。回复 furina_mod:气氛值 点生命。",
-    "UPGRADE_DESCRIPTION": "固有 。 消耗 。回复 furina_mod:气氛值 点生命2次。"
+    "DESCRIPTION": "消耗 。恢复所有生命。",
+    "UPGRADE_DESCRIPTION": "固有 。 消耗 。恢复所有生命。"
   },
   "ApinFurina:LeSouvenirAvecLeCrepuscule": {
     "NAME": "时暮的思眷",
