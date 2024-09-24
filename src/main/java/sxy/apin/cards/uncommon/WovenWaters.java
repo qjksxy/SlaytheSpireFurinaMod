@@ -46,7 +46,7 @@ public class WovenWaters extends CustomCard {
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         AbstractDungeon.actionManager.addToBottom(
                 new ApplyPowerAction(abstractPlayer, abstractPlayer,
-                        new WovenWatersPower(abstractPlayer, 1), 1)
+                        new WovenWatersPower(abstractPlayer), 1)
         );
     }
 }

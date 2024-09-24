@@ -26,7 +26,7 @@ public class AllLawsPower extends AbstractPower {
         this.ID = POWER_ID;
         this.owner = owner;
         this.type = PowerType.BUFF;
-        this.amount = 1;
+        this.amount = -1;
         // 添加一大一小两张能力图
         String path128 = "sxy/apin/img/powers/power_128/power_raw_52.png";
         String path48 = "sxy/apin/img/powers/power_48/power_raw_52.png";
@@ -34,10 +34,6 @@ public class AllLawsPower extends AbstractPower {
         this.region48 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path48), 8, 8, 32, 32);
         // 首次添加能力更新描述
         this.updateDescription();
-    }
-
-    public void updateDescription() {
-        this.description = DESCRIPTIONS[0];
     }
 
     @Override
@@ -50,5 +46,9 @@ public class AllLawsPower extends AbstractPower {
         if (this.amount >= 999) {
             this.amount = 999;
         }
+    }
+
+    public void updateDescription() {
+        this.description = DESCRIPTIONS[0];
     }
 }

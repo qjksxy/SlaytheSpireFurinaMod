@@ -56,7 +56,7 @@ public class HearMe extends CustomCard {
         }
         AbstractDungeon.actionManager.addToBottom(
                 new ApplyPowerAction(abstractPlayer, abstractPlayer,
-                        new HearMePower(abstractPlayer, 1, upgraded), 0)
+                        new HearMePower(abstractPlayer, upgraded), 0)
         );
     }
 

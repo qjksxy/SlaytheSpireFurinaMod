@@ -21,9 +21,9 @@ public class AllWatersPower extends AbstractPower {
     private static final String NAME = powerStrings.NAME;
     // 能力的描述
     private static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
-    private int count = 0;
     // 标识是否为强化后能力
-    private boolean flag;
+    public boolean flag;
+    private int count = 0;
 
     public AllWatersPower(AbstractCreature owner, boolean flag) {
         this.name = NAME;
@@ -31,6 +31,7 @@ public class AllWatersPower extends AbstractPower {
         this.owner = owner;
         this.type = PowerType.BUFF;
         this.flag = flag;
+        this.amount = -1;
         // 添加一大一小两张能力图
         String path128 = "sxy/apin/img/powers/power_128/power_raw_29.png";
         String path48 = "sxy/apin/img/powers/power_48/power_raw_29.png";
@@ -42,10 +43,6 @@ public class AllWatersPower extends AbstractPower {
 
     public void updateDescription() {
         this.description = DESCRIPTIONS[0];
-    }
-
-    @Override
-    public void stackPower(int stackAmount) {
     }
 
     @Override
@@ -61,5 +58,9 @@ public class AllWatersPower extends AbstractPower {
         }
         FurinaHelper.addToBottom(new GainEnergyAction(t));
         this.flash();
+    }
+
+    public void setFlag(boolean flag) {
+        this.flag = flag;
     }
 }

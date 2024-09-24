@@ -26,6 +26,7 @@ public class PerpetualMuseOfChansonsPower extends AbstractPower {
         this.ID = POWER_ID;
         this.owner = owner;
         this.type = PowerType.BUFF;
+        this.amount = -1;
         // 添加一大一小两张能力图
         String path128 = "sxy/apin/img/powers/power_128/power_raw_7.png";
         String path48 = "sxy/apin/img/powers/power_48/power_raw_7.png";
@@ -39,15 +40,4 @@ public class PerpetualMuseOfChansonsPower extends AbstractPower {
         this.description = DESCRIPTIONS[0];
     }
 
-    @Override
-    public void stackPower(int stackAmount) {
-        if (this.amount == -1) {
-            return;
-        }
-        this.fontScale = 8.0F;
-        this.amount += stackAmount;
-        if (this.amount >= 999) {
-            this.amount = 999;
-        }
-    }
 }

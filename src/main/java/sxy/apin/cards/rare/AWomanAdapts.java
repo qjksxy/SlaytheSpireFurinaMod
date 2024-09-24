@@ -46,7 +46,7 @@ public class AWomanAdapts extends CustomCard {
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         AbstractDungeon.actionManager.addToBottom(
                 new ApplyPowerAction(abstractPlayer, abstractPlayer,
-                        new AWomanAdaptsPower(abstractPlayer, 1), 0)
+                        new AWomanAdaptsPower(abstractPlayer), 0)
         );
     }
 }

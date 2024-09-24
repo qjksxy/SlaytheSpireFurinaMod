@@ -19,12 +19,13 @@ public class WovenWatersPower extends AbstractPower {
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     private static final String NAME = powerStrings.NAME;
     private static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
-    public WovenWatersPower(AbstractCreature owner, int amount) {
+
+    public WovenWatersPower(AbstractCreature owner) {
         this.name = NAME;
         this.ID = POWER_ID;
         this.owner = owner;
         this.type = PowerType.BUFF;
-        this.amount = amount;
+        this.amount = -1;
         // 添加一大一小两张能力图
         String path128 = "sxy/apin/img/powers/power_128/power_raw_71.png";
         String path48 = "sxy/apin/img/powers/power_48/power_raw_71.png";
@@ -40,25 +41,16 @@ public class WovenWatersPower extends AbstractPower {
     }
 
     @Override
-    public void stackPower(int stackAmount) {
-        if (this.amount == -1) {
-            return;
-        }
-        this.fontScale = 8.0F;
-        this.amount += stackAmount;
-    }
-
-    @Override
     public void atEndOfTurn(boolean isPlayer) {
         FurinaHelper.reducePlayerPower(this.ID, 1);
     }
 
     @Override
     public void onUseCard(AbstractCard card, UseCardAction action) {
-        this.flash();
         if (card.type != AbstractCard.CardType.ATTACK) {
             return;
         }
+        this.flash();
         Furina.gainElementEnergy(1);
     }
 }

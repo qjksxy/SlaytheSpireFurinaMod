@@ -60,24 +60,20 @@ public class ElementalSkill extends CustomCard {
                             new SingerOfManyWatersPower(abstractPlayer, magicNumber), magicNumber)
             );
         }
-
         Furina.gainElementEnergy(magicNumber);
 
+        // 6命效果  打出此牌时获得 CenterOfAttentionPower
         HearMePower power = (HearMePower) FurinaHelper.getPower(HearMePower.POWER_ID);
         if (power != null) {
-            if (FurinaHelper.hasPower(CenterOfAttentionPower.POWER_ID)) {
-                CenterOfAttentionPower centerOfAttentionPower =
-                        (CenterOfAttentionPower) FurinaHelper.getPower(CenterOfAttentionPower.POWER_ID);
-                assert centerOfAttentionPower != null;
-                if (centerOfAttentionPower.isUpgraded()) {
-                    return;
-                }
-                if (power.isUpgraded()) {
+            CenterOfAttentionPower centerOfAttentionPower =
+                    (CenterOfAttentionPower) FurinaHelper.getPower(CenterOfAttentionPower.POWER_ID);
+            if (centerOfAttentionPower != null) {
+                if (!centerOfAttentionPower.isUpgraded() && power.isUpgraded()) {
                     centerOfAttentionPower.upgrade();
                 }
             } else {
                 FurinaHelper.applyPower(abstractPlayer, abstractPlayer,
-                        new CenterOfAttentionPower(abstractPlayer, 1, power.isUpgraded()), 1);
+                        new CenterOfAttentionPower(abstractPlayer, power.isUpgraded()), 0);
             }
 
         }

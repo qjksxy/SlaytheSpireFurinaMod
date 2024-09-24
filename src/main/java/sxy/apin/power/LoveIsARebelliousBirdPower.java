@@ -28,6 +28,7 @@ public class LoveIsARebelliousBirdPower extends AbstractPower {
         this.owner = owner;
         this.type = PowerType.BUFF;
         this.flag = flag;
+        this.amount = -1;
         // 添加一大一小两张能力图
         String path128 = "sxy/apin/img/powers/power_128/power_raw_76.png";
         String path48 = "sxy/apin/img/powers/power_48/power_raw_76.png";
@@ -35,10 +36,6 @@ public class LoveIsARebelliousBirdPower extends AbstractPower {
         this.region48 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path48), 8, 8, 32, 32);
         // 首次添加能力更新描述
         this.updateDescription();
-    }
-
-    @Override
-    public void stackPower(int stackAmount) {
     }
 
     // 能力在更新时如何修改描述

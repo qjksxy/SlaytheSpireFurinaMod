@@ -55,7 +55,7 @@ public class MySecretIsHiddenWithinMe extends CustomCard {
         }
         AbstractDungeon.actionManager.addToBottom(
                 new ApplyPowerAction(abstractPlayer, abstractPlayer,
-                        new MySecretIsHiddenWithinMePower(abstractPlayer, 1, upgraded), 0)
+                        new MySecretIsHiddenWithinMePower(abstractPlayer, upgraded), 0)
         );
     }
 }

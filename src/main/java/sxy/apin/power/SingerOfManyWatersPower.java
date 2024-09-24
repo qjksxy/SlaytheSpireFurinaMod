@@ -59,6 +59,7 @@ public class SingerOfManyWatersPower extends AbstractPower {
         }
 
     }
+
     // 能力在更新时如何修改描述
     public void updateDescription() {
         this.description = DESCRIPTIONS[0];

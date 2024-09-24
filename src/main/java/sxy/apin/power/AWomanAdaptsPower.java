@@ -21,12 +21,12 @@ public class AWomanAdaptsPower extends AbstractPower {
     // 能力的描述
     private static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
-    public AWomanAdaptsPower(AbstractCreature owner, int amount) {
+    public AWomanAdaptsPower(AbstractCreature owner) {
         this.name = NAME;
         this.ID = POWER_ID;
         this.owner = owner;
         this.type = PowerType.BUFF;
-        this.amount = amount;
+        this.amount = -1;
         // 添加一大一小两张能力图
         String path128 = "sxy/apin/img/powers/power_128/power_raw_77.png";
         String path48 = "sxy/apin/img/powers/power_48/power_raw_77.png";
@@ -34,10 +34,6 @@ public class AWomanAdaptsPower extends AbstractPower {
         this.region48 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path48), 8, 8, 32, 32);
         // 首次添加能力更新描述
         this.updateDescription();
-    }
-
-    @Override
-    public void stackPower(int stackAmount) {
     }
 
     // 能力在更新时如何修改描述

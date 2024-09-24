@@ -170,7 +170,7 @@
   "ApinFurina:PerpetualMuseOfRondeauxPower": {
     "NAME": "无尽圆舞",
     "DESCRIPTIONS": [
-      "消耗。回合开始时，若当前生命值低于50%，则获得16层战意。"
+      "消耗。回合开始时，若当前生命值低于50%，则获得12层战意。"
     ]
   },
   "ApinFurina:EndlessSoloOfSolitudePower": {

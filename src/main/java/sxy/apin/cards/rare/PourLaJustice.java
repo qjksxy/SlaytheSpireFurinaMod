@@ -46,7 +46,7 @@ public class PourLaJustice extends CustomCard {
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         AbstractDungeon.actionManager.addToBottom(
                 new ApplyPowerAction(abstractPlayer, abstractPlayer,
-                        new PourLaJusticePower(abstractPlayer, 1), 1)
+                        new PourLaJusticePower(abstractPlayer), 0)
         );
     }
 }

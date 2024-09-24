@@ -55,6 +55,6 @@ public class EndlessSoloOfSolitudePower extends AbstractPower {
     @Override
     public void atStartOfTurn() {
         int amount = owner.currentHealth / 10;
-        FurinaHelper.applyPower(owner, owner, new Dewdrop(owner, amount), amount);
+        FurinaHelper.applyPower(owner, owner, new Dewdrop(owner, this.amount * amount), this.amount * amount);
     }
 }
