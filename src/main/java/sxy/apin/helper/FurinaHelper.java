@@ -22,6 +22,7 @@ public class FurinaHelper {
     // 89, 138, 194
     public static final Color MY_COLOR = new Color(89.0F / 255.0F, 138.0F / 255.0F, 194.0F / 255.0F, 1.0F);
     public static Random random = new Random();
+
     public static String makeCardID(String id) {
         return MOD_ID + ":" + id;
     }
@@ -67,7 +68,7 @@ public class FurinaHelper {
     }
 
     public static AbstractMonster getRandomMonster() {
-        return AbstractDungeon.getMonsters().getRandomMonster((AbstractMonster) null, true, AbstractDungeon.cardRandomRng);
+        return AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRandomRng);
     }
 
     public static AbstractMonster getNearestMonster() {

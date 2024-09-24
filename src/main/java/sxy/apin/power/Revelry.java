@@ -7,7 +7,6 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -82,7 +81,7 @@ public class Revelry extends AbstractPower {
         // 众民：获得1层
         AbstractPower peoplePower = FurinaHelper.getPower(AllPeoplePower.POWER_ID);
         if (peoplePower != null) {
-            AbstractMonster monster = AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRandomRng);
+            AbstractMonster monster = FurinaHelper.getRandomMonster();
             FurinaHelper.damage(monster, player, 5, DamageInfo.DamageType.NORMAL);
         }
         // 众律法：获得1层

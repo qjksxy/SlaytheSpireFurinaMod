@@ -16,7 +16,6 @@ import org.apache.logging.log4j.Logger;
 import sxy.apin.cards.basic.*;
 import sxy.apin.cards.common.*;
 import sxy.apin.cards.rare.*;
-import sxy.apin.cards.uncommon.Erinnyes;
 import sxy.apin.cards.uncommon.*;
 import sxy.apin.character.Furina;
 import sxy.apin.helper.FurinaHelper;
@@ -86,7 +85,7 @@ public class FurinaCore implements EditCardsSubscriber, EditStringsSubscriber, E
     // 当basemod开始注册mod卡牌时，便会调用这个函数
     @Override
     public void receiveEditCards() {
-        // BASIC
+        // BASIC--6
         BaseMod.addCard(new ChargedAttack());
         BaseMod.addCard(new Dodge());
         BaseMod.addCard(new SeatsSacredAndSecular());
@@ -94,7 +93,7 @@ public class FurinaCore implements EditCardsSubscriber, EditStringsSubscriber, E
         BaseMod.addCard(new Strike());
         BaseMod.addCard(new SurgingBlade());
 
-        // COMMON
+        // COMMON--18
         BaseMod.addCard(new ArmoredCrab());
         BaseMod.addCard(new BallOctopus());
         BaseMod.addCard(new Bloom());
@@ -114,7 +113,7 @@ public class FurinaCore implements EditCardsSubscriber, EditStringsSubscriber, E
         BaseMod.addCard(new Vaporize());
         BaseMod.addCard(new WolfFang());
 
-        // UNCOMMON
+        // UNCOMMON--36
         BaseMod.addCard(new AllKindreds());
         BaseMod.addCard(new AllLaws());
         BaseMod.addCard(new AllPeople());
@@ -152,7 +151,7 @@ public class FurinaCore implements EditCardsSubscriber, EditStringsSubscriber, E
         BaseMod.addCard(new WeepingWillowOfTheLake());
         BaseMod.addCard(new WovenWaters());
 
-        // RARE
+        // RARE--20
         BaseMod.addCard(new AWomanAdapts());
         BaseMod.addCard(new Banquet());
         BaseMod.addCard(new CoronatedPrimaDonna());
@@ -184,7 +183,7 @@ public class FurinaCore implements EditCardsSubscriber, EditStringsSubscriber, E
         BaseMod.addKeyword("furina_mod", "始基力", new String[]{"始基力", "始基力形态", "芒荒形态"}, "芙宁娜拥有荒芒两种始基力形态，可通过特定牌切换自身的始基力形态。部分牌在不同始基力形态下有不同效果。");
         BaseMod.addKeyword("furina_mod", "会心", new String[]{"会心"}, "每打出一张攻击牌获得2层 #y会心 ，受到一次伤害消除3层 #y会心 。回合结束时对最近敌人造成 #y会心 层数的伤害。");
         BaseMod.addKeyword("furina_mod", "珠露", new String[]{"珠露"}, "每受到1点治疗累计1层 #y珠露 。回合开始时，若 #y珠露 层数大于生命上限的10%， #y珠露 破碎，对敌方全体造成 #y珠露 层数的伤害。");
-        BaseMod.addKeyword("furina_mod", "战意", new String[]{"战意"}, "每受到伤害或治疗时，获得1层 #y战意 。回合开始阶段，获得 #y战意 层数的护盾，并消耗三分之一的层数。");
+        BaseMod.addKeyword("furina_mod", "战意", new String[]{"战意"}, "每受到伤害或治疗时，获得1层 #y战意 。回合开始阶段，获得 #y战意 层数的护盾，随后消耗三分之一的层数。");
     }
 
     @Override
