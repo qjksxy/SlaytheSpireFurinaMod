@@ -33,7 +33,7 @@ public class CriticalBoost extends AbstractPower {
         this.ID = POWER_ID;
         this.owner = owner;
         this.type = PowerType.BUFF;
-        this.amount = amount;
+        this.amount = Math.min(amount, getLimit());
         // 添加一大一小两张能力图
         String path128 = "sxy/apin/img/powers/power_128/power_raw_89.png";
         String path48 = "sxy/apin/img/powers/power_48/power_raw_89.png";
@@ -47,6 +47,10 @@ public class CriticalBoost extends AbstractPower {
         this.description = DESCRIPTIONS[0];
     }
 
+    public int getLimit() {
+        return 30;
+    }
+
     @Override
     public void stackPower(int stackAmount) {
         if (this.amount == -1) {
@@ -54,9 +58,7 @@ public class CriticalBoost extends AbstractPower {
         }
         this.fontScale = 8.0F;
         this.amount += stackAmount;
-        if (this.amount >= 30) {
-            this.amount = 30;
-        }
+        this.amount = Math.min(this.amount, getLimit());
     }
 
     @Override

@@ -95,7 +95,7 @@ public class SalonMembers extends AbstractPower {
                             new DamageInfo(AbstractDungeon.player, (int) (10 * factor), DamageInfo.DamageType.NORMAL))
             );
         }
-        if (AbstractDungeon.player.currentHealth < AbstractDungeon.player.maxHealth / 2) {
+        if (AbstractDungeon.player.currentHealth <= AbstractDungeon.player.maxHealth / 2) {
             return;
         }
         if (revelry < 1) {
@@ -108,7 +108,7 @@ public class SalonMembers extends AbstractPower {
         AbstractDungeon.actionManager.addToBottom(
                 new DamageAction(mon,
                         new DamageInfo(AbstractDungeon.player,
-                                (int) (revelry * factor / 2),
+                                (int) (revelry * factor),
                                 DamageInfo.DamageType.NORMAL))
         );
     }

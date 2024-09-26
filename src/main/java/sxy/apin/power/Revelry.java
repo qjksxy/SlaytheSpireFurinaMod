@@ -1,7 +1,6 @@
 package sxy.apin.power;
 
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -68,16 +67,7 @@ public class Revelry extends AbstractPower {
         if (watersPower != null) {
             watersPower.stackPower(1);
         }
-        // 众方：获得1层，累计 3 层抽牌
-        AllKindredsPower kindredsPower = (AllKindredsPower) FurinaHelper.getPower(AllKindredsPower.POWER_ID);
-        if (kindredsPower != null) {
-            kindredsPower.stackCount(1);
-            if (kindredsPower.getCount() >= 3) {
-                kindredsPower.stackCount(-3);
-            }
-            kindredsPower.flash();
-            FurinaHelper.addToBottom(new DrawCardAction(1));
-        }
+
         // 众民：获得1层
         AbstractPower peoplePower = FurinaHelper.getPower(AllPeoplePower.POWER_ID);
         if (peoplePower != null) {

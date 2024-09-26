@@ -30,7 +30,7 @@ public class Dewdrop extends AbstractPower {
         this.ID = POWER_ID;
         this.owner = owner;
         this.type = PowerType.BUFF;
-        this.amount = amount;
+        this.amount = Math.min(amount, getLimit());
         // 添加一大一小两张能力图
         String path128 = "sxy/apin/img/powers/power_128/power_raw_87.png";
         String path48 = "sxy/apin/img/powers/power_48/power_raw_87.png";
@@ -51,10 +51,11 @@ public class Dewdrop extends AbstractPower {
         }
         this.fontScale = 8.0F;
         this.amount += stackAmount;
-        int limit = FurinaHelper.getPlayer().maxHealth / 5;
-        if (this.amount >= limit) {
-            this.amount = limit;
-        }
+        this.amount = Math.min(this.amount, getLimit());
+    }
+
+    public int getLimit() {
+        return FurinaHelper.getPlayer().maxHealth / 5;
     }
 
     @Override

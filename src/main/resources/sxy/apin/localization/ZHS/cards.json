@@ -26,8 +26,8 @@
   },
   "ApinFurina:ElectroCharged": {
     "NAME": "感电",
-    "DESCRIPTION": "对敌人造成 !D! 点伤害，并附属感电。可多次升级。",
-    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 点伤害，并附属感电。可多次升级。"
+    "DESCRIPTION": "对敌人造成 !D! 点伤害，并附属感电：场上有目标受到感电伤害时，受到相同的连锁伤害。可多次升级。",
+    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 点伤害，并附属感电：场上有目标受到感电伤害时，受到相同的连锁伤害。可多次升级。"
   },
   "ApinFurina:Bloom": {
     "NAME": "绽放",
@@ -76,8 +76,8 @@
   },
   "ApinFurina:KeyOfKhajNisut": {
     "NAME": "圣显之钥",
-    "DESCRIPTION": "造成 !D! 点伤害，斩杀时，永久获得5点生命上限。",
-    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，斩杀时，永久获得5点生命上限。"
+    "DESCRIPTION": "造成 !D! 点伤害，斩杀时 消耗 ，并获得3点生命上限。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，斩杀时 消耗 ，并获得3点生命上限。"
   },
   "ApinFurina:UrakuMisugiri": {
     "NAME": "有乐御簾切",
@@ -181,13 +181,13 @@
   },
   "ApinFurina:ElementalBurst": {
     "NAME": "万众狂欢",
-    "DESCRIPTION": "消耗6点 furina_mod:元素能量 。附属 !M! 层 furina_mod:普世欢腾 ，造成两点伤害。",
-    "UPGRADE_DESCRIPTION": "消耗6点 furina_mod:元素能量 。附属 !M! 层 furina_mod:普世欢腾 ，造成两点伤害。"
+    "DESCRIPTION": "消耗5点 furina_mod:元素能量 。附属 !M! 层 furina_mod:普世欢腾 ，造成 !D! 点伤害。",
+    "UPGRADE_DESCRIPTION": "消耗5点 furina_mod:元素能量 。附属 !M! 层 furina_mod:普世欢腾 ，造成 !D! 点伤害。"
   },
   "ApinFurina:SlowingWater": {
     "NAME": "迟滞之水",
-    "DESCRIPTION": "回合结束时，如果剩余能量未使用，则下一回合获得 !M! 能量。",
-    "UPGRADE_DESCRIPTION": "回合结束时，如果剩余能量未使用，则下一回合获得 !M! 能量。"
+    "DESCRIPTION": "回合结束时，如果剩余 [E] 未使用，则下一回合获得 !M! 点 [E] 。",
+    "UPGRADE_DESCRIPTION": "回合结束时，如果剩余 [E] 未使用，则下一回合获得 !M! 点 [E] 。"
   },
   "ApinFurina:SoothingWater": {
     "NAME": "愈疗之水",
@@ -231,8 +231,8 @@
   },
   "ApinFurina:CourtOfFontaine": {
     "NAME": "枫丹廷",
-    "DESCRIPTION": "选择 !M! 张牌消耗，获得 1 能量。",
-    "UPGRADE_DESCRIPTION": "选择 !M! 张牌消耗，获得 1 能量。"
+    "DESCRIPTION": "选择 !M! 张牌消耗，获得 [E] 。",
+    "UPGRADE_DESCRIPTION": "选择 !M! 张牌消耗，获得 [E] 。"
   },
   "ApinFurina:FountainOfLucine": {
     "NAME": "露景泉",
@@ -291,8 +291,8 @@
   },
   "ApinFurina:DewsFirstGlimmerAtDaybreak": {
     "NAME": "晨露浮光之初",
-    "DESCRIPTION": "消耗 。获得 !M! 能量。",
-    "UPGRADE_DESCRIPTION": "消耗 。获得 !M! 能量。"
+    "DESCRIPTION": "消耗 。获得 !M! [E] 。",
+    "UPGRADE_DESCRIPTION": "消耗 。获得 !M! [E] 。"
   },
   "ApinFurina:PeripateticPeregrination": {
     "NAME": "四季的悠游",
@@ -301,8 +301,8 @@
   },
   "ApinFurina:LeSouvenirAvecLeCrepuscule": {
     "NAME": "时暮的思眷",
-    "DESCRIPTION": "消耗 。获得 !M! 最大生命。",
-    "UPGRADE_DESCRIPTION": "消耗 。获得 !M! 最大生命。"
+    "DESCRIPTION": "消耗 。获得 !M! 生命上限。",
+    "UPGRADE_DESCRIPTION": "消耗 。获得 !M! 生命上限。"
   },
   "ApinFurina:GymnopediesOfLune": {
     "NAME": "淡月之舞",
@@ -321,8 +321,8 @@
   },
   "ApinFurina:TheLittleOceanid": {
     "NAME": "水的女儿",
-    "DESCRIPTION": "消耗 !M! 生命，获得1能量。",
-    "UPGRADE_DESCRIPTION": "消耗 !M! 生命，获得1能量。"
+    "DESCRIPTION": "消耗 !M! 生命，获得 [E] 。",
+    "UPGRADE_DESCRIPTION": "消耗 !M! 生命，获得 [E] 。"
   },
   "ApinFurina:CoronatedPrimaDonna": {
     "NAME": "冠笄伶优",
@@ -336,8 +336,8 @@
   },
   "ApinFurina:AllWaters": {
     "NAME": "众水",
-    "DESCRIPTION": "每当你获得5次 furina_mod:气氛值 时，便在下回合获得1能量。",
-    "UPGRADE_DESCRIPTION": "每当你获得4次 furina_mod:气氛值 时，便在下回合获得1能量。"
+    "DESCRIPTION": "每当你获得5次 furina_mod:气氛值 时，便在下回合获得 [E] 。",
+    "UPGRADE_DESCRIPTION": "每当你获得4次 furina_mod:气氛值 时，便在下回合获得 [E] 。"
   },
   "ApinFurina:AllKindreds": {
     "NAME": "众方",

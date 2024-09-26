@@ -15,7 +15,7 @@ import sxy.apin.character.Furina;
 import sxy.apin.helper.FurinaHelper;
 
 /**
- * 众水的歌者 回合结束时恢复 3 点生命，若生命值低于 50%，则额外恢复 furina:气氛值 / 5 的生命。
+ * 众水的歌者 回合结束时恢复 3 点生命，若生命值低于 50%，则额外恢复 furina:气氛值 的生命。
  */
 public class SingerOfManyWatersPower extends AbstractPower {
     // 能力的ID
@@ -84,11 +84,11 @@ public class SingerOfManyWatersPower extends AbstractPower {
         AbstractDungeon.actionManager.addToBottom(
                 new HealAction(player, player, (int) (5 * factor))
         );
-        if (AbstractDungeon.player.currentHealth > AbstractDungeon.player.maxHealth / 2) {
+        if (AbstractDungeon.player.currentHealth >= AbstractDungeon.player.maxHealth / 2) {
             return;
         }
         AbstractDungeon.actionManager.addToBottom(
-                new HealAction(player, player, (int) (revelry * factor / 2))
+                new HealAction(player, player, (int) (revelry * factor))
         );
     }
 }

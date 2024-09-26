@@ -1,6 +1,7 @@
 package sxy.apin.power;
 
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -53,6 +54,14 @@ public class ElementEnergy extends AbstractPower {
             this.amount = 0;
         }
 
+    }
+
+    @Override
+    public void atStartOfTurn() {
+        if (this.amount >= 15) {
+            this.amount -= 10;
+            FurinaHelper.addToBottom(new GainEnergyAction(1));
+        }
     }
 
     // 能力在更新时如何修改描述

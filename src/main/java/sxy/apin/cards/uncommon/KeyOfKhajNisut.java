@@ -44,6 +44,6 @@ public class KeyOfKhajNisut extends CustomCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        FurinaHelper.addToBottom(new KeyOfKhajNisutAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage)));
+        FurinaHelper.addToBottom(new KeyOfKhajNisutAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage), this));
     }
 }

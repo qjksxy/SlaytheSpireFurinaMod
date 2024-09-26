@@ -14,7 +14,7 @@
   "ApinFurina:ElementEnergy": {
     "NAME": "元素能量",
     "DESCRIPTIONS": [
-      "用于部分技能牌打出时消耗。"
+      "用于部分技能牌打出时消耗；回合开始时，若持有15层及以上的元素能量，则消耗10层，获得 [E] 。"
     ]
   },
   "ApinFurina:Pneuma": {
@@ -68,13 +68,13 @@
   "ApinFurina:SalonMembers": {
     "NAME": "沙龙成员",
     "DESCRIPTIONS": [
-      "回合结束时，对最近敌人造成10点伤害。若生命值高于50%，则额外造成50%气氛值的伤害。"
+      "回合结束时，对最近敌人造成10点伤害。若生命值高于50%，则额外造成 #y气氛值 的伤害。"
     ]
   },
   "ApinFurina:SingerOfManyWatersPower": {
     "NAME": "众水的歌者",
     "DESCRIPTIONS": [
-      "回合结束时恢复5点生命，若生命值低于50%，则额外恢复50%气氛值的生命。"
+      "回合结束时恢复5点生命。若生命值低于50%，则额外恢复 #y气氛值 的生命。"
     ]
   },
   "ApinFurina:FrozenPower": {
@@ -86,7 +86,7 @@
   "ApinFurina:LoveIsARebelliousBirdPower": {
     "NAME": "爱是难驯鸟",
     "DESCRIPTIONS": [
-      "气氛值上限提升到50。"
+      "气氛值上限提升。"
     ]
   },
   "ApinFurina:AWomanAdaptsPower": {
@@ -104,7 +104,7 @@
   "ApinFurina:WhoDweltInTheNetherworldPower": {
     "NAME": "若非处幽冥",
     "DESCRIPTIONS": [
-      "孤心沙龙提供的元素能量+1。"
+      "每回合开始时，获得 #y元素能量 。"
     ]
   },
   "ApinFurina:INowKnowItIsPower": {
@@ -134,7 +134,7 @@
   "ApinFurina:BloomPower": {
     "NAME": "草原核",
     "DESCRIPTIONS": [
-      "回合结束时造成 5 点群伤。"
+      "回合结束时对所有敌人造成伤害。"
     ]
   },
   "ApinFurina:AllWatersPower": {
@@ -164,13 +164,13 @@
   "ApinFurina:PerpetualMuseOfChansonsPower": {
     "NAME": "永世领唱",
     "DESCRIPTIONS": [
-      "消耗。每持有10点气氛值，会心造成的伤害提升50%。"
+      "每持有10点气氛值，会心造成的伤害提升50%。"
     ]
   },
   "ApinFurina:PerpetualMuseOfRondeauxPower": {
     "NAME": "无尽圆舞",
     "DESCRIPTIONS": [
-      "消耗。回合开始时，若当前生命值低于50%，则获得12层战意。"
+      "回合开始时，若当前生命值低于50%，则获得12层战意。"
     ]
   },
   "ApinFurina:EndlessSoloOfSolitudePower": {
@@ -188,7 +188,7 @@
   "ApinFurina:WovenWatersPower": {
     "NAME": "交织之水",
     "DESCRIPTIONS": [
-      "本回合每打出一张攻击牌，则获得1元素能量。"
+      "本回合每打出一张攻击牌，则获得1 #y元素能量 。"
     ]
   }
 }

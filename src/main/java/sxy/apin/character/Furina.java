@@ -6,6 +6,7 @@ import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -177,6 +178,16 @@ public class Furina extends CustomPlayer {
         AbstractDungeon.actionManager.addToBottom(
                 new ApplyPowerAction(player, player, new Revelry(player, amount), amount)
         );
+        // 众方：获得1层，累计 3 层抽牌
+        AllKindredsPower kindredsPower = (AllKindredsPower) FurinaHelper.getPower(AllKindredsPower.POWER_ID);
+        if (kindredsPower != null) {
+            kindredsPower.stackCount(1);
+            if (kindredsPower.getCount() >= 3) {
+                kindredsPower.stackCount(-3);
+            }
+            kindredsPower.flash();
+            FurinaHelper.addToBottom(new DrawCardAction(1));
+        }
     }
 
     public static int getRevelry() {
