@@ -51,8 +51,9 @@ public class Dewdrop extends AbstractPower {
         }
         this.fontScale = 8.0F;
         this.amount += stackAmount;
-        if (this.amount >= 999) {
-            this.amount = 999;
+        int limit = FurinaHelper.getPlayer().maxHealth / 5;
+        if (this.amount >= limit) {
+            this.amount = limit;
         }
     }
 

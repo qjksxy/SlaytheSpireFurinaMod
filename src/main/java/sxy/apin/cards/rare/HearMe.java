@@ -37,7 +37,6 @@ public class HearMe extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.updateCost(-1);
         }
         this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
         this.initializeDescription();
@@ -68,7 +67,7 @@ public class HearMe extends CustomCard {
             return extraDamage;
         }
         if (power.isUpgraded()) {
-            extraDamage = (int) (hp * 0.3);
+            extraDamage = (int) (hp * 0.32);
         } else {
             extraDamage = (int) (hp * 0.25);
         }

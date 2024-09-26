@@ -54,8 +54,8 @@ public class CriticalBoost extends AbstractPower {
         }
         this.fontScale = 8.0F;
         this.amount += stackAmount;
-        if (this.amount >= 999) {
-            this.amount = 999;
+        if (this.amount >= 30) {
+            this.amount = 30;
         }
     }
 

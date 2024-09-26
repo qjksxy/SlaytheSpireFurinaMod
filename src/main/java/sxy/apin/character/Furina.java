@@ -172,9 +172,7 @@ public class Furina extends CustomPlayer {
             return;
         }
         if (FurinaHelper.hasPower(AWomanAdaptsPower.POWER_ID)) {
-            if (FurinaHelper.getRandomFloat() < 0.6) {
-                amount += 1;
-            }
+            amount += 1;
         }
         AbstractDungeon.actionManager.addToBottom(
                 new ApplyPowerAction(player, player, new Revelry(player, amount), amount)

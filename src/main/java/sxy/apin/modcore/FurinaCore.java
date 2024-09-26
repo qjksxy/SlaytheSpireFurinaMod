@@ -35,7 +35,7 @@ public class FurinaCore implements EditCardsSubscriber, EditStringsSubscriber, E
     // 人物选择界面按钮的图片
     private static final String MY_CHARACTER_BUTTON = "sxy/apin/img/char/furina_button.png";
     // 人物选择界面的立绘
-    private static final String MY_CHARACTER_PORTRAIT = "sxy/apin/img/char/character_portrait.png";
+    private static final String MY_CHARACTER_PORTRAIT = "sxy/apin/img/char/furina_1920_1200.png";
     // 攻击牌的背景（小尺寸）
     private static final String BG_ATTACK_512 = "sxy/apin/img/512/bg_attack_512.png";
     // 能力牌的背景（小尺寸）
