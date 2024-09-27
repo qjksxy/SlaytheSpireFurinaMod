@@ -51,7 +51,12 @@ public class SplendorOfTranquilWaters extends CustomCard {
         if (this.upgraded) {
             energy += 1;
         }
-        FurinaHelper.damage(abstractMonster, abstractPlayer, damage * energy + extraDamage, DamageInfo.DamageType.NORMAL);
+        for (int i = 0; i < energy; i++) {
+            FurinaHelper.damage(abstractMonster, abstractPlayer, damage, DamageInfo.DamageType.NORMAL);
+        }
+        if (extraDamage > 0) {
+            FurinaHelper.damage(abstractMonster, abstractPlayer, extraDamage, DamageInfo.DamageType.NORMAL);
+        }
         if (Furina.getArkhe() == Furina.OUSIA) {
             FurinaHelper.addToBottom(new HealAction(abstractPlayer, abstractPlayer, damage));
         } else {

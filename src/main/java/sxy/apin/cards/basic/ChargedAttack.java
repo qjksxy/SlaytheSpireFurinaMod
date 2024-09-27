@@ -10,7 +10,6 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import sxy.apin.cards.rare.HearMe;
-import sxy.apin.character.Furina;
 import sxy.apin.helper.FurinaHelper;
 
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
@@ -21,7 +20,7 @@ public class ChargedAttack extends CustomCard {
     private static final String NAME = CARD_STRINGS.NAME;
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final String IMG_PATH = "sxy/apin/img/cards/attack/card_raw_121.png";
-    private static final int COST = 2;
+    private static final int COST = 1;
     private static final CardType TYPE = CardType.ATTACK;
     private static final CardColor COLOR = FURINA_BLUE;
     private static final CardRarity RARITY = CardRarity.BASIC;
@@ -57,7 +56,6 @@ public class ChargedAttack extends CustomCard {
                         new DamageInfo(abstractPlayer, damage + extraDamage, DamageInfo.DamageType.NORMAL)
                 )
         );
-        Furina.gainElementEnergy(1);
         AbstractDungeon.actionManager.addToBottom(
                 new MakeTempCardInHandAction(new SeatsSacredAndSecular(), 1)
         );

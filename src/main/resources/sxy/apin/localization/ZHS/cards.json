@@ -6,8 +6,8 @@
   },
   "ApinFurina:ChargedAttack": {
     "NAME": "独舞之邀·重击",
-    "DESCRIPTION": "对敌人造成 !D! 点伤害。获得 1 点 furina_mod:元素能量 。添加一张圣俗杂座到手牌中。",
-    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 点伤害。获得 1 点 furina_mod:元素能量 。添加一张圣俗杂座到手牌中。"
+    "DESCRIPTION": "对敌人造成 !D! 点伤害。添加一张圣俗杂座到手牌中。",
+    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 点伤害。添加一张圣俗杂座到手牌中。"
   },
   "ApinFurina:Frozen": {
     "NAME": "冻结",
@@ -116,8 +116,8 @@
   },
   "ApinFurina:SplendorOfTranquilWaters": {
     "NAME": "静水流涌之辉",
-    "DESCRIPTION": "对敌人造成当前 X 倍 furina_mod:气氛值 的伤害。此外，依据当前的 furina_mod:始基力形态 ，额外造成当前 furina_mod:气氛值 的伤害（芒）或治疗（荒）。",
-    "UPGRADE_DESCRIPTION": "对敌人造成当前 X+1 倍 furina_mod:气氛值 的伤害。此外，依据当前的 furina_mod:始基力形态 ，额外造成当前 furina_mod:气氛值 的伤害（芒）或治疗（荒）。"
+    "DESCRIPTION": "对敌人造成当前 X 倍 furina_mod:气氛值 的伤害。此外，依据当前的 furina_mod:始基力形态 ，额外造成当前 furina_mod:气氛值 的回复（荒）或伤害（芒）。",
+    "UPGRADE_DESCRIPTION": "对敌人造成当前 X+1 倍 furina_mod:气氛值 的伤害。此外，依据当前的 furina_mod:始基力形态 ，额外造成当前 furina_mod:气氛值 的回复（荒）或伤害（芒）。"
   },
   "ApinFurina:Dodge": {
     "NAME": "闪避",
@@ -191,18 +191,18 @@
   },
   "ApinFurina:SoothingWater": {
     "NAME": "愈疗之水",
-    "DESCRIPTION": "恢复 !M! 生命，获得2 furina_mod:气氛值 ，获得2 furina_mod:元素能量 。",
-    "UPGRADE_DESCRIPTION": "恢复 !M! 生命，获得2 furina_mod:气氛值 ，获得2 furina_mod:元素能量 。"
+    "DESCRIPTION": "回复 !M! 生命，获得2 furina_mod:气氛值 ，获得2 furina_mod:元素能量 。",
+    "UPGRADE_DESCRIPTION": "回复 !M! 生命，获得2 furina_mod:气氛值 ，获得2 furina_mod:元素能量 。"
   },
   "ApinFurina:WovenWaters": {
     "NAME": "交织之水",
-    "DESCRIPTION": "本回合每打出一张攻击牌，则获得1 furina_mod:元素能量 。",
-    "UPGRADE_DESCRIPTION": "本回合每打出一张攻击牌，则获得1 furina_mod:元素能量 。"
+    "DESCRIPTION": "获得 !M! 层 furina_mod:战意 。依据当前的始基力形态，额外获得 !M! 层 furina_mod:会心 （荒）或 furina_mod:珠露 （芒）。",
+    "UPGRADE_DESCRIPTION": "获得 !M! 层 furina_mod:战意 。依据当前的始基力形态，额外获得 !M! 层 furina_mod:会心 （荒）或 furina_mod:珠露 （芒）。"
   },
   "ApinFurina:SingerOfManyWaters": {
     "NAME": "众水的歌者",
-    "DESCRIPTION": "只能在始基力：芒形态打出：获得 !M! 点治疗，然后获得 !M! 层 furina_mod:珠露 。",
-    "UPGRADE_DESCRIPTION": "只能在始基力：芒形态打出：获得 !M! 点治疗，然后获得 !M! 层 furina_mod:珠露 。"
+    "DESCRIPTION": "只能在始基力：芒形态打出：回复 !M! 点生命，然后获得 !M! 层 furina_mod:珠露 。",
+    "UPGRADE_DESCRIPTION": "只能在始基力：芒形态打出：回复 !M! 点生命，然后获得 !M! 层 furina_mod:珠露 。"
   },
   "ApinFurina:GentilhommeUsher": {
     "NAME": "乌瑟勋爵",
@@ -221,8 +221,8 @@
   },
   "ApinFurina:MelusineSupport": {
     "NAME": "美露莘的声援",
-    "DESCRIPTION": "随机触发1种效果：抽1张牌；回复3点生命；消耗1点生命；将抽牌堆中的1张攻击牌加入手牌。",
-    "UPGRADE_DESCRIPTION": "随机触发1种效果：抽1张牌；回复3点生命；消耗1点生命；将抽牌堆中的1张攻击牌加入手牌。"
+    "DESCRIPTION": "随机触发1种效果：回复10点生命；对随机敌人造成10点伤害；抽1张技能牌。",
+    "UPGRADE_DESCRIPTION": "随机触发1种效果：回复10点生命；对随机敌人造成10点伤害；抽1张技能牌。"
   },
   "ApinFurina:Fontatine": {
     "NAME": "枫丹",
@@ -236,8 +236,8 @@
   },
   "ApinFurina:FountainOfLucine": {
     "NAME": "露景泉",
-    "DESCRIPTION": "场上每有1名敌人，你获得 !M! 点治疗1次。",
-    "UPGRADE_DESCRIPTION": "场上每有1名敌人，你获得 !M! 点治疗1次。"
+    "DESCRIPTION": "场上每有1名敌人，回复 !M! 点生命。",
+    "UPGRADE_DESCRIPTION": "场上每有1名敌人，回复 !M! 点生命。"
   },
   "ApinFurina:MaisonGardiennage": {
     "NAME": "执律庭",
@@ -276,8 +276,8 @@
   },
   "ApinFurina:PassingOfJudgment": {
     "NAME": "裁定之时",
-    "DESCRIPTION": "获得1层 furina_mod:会心 和 furina_mod:战意 和 furina_mod:珠露 。",
-    "UPGRADE_DESCRIPTION": "获得1层 furina_mod:会心 和 furina_mod:战意 和 furina_mod:珠露 。"
+    "DESCRIPTION": "立即结算一次当前的 furina_mod:会心 、 furina_mod:战意 和 furina_mod:珠露 。",
+    "UPGRADE_DESCRIPTION": "立即结算一次当前的 furina_mod:会心 、 furina_mod:战意 和 furina_mod:珠露 。本次结算不消耗 furina_mod:珠露 层数。"
   },
   "ApinFurina:VarunadaLazuriteGemstone": {
     "NAME": "涤净青金",
@@ -296,8 +296,8 @@
   },
   "ApinFurina:PeripateticPeregrination": {
     "NAME": "四季的悠游",
-    "DESCRIPTION": "消耗 。恢复所有生命。",
-    "UPGRADE_DESCRIPTION": "固有 。 消耗 。恢复所有生命。"
+    "DESCRIPTION": "消耗 。回复所有生命。",
+    "UPGRADE_DESCRIPTION": "固有 。 消耗 。回复所有生命。"
   },
   "ApinFurina:LeSouvenirAvecLeCrepuscule": {
     "NAME": "时暮的思眷",
@@ -306,13 +306,13 @@
   },
   "ApinFurina:GymnopediesOfLune": {
     "NAME": "淡月之舞",
-    "DESCRIPTION": "当前 furina_mod:气氛值 翻倍。",
-    "UPGRADE_DESCRIPTION": "当前 furina_mod:气氛值 翻倍。"
+    "DESCRIPTION": "解除自身的一个负面效果。",
+    "UPGRADE_DESCRIPTION": "解除自身的一个负面效果。"
   },
   "ApinFurina:Banquet": {
     "NAME": "欢宴",
-    "DESCRIPTION": "消耗 。 furina_mod:气氛值 提升至最大值。",
-    "UPGRADE_DESCRIPTION": "消耗 。 furina_mod:气氛值 提升至最大值。"
+    "DESCRIPTION": "固有 。 消耗 。 furina_mod:气氛值 提升至最大值。",
+    "UPGRADE_DESCRIPTION": "固有 。 消耗 。 furina_mod:气氛值 提升至最大值。"
   },
   "ApinFurina:LaVaguelette": {
     "NAME": "轻涟",
@@ -326,8 +326,8 @@
   },
   "ApinFurina:CoronatedPrimaDonna": {
     "NAME": "冠笄伶优",
-    "DESCRIPTION": "升级所有手牌。",
-    "UPGRADE_DESCRIPTION": "升级所有手牌。"
+    "DESCRIPTION": "升级所有手牌。获得 !M! furina_mod:气氛值 。",
+    "UPGRADE_DESCRIPTION": "升级所有手牌。获得 !M! furina_mod:气氛值 。"
   },
   "ApinFurina:MemberOfTheCast": {
     "NAME": "「戏中人」",
@@ -341,8 +341,8 @@
   },
   "ApinFurina:AllKindreds": {
     "NAME": "众方",
-    "DESCRIPTION": "每当你获得3次 furina_mod:气氛值 时，抽1张牌。",
-    "UPGRADE_DESCRIPTION": "每当你获得3次 furina_mod:气氛值 时，抽1张牌。"
+    "DESCRIPTION": "每当你获得4次 furina_mod:气氛值 时，抽1张牌。",
+    "UPGRADE_DESCRIPTION": "每当你获得4次 furina_mod:气氛值 时，抽1张牌。"
   },
   "ApinFurina:AllPeople": {
     "NAME": "众民",
@@ -391,8 +391,8 @@
   },
   "ApinFurina:INowKnowItIs": {
     "NAME": "我已有觉察",
-    "DESCRIPTION": "孤心沙龙造成的伤害和治疗量提升50%。",
-    "UPGRADE_DESCRIPTION": "孤心沙龙造成的伤害和治疗量提升70%。"
+    "DESCRIPTION": "孤心沙龙造成的伤害和回复量提升50%。",
+    "UPGRADE_DESCRIPTION": "孤心沙龙造成的伤害和回复量提升70%。"
   },
   "ApinFurina:HearMe": {
     "NAME": "诸君听我颂",

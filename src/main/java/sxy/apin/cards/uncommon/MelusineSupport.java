@@ -1,12 +1,12 @@
 package sxy.apin.cards.uncommon;
 
 import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.HealAction;
 import com.megacrit.cardcrawl.actions.utility.DrawPileToHandAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import sxy.apin.helper.FurinaHelper;
@@ -14,7 +14,7 @@ import sxy.apin.helper.FurinaHelper;
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
 
 /**
- * 美露莘的声援 随机触发1种效果：抽1张牌；回复3点生命；消耗1点生命；将抽牌堆中的1张攻击牌加入手牌。
+ * 美露莘的声援 随机触发1种效果：获得10点治疗；对随机敌人造成10点伤害；抽1张技能牌。
  */
 public class MelusineSupport extends CustomCard {
     public static final String ID = FurinaHelper.makeCardID(MelusineSupport.class.getSimpleName());
@@ -48,15 +48,13 @@ public class MelusineSupport extends CustomCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        double random = FurinaHelper.getRandomFloat();
+        double random = AbstractDungeon.eventRng.random();
         if (random < 0.3) {
-            FurinaHelper.addToBottom(new DrawCardAction(1));
+            FurinaHelper.damage(FurinaHelper.getRandomMonster(), abstractPlayer, 10, DamageInfo.DamageType.NORMAL);
         } else if (random < 0.7) {
-            FurinaHelper.addToBottom(new HealAction(abstractPlayer, abstractPlayer, 3));
-        } else if (random < 0.9) {
-            FurinaHelper.damage(abstractPlayer, abstractPlayer, 1, DamageInfo.DamageType.NORMAL);
+            FurinaHelper.addToBottom(new HealAction(abstractPlayer, abstractPlayer, 10));
         } else {
-            FurinaHelper.addToBottom(new DrawPileToHandAction(1, CardType.ATTACK));
+            FurinaHelper.addToBottom(new DrawPileToHandAction(1, CardType.SKILL));
         }
     }
 }

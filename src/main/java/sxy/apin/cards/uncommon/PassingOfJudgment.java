@@ -1,10 +1,12 @@
 package sxy.apin.cards.uncommon;
 
 import basemod.abstracts.CustomCard;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import sxy.apin.helper.FurinaHelper;
 import sxy.apin.power.CriticalBoost;
 import sxy.apin.power.Dewdrop;
@@ -13,7 +15,7 @@ import sxy.apin.power.Grit;
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
 
 /**
- * 裁定之时 随机获得 1 层会心/战意/珠露。
+ * 裁定之时 立即结算一次 会心/战意/珠露；（本次结算不消耗珠露层数）。
  */
 public class PassingOfJudgment extends CustomCard {
     public static final String ID = FurinaHelper.makeCardID(PassingOfJudgment.class.getSimpleName());
@@ -21,7 +23,7 @@ public class PassingOfJudgment extends CustomCard {
     private static final String NAME = CARD_STRINGS.NAME;
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final String IMG_PATH = "sxy/apin/img/cards/skill/card_raw_115.png";
-    private static final int COST = 1;
+    private static final int COST = 2;
     private static final CardType TYPE = CardType.SKILL;
     private static final CardColor COLOR = FURINA_BLUE;
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
@@ -39,7 +41,6 @@ public class PassingOfJudgment extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.updateCost(-1);
         }
         this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
         this.initializeDescription();
@@ -50,5 +51,20 @@ public class PassingOfJudgment extends CustomCard {
         FurinaHelper.applyPower(abstractPlayer, abstractPlayer, new Grit(abstractPlayer, 1), 1);
         FurinaHelper.applyPower(abstractPlayer, abstractPlayer, new CriticalBoost(abstractPlayer, 1), 1);
         FurinaHelper.applyPower(abstractPlayer, abstractPlayer, new Dewdrop(abstractPlayer, 1), 1);
+        AbstractPower grit = FurinaHelper.getPower(Grit.POWER_ID);
+        if (grit != null) {
+            FurinaHelper.addToBottom(new GainBlockAction(abstractPlayer, grit.amount));
+        }
+        CriticalBoost criticalBoost = (CriticalBoost) FurinaHelper.getPower(CriticalBoost.POWER_ID);
+        if (criticalBoost != null) {
+            criticalBoost.effect();
+        }
+        Dewdrop dewdrop = (Dewdrop) FurinaHelper.getPower(Dewdrop.POWER_ID);
+        if (dewdrop != null) {
+            dewdrop.effect(abstractPlayer);
+            if (!this.upgraded) {
+                FurinaHelper.removePlayerPower(dewdrop.ID);
+            }
+        }
     }
 }

@@ -28,6 +28,7 @@ public class Banquet extends CustomCard {
     public Banquet() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.exhaust = true;
+        this.isInnate = true;
     }
 
     @Override

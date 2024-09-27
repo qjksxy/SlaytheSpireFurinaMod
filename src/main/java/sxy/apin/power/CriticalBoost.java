@@ -13,8 +13,6 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import sxy.apin.character.Furina;
 import sxy.apin.helper.FurinaHelper;
 
-import java.util.ArrayList;
-
 /**
  * 会心 每打出一张攻击牌获得1层会心，受到一次伤害消除2层会心。回合结束时对最近敌人造成会心层数的伤害。
  */
@@ -63,10 +61,8 @@ public class CriticalBoost extends AbstractPower {
 
     @Override
     public void onUseCard(AbstractCard card, UseCardAction action) {
-        if (card.type == AbstractCard.CardType.ATTACK) {
-            this.amount += 2;
-            this.flash();
-        }
+        this.amount += 2;
+        this.flash();
     }
 
     @Override
@@ -81,29 +77,23 @@ public class CriticalBoost extends AbstractPower {
     @Override
     public void atEndOfTurn(boolean isPlayer) {
         if (isPlayer) {
-            AbstractMonster mon;
-            ArrayList<AbstractMonster> monsters = FurinaHelper.getMonsters();
-            if (monsters.isEmpty()) {
-                return;
-            } else {
-                mon = monsters.get(0);
-            }
-            for (AbstractMonster monster : monsters) {
-                if (monster.isDeadOrEscaped() || monster.currentHealth <= 0) {
-                    continue;
-                }
-                mon = monster;
-                break;
-            }
-            this.flash();
-            // 永世领唱 每持有 10 点气氛值，会心造成的伤害提升50%。
-            double fac = 1.0;
-            if (FurinaHelper.getPower(PerpetualMuseOfChansonsPower.POWER_ID) != null) {
-                int revelry = Furina.getRevelry();
-                //noinspection RedundantCast
-                fac += (int) (revelry / 10) * 0.5;
-            }
-            FurinaHelper.damage(mon, FurinaHelper.getPlayer(), (int) (this.amount * fac), DamageInfo.DamageType.NORMAL);
+            effect();
         }
+    }
+
+    public void effect() {
+        AbstractMonster mon = FurinaHelper.getNearestMonster();
+        if (mon == null) {
+            return;
+        }
+        this.flash();
+        // 永世领唱 每持有 10 点气氛值，会心造成的伤害提升50%。
+        double fac = 1.0;
+        if (FurinaHelper.getPower(PerpetualMuseOfChansonsPower.POWER_ID) != null) {
+            int revelry = Furina.getRevelry();
+            //noinspection RedundantCast
+            fac += (int) (revelry / 10) * 0.5;
+        }
+        FurinaHelper.damage(mon, FurinaHelper.getPlayer(), (int) (this.amount * fac), DamageInfo.DamageType.NORMAL);
     }
 }

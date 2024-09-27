@@ -22,7 +22,7 @@ public class SlowingWaterPower extends AbstractPower {
     private static final String NAME = powerStrings.NAME;
     // 能力的描述
     private static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
-    private boolean flag = false;
+    private boolean flag;
 
     public SlowingWaterPower(AbstractCreature owner, int amount) {
         this.name = NAME;
@@ -30,6 +30,7 @@ public class SlowingWaterPower extends AbstractPower {
         this.owner = owner;
         this.type = PowerType.BUFF;
         this.amount = amount;
+        this.flag = false;
         // 添加一大一小两张能力图
         String path128 = "sxy/apin/img/powers/power_128/power_raw_71.png";
         String path48 = "sxy/apin/img/powers/power_48/power_raw_71.png";
@@ -59,6 +60,7 @@ public class SlowingWaterPower extends AbstractPower {
     public void atStartOfTurn() {
         if (this.flag && this.amount > 0) {
             FurinaHelper.addToBottom(new GainEnergyAction(this.amount));
+            this.flag = false;
         }
         FurinaHelper.removePlayerPower(this.ID);
     }

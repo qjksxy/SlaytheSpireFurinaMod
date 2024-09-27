@@ -7,13 +7,16 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import sxy.apin.character.Furina;
 import sxy.apin.helper.FurinaHelper;
-import sxy.apin.power.WovenWatersPower;
+import sxy.apin.power.CriticalBoost;
+import sxy.apin.power.Dewdrop;
+import sxy.apin.power.Grit;
 
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
 
 /**
- * 交织之水 本回合每打出一张攻击牌，则获得 1元素能量。
+ * 交织之水 获得 !M! 层 furina_mod:战意 。依据当前的始基力形态，额外获得 !M! 层 furina_mod:会心 或 furina_mod:珠露 。
  */
 public class WovenWaters extends CustomCard {
     public static final String ID = FurinaHelper.makeCardID(WovenWaters.class.getSimpleName());
@@ -29,15 +32,16 @@ public class WovenWaters extends CustomCard {
 
     public WovenWaters() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
+        this.magicNumber = 6;
+        this.baseMagicNumber = 6;
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.updateCost(-1);
+            this.upgradeMagicNumber(2);
         }
-        this.upgradeMagicNumber(1);
         this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
         this.initializeDescription();
     }
@@ -46,7 +50,13 @@ public class WovenWaters extends CustomCard {
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         AbstractDungeon.actionManager.addToBottom(
                 new ApplyPowerAction(abstractPlayer, abstractPlayer,
-                        new WovenWatersPower(abstractPlayer), 1)
+                        new Grit(abstractPlayer, this.magicNumber), this.magicNumber)
         );
+        int arkhe = Furina.getArkhe();
+        if (arkhe == Furina.OUSIA) {
+            FurinaHelper.applyPower(abstractPlayer, abstractPlayer, new CriticalBoost(abstractPlayer, this.magicNumber), this.magicNumber);
+        } else {
+            FurinaHelper.applyPower(abstractPlayer, abstractPlayer, new Dewdrop(abstractPlayer, this.magicNumber), this.magicNumber);
+        }
     }
 }

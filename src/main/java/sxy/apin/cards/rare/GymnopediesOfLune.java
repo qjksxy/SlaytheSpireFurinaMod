@@ -5,13 +5,13 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import sxy.apin.character.Furina;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import sxy.apin.helper.FurinaHelper;
 
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
 
 /**
- * 淡月之舞  当前气氛值翻倍。
+ * 淡月之舞  解除自身的一个负面效果
  */
 public class GymnopediesOfLune extends CustomCard {
     public static final String ID = FurinaHelper.makeCardID(GymnopediesOfLune.class.getSimpleName());
@@ -41,7 +41,12 @@ public class GymnopediesOfLune extends CustomCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        int revelry = Furina.getRevelry();
-        Furina.gainRevelry(revelry);
+        for (AbstractPower power : abstractPlayer.powers) {
+            if (power.type == AbstractPower.PowerType.DEBUFF) {
+                FurinaHelper.removePlayerPower(power.ID);
+                return;
+            }
+        }
+
     }
 }
