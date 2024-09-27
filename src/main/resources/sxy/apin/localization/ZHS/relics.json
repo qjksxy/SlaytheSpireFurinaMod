@@ -3,7 +3,7 @@
     "NAME": "游医的银莲",
     "FLAVOR": "relics.json",
     "DESCRIPTIONS": [
-      "每受到 #b3 次治疗时，恢复 #y1 点生命。"
+      "每受到 #y3 次治疗时，恢复 #y1 点生命。"
     ]
   },
   "ApinFurina:LittleCake": {

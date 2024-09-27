@@ -61,6 +61,7 @@ public class Grit extends AbstractPower {
     @Override
     public void wasHPLost(DamageInfo info, int damageAmount) {
         this.amount++;
+        this.amount = Math.min(this.amount, getLimit());
         this.flash();
         if (this.amount <= 0) {
             FurinaHelper.removePlayerPower(this.ID);
@@ -70,6 +71,7 @@ public class Grit extends AbstractPower {
     @Override
     public int onHeal(int healAmount) {
         this.amount++;
+        this.amount = Math.min(this.amount, getLimit());
         return healAmount;
     }
 

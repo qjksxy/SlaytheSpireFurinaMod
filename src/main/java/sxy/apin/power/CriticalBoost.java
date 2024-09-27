@@ -62,6 +62,7 @@ public class CriticalBoost extends AbstractPower {
     @Override
     public void onUseCard(AbstractCard card, UseCardAction action) {
         this.amount += 2;
+        this.amount = Math.min(this.amount, getLimit());
         this.flash();
     }
 
