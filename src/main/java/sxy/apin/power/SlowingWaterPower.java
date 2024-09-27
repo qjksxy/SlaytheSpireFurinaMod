@@ -2,13 +2,15 @@ package sxy.apin.power;
 
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
-import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
+import org.apache.logging.log4j.Level;
 import sxy.apin.helper.FurinaHelper;
+import sxy.apin.modcore.FurinaCore;
 
 /**
  * 迟滞之水 回合结束时，如果剩余能量未使用，则下一回合获得1能量。
@@ -59,6 +61,7 @@ public class SlowingWaterPower extends AbstractPower {
     @Override
     public void atStartOfTurn() {
         if (this.flag && this.amount > 0) {
+
             FurinaHelper.addToBottom(new GainEnergyAction(this.amount));
             this.flag = false;
         }
@@ -70,8 +73,8 @@ public class SlowingWaterPower extends AbstractPower {
         if (!isPlayer) {
             return;
         }
-        AbstractPlayer player = FurinaHelper.getPlayer();
-        if (player.energy.energy > 0) {
+        FurinaCore.logger.log(Level.WARN, "energy_count: " + EnergyPanel.totalCount);
+        if (EnergyPanel.totalCount > 0) {
             this.flag = true;
         }
     }

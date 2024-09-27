@@ -43,6 +43,6 @@ public class Banquet extends CustomCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        Furina.gainRevelry(50);
+        Furina.gainRevelry(60);
     }
 }

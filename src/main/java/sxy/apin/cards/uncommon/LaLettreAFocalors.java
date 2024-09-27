@@ -30,7 +30,6 @@ public class LaLettreAFocalors extends CustomCard {
 
     public LaLettreAFocalors() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseHeal = 2;
         this.tags.add(CardTags.HEALING);
     }
 
@@ -48,7 +47,7 @@ public class LaLettreAFocalors extends CustomCard {
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         int extraHealth = Furina.getRevelry();
         AbstractDungeon.actionManager.addToBottom(
-                new HealAction(abstractPlayer, abstractPlayer, this.baseHeal + extraHealth)
+                new HealAction(abstractPlayer, abstractPlayer, extraHealth)
         );
     }
 }

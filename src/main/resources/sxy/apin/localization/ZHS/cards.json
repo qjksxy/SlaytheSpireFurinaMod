@@ -1,4 +1,9 @@
 {
+  "ApinFurina:TestCard": {
+    "NAME": "测试",
+    "DESCRIPTION": "测测测测测",
+    "UPGRADE_DESCRIPTION": "测测测测测"
+  },
   "ApinFurina:Strike": {
     "NAME": "独舞之邀",
     "DESCRIPTION": "造成 !D! 点伤害。获得 1 点 furina_mod:元素能量 。根据当前 furina_mod:始基力形态 ，添加一张灵息之刺或流涌之刃到手牌中。",
@@ -151,8 +156,8 @@
   },
   "ApinFurina:BubblySeahorse": {
     "NAME": "泡泡海马",
-    "DESCRIPTION": "获得 8 层珠露。",
-    "UPGRADE_DESCRIPTION": "获得 8 层珠露。"
+    "DESCRIPTION": "获得 !M! 层 furina_mod:珠露 。",
+    "UPGRADE_DESCRIPTION": "获得 !M! 层 furina_mod:珠露 。"
   },
   "ApinFurina:BallOctopus": {
     "NAME": "球球章鱼",
@@ -246,8 +251,8 @@
   },
   "ApinFurina:PalaisMermonia": {
     "NAME": "沫芒宫",
-    "DESCRIPTION": "消耗1张牌，回复5+50% furina_mod:气氛值 生命。",
-    "UPGRADE_DESCRIPTION": "消耗1张牌，回复5+50% furina_mod:气氛值 生命。"
+    "DESCRIPTION": "消耗1张牌，回复50% furina_mod:气氛值 生命。",
+    "UPGRADE_DESCRIPTION": "消耗1张牌，回复50% furina_mod:气氛值 生命。"
   },
   "ApinFurina:WeepingWillowOfTheLake": {
     "NAME": "湖中垂柳",
@@ -271,8 +276,8 @@
   },
   "ApinFurina:LaLettreAFocalors": {
     "NAME": "致水神",
-    "DESCRIPTION": "回复2+ furina_mod:气氛值 点生命值。",
-    "UPGRADE_DESCRIPTION": "回复2+ furina_mod:气氛值 点生命值。"
+    "DESCRIPTION": "回复 furina_mod:气氛值 点生命值。",
+    "UPGRADE_DESCRIPTION": "回复 furina_mod:气氛值 点生命值。"
   },
   "ApinFurina:PassingOfJudgment": {
     "NAME": "裁定之时",
@@ -286,8 +291,8 @@
   },
   "ApinFurina:PourLaJustice": {
     "NAME": "普茹斯蒂司",
-    "DESCRIPTION": "本回合每打出1张卡牌，回复5生命。",
-    "UPGRADE_DESCRIPTION": "本回合每打出1张卡牌，回复5生命。"
+    "DESCRIPTION": "本回合每打出1张卡牌，回复1生命。",
+    "UPGRADE_DESCRIPTION": "本回合每打出1张卡牌，回复1生命。"
   },
   "ApinFurina:DewsFirstGlimmerAtDaybreak": {
     "NAME": "晨露浮光之初",
@@ -296,8 +301,8 @@
   },
   "ApinFurina:PeripateticPeregrination": {
     "NAME": "四季的悠游",
-    "DESCRIPTION": "消耗 。回复所有生命。",
-    "UPGRADE_DESCRIPTION": "固有 。 消耗 。回复所有生命。"
+    "DESCRIPTION": "消耗 。回复60生命。",
+    "UPGRADE_DESCRIPTION": "固有 。 消耗 。回复80生命。"
   },
   "ApinFurina:LeSouvenirAvecLeCrepuscule": {
     "NAME": "时暮的思眷",

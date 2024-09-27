@@ -11,7 +11,7 @@ import sxy.apin.helper.FurinaHelper;
 public class TravelingDoctor extends CustomRelic {
     public static final String ID = FurinaHelper.makeRelicID("Traveling Doctor");
     public static final String IMG_PATH = "sxy/apin/img/relic/crackedOrb.png";
-    public static final int HEALTH_NUM = 1;
+    public static final int HEALTH_NUM = 5;
     private int healCount = 0;
 
     public TravelingDoctor() {
@@ -42,8 +42,8 @@ public class TravelingDoctor extends CustomRelic {
     @Override
     public int onPlayerHeal(int healAmount) {
         this.healCount++;
-        if (this.healCount >= 3) {
-            this.healCount = 0;
+        if (this.healCount >= 5) {
+            this.healCount -= 5;
             this.flash();
             this.addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
             this.addToBot(new HealAction(AbstractDungeon.player, AbstractDungeon.player, HEALTH_NUM));

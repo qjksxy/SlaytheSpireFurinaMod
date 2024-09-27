@@ -50,6 +50,6 @@ public class PalaisMermonia extends CustomCard {
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         int revelry = Furina.getRevelry();
         FurinaHelper.addToBottom(new ExhaustAction(1, false, false, false));
-        FurinaHelper.addToBottom(new HealAction(abstractPlayer, abstractPlayer, 5 + revelry / 2));
+        FurinaHelper.addToBottom(new HealAction(abstractPlayer, abstractPlayer, revelry / 2));
     }
 }

@@ -11,7 +11,7 @@ import sxy.apin.helper.FurinaHelper;
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
 
 /**
- * 四季的悠游  消耗 。回复当前气氛值点生命。
+ * 四季的悠游  消耗 。
  */
 public class PeripateticPeregrination extends CustomCard {
     public static final String ID = FurinaHelper.makeCardID(PeripateticPeregrination.class.getSimpleName());
@@ -42,7 +42,7 @@ public class PeripateticPeregrination extends CustomCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        int heal = abstractPlayer.maxHealth - abstractPlayer.currentHealth;
+        int heal = this.upgraded ? 80 : 60;
         FurinaHelper.addToBottom(new HealAction(abstractPlayer, abstractPlayer, heal));
     }
 }
