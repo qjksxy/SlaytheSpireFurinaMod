@@ -1,14 +1,14 @@
 {
   "ApinFurina:Traveling Doctor": {
     "NAME": "游医的银莲",
-    "FLAVOR": "relics.json",
+    "FLAVOR": "是珍贵的药材，但存放了这么久已经失去了药用价值。",
     "DESCRIPTIONS": [
       "每受到 #y5 次治疗时，恢复 #y5 点生命。"
     ]
   },
   "ApinFurina:LittleCake": {
     "NAME": "旅行者赠送的小蛋糕",
-    "FLAVOR": "relics.json",
+    "FLAVOR": "一个人能吃下所有的蛋糕吗？或者每天吃一个，这样差不多可以吃一周？但是蛋糕放不了这么多天啊。唔…不要担心，以后就有很多朋友一起来吃了吧。",
     "DESCRIPTIONS": [
       "每场战斗开始时，回复 #y10 点生命。"
     ]

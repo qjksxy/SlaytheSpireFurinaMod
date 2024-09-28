@@ -47,9 +47,9 @@ public class Furina extends CustomPlayer {
     public static final int PNEUMA = 1;
 
     // 火堆的人物立绘（行动前）
-    private static final String MY_CHARACTER_SHOULDER_1 = "sxy/apin/img/char/shoulder.png";
+    private static final String MY_CHARACTER_SHOULDER_1 = "sxy/apin/img/char/blank.png";
     // 火堆的人物立绘（行动后）
-    private static final String MY_CHARACTER_SHOULDER_2 = "sxy/apin/img/char/shoulder2.png";
+    private static final String MY_CHARACTER_SHOULDER_2 = "sxy/apin/img/char/blank.png";
     // 人物死亡图像
     private static final String CORPSE_IMAGE = "sxy/apin/img/char/corpse.png";
     // 战斗界面左下角能量图标的每个图层
@@ -307,9 +307,9 @@ public class Furina extends CustomPlayer {
     public ArrayList<CutscenePanel> getCutscenePanels() {
         ArrayList<CutscenePanel> panels = new ArrayList<>();
         // 有两个参数的，第二个参数表示出现图片时播放的音效
-        panels.add(new CutscenePanel("sxy/apin/img/char/Victory1.png", "ATTACK_MAGIC_FAST_1"));
-        panels.add(new CutscenePanel("sxy/apin/img/char/Victory2.png"));
-        panels.add(new CutscenePanel("sxy/apin/img/char/Victory3.png"));
+        panels.add(new CutscenePanel("sxy/apin/img/char/victory_1.png", "ATTACK_MAGIC_FAST_1"));
+        panels.add(new CutscenePanel("sxy/apin/img/char/victory_2.png"));
+        panels.add(new CutscenePanel("sxy/apin/img/char/victory_3.png"));
         return panels;
     }
 

@@ -11,7 +11,7 @@ import sxy.apin.helper.FurinaHelper;
 
 public class LittleCake extends CustomRelic {
     public static final String ID = FurinaHelper.makeRelicID(LittleCake.class.getSimpleName());
-    public static final String IMG_PATH = "sxy/apin/img/relic/large/relic_1.png";
+    public static final String IMG_PATH = "sxy/apin/img/relic/large/cake.png";
 //    public static final String OUTLINE_PATH = "sxy/apin/img/relic/outline/relic_1.png";
 
     public LittleCake() {

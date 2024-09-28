@@ -85,6 +85,7 @@ public class FurinaCore implements EditCardsSubscriber, EditStringsSubscriber, E
     // 当basemod开始注册mod卡牌时，便会调用这个函数
     @Override
     public void receiveEditCards() {
+        BaseMod.addCard(new TestCard());
         // BASIC--6
         BaseMod.addCard(new ChargedAttack());
         BaseMod.addCard(new Dodge());
