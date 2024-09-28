@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://github.com/qjksxy/logoGtt.png" width="300" height="200">
+  <img src="https://github.com/qjksxy/SlaytheSpireFurinaMod/blob/master/furina_2.png">
 
 # 杀戮尖塔芙宁娜模组
 
