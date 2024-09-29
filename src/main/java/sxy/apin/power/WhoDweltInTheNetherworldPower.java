@@ -1,11 +1,14 @@
 package sxy.apin.power;
 
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import sxy.apin.cards.common.ElementalBurst;
 import sxy.apin.character.Furina;
 import sxy.apin.helper.FurinaHelper;
 
@@ -22,12 +25,12 @@ public class WhoDweltInTheNetherworldPower extends AbstractPower {
     // 能力的描述
     private static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
-    public WhoDweltInTheNetherworldPower(AbstractCreature owner, int amount) {
+    public WhoDweltInTheNetherworldPower(AbstractCreature owner) {
         this.name = NAME;
         this.ID = POWER_ID;
         this.owner = owner;
         this.type = PowerType.BUFF;
-        this.amount = amount;
+        this.amount = -1;
         // 添加一大一小两张能力图
         String path128 = "sxy/apin/img/powers/power_128/power_raw_79.png";
         String path48 = "sxy/apin/img/powers/power_48/power_raw_79.png";
@@ -38,12 +41,13 @@ public class WhoDweltInTheNetherworldPower extends AbstractPower {
     }
 
     @Override
-    public void stackPower(int stackAmount) {
-    }
-
-    @Override
     public void atStartOfTurn() {
         Furina.gainElementEnergy(this.amount);
+        if (Furina.getRevelry() >= 5) {
+            AbstractDungeon.actionManager.addToBottom(
+                    new MakeTempCardInHandAction(new ElementalBurst(), 1)
+            );
+        }
     }
 
     // 能力在更新时如何修改描述

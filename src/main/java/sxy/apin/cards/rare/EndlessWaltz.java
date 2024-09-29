@@ -29,6 +29,7 @@ public class EndlessWaltz extends CustomCard {
 
     public EndlessWaltz() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
+        this.magicNumber = this.baseMagicNumber = 1;
         this.tags.add(CardTags.STRIKE);
     }
 
@@ -36,6 +37,7 @@ public class EndlessWaltz extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
+            this.upgradeMagicNumber(1);
         }
         this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
         this.initializeDescription();
@@ -45,12 +47,7 @@ public class EndlessWaltz extends CustomCard {
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         int damage = Furina.getRevelry();
         int extraDamage = HearMe.getExtraDamage();
-        if (this.upgraded) {
-            damage = (int) (damage * 0.7);
-        } else {
-            damage = (int) (damage * 0.9);
-        }
         FurinaHelper.damage(abstractMonster, abstractPlayer, damage + extraDamage, DamageInfo.DamageType.NORMAL);
-        FurinaHelper.addToBottom(new DrawCardAction(1));
+        FurinaHelper.addToBottom(new DrawCardAction(this.magicNumber));
     }
 }

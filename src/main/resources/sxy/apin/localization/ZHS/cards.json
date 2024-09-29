@@ -1,8 +1,8 @@
 {
   "ApinFurina:TestCard": {
     "NAME": "测试",
-    "DESCRIPTION": "测测测测测",
-    "UPGRADE_DESCRIPTION": "测测测测测"
+    "DESCRIPTION": "当前测试中。",
+    "UPGRADE_DESCRIPTION": "当前测试中。"
   },
   "ApinFurina:Strike": {
     "NAME": "独舞之邀",
@@ -51,13 +51,13 @@
   },
   "ApinFurina:TheDockhandsAssistant": {
     "NAME": "船坞长剑",
-    "DESCRIPTION": "对敌人造成 !D! 点伤害。获得5 furina_mod:元素能量 。",
-    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 点伤害。获得5 furina_mod:元素能量 。"
+    "DESCRIPTION": "对敌人造成 !D! 点伤害。获得 !M! furina_mod:元素能量 。",
+    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 点伤害。获得 !M! furina_mod:元素能量 。"
   },
   "ApinFurina:FleuveCendreFerryman": {
     "NAME": "灰河渡手",
-    "DESCRIPTION": "对敌人造成 !D! 点伤害。获得3 furina_mod:气氛值 和1 furina_mod:元素能量 。",
-    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 点伤害。获得3 furina_mod:气氛值 和1 furina_mod:元素能量 。"
+    "DESCRIPTION": "对敌人造成 !D! 点伤害。获得 !M! furina_mod:气氛值 和1 furina_mod:元素能量 。",
+    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 点伤害。获得 !M! furina_mod:气氛值 和1 furina_mod:元素能量 。"
   },
   "ApinFurina:Order": {
     "NAME": "秩序",
@@ -106,23 +106,23 @@
   },
   "ApinFurina:EndlessWaltz": {
     "NAME": "停不了的圆舞",
-    "DESCRIPTION": "对敌人造成当前 furina_mod:气氛值 70%的伤害。抽1张牌。",
-    "UPGRADE_DESCRIPTION": "对敌人造成当前 furina_mod:气氛值 90%的伤害。抽1张牌。"
+    "DESCRIPTION": "对敌人造成当前 furina_mod:气氛值 的伤害。抽 !M! 张牌。",
+    "UPGRADE_DESCRIPTION": "对敌人造成当前 furina_mod:气氛值 的伤害。抽 !M! 张牌。"
   },
   "ApinFurina:UnheardConfession": {
     "NAME": "无人听的自白",
-    "DESCRIPTION": "对全体敌人造成当前 furina_mod:气氛值 80%的伤害。消耗1张牌。",
-    "UPGRADE_DESCRIPTION": "对全体敌人造成当前 furina_mod:气氛值 80%的伤害。至多消耗1张牌。"
+    "DESCRIPTION": "对全体敌人造成当前60% furina_mod:气氛值 的伤害。消耗1张牌。",
+    "UPGRADE_DESCRIPTION": "对全体敌人造成当前80% furina_mod:气氛值 的伤害。至多消耗1张牌。"
   },
   "ApinFurina:TheSeaIsMyStage": {
     "NAME": "瀚海亦舞台",
-    "DESCRIPTION": "对敌人造成当前 furina_mod:气氛值 50%的伤害，给予 !M! 层易伤和脆弱。",
-    "UPGRADE_DESCRIPTION": "对敌人造成当前 furina_mod:气氛值 50%的伤害，给予 !M! 层易伤和脆弱。"
+    "DESCRIPTION": "对敌人造成当前 furina_mod:气氛值 的伤害，给予 !M! 层易伤和虚弱。",
+    "UPGRADE_DESCRIPTION": "对敌人造成当前 furina_mod:气氛值 的伤害，给予 !M! 层易伤和虚弱。"
   },
   "ApinFurina:SplendorOfTranquilWaters": {
     "NAME": "静水流涌之辉",
-    "DESCRIPTION": "对敌人造成当前 X 倍 furina_mod:气氛值 的伤害。此外，依据当前的 furina_mod:始基力形态 ，额外造成当前 furina_mod:气氛值 的回复（荒）或伤害（芒）。",
-    "UPGRADE_DESCRIPTION": "对敌人造成当前 X+1 倍 furina_mod:气氛值 的伤害。此外，依据当前的 furina_mod:始基力形态 ，额外造成当前 furina_mod:气氛值 的回复（荒）或伤害（芒）。"
+    "DESCRIPTION": "对敌人造成当前X次 furina_mod:气氛值 的伤害。此外，依据当前的 furina_mod:始基力形态 ，额外造成当前 furina_mod:气氛值 的回复（荒）或伤害（芒）。",
+    "UPGRADE_DESCRIPTION": "对敌人造成当前X+1次 furina_mod:气氛值 的伤害。此外，依据当前的 furina_mod:始基力形态 ，额外造成当前 furina_mod:气氛值 的回复（荒）或伤害（芒）。"
   },
   "ApinFurina:Dodge": {
     "NAME": "闪避",
@@ -146,8 +146,8 @@
   },
   "ApinFurina:Blubberbeast": {
     "NAME": "膨膨兽",
-    "DESCRIPTION": "消耗8生命，抽 !M! 张牌。",
-    "UPGRADE_DESCRIPTION": "消耗12生命，抽 !M! 张牌。"
+    "DESCRIPTION": "失去4生命，抽 !M! 张牌。",
+    "UPGRADE_DESCRIPTION": "失去6生命，抽 !M! 张牌。"
   },
   "ApinFurina:ArmoredCrab": {
     "NAME": "重甲蟹",
@@ -161,8 +161,8 @@
   },
   "ApinFurina:BallOctopus": {
     "NAME": "球球章鱼",
-    "DESCRIPTION": "消耗8生命，将 !M! 张弃牌堆中的牌加入手牌。",
-    "UPGRADE_DESCRIPTION": "消耗12生命，将 !M! 张弃牌堆中的牌加入手牌。"
+    "DESCRIPTION": "失去1生命，将 !M! 张弃牌堆中的牌加入手牌。",
+    "UPGRADE_DESCRIPTION": "失去1生命，将 !M! 张弃牌堆中的牌加入手牌。"
   },
   "ApinFurina:OratriceMecaniquedAnalyseCardinale": {
     "NAME": "谕示裁定枢机",
@@ -181,8 +181,8 @@
   },
   "ApinFurina:ElementalSkill": {
     "NAME": "孤心沙龙",
-    "DESCRIPTION": "获得 !M! 点 furina_mod:元素能量 。根据当前的 furina_mod:芒荒形态 获得 !M! 层沙龙成员或众水的歌者。 furina_mod:芒荒形态 发生转变时，沙龙成员或众水的歌者同时转变。",
-    "UPGRADE_DESCRIPTION": "获得 !M! 点 furina_mod:元素能量 。根据当前的 furina_mod:芒荒形态 获得 !M! 层沙龙成员或众水的歌者。 furina_mod:芒荒形态 发生转变时，沙龙成员或众水的歌者同时转变。"
+    "DESCRIPTION": "获得 !M! 点 furina_mod:元素能量 。根据当前的 furina_mod:芒荒形态 获得 !M! 层 furina_mod:沙龙成员 或 furina_mod:众水的歌者 。 furina_mod:芒荒形态 发生转变时，沙龙成员或众水的歌者同时转变。",
+    "UPGRADE_DESCRIPTION": "获得 !M! 点 furina_mod:元素能量 。根据当前的 furina_mod:芒荒形态 获得 !M! 层 furina_mod:沙龙成员 或 furina_mod:众水的歌者 。 furina_mod:芒荒形态 发生转变时，沙龙成员或众水的歌者同时转变。"
   },
   "ApinFurina:ElementalBurst": {
     "NAME": "万众狂欢",
@@ -221,8 +221,8 @@
   },
   "ApinFurina:MademoiselleCrabaletta": {
     "NAME": "谢贝蕾妲小姐",
-    "DESCRIPTION": "只能在始基力：荒形态打出：减少 !M! 生命，获得 !M! furina_mod:气氛值 。",
-    "UPGRADE_DESCRIPTION": "只能在始基力：荒形态打出：减少 !M! 生命，获得 !M! furina_mod:气氛值 。"
+    "DESCRIPTION": "只能在始基力：荒形态打出：失去 !M! 生命，获得 !M! furina_mod:气氛值 。",
+    "UPGRADE_DESCRIPTION": "只能在始基力：荒形态打出：失去 !M! 生命，获得 !M! furina_mod:气氛值 。"
   },
   "ApinFurina:MelusineSupport": {
     "NAME": "美露莘的声援",
@@ -291,8 +291,8 @@
   },
   "ApinFurina:PourLaJustice": {
     "NAME": "普茹斯蒂司",
-    "DESCRIPTION": "本回合每打出1张卡牌，回复1生命。",
-    "UPGRADE_DESCRIPTION": "本回合每打出1张卡牌，回复1生命。"
+    "DESCRIPTION": "本回合每打出1张卡牌，回复3生命。",
+    "UPGRADE_DESCRIPTION": "本回合每打出1张卡牌，回复3生命。"
   },
   "ApinFurina:DewsFirstGlimmerAtDaybreak": {
     "NAME": "晨露浮光之初",
@@ -301,8 +301,8 @@
   },
   "ApinFurina:PeripateticPeregrination": {
     "NAME": "四季的悠游",
-    "DESCRIPTION": "消耗 。回复60生命。",
-    "UPGRADE_DESCRIPTION": "固有 。 消耗 。回复80生命。"
+    "DESCRIPTION": "消耗 。回复50生命。",
+    "UPGRADE_DESCRIPTION": "固有 。 消耗 。回复60生命。"
   },
   "ApinFurina:LeSouvenirAvecLeCrepuscule": {
     "NAME": "时暮的思眷",
@@ -321,13 +321,13 @@
   },
   "ApinFurina:LaVaguelette": {
     "NAME": "轻涟",
-    "DESCRIPTION": "抽牌至9张。",
-    "UPGRADE_DESCRIPTION": "抽牌至9张。"
+    "DESCRIPTION": "抽牌至9张。将一张圣俗杂座加入手牌。",
+    "UPGRADE_DESCRIPTION": "抽牌至9张。将一张圣俗杂座加入手牌。"
   },
   "ApinFurina:TheLittleOceanid": {
     "NAME": "水的女儿",
-    "DESCRIPTION": "消耗 !M! 生命，获得 [E] 。",
-    "UPGRADE_DESCRIPTION": "消耗 !M! 生命，获得 [E] 。"
+    "DESCRIPTION": "失去 !M! 生命，获得 [E] 。",
+    "UPGRADE_DESCRIPTION": "失去 !M! 生命，获得 [E] 。"
   },
   "ApinFurina:CoronatedPrimaDonna": {
     "NAME": "冠笄伶优",
@@ -346,8 +346,8 @@
   },
   "ApinFurina:AllKindreds": {
     "NAME": "众方",
-    "DESCRIPTION": "每当你获得4次 furina_mod:气氛值 时，抽1张牌。",
-    "UPGRADE_DESCRIPTION": "每当你获得4次 furina_mod:气氛值 时，抽1张牌。"
+    "DESCRIPTION": "每当你获得3次 furina_mod:气氛值 时，抽1张牌。",
+    "UPGRADE_DESCRIPTION": "每当你获得3次 furina_mod:气氛值 时，抽1张牌。"
   },
   "ApinFurina:AllPeople": {
     "NAME": "众民",
@@ -356,8 +356,8 @@
   },
   "ApinFurina:AllLaws": {
     "NAME": "众律法",
-    "DESCRIPTION": "每当你获得 furina_mod:气氛值 时，随机获得 1 层 furina_mod:会心 / furina_mod:战意 / furina_mod:珠露 。",
-    "UPGRADE_DESCRIPTION": "每当你获得 furina_mod:气氛值 时，随机获得 1 层 furina_mod:会心 / furina_mod:战意 / furina_mod:珠露 。"
+    "DESCRIPTION": "每当你获得 furina_mod:气氛值 时，随机获得3层 furina_mod:会心 / furina_mod:战意 / furina_mod:珠露 。",
+    "UPGRADE_DESCRIPTION": "每当你获得 furina_mod:气氛值 时，随机获得3层 furina_mod:会心 / furina_mod:战意 / furina_mod:珠露 。"
   },
   "ApinFurina:PerpetualMuseOfChansons": {
     "NAME": "永世领唱",
@@ -391,8 +391,8 @@
   },
   "ApinFurina:WhoDweltInTheNetherworld": {
     "NAME": "若非处幽冥",
-    "DESCRIPTION": "固有 。 获得 !M! 点 furina_mod:元素能量 。每回合开始阶段获得 !M! 点 furina_mod:元素能量 。",
-    "UPGRADE_DESCRIPTION": "固有 。 获得 !M! 点 furina_mod:元素能量 。每回合开始阶段获得 !M! 点 furina_mod:元素能量 。"
+    "DESCRIPTION": "固有 。 获得 !M! 点 furina_mod:元素能量 。每回合开始阶段获得 !M! 点 furina_mod:元素能量 。回合开始阶段，若 furina_mod:元素能量 不低于5，将一张万众狂欢临时加入到手牌。",
+    "UPGRADE_DESCRIPTION": "固有 。 获得 !M! 点 furina_mod:元素能量 。每回合开始阶段获得 !M! 点 furina_mod:元素能量 。回合开始阶段，若 furina_mod:元素能量 不低于5，将一张万众狂欢临时加入到手牌。"
   },
   "ApinFurina:INowKnowItIs": {
     "NAME": "我已有觉察",

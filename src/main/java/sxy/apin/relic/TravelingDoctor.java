@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import sxy.apin.helper.FurinaHelper;
 
 public class TravelingDoctor extends CustomRelic {
-    public static final String ID = FurinaHelper.makeRelicID("Traveling Doctor");
+    public static final String ID = FurinaHelper.makeRelicID(TravelingDoctor.class.getSimpleName());
     public static final String IMG_PATH = "sxy/apin/img/relic/large/relic_1.png";
     public static final int HEALTH_NUM = 5;
     private int healCount = 0;

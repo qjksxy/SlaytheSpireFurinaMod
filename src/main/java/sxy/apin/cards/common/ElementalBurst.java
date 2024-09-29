@@ -35,7 +35,7 @@ public class ElementalBurst extends CustomCard {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseMagicNumber = 2;
         this.magicNumber = 2;
-        this.baseDamage = 4;
+        this.baseDamage = 12;
     }
 
     @Override

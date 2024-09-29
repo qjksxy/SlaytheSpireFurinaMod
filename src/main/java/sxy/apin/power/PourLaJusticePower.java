@@ -50,6 +50,6 @@ public class PourLaJusticePower extends AbstractPower {
     public void onUseCard(AbstractCard card, UseCardAction action) {
         this.flash();
         AbstractPlayer player = FurinaHelper.getPlayer();
-        FurinaHelper.addToBottom(new HealAction(player, player, 1));
+        FurinaHelper.addToBottom(new HealAction(player, player, 3));
     }
 }

@@ -28,7 +28,7 @@ public class WolfFang extends CustomCard {
 
     public WolfFang() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.damage = this.baseDamage = 8;
+        this.damage = this.baseDamage = 12;
         this.magicNumber = 5;
         this.baseMagicNumber = 5;
         this.tags.add(CardTags.STRIKE);

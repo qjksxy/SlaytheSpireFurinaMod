@@ -29,6 +29,7 @@ public class FleuveCendreFerryman extends CustomCard {
     public FleuveCendreFerryman() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.damage = this.baseDamage = 8;
+        this.magicNumber = this.baseMagicNumber = 5;
         this.tags.add(CardTags.STRIKE);
     }
 
@@ -46,6 +47,6 @@ public class FleuveCendreFerryman extends CustomCard {
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         FurinaHelper.damage(abstractMonster, abstractPlayer, this.damage, DamageInfo.DamageType.NORMAL);
         Furina.gainElementEnergy(3);
-        Furina.gainRevelry(1);
+        Furina.gainRevelry(this.magicNumber);
     }
 }

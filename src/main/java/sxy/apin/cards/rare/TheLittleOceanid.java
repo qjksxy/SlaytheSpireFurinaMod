@@ -28,15 +28,15 @@ public class TheLittleOceanid extends CustomCard {
 
     public TheLittleOceanid() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.magicNumber = 9;
-        this.baseMagicNumber = 9;
+        this.magicNumber = 3;
+        this.baseMagicNumber = 3;
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(-3);
+            this.upgradeMagicNumber(-1);
         }
         this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
         this.initializeDescription();

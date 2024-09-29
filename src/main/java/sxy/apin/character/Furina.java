@@ -181,8 +181,8 @@ public class Furina extends CustomPlayer {
         AllKindredsPower kindredsPower = (AllKindredsPower) FurinaHelper.getPower(AllKindredsPower.POWER_ID);
         if (kindredsPower != null) {
             kindredsPower.stackCount(1);
-            if (kindredsPower.getCount() >= 4) {
-                kindredsPower.stackCount(-4);
+            if (kindredsPower.getCount() >= 3) {
+                kindredsPower.stackCount(-3);
             }
             kindredsPower.flash();
             FurinaHelper.addToBottom(new DrawCardAction(1));

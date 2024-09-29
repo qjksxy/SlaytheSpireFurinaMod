@@ -79,11 +79,11 @@ public class Revelry extends AbstractPower {
         if (lawsPower != null) {
             double random = FurinaHelper.getRandomFloat();
             if (random < 0.34) {
-                FurinaHelper.applyPower(player, player, new Grit(player, 1), 1);
+                FurinaHelper.applyPower(player, player, new Grit(player, 3), 3);
             } else if (random < 0.67) {
-                FurinaHelper.applyPower(player, player, new CriticalBoost(player, 1), 1);
+                FurinaHelper.applyPower(player, player, new CriticalBoost(player, 3), 3);
             } else {
-                FurinaHelper.applyPower(player, player, new Dewdrop(player, 1), 1);
+                FurinaHelper.applyPower(player, player, new Dewdrop(player, 3), 3);
             }
         }
     }

@@ -101,7 +101,7 @@ public class SalonMembers extends AbstractPower {
         if (revelry < 1) {
             return;
         }
-        mon = FurinaHelper.getNearestMonster();
+        mon = FurinaHelper.getRandomMonster();
         if (mon == null) {
             return;
         }

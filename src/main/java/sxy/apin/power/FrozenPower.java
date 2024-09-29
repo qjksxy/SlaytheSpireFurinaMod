@@ -24,12 +24,12 @@ public class FrozenPower extends AbstractPower {
     private static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
 
-    public FrozenPower(AbstractCreature owner, int amount) {
+    public FrozenPower(AbstractCreature owner) {
         this.name = NAME;
         this.ID = POWER_ID;
         this.owner = owner;
         this.type = PowerType.BUFF;
-        this.amount = amount;
+        this.amount = -1;
         // 添加一大一小两张能力图
         String path128 = "sxy/apin/img/powers/power_128/power_raw_82.png";
         String path48 = "sxy/apin/img/powers/power_48/power_raw_82.png";
@@ -42,10 +42,6 @@ public class FrozenPower extends AbstractPower {
     // 能力在更新时如何修改描述
     public void updateDescription() {
         this.description = DESCRIPTIONS[0];
-    }
-
-    @Override
-    public void stackPower(int stackAmount) {
     }
 
     @Override

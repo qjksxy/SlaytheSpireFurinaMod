@@ -28,15 +28,15 @@ public class CoronatedPrimaDonna extends CustomCard {
 
     public CoronatedPrimaDonna() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseMagicNumber = 5;
-        this.magicNumber = 5;
+        this.baseMagicNumber = 6;
+        this.magicNumber = 6;
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(5);
+            this.upgradeMagicNumber(6);
         }
         this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
         this.initializeDescription();

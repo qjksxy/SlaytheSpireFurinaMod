@@ -51,7 +51,7 @@ public class WhoDweltInTheNetherworld extends CustomCard {
         Furina.gainElementEnergy(this.magicNumber);
         AbstractDungeon.actionManager.addToBottom(
                 new ApplyPowerAction(abstractPlayer, abstractPlayer,
-                        new WhoDweltInTheNetherworldPower(abstractPlayer, this.magicNumber), 0)
+                        new WhoDweltInTheNetherworldPower(abstractPlayer), 0)
         );
     }
 }

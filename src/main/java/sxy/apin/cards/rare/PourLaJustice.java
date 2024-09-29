@@ -37,7 +37,6 @@ public class PourLaJustice extends CustomCard {
             this.upgradeName();
             this.updateCost(-1);
         }
-        this.upgradeMagicNumber(1);
         this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
         this.initializeDescription();
     }

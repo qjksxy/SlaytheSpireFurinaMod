@@ -1,6 +1,8 @@
 package sxy.apin.cards.rare;
 
 import basemod.abstracts.CustomCard;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.actions.common.ExhaustAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -46,11 +48,12 @@ public class UnheardConfession extends CustomCard {
         int damage = Furina.getRevelry();
         int extraDamage = HearMe.getExtraDamage();
         if (this.upgraded) {
-            damage = (int) (damage * 0.6);
+            damage = (int) (damage * 0.8);
         } else {
-            damage = (int) (damage * 0.5);
+            damage = (int) (damage * 0.6);
         }
-        FurinaHelper.damage(abstractMonster, abstractPlayer, damage + extraDamage, DamageInfo.DamageType.NORMAL);
+        DamageAllEnemiesAction action = new DamageAllEnemiesAction(abstractPlayer, damage + extraDamage, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.NONE);
+        FurinaHelper.addToBottom(action);
         FurinaHelper.addToBottom(new ExhaustAction(1, this.upgraded));
     }
 }

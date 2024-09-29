@@ -42,7 +42,7 @@ public class PeripateticPeregrination extends CustomCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        int heal = this.upgraded ? 80 : 60;
+        int heal = this.upgraded ? 60 : 50;
         FurinaHelper.addToBottom(new HealAction(abstractPlayer, abstractPlayer, heal));
     }
 }

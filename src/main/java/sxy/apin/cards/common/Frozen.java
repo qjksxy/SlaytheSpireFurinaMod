@@ -28,7 +28,7 @@ public class Frozen extends CustomCard {
 
     public Frozen() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.damage = this.baseDamage = 12;
+        this.damage = this.baseDamage = 15;
         this.tags.add(CardTags.STRIKE);
     }
 
@@ -38,7 +38,7 @@ public class Frozen extends CustomCard {
         ++this.timesUpgraded;
         this.name = NAME + "+" + this.timesUpgraded;
         this.initializeTitle();
-        this.upgradeDamage(4);
+        this.upgradeDamage(6);
 //        this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
 //        this.initializeDescription();
     }
@@ -52,6 +52,6 @@ public class Frozen extends CustomCard {
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         FurinaHelper.damage(abstractMonster, abstractPlayer, this.damage, DamageInfo.DamageType.NORMAL);
         FurinaHelper.applyPower(abstractPlayer, abstractPlayer,
-                new FrozenPower(abstractPlayer, 1), 1);
+                new FrozenPower(abstractPlayer), 1);
     }
 }

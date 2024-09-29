@@ -1,5 +1,5 @@
 {
-  "ApinFurina:Traveling Doctor": {
+  "ApinFurina:TravelingDoctor": {
     "NAME": "游医的银莲",
     "FLAVOR": "是珍贵的药材，但存放了这么久已经失去了药用价值。",
     "DESCRIPTIONS": [
@@ -15,7 +15,7 @@
   },
   "ApinFurina:Nighttime": {
     "NAME": "回声之林夜话",
-    "FLAVOR": "relics.json",
+    "FLAVOR": "故事中的女巫所佩戴的胸花，与她所喜爱的其他装饰一样，用蝴蝶的造型作为点缀。",
     "DESCRIPTIONS": [
       "故事中的女巫所佩戴的胸花，与她所喜爱的其他装饰一样，用蝴蝶的造型作为点缀。"
     ]
@@ -35,7 +35,7 @@
     ]
   },
   "ApinFurina:GoldenTroupe": {
-    "NAME": "黄金剧团 ",
+    "NAME": "黄金剧团",
     "FLAVOR": "由砗磲、贝母和金箔精心制成的花朵，正骄傲地盛放着。",
     "DESCRIPTIONS": [
       "每场战斗开始时，回复 #y10 点生命。"
@@ -62,7 +62,7 @@
       "每场战斗开始时，回复 #y10 点生命。"
     ]
   },
-  "ApinFurina:Vourukasha's Glow": {
+  "ApinFurina:VourukashasGlow": {
     "NAME": "花海甘露之光",
     "FLAVOR": "久远的朝圣者曾佩戴的徽记，是一朵华丽的小花。",
     "DESCRIPTIONS": [

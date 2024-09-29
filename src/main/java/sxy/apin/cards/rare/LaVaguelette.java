@@ -2,10 +2,13 @@ package sxy.apin.cards.rare;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import sxy.apin.cards.basic.SeatsSacredAndSecular;
 import sxy.apin.helper.FurinaHelper;
 
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
@@ -43,5 +46,8 @@ public class LaVaguelette extends CustomCard {
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         int size = FurinaHelper.getHandCards().size();
         FurinaHelper.addToBottom(new DrawCardAction(10 - size));
+        AbstractDungeon.actionManager.addToBottom(
+                new MakeTempCardInHandAction(new SeatsSacredAndSecular(), 1)
+        );
     }
 }
