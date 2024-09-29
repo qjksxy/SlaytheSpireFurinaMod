@@ -1,6 +1,7 @@
 package sxy.apin.cards.rare;
 
 import basemod.abstracts.CustomCard;
+import com.megacrit.cardcrawl.actions.common.ExhaustAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -11,7 +12,7 @@ import sxy.apin.helper.FurinaHelper;
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
 
 /**
- * 淡月之舞  解除自身的一个负面效果
+ * 淡月之舞  解除自身的一个负面效果 至多消耗 !M! 张牌。
  */
 public class GymnopediesOfLune extends CustomCard {
     public static final String ID = FurinaHelper.makeCardID(GymnopediesOfLune.class.getSimpleName());
@@ -27,6 +28,7 @@ public class GymnopediesOfLune extends CustomCard {
 
     public GymnopediesOfLune() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
+        this.magicNumber = this.baseMagicNumber = 1;
     }
 
     @Override
@@ -34,6 +36,7 @@ public class GymnopediesOfLune extends CustomCard {
         if (!this.upgraded) {
             this.upgradeName();
             this.updateCost(-1);
+            this.upgradeMagicNumber(1);
         }
         this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
         this.initializeDescription();
@@ -47,6 +50,7 @@ public class GymnopediesOfLune extends CustomCard {
                 return;
             }
         }
-
+//        FurinaHelper.addToBottom(new ExhaustAction(this.magicNumber, true));
+        FurinaHelper.addToBottom(new ExhaustAction(this.magicNumber, false, true, true));
     }
 }

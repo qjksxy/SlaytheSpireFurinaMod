@@ -20,6 +20,7 @@ import sxy.apin.cards.uncommon.*;
 import sxy.apin.character.Furina;
 import sxy.apin.helper.FurinaHelper;
 import sxy.apin.relic.LittleCake;
+import sxy.apin.relic.Nighttime;
 import sxy.apin.relic.TravelingDoctor;
 
 import static com.megacrit.cardcrawl.core.Settings.language;
@@ -197,5 +198,6 @@ public class FurinaCore implements EditCardsSubscriber, EditStringsSubscriber, E
     public void receiveEditRelics() {
         BaseMod.addRelic(new LittleCake(), RelicType.SHARED);
         BaseMod.addRelic(new TravelingDoctor(), RelicType.SHARED);
+        BaseMod.addRelic(new Nighttime(), RelicType.SHARED);
     }
 }

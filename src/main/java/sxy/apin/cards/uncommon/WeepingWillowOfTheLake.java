@@ -31,8 +31,8 @@ public class WeepingWillowOfTheLake extends CustomCard {
 
     public WeepingWillowOfTheLake() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.magicNumber = 3;
-        this.baseMagicNumber = 3;
+        this.magicNumber = 5;
+        this.baseMagicNumber = 5;
     }
 
     @Override
