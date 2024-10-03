@@ -1,7 +1,6 @@
 package sxy.apin.modcore;
 
 import basemod.BaseMod;
-import basemod.helpers.RelicType;
 import basemod.interfaces.*;
 import com.badlogic.gdx.graphics.Color;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
@@ -19,9 +18,7 @@ import sxy.apin.cards.rare.*;
 import sxy.apin.cards.uncommon.*;
 import sxy.apin.character.Furina;
 import sxy.apin.helper.FurinaHelper;
-import sxy.apin.relic.LittleCake;
-import sxy.apin.relic.Nighttime;
-import sxy.apin.relic.TravelingDoctor;
+import sxy.apin.relic.*;
 
 import static com.megacrit.cardcrawl.core.Settings.language;
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
@@ -196,8 +193,13 @@ public class FurinaCore implements EditCardsSubscriber, EditStringsSubscriber, E
 
     @Override
     public void receiveEditRelics() {
-        BaseMod.addRelic(new LittleCake(), RelicType.SHARED);
-        BaseMod.addRelic(new TravelingDoctor(), RelicType.SHARED);
-        BaseMod.addRelic(new Nighttime(), RelicType.SHARED);
+        BaseMod.addRelicToCustomPool(new GoldenTroupe(), FURINA_BLUE);
+        BaseMod.addRelicToCustomPool(new MarechausseeHunter(), FURINA_BLUE);
+        BaseMod.addRelicToCustomPool(new Nighttime(), FURINA_BLUE);
+        BaseMod.addRelicToCustomPool(new NoblesseOblige(), FURINA_BLUE);
+        BaseMod.addRelicToCustomPool(new ShimenawasReminiscence(), FURINA_BLUE);
+        BaseMod.addRelicToCustomPool(new SongOfDaysPast(), FURINA_BLUE);
+        BaseMod.addRelicToCustomPool(new TenacityOfTheMillelith(), FURINA_BLUE);
+        BaseMod.addRelicToCustomPool(new VourukashasGlow(), FURINA_BLUE);
     }
 }

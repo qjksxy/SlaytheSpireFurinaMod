@@ -24,63 +24,63 @@
     "NAME": "昔时之歌",
     "FLAVOR": "由海纹石与苍银打造而成的不凋花朵，据说至今依然被视为反抗者的象征。",
     "DESCRIPTIONS": [
-      "每场战斗开始时，回复 #y10 点生命。"
+      "战斗开始时，若生命值不足40%，则获得15金币。"
     ]
   },
   "ApinFurina:MarechausseeHunter": {
     "NAME": "逐影猎人",
     "FLAVOR": "老旧的勋章，在过去曾被用来配发给在战斗中做出了杰出贡献的人。",
     "DESCRIPTIONS": [
-      "每场战斗开始时，回复 #y10 点生命。"
+      "每受到5次治疗时，恢复5点生命。"
     ]
   },
   "ApinFurina:GoldenTroupe": {
     "NAME": "黄金剧团",
     "FLAVOR": "由砗磲、贝母和金箔精心制成的花朵，正骄傲地盛放着。",
     "DESCRIPTIONS": [
-      "每场战斗开始时，回复 #y10 点生命。"
+      "受到未被格挡的伤害时，若生命值等于上限，则回复20%伤害值的生命。"
     ]
   },
   "ApinFurina:EmblemOfSeveredFate": {
     "NAME": "绝缘之旗印",
     "FLAVOR": "传说中背叛了将军的鬼人，曾经获赐的刀上的华美宝镡。",
     "DESCRIPTIONS": [
-      "每场战斗开始时，回复 #y10 点生命。"
+      "第三回合开始时，你可以从抽牌堆中选择一张技能牌加入手牌。"
     ]
   },
   "ApinFurina:ShimenawasReminiscence": {
     "NAME": "追忆之注连",
     "FLAVOR": "精美的水引御守，据说能够封存实现愿望的力量。",
     "DESCRIPTIONS": [
-      "每场战斗开始时，回复 #y10 点生命。"
+      "打出牌时，若持有层数大于15的正面效果：则减少3层，获得1力量。"
     ]
   },
   "ApinFurina:OceanHuedClam": {
     "NAME": "海染砗磲",
     "FLAVOR": "染上多变海色的轻柔之花，在月光下闪烁着奇妙的色彩。",
     "DESCRIPTIONS": [
-      "每场战斗开始时，回复 #y10 点生命。"
+      "记录每场战斗中溢出的回复量，至多记录20点。在下一场战斗开始时，对随机敌人造成记录值的伤害。"
     ]
   },
   "ApinFurina:VourukashasGlow": {
     "NAME": "花海甘露之光",
     "FLAVOR": "久远的朝圣者曾佩戴的徽记，是一朵华丽的小花。",
     "DESCRIPTIONS": [
-      "每场战斗开始时，回复 #y10 点生命。"
+      "战斗开始时，回复 #y10 点生命。"
     ]
   },
   "ApinFurina:TenacityOfTheMillelith": {
     "NAME": "千岩牢固",
     "FLAVOR": "以金箔制成的精致花朵，象征了其主人所获得的功勋与荣誉。",
     "DESCRIPTIONS": [
-      "每场战斗开始时，回复 #y10 点生命。"
+      "获得格挡时：若此次获得的格挡不低于20，则额外获得8点格挡。"
     ]
   },
   "ApinFurina:NoblesseOblige": {
     "NAME": "昔日宗室之仪",
     "FLAVOR": "绸缎制成的璃色花，常在典雅场合佩戴。如今仍像被抛弃的那天一样鲜明。",
     "DESCRIPTIONS": [
-      "每场战斗开始时，回复 #y10 点生命。"
+      "每回合开始时：生命减少到50%，获得减少值2倍的格挡。"
     ]
   }
 }

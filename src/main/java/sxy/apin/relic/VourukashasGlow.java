@@ -9,12 +9,12 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import sxy.apin.character.Furina;
 import sxy.apin.helper.FurinaHelper;
 
-public class LittleCake extends CustomRelic {
-    public static final String ID = FurinaHelper.makeRelicID(LittleCake.class.getSimpleName());
-    public static final String IMG_PATH = "sxy/apin/img/relic/large/cake.png";
+public class VourukashasGlow extends CustomRelic {
+    public static final String ID = FurinaHelper.makeRelicID(VourukashasGlow.class.getSimpleName());
+    public static final String IMG_PATH = "sxy/apin/img/relic/large/relic_2.png";
 //    public static final String OUTLINE_PATH = "sxy/apin/img/relic/outline/relic_1.png";
 
-    public LittleCake() {
+    public VourukashasGlow() {
         super(ID, ImageMaster.loadImage(IMG_PATH), RelicTier.COMMON, LandingSound.SOLID);
     }
 
@@ -25,7 +25,7 @@ public class LittleCake extends CustomRelic {
 
     @Override
     public AbstractRelic makeCopy() {
-        return new LittleCake();
+        return new VourukashasGlow();
     }
 
     @Override

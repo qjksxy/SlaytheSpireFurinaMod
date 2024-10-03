@@ -56,8 +56,8 @@
   },
   "ApinFurina:FleuveCendreFerryman": {
     "NAME": "灰河渡手",
-    "DESCRIPTION": "对敌人造成 !D! 点伤害。获得 !M! furina_mod:气氛值 和1 furina_mod:元素能量 。",
-    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 点伤害。获得 !M! furina_mod:气氛值 和1 furina_mod:元素能量 。"
+    "DESCRIPTION": "对敌人造成 !D! 点伤害。获得 !M! furina_mod:气氛值 和3 furina_mod:元素能量 。",
+    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 点伤害。获得 !M! furina_mod:气氛值 和3 furina_mod:元素能量 。"
   },
   "ApinFurina:Order": {
     "NAME": "秩序",
@@ -301,8 +301,8 @@
   },
   "ApinFurina:PeripateticPeregrination": {
     "NAME": "四季的悠游",
-    "DESCRIPTION": "消耗 。回复50生命。",
-    "UPGRADE_DESCRIPTION": "固有 。 消耗 。回复60生命。"
+    "DESCRIPTION": "消耗 。回复30生命。",
+    "UPGRADE_DESCRIPTION": "固有 。 消耗 。回复40生命。"
   },
   "ApinFurina:LeSouvenirAvecLeCrepuscule": {
     "NAME": "时暮的思眷",
@@ -321,8 +321,8 @@
   },
   "ApinFurina:LaVaguelette": {
     "NAME": "轻涟",
-    "DESCRIPTION": "抽牌至9张。将一张圣俗杂座加入手牌。",
-    "UPGRADE_DESCRIPTION": "抽牌至9张。将一张圣俗杂座加入手牌。"
+    "DESCRIPTION": "抽牌至9张。将一张 *圣俗杂座 加入手牌。",
+    "UPGRADE_DESCRIPTION": "抽牌至9张。将一张 *圣俗杂座+ 加入手牌。"
   },
   "ApinFurina:TheLittleOceanid": {
     "NAME": "水的女儿",
@@ -351,8 +351,8 @@
   },
   "ApinFurina:AllPeople": {
     "NAME": "众民",
-    "DESCRIPTION": "每当你获得 furina_mod:气氛值 时，对随机敌人造成 5 点伤害。",
-    "UPGRADE_DESCRIPTION": "每当你获得 furina_mod:气氛值 时，对随机敌人造成 5 点伤害。"
+    "DESCRIPTION": "每当你获得 furina_mod:气氛值 时，对随机敌人造成 5 点伤害。每回合至多生效6次。",
+    "UPGRADE_DESCRIPTION": "每当你获得 furina_mod:气氛值 时，对随机敌人造成 5 点伤害。每回合至多生效6次。"
   },
   "ApinFurina:AllLaws": {
     "NAME": "众律法",

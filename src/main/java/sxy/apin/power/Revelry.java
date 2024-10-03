@@ -69,8 +69,9 @@ public class Revelry extends AbstractPower {
         }
 
         // 众民：获得1层
-        AbstractPower peoplePower = FurinaHelper.getPower(AllPeoplePower.POWER_ID);
-        if (peoplePower != null) {
+        AllPeoplePower peoplePower = (AllPeoplePower) FurinaHelper.getPower(AllPeoplePower.POWER_ID);
+        if (peoplePower != null && peoplePower.num > 0) {
+            peoplePower.num -= 1;
             AbstractMonster monster = FurinaHelper.getRandomMonster();
             FurinaHelper.damage(monster, player, 5, DamageInfo.DamageType.NORMAL);
         }

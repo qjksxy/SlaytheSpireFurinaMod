@@ -20,6 +20,7 @@ public class AllPeoplePower extends AbstractPower {
     private static final String NAME = powerStrings.NAME;
     // 能力的描述
     private static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
+    public int num = 6;
 
     public AllPeoplePower(AbstractCreature owner) {
         this.name = NAME;
@@ -39,4 +40,10 @@ public class AllPeoplePower extends AbstractPower {
     public void updateDescription() {
         this.description = DESCRIPTIONS[0];
     }
+
+    @Override
+    public void atStartOfTurn() {
+        this.num = 6;
+    }
+
 }

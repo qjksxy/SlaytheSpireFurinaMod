@@ -32,7 +32,7 @@ import sxy.apin.cards.common.ElementalSkill;
 import sxy.apin.helper.FurinaHelper;
 import sxy.apin.modcore.FurinaCore;
 import sxy.apin.power.*;
-import sxy.apin.relic.LittleCake;
+import sxy.apin.relic.VourukashasGlow;
 
 import java.util.ArrayList;
 
@@ -239,8 +239,7 @@ public class Furina extends CustomPlayer {
     // 初始遗物的ID，可以先写个原版遗物凑数
     public ArrayList<String> getStartingRelics() {
         ArrayList<String> retVal = new ArrayList<>();
-        retVal.add(LittleCake.ID);
-//        retVal.add(TravelingDoctor.ID);
+        retVal.add(VourukashasGlow.ID);
         return retVal;
     }
 
@@ -248,8 +247,8 @@ public class Furina extends CustomPlayer {
         return new CharSelectInfo(
                 characterStrings.NAMES[0], // 人物名字
                 characterStrings.TEXT[0], // 人物介绍
-                99, // 当前血量
-                99, // 最大血量
+                80, // 当前血量
+                80, // 最大血量
                 0, // 初始充能球栏位
                 300, // 初始携带金币
                 5, // 每回合抽牌数量
@@ -375,5 +374,8 @@ public class Furina extends CustomPlayer {
         @SpireEnum(name = "FURINA_BLUE")
         @SuppressWarnings("unused")
         public static CardLibrary.LibraryType FURINA_LIBRARY;
+//        @SpireEnum(name = "FURINA_BLUE")
+//        @SuppressWarnings("unused")
+//        public static RelicType FURINA_RELIC;
     }
 }

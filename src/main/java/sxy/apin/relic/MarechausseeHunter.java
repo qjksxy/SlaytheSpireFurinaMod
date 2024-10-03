@@ -8,13 +8,13 @@ import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import sxy.apin.helper.FurinaHelper;
 
-public class TravelingDoctor extends CustomRelic {
-    public static final String ID = FurinaHelper.makeRelicID(TravelingDoctor.class.getSimpleName());
-    public static final String IMG_PATH = "sxy/apin/img/relic/large/relic_1.png";
+public class MarechausseeHunter extends CustomRelic {
+    public static final String ID = FurinaHelper.makeRelicID(MarechausseeHunter.class.getSimpleName());
+    public static final String IMG_PATH = "sxy/apin/img/relic/large/relic_9.png";
     public static final int HEALTH_NUM = 5;
     private int healCount = 0;
 
-    public TravelingDoctor() {
+    public MarechausseeHunter() {
         super(ID, ImageMaster.loadImage(IMG_PATH), RelicTier.COMMON, LandingSound.SOLID);
     }
 
@@ -25,18 +25,12 @@ public class TravelingDoctor extends CustomRelic {
 
     @Override
     public AbstractRelic makeCopy() {
-        return new TravelingDoctor();
+        return new MarechausseeHunter();
     }
 
     @Override
     public void onEquip() {
         this.healCount = 0;
-    }
-
-    @Override
-    public void atBattleStart() {
-        super.atBattleStart();
-        this.addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
     }
 
     @Override

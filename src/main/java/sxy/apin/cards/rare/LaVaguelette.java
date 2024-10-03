@@ -30,12 +30,14 @@ public class LaVaguelette extends CustomCard {
 
     public LaVaguelette() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
+        this.cardsToPreview = new SeatsSacredAndSecular();
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
+            this.cardsToPreview.upgrade();
             this.updateCost(-1);
         }
         this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
@@ -47,7 +49,7 @@ public class LaVaguelette extends CustomCard {
         int size = FurinaHelper.getHandCards().size();
         FurinaHelper.addToBottom(new DrawCardAction(10 - size));
         AbstractDungeon.actionManager.addToBottom(
-                new MakeTempCardInHandAction(new SeatsSacredAndSecular(), 1)
+                new MakeTempCardInHandAction(this.cardsToPreview, 1)
         );
     }
 }
