@@ -31,8 +31,8 @@ public class MistsplitterReforged extends CustomCard {
     public MistsplitterReforged() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.damage = this.baseDamage = 18;
-        this.baseMagicNumber = 5;
-        this.magicNumber = 5;
+        this.baseMagicNumber = 6;
+        this.magicNumber = 6;
         this.tags.add(CardTags.STRIKE);
     }
 
@@ -40,7 +40,7 @@ public class MistsplitterReforged extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.updateCost(-1);
+            this.upgradeDamage(6);
         }
         this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
         this.initializeDescription();

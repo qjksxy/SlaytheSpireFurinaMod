@@ -29,13 +29,14 @@ public class PourLaJustice extends CustomCard {
 
     public PourLaJustice() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
+        this.magicNumber = this.baseMagicNumber = 2;
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.updateCost(-1);
+            this.upgradeMagicNumber(1);
         }
         this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
         this.initializeDescription();
@@ -45,7 +46,7 @@ public class PourLaJustice extends CustomCard {
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         AbstractDungeon.actionManager.addToBottom(
                 new ApplyPowerAction(abstractPlayer, abstractPlayer,
-                        new PourLaJusticePower(abstractPlayer), 0)
+                        new PourLaJusticePower(abstractPlayer, this.magicNumber), 0)
         );
     }
 }

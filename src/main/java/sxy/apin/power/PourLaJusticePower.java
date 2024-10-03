@@ -20,13 +20,15 @@ public class PourLaJusticePower extends AbstractPower {
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     private static final String NAME = powerStrings.NAME;
     private static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
+    private final int healNum;
 
-    public PourLaJusticePower(AbstractCreature owner) {
+    public PourLaJusticePower(AbstractCreature owner, int healNum) {
         this.name = NAME;
         this.ID = POWER_ID;
         this.owner = owner;
         this.type = PowerType.BUFF;
         this.amount = -1;
+        this.healNum = healNum;
         // 添加一大一小两张能力图
         String path128 = "sxy/apin/img/powers/power_128/power_raw_66.png";
         String path48 = "sxy/apin/img/powers/power_48/power_raw_66.png";
@@ -50,6 +52,6 @@ public class PourLaJusticePower extends AbstractPower {
     public void onUseCard(AbstractCard card, UseCardAction action) {
         this.flash();
         AbstractPlayer player = FurinaHelper.getPlayer();
-        FurinaHelper.addToBottom(new HealAction(player, player, 3));
+        FurinaHelper.addToBottom(new HealAction(player, player, healNum));
     }
 }

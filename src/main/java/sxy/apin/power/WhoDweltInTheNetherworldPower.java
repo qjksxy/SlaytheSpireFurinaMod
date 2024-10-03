@@ -2,13 +2,13 @@ package sxy.apin.power;
 
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import sxy.apin.cards.common.ElementalBurst;
 import sxy.apin.character.Furina;
 import sxy.apin.helper.FurinaHelper;
 
@@ -24,13 +24,16 @@ public class WhoDweltInTheNetherworldPower extends AbstractPower {
     private static final String NAME = powerStrings.NAME;
     // 能力的描述
     private static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
-
-    public WhoDweltInTheNetherworldPower(AbstractCreature owner) {
+    private final AbstractCard card;
+    private final int num;
+    public WhoDweltInTheNetherworldPower(AbstractCreature owner, AbstractCard card, int num) {
         this.name = NAME;
         this.ID = POWER_ID;
         this.owner = owner;
         this.type = PowerType.BUFF;
         this.amount = -1;
+        this.num = num;
+        this.card = card;
         // 添加一大一小两张能力图
         String path128 = "sxy/apin/img/powers/power_128/power_raw_79.png";
         String path48 = "sxy/apin/img/powers/power_48/power_raw_79.png";
@@ -42,10 +45,10 @@ public class WhoDweltInTheNetherworldPower extends AbstractPower {
 
     @Override
     public void atStartOfTurn() {
-        Furina.gainElementEnergy(this.amount);
+        Furina.gainElementEnergy(this.num);
         if (Furina.getRevelry() >= 5) {
             AbstractDungeon.actionManager.addToBottom(
-                    new MakeTempCardInHandAction(new ElementalBurst(), 1)
+                    new MakeTempCardInHandAction(card, 1)
             );
         }
     }

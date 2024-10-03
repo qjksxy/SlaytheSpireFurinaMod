@@ -30,7 +30,7 @@ public class ChargedAttack extends CustomCard {
     public ChargedAttack() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.damage = this.baseDamage = 6;
-        this.tags.add(CardTags.STARTER_STRIKE);
+        this.cardsToPreview = new SeatsSacredAndSecular();
         this.tags.add(CardTags.STRIKE);
     }
 
@@ -38,8 +38,8 @@ public class ChargedAttack extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.updateCost(-1);
             this.upgradeDamage(2);
+            this.cardsToPreview.upgrade();
         }
         this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
         this.initializeDescription();
@@ -57,7 +57,7 @@ public class ChargedAttack extends CustomCard {
                 )
         );
         AbstractDungeon.actionManager.addToBottom(
-                new MakeTempCardInHandAction(new SeatsSacredAndSecular(), 1)
+                new MakeTempCardInHandAction(this.cardsToPreview, 1)
         );
     }
 

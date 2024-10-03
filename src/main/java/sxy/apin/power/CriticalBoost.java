@@ -46,7 +46,7 @@ public class CriticalBoost extends AbstractPower {
     }
 
     public int getLimit() {
-        return 30;
+        return 25;
     }
 
     @Override
@@ -61,6 +61,9 @@ public class CriticalBoost extends AbstractPower {
 
     @Override
     public void onUseCard(AbstractCard card, UseCardAction action) {
+        if (this.amount == getLimit()) {
+            return;
+        }
         this.amount += 2;
         this.amount = Math.min(this.amount, getLimit());
         this.flash();
@@ -68,7 +71,7 @@ public class CriticalBoost extends AbstractPower {
 
     @Override
     public void wasHPLost(DamageInfo info, int damageAmount) {
-        this.amount -= 3;
+        this.amount -= 5;
         this.flash();
         if (this.amount <= 0) {
             FurinaHelper.removePlayerPower(this.ID);
@@ -93,7 +96,7 @@ public class CriticalBoost extends AbstractPower {
         if (FurinaHelper.getPower(PerpetualMuseOfChansonsPower.POWER_ID) != null) {
             int revelry = Furina.getRevelry();
             //noinspection RedundantCast
-            fac += (int) (revelry / 10) * 0.5;
+            fac += (int) (revelry / 10) * 0.25;
         }
         FurinaHelper.damage(mon, FurinaHelper.getPlayer(), (int) (this.amount * fac), DamageInfo.DamageType.NORMAL);
     }

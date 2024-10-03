@@ -31,6 +31,7 @@ public class Crystalize extends CustomCard {
         this.damage = this.baseDamage = 9;
         this.baseBlock = 6;
         this.block = 6;
+        this.magicNumber = this.baseMagicNumber = 6;
         this.tags.add(CardTags.STARTER_DEFEND);
         this.tags.add(CardTags.STRIKE);
     }
@@ -47,6 +48,7 @@ public class Crystalize extends CustomCard {
         this.name = NAME + "+" + this.timesUpgraded;
         this.initializeTitle();
         this.upgradeBlock(6);
+        this.upgradeMagicNumber(6);
     }
 
     @Override

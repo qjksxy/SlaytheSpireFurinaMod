@@ -45,7 +45,7 @@ public class Grit extends AbstractPower {
 
 
     public int getLimit() {
-        return 30;
+        return 25;
     }
 
     @Override

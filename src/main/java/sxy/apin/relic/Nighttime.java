@@ -13,6 +13,7 @@ import sxy.apin.helper.FurinaHelper;
 public class Nighttime extends CustomRelic {
     public static final String ID = FurinaHelper.makeRelicID(Nighttime.class.getSimpleName());
     public static final String IMG_PATH = "sxy/apin/img/relic/large/relic_4.png";
+    public double proba = 1.0;
 //    public static final String OUTLINE_PATH = "sxy/apin/img/relic/outline/relic_1.png";
 
     public Nighttime() {
@@ -32,7 +33,8 @@ public class Nighttime extends CustomRelic {
     @Override
     public void atBattleStart() {
         super.atBattleStart();
-
+        this.flash();
+        this.proba = 1.0;
         this.addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
         AbstractCard c;
         int random = AbstractDungeon.cardRng.random(6);
@@ -56,5 +58,17 @@ public class Nighttime extends CustomRelic {
                 c = new Vaporize();
         }
         FurinaHelper.addToBottom(new MakeTempCardInDrawPileAction(c, 1, true, true));
+    }
+
+    @Override
+    public void onCardDraw(AbstractCard card) {
+        if (card instanceof Swirl || card instanceof Bloom || card instanceof Frozen ||
+        card instanceof Crystalize || card instanceof  ElectroCharged || card instanceof Vaporize) {
+            if (AbstractDungeon.cardRng.random() < this.proba) {
+                this.flash();
+                card.upgrade();
+                this.proba *= 0.85;
+            }
+        }
     }
 }

@@ -20,13 +20,13 @@
   "ApinFurina:Pneuma": {
     "NAME": "始基力：芒",
     "DESCRIPTIONS": [
-      "可以通过卡牌圣俗杂座切换为始基力：荒。"
+      "主回复的形态。可以通过卡牌圣俗杂座切换为始基力：荒。"
     ]
   },
   "ApinFurina:Ousia": {
     "NAME": "始基力：荒",
     "DESCRIPTIONS": [
-      "可以通过卡牌圣俗杂座切换为始基力：芒。"
+      "主输出的形态。可以通过卡牌圣俗杂座切换为始基力：芒。"
     ]
   },
   "ApinFurina:PneumaEmergy": {

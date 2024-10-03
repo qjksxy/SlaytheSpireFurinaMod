@@ -6,43 +6,43 @@
   },
   "ApinFurina:Strike": {
     "NAME": "独舞之邀",
-    "DESCRIPTION": "造成 !D! 点伤害。获得 1 点 furina_mod:元素能量 。根据当前 furina_mod:始基力形态 ，添加一张灵息之刺或流涌之刃到手牌中。",
-    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。获得 1 点 furina_mod:元素能量 。根据当前 furina_mod:始基力形态 ，添加一张灵息之刺或流涌之刃到手牌中。"
+    "DESCRIPTION": "造成 !D! 点伤害。获得 1 点 furina_mod:元素能量 。根据当前 furina_mod:形态 ，添加一张 *灵息之刺 或 *流涌之刃 到手牌中。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。获得 1 点 furina_mod:元素能量 。根据当前 furina_mod:形态 ，添加一张 *灵息之刺 或 *流涌之刃 到手牌中。"
   },
   "ApinFurina:ChargedAttack": {
     "NAME": "独舞之邀·重击",
-    "DESCRIPTION": "对敌人造成 !D! 点伤害。添加一张圣俗杂座到手牌中。",
-    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 点伤害。添加一张圣俗杂座到手牌中。"
+    "DESCRIPTION": "对敌人造成 !D! 点伤害。添加一张 *圣俗杂座 到手牌中。",
+    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 点伤害。添加一张 *圣俗杂座+ 到手牌中。"
   },
   "ApinFurina:Frozen": {
     "NAME": "冻结",
-    "DESCRIPTION": "对敌人造成 !D! 点伤害。本回合不消耗 furina_mod:气氛值 。可多次升级。",
-    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 点伤害。本回合不消耗 furina_mod:气氛值 。可多次升级。"
+    "DESCRIPTION": "对敌人造成 !D! 点伤害。本回合不消耗 furina_mod:气氛值 。可多次线性升级。",
+    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 点伤害。本回合不消耗 furina_mod:气氛值 。可多次线性升级。"
   },
   "ApinFurina:Crystalize": {
     "NAME": "结晶",
-    "DESCRIPTION": "对敌人造成 !D! 点伤害。获得 !M! 点 格挡 。可多次升级。",
-    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 点伤害。获得 !M! 点 格挡 。可多次升级。"
+    "DESCRIPTION": "对敌人造成 !D! 点伤害。获得 !M! 点 格挡 。可多次线性升级。",
+    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 点伤害。获得 !M! 点 格挡 。可多次线性升级。"
   },
   "ApinFurina:Swirl": {
     "NAME": "扩散",
-    "DESCRIPTION": "对所有敌人造成 !D! 伤害。可多次升级。",
-    "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 伤害。可多次升级。"
+    "DESCRIPTION": "对所有敌人造成 !D! 伤害。可多次线性升级。",
+    "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 伤害。可多次线性升级。"
   },
   "ApinFurina:ElectroCharged": {
     "NAME": "感电",
-    "DESCRIPTION": "对敌人造成 !D! 点伤害，并附属感电：场上有目标受到感电伤害时，受到相同的连锁伤害。可多次升级。",
-    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 点伤害，并附属感电：场上有目标受到感电伤害时，受到相同的连锁伤害。可多次升级。"
+    "DESCRIPTION": "对敌人造成 !D! 点伤害，并附属感电：场上有目标受到感电伤害时，受到相同的连锁伤害。可多次线性升级。",
+    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 点伤害，并附属感电：场上有目标受到感电伤害时，受到相同的连锁伤害。可多次线性升级。"
   },
   "ApinFurina:Bloom": {
     "NAME": "绽放",
-    "DESCRIPTION": "对敌人造成 !D! 伤害，生成草原核：回合结束阶段对全体敌人造成 !M! 点伤害。可多次升级。",
-    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 伤害，生成草原核：回合结束阶段对全体敌人造成 !M! 点伤害。可多次升级。"
+    "DESCRIPTION": "对敌人造成 !D! 伤害，生成草原核：回合结束阶段对全体敌人造成 !M! 点伤害。可多次线性升级。",
+    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 伤害，生成草原核：回合结束阶段对全体敌人造成 !M! 点伤害。可多次线性升级。"
   },
   "ApinFurina:Vaporize": {
     "NAME": "蒸发",
-    "DESCRIPTION": "对敌人造成 !D! 点伤害。可多次升级。",
-    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 点伤害。可多次升级。"
+    "DESCRIPTION": "对敌人造成 !D! 点伤害。可多次线性升级。",
+    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 点伤害。可多次线性升级。"
   },
   "ApinFurina:WolfFang": {
     "NAME": "狼牙",
@@ -121,8 +121,8 @@
   },
   "ApinFurina:SplendorOfTranquilWaters": {
     "NAME": "静水流涌之辉",
-    "DESCRIPTION": "对敌人造成当前X次 furina_mod:气氛值 的伤害。此外，依据当前的 furina_mod:始基力形态 ，额外造成当前 furina_mod:气氛值 的回复（荒）或伤害（芒）。",
-    "UPGRADE_DESCRIPTION": "对敌人造成当前X+1次 furina_mod:气氛值 的伤害。此外，依据当前的 furina_mod:始基力形态 ，额外造成当前 furina_mod:气氛值 的回复（荒）或伤害（芒）。"
+    "DESCRIPTION": "对敌人造成当前X次 furina_mod:气氛值 的伤害。此外，依据当前的 furina_mod:形态 ，额外造成当前 furina_mod:气氛值 的回复（荒）或伤害（芒）。",
+    "UPGRADE_DESCRIPTION": "对敌人造成当前X+1次 furina_mod:气氛值 的伤害。此外，依据当前的 furina_mod:形态 ，额外造成当前 furina_mod:气氛值 的回复（荒）或伤害（芒）。"
   },
   "ApinFurina:Dodge": {
     "NAME": "闪避",
@@ -141,8 +141,8 @@
   },
   "ApinFurina:SeatsSacredAndSecular": {
     "NAME": "圣俗杂座",
-    "DESCRIPTION": "虚无 。 消耗 。切换自身的始基力属性。",
-    "UPGRADE_DESCRIPTION": "虚无 。 消耗 。切换自身的始基力属性。"
+    "DESCRIPTION": "虚无 。 消耗 。切换自身的 furina_mod:形态 。",
+    "UPGRADE_DESCRIPTION": "保留 。 消耗 。切换自身的 furina_mod:形态 。"
   },
   "ApinFurina:Blubberbeast": {
     "NAME": "膨膨兽",
@@ -201,28 +201,28 @@
   },
   "ApinFurina:WovenWaters": {
     "NAME": "交织之水",
-    "DESCRIPTION": "获得 !M! 层 furina_mod:战意 。依据当前的始基力形态，额外获得 !M! 层 furina_mod:会心 （荒）或 furina_mod:珠露 （芒）。",
-    "UPGRADE_DESCRIPTION": "获得 !M! 层 furina_mod:战意 。依据当前的始基力形态，额外获得 !M! 层 furina_mod:会心 （荒）或 furina_mod:珠露 （芒）。"
+    "DESCRIPTION": "获得 !M! 层 furina_mod:战意 。依据当前的 furina_mod:形态 ，额外获得 !M! 层 furina_mod:会心 （荒）或 furina_mod:珠露 （芒）。",
+    "UPGRADE_DESCRIPTION": "获得 !M! 层 furina_mod:战意 。依据当前的 furina_mod:形态 ，额外获得 !M! 层 furina_mod:会心 （荒）或 furina_mod:珠露 （芒）。"
   },
   "ApinFurina:SingerOfManyWaters": {
     "NAME": "众水的歌者",
-    "DESCRIPTION": "只能在始基力：芒形态打出：回复 !M! 点生命，然后获得 !M! 层 furina_mod:珠露 。",
-    "UPGRADE_DESCRIPTION": "只能在始基力：芒形态打出：回复 !M! 点生命，然后获得 !M! 层 furina_mod:珠露 。"
+    "DESCRIPTION": "只能在 *芒 furina_mod:形态 打出：回复 !M! 点生命，然后获得 !M! 层 furina_mod:珠露 。",
+    "UPGRADE_DESCRIPTION": "只能在 *芒 furina_mod:形态 打出：回复 !M! 点生命，然后获得 !M! 层 furina_mod:珠露 。"
   },
   "ApinFurina:GentilhommeUsher": {
     "NAME": "乌瑟勋爵",
-    "DESCRIPTION": "只能在始基力：荒形态打出：获得 !M! 层 furina_mod:会心 。",
-    "UPGRADE_DESCRIPTION": "只能在始基力：荒形态打出：获得 !M! 层 furina_mod:会心 。"
+    "DESCRIPTION": "只能在 *荒 furina_mod:形态 打出：获得 !M! 层 furina_mod:会心 。",
+    "UPGRADE_DESCRIPTION": "只能在 *荒 furina_mod:形态 打出：获得 !M! 层 furina_mod:会心 。"
   },
   "ApinFurina:SurintendanteChevalmarin": {
     "NAME": "海薇玛夫人",
-    "DESCRIPTION": "只能在始基力：荒形态打出：获得 !M! 层 furina_mod:战意 。",
-    "UPGRADE_DESCRIPTION": "只能在始基力：荒形态打出：获得 !M! 层 furina_mod:战意 。"
+    "DESCRIPTION": "获得 !M! 层 furina_mod:战意 。",
+    "UPGRADE_DESCRIPTION": "获得 !M! 层 furina_mod:战意 。"
   },
   "ApinFurina:MademoiselleCrabaletta": {
     "NAME": "谢贝蕾妲小姐",
-    "DESCRIPTION": "只能在始基力：荒形态打出：失去 !M! 生命，获得 !M! furina_mod:气氛值 。",
-    "UPGRADE_DESCRIPTION": "只能在始基力：荒形态打出：失去 !M! 生命，获得 !M! furina_mod:气氛值 。"
+    "DESCRIPTION": "失去 !M! 生命，获得 !M! furina_mod:气氛值 。",
+    "UPGRADE_DESCRIPTION": "失去 !M! 生命，获得 !M! furina_mod:气氛值 。"
   },
   "ApinFurina:MelusineSupport": {
     "NAME": "美露莘的声援",
@@ -276,8 +276,8 @@
   },
   "ApinFurina:LaLettreAFocalors": {
     "NAME": "致水神",
-    "DESCRIPTION": "回复 furina_mod:气氛值 点生命值。",
-    "UPGRADE_DESCRIPTION": "回复 furina_mod:气氛值 点生命值。"
+    "DESCRIPTION": "回复50% furina_mod:气氛值 点生命值。",
+    "UPGRADE_DESCRIPTION": "回复65% furina_mod:气氛值 点生命值。"
   },
   "ApinFurina:PassingOfJudgment": {
     "NAME": "裁定之时",
@@ -291,8 +291,8 @@
   },
   "ApinFurina:PourLaJustice": {
     "NAME": "普茹斯蒂司",
-    "DESCRIPTION": "本回合每打出1张卡牌，回复3生命。",
-    "UPGRADE_DESCRIPTION": "本回合每打出1张卡牌，回复3生命。"
+    "DESCRIPTION": "本回合每打出1张卡牌，回复 !M! 生命。",
+    "UPGRADE_DESCRIPTION": "本回合每打出1张卡牌，回复 !M! 生命。"
   },
   "ApinFurina:DewsFirstGlimmerAtDaybreak": {
     "NAME": "晨露浮光之初",
@@ -361,8 +361,8 @@
   },
   "ApinFurina:PerpetualMuseOfChansons": {
     "NAME": "永世领唱",
-    "DESCRIPTION": "每持有 10 点 furina_mod:气氛值 ， furina_mod:会心 造成的伤害提升50%。",
-    "UPGRADE_DESCRIPTION": "每持有 10 点 furina_mod:气氛值 ， furina_mod:会心 造成的伤害提升50%。"
+    "DESCRIPTION": "每持有 10 点 furina_mod:气氛值 ， furina_mod:会心 造成的伤害提升25%。",
+    "UPGRADE_DESCRIPTION": "每持有 10 点 furina_mod:气氛值 ， furina_mod:会心 造成的伤害提升25%。"
   },
   "ApinFurina:PerpetualMuseOfRondeaux": {
     "NAME": "无尽圆舞",
@@ -391,8 +391,8 @@
   },
   "ApinFurina:WhoDweltInTheNetherworld": {
     "NAME": "若非处幽冥",
-    "DESCRIPTION": "固有 。 获得 !M! 点 furina_mod:元素能量 。回合开始阶段：获得 !M! 点 furina_mod:元素能量 ；若 furina_mod:元素能量 不低于5，将一张万众狂欢临时加入到手牌。",
-    "UPGRADE_DESCRIPTION": "固有 。 获得 !M! 点 furina_mod:元素能量 。回合开始阶段：获得 !M! 点 furina_mod:元素能量 ；若 furina_mod:元素能量 不低于5，将一张万众狂欢临时加入到手牌。"
+    "DESCRIPTION": "固有 。 获得 !M! 点 furina_mod:元素能量 。回合开始阶段：获得 !M! 点 furina_mod:元素能量 ；若 furina_mod:元素能量 不低于5，将一张 *万众狂欢 临时加入到手牌。",
+    "UPGRADE_DESCRIPTION": "固有 。 获得 !M! 点 furina_mod:元素能量 。回合开始阶段：获得 !M! 点 furina_mod:元素能量 ；若 furina_mod:元素能量 不低于5，将一张 *万众狂欢+ 临时加入到手牌。"
   },
   "ApinFurina:INowKnowItIs": {
     "NAME": "我已有觉察",

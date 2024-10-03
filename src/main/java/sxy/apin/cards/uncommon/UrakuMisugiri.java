@@ -38,7 +38,7 @@ public class UrakuMisugiri extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.updateCost(-1);
+            this.upgradeDamage(6);
         }
         this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
         this.initializeDescription();
@@ -51,6 +51,6 @@ public class UrakuMisugiri extends CustomCard {
                         new DamageInfo(abstractPlayer, damage, DamageInfo.DamageType.NORMAL)
                 )
         );
-        Furina.gainRevelry(5);
+        Furina.gainRevelry(6);
     }
 }

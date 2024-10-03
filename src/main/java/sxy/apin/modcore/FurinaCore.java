@@ -181,8 +181,8 @@ public class FurinaCore implements EditCardsSubscriber, EditStringsSubscriber, E
         BaseMod.addKeyword("furina_mod", "芒荒能量", new String[]{"芒荒能量", "芒性能量", "荒性能量"}, "同时具有芒性能量和荒性能量时会引发芒荒过载：获得1点 #y元素能量 。并顺次获得战意/珠露/会心。");
         BaseMod.addKeyword("furina_mod", "气氛值", new String[]{"气氛值"}, "提高部分伤害或治疗效果。每回合结束时消耗10%。");
         BaseMod.addKeyword("furina_mod", "元素能量", new String[]{"元素能量"}, "特定牌打出需要消耗一定的元素能量。");
-        BaseMod.addKeyword("furina_mod", "始基力", new String[]{"始基力", "始基力形态", "芒荒形态"}, "芙宁娜拥有荒芒两种始基力形态，可通过特定牌切换自身的始基力。部分牌在不同形态下有不同效果。");
-        BaseMod.addKeyword("furina_mod", "会心", new String[]{"会心"}, "每打出一张攻击牌获得2层 #y会心 ，受到一次伤害消除3层 #y会心 。回合结束时对最近敌人造成 #y会心 层数的伤害。");
+        BaseMod.addKeyword("furina_mod", "始基力形态", new String[]{"始基力", "始基力形态", "芒荒形态", "形态"}, "芙宁娜具备荒（主伤害）芒（主回复）两种始基力形态，可通过特定牌切换自身形态。部分牌在不同形态下有不同效果。");
+        BaseMod.addKeyword("furina_mod", "会心", new String[]{"会心"}, "每打出一张牌获得2层 #y会心 ，受到一次伤害消除5层 #y会心 。回合结束时对最近敌人造成 #y会心 层数的伤害。");
         BaseMod.addKeyword("furina_mod", "珠露", new String[]{"珠露"}, "每受到1点治疗累计1层 #y珠露 。回合开始时，若 #y珠露 层数大于生命上限的10%， #y珠露 破碎，对敌方全体造成 #y珠露 层数的伤害。");
         BaseMod.addKeyword("furina_mod", "战意", new String[]{"战意"}, "每受到伤害或治疗时，获得1层 #y战意 。回合开始阶段，获得 #y战意 层数的护盾，随后消耗三分之一的层数。");
         BaseMod.addKeyword("furina_mod", "沙龙成员", new String[]{"沙龙成员"}, "回合结束时，对最近敌人造成10点伤害。若生命值高于50%，则对随机敌人额外造成 #y气氛值 的伤害。");
