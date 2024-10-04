@@ -48,6 +48,6 @@ public class WolfFang extends CustomCard {
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         FurinaHelper.damage(abstractMonster, abstractPlayer, this.damage, DamageInfo.DamageType.NORMAL);
-        Furina.gainRevelry(3);
+        Furina.gainRevelry(this.magicNumber);
     }
 }

@@ -2,7 +2,6 @@ package sxy.apin.cards.basic;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -36,8 +35,8 @@ public class Strike extends CustomCard {
         // CardRarity：有 BASIC, SPECIAL, COMMON, UNCOMMON, RARE, CURSE 六种，分别代表不同的卡牌稀有度
         // CardTarget：有 ENEMY, ALL_ENEMY, SELF, NONE, SELF_AND_ENEMY, ALL，分别代表单个敌人，所有敌人，自身，无，自身和敌人，所有，六种卡牌目标。
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.damage = this.baseDamage = 5;
-        this.cardsToPreview = new SpiritbreathThorn();
+        this.damage = this.baseDamage = 6;
+//        this.cardsToPreview = new SpiritbreathThorn();
         this.tags.add(CardTags.STRIKE);
     }
 
@@ -46,7 +45,7 @@ public class Strike extends CustomCard {
         if (!this.upgraded) {
             this.upgradeName(); // 卡牌名字变为绿色并添加“+”，且标为升级过的卡牌，之后不能再升级。
             this.upgradeDamage(3); // 将该卡牌的伤害提高3点。
-            this.cardsToPreview = new SurgingBlade();
+//            this.cardsToPreview = new SurgingBlade();
         }
         // 加上以下两行就能使用UPGRADE_DESCRIPTION了（如果你写了的话）
         this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
@@ -67,14 +66,14 @@ public class Strike extends CustomCard {
                 )
         );
         Furina.gainElementEnergy(1);
-        if (Furina.getArkhe() == Furina.PNEUMA) {
-            AbstractDungeon.actionManager.addToBottom(
-                    new MakeTempCardInHandAction(new SpiritbreathThorn(), 1)
-            );
-        } else {
-            AbstractDungeon.actionManager.addToBottom(
-                    new MakeTempCardInHandAction(new SurgingBlade(), 1)
-            );
-        }
+//        if (Furina.getArkhe() == Furina.PNEUMA) {
+//            AbstractDungeon.actionManager.addToBottom(
+//                    new MakeTempCardInHandAction(new SpiritbreathThorn(), 1)
+//            );
+//        } else {
+//            AbstractDungeon.actionManager.addToBottom(
+//                    new MakeTempCardInHandAction(new SurgingBlade(), 1)
+//            );
+//        }
     }
 }

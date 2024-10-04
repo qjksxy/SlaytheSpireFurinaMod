@@ -33,8 +33,8 @@ public class ElementalBurst extends CustomCard {
 
     public ElementalBurst() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseMagicNumber = 2;
-        this.magicNumber = 2;
+        this.baseMagicNumber = 3;
+        this.magicNumber = 3;
         this.baseDamage = 12;
     }
 
@@ -42,7 +42,7 @@ public class ElementalBurst extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(1);
+            this.upgradeMagicNumber(-1);
         }
         // 加上以下两行就能使用 UPGRADE_DESCRIPTION 了（如果你写了的话）
         this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
@@ -59,18 +59,22 @@ public class ElementalBurst extends CustomCard {
             if (!p.hasPower(ElementEnergy.POWER_ID)) {
                 return false;
             }
-            return p.getPower(ElementEnergy.POWER_ID).amount >= 5;
+            return p.getPower(ElementEnergy.POWER_ID).amount >= this.magicNumber;
         }
     }
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
+        int amount = 0;
+        int ee_consume = 0;
+        amount = Math.min(3, abstractPlayer.getPower(ElementEnergy.POWER_ID).amount / this.magicNumber);
+        ee_consume = amount * this.magicNumber;
         AbstractDungeon.actionManager.addToBottom(
-                new ReducePowerAction(abstractPlayer, abstractPlayer, ElementEnergy.POWER_ID, 5)
+                new ReducePowerAction(abstractPlayer, abstractPlayer, ElementEnergy.POWER_ID, ee_consume)
         );
         AbstractDungeon.actionManager.addToBottom(
                 new ApplyPowerAction(abstractPlayer, abstractPlayer,
-                        new UniversalRevelry(abstractPlayer, magicNumber), magicNumber)
+                        new UniversalRevelry(abstractPlayer, amount), amount)
         );
         AbstractDungeon.actionManager.addToBottom(
                 new DamageAction(abstractMonster,

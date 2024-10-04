@@ -8,7 +8,7 @@
   "ApinFurina:Revelry": {
     "NAME": "气氛值",
     "DESCRIPTIONS": [
-      "提高指定类型伤害和治疗效果。回合结束阶段减少10%的层数。"
+      "提高指定类型伤害和治疗效果。回合结束阶段减少10%的层数。上限40层。"
     ]
   },
   "ApinFurina:ElementEnergy": {

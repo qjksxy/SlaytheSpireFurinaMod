@@ -43,7 +43,7 @@ public class Revelry extends AbstractPower {
     public int getAmountLimit() {
         LoveIsARebelliousBirdPower power = (LoveIsARebelliousBirdPower) FurinaHelper.getPower(LoveIsARebelliousBirdPower.POWER_ID);
         if (power == null) {
-            return 30;
+            return 40;
         }
         if (power.flag) {
             return 60;

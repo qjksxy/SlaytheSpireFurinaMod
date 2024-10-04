@@ -6,8 +6,8 @@
   },
   "ApinFurina:Strike": {
     "NAME": "独舞之邀",
-    "DESCRIPTION": "造成 !D! 点伤害。获得 1 点 furina_mod:元素能量 。根据当前 furina_mod:形态 ，添加一张 *灵息之刺 或 *流涌之刃 到手牌中。",
-    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。获得 1 点 furina_mod:元素能量 。根据当前 furina_mod:形态 ，添加一张 *灵息之刺 或 *流涌之刃 到手牌中。"
+    "DESCRIPTION": "造成 !D! 点伤害。获得 1 点 furina_mod:元素能量 。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。获得 1 点 furina_mod:元素能量 。"
   },
   "ApinFurina:ChargedAttack": {
     "NAME": "独舞之邀·重击",
@@ -181,13 +181,13 @@
   },
   "ApinFurina:ElementalSkill": {
     "NAME": "孤心沙龙",
-    "DESCRIPTION": "获得 !M! 点 furina_mod:元素能量 。根据当前的 furina_mod:芒荒形态 获得 !M! 层 furina_mod:沙龙成员 或 furina_mod:众水的歌者 。 furina_mod:芒荒形态 发生转变时，沙龙成员或众水的歌者同时转变。",
-    "UPGRADE_DESCRIPTION": "获得 !M! 点 furina_mod:元素能量 。根据当前的 furina_mod:芒荒形态 获得 !M! 层 furina_mod:沙龙成员 或 furina_mod:众水的歌者 。 furina_mod:芒荒形态 发生转变时，沙龙成员或众水的歌者同时转变。"
+    "DESCRIPTION": "获得 !M! 点 furina_mod:元素能量 。根据当前的 furina_mod:形态 获得 !M! 层 furina_mod:沙龙成员 或 furina_mod:众水的歌者 。 furina_mod:形态 发生转变时，沙龙成员或众水的歌者同时转变。",
+    "UPGRADE_DESCRIPTION": "获得 !M! 点 furina_mod:元素能量 。根据当前的 furina_mod:形态 获得 !M! 层 furina_mod:沙龙成员 或 furina_mod:众水的歌者 。 furina_mod:形态 发生转变时，沙龙成员或众水的歌者同时转变。"
   },
   "ApinFurina:ElementalBurst": {
     "NAME": "万众狂欢",
-    "DESCRIPTION": "消耗5点 furina_mod:元素能量 。附属 !M! 层 furina_mod:普世欢腾 ，造成 !D! 点伤害。",
-    "UPGRADE_DESCRIPTION": "消耗5点 furina_mod:元素能量 。附属 !M! 层 furina_mod:普世欢腾 ，造成 !D! 点伤害。"
+    "DESCRIPTION": "每消耗 !M! 层 furina_mod:元素能量 获得1层 furina_mod:普世欢腾 ，至多获得3层。造成 !D! 点伤害。",
+    "UPGRADE_DESCRIPTION": "每消耗 !M! 层 furina_mod:元素能量 获得1层 furina_mod:普世欢腾 ，至多获得3层。造成 !D! 点伤害。"
   },
   "ApinFurina:SlowingWater": {
     "NAME": "迟滞之水",
@@ -391,8 +391,8 @@
   },
   "ApinFurina:WhoDweltInTheNetherworld": {
     "NAME": "若非处幽冥",
-    "DESCRIPTION": "固有 。 获得 !M! 点 furina_mod:元素能量 。回合开始阶段：获得 !M! 点 furina_mod:元素能量 ；若 furina_mod:元素能量 不低于5，将一张 *万众狂欢 临时加入到手牌。",
-    "UPGRADE_DESCRIPTION": "固有 。 获得 !M! 点 furina_mod:元素能量 。回合开始阶段：获得 !M! 点 furina_mod:元素能量 ；若 furina_mod:元素能量 不低于5，将一张 *万众狂欢+ 临时加入到手牌。"
+    "DESCRIPTION": "固有 。 获得 !M! 点 furina_mod:元素能量 。回合开始阶段：获得 !M! 点 furina_mod:元素能量 ；若 furina_mod:元素能量 不低于5，将一张虚无的 *万众狂欢 临时加入到手牌。",
+    "UPGRADE_DESCRIPTION": "固有 。 获得 !M! 点 furina_mod:元素能量 。回合开始阶段：获得 !M! 点 furina_mod:元素能量 ；若 furina_mod:元素能量 不低于5，将一张虚无的 *万众狂欢+ 临时加入到手牌。"
   },
   "ApinFurina:INowKnowItIs": {
     "NAME": "我已有觉察",
