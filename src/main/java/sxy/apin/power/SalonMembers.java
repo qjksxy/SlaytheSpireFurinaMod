@@ -69,23 +69,8 @@ public class SalonMembers extends AbstractPower {
     @Override
     public void atEndOfTurn(boolean isPlayer) {
         int revelry = Furina.getRevelry();
-        INowKnowItIsPower power = (INowKnowItIsPower) FurinaHelper.getPower(INowKnowItIsPower.POWER_ID);
-        double factor = 1.0;
-        if (power != null) {
-            if (power.isUpgraded()) {
-                factor = 1.5;
-            } else {
-                factor = 1.7;
-            }
-        }
-
-        AbstractMonster mon = null;
-        for (AbstractMonster monster : AbstractDungeon.getCurrRoom().monsters.monsters) {
-            if (!monster.escaped && !monster.isDying && monster.currentHealth > 0) {
-                mon = monster;
-                break;
-            }
-        }
+        double factor = INowKnowItIsPower.getINowKnowItIsPowerFactor();
+        AbstractMonster mon = FurinaHelper.getNearestMonster();
         if (mon != null) {
             AbstractDungeon.actionManager.addToBottom(
                     new ReducePowerAction(AbstractDungeon.player, AbstractDungeon.player, SalonMembers.POWER_ID, 1)

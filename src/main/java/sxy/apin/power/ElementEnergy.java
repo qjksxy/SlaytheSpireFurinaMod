@@ -59,7 +59,8 @@ public class ElementEnergy extends AbstractPower {
     @Override
     public void atStartOfTurn() {
         if (this.amount >= 15) {
-            this.amount -= 10;
+            this.amount -= 9;
+            this.flash();
             FurinaHelper.addToBottom(new GainEnergyAction(1));
         }
     }

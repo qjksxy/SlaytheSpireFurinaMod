@@ -8,13 +8,13 @@
   "ApinFurina:Revelry": {
     "NAME": "气氛值",
     "DESCRIPTIONS": [
-      "提高指定类型伤害和治疗效果。回合结束阶段减少10%的层数。上限40层。"
+      "提高指定类型伤害和治疗效果。回合结束时减少10%的层数。上限40层。"
     ]
   },
   "ApinFurina:ElementEnergy": {
     "NAME": "元素能量",
     "DESCRIPTIONS": [
-      "用于部分技能牌打出时消耗；回合开始时，若持有15层及以上的元素能量，则减少10层，获得 [E] 。"
+      "用于部分技能牌打出时消耗；回合开始时，若持有15层及以上的元素能量，则减少9层，获得 [E] 。"
     ]
   },
   "ApinFurina:Pneuma": {
@@ -44,19 +44,19 @@
   "ApinFurina:CriticalBoost": {
     "NAME": "会心",
     "DESCRIPTIONS": [
-      "每打出一张牌获得2层会心，受到一次伤害减少3层会心。回合结束时对最远敌人造成会心层数的伤害。至多叠加30层。"
+      "每打出一张牌获得2层会心，受到一次伤害减少5层会心。回合结束时对最远敌人造成会心层数的伤害。至多叠加25层。"
     ]
   },
   "ApinFurina:Grit": {
     "NAME": "战意",
     "DESCRIPTIONS": [
-      "每受到伤害或治疗时，获得1层战意。回合开始阶段，获得战意层数的护盾，并减少三分之一的层数。至多叠加30层。"
+      "每受到伤害或治疗时，获得1层战意。回合开始阶段，获得战意层数的护盾，并减少三分之一的层数。至多叠加25层。"
     ]
   },
   "ApinFurina:Dewdrop": {
     "NAME": "珠露",
     "DESCRIPTIONS": [
-      "每受到1点治疗获得1层珠露。回合开始时，若珠露层数大于生命上限的10%，珠露破碎，对敌方全体造成珠露层数的伤害。至多叠加至生命上限的20%。"
+      "每受到1点治疗获得1层珠露。回合开始时，若珠露层数大于生命上限的10%，珠露破碎，对敌方全体造成珠露层数的伤害。至多叠加至生命上限的25%。"
     ]
   },
   "ApinFurina:PourLaJusticePower": {
@@ -104,7 +104,7 @@
   "ApinFurina:WhoDweltInTheNetherworldPower": {
     "NAME": "若非处幽冥",
     "DESCRIPTIONS": [
-      "每回合开始时，获得 #y元素能量 。若 #y元素能量 不低于5，将一张 #y万众狂欢 临时加入手牌。"
+      "每回合开始时，获得 #y元素能量 。若 #y元素能量 不低于5，将一张虚无消耗的 #y万众狂欢 加入手牌。"
     ]
   },
   "ApinFurina:INowKnowItIsPower": {
@@ -164,7 +164,7 @@
   "ApinFurina:PerpetualMuseOfChansonsPower": {
     "NAME": "永世领唱",
     "DESCRIPTIONS": [
-      "每持有10点气氛值，会心造成的伤害提升50%。"
+      "每持有10点气氛值，会心造成的伤害提升25%。"
     ]
   },
   "ApinFurina:PerpetualMuseOfRondeauxPower": {

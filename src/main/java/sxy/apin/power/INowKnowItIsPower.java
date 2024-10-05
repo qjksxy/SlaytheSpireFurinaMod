@@ -51,4 +51,17 @@ public class INowKnowItIsPower extends AbstractPower {
     public void upgrade() {
         this.upgraded = true;
     }
+
+    public static double getINowKnowItIsPowerFactor() {
+        INowKnowItIsPower power = (INowKnowItIsPower) FurinaHelper.getPower(INowKnowItIsPower.POWER_ID);
+        double factor = 1.0;
+        if (power != null) {
+            if (power.isUpgraded()) {
+                factor = 1.3;
+            } else {
+                factor = 1.4;
+            }
+        }
+        return factor;
+    }
 }

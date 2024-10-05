@@ -6,23 +6,23 @@
   },
   "ApinFurina:Strike": {
     "NAME": "独舞之邀",
-    "DESCRIPTION": "造成 !D! 点伤害。获得 1 点 furina_mod:元素能量 。",
-    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。获得 1 点 furina_mod:元素能量 。"
+    "DESCRIPTION": "造成 !D! 点伤害。获得1点 furina_mod:元素能量 。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。获得1点 furina_mod:元素能量 。"
   },
   "ApinFurina:ChargedAttack": {
     "NAME": "独舞之邀·重击",
-    "DESCRIPTION": "对敌人造成 !D! 点伤害。添加一张 *圣俗杂座 到手牌中。",
-    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 点伤害。添加一张 *圣俗杂座+ 到手牌中。"
+    "DESCRIPTION": "造成 !D! 点伤害。添加一张 *圣俗杂座 到手牌中。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。添加一张 *圣俗杂座+ 到手牌中。"
   },
   "ApinFurina:Frozen": {
     "NAME": "冻结",
-    "DESCRIPTION": "对敌人造成 !D! 点伤害。本回合不消耗 furina_mod:气氛值 。可多次线性升级。",
-    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 点伤害。本回合不消耗 furina_mod:气氛值 。可多次线性升级。"
+    "DESCRIPTION": "造成 !D! 点伤害。本回合不消耗 furina_mod:气氛值 。可多次线性升级。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。本回合不消耗 furina_mod:气氛值 。可多次线性升级。"
   },
   "ApinFurina:Crystalize": {
     "NAME": "结晶",
-    "DESCRIPTION": "对敌人造成 !D! 点伤害。获得 !M! 点 格挡 。可多次线性升级。",
-    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 点伤害。获得 !M! 点 格挡 。可多次线性升级。"
+    "DESCRIPTION": "造成 !D! 点伤害。获得 !M! 点 格挡 。可多次线性升级。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。获得 !M! 点 格挡 。可多次线性升级。"
   },
   "ApinFurina:Swirl": {
     "NAME": "扩散",
@@ -31,33 +31,33 @@
   },
   "ApinFurina:ElectroCharged": {
     "NAME": "感电",
-    "DESCRIPTION": "对敌人造成 !D! 点伤害，并附属感电：场上有目标受到感电伤害时，受到相同的连锁伤害。可多次线性升级。",
-    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 点伤害，并附属感电：场上有目标受到感电伤害时，受到相同的连锁伤害。可多次线性升级。"
+    "DESCRIPTION": "造成 !D! 点伤害，并附属感电：场上有目标受到感电伤害时，受到相同的连锁伤害。可多次线性升级。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，并附属感电：场上有目标受到感电伤害时，受到相同的连锁伤害。可多次线性升级。"
   },
   "ApinFurina:Bloom": {
     "NAME": "绽放",
-    "DESCRIPTION": "对敌人造成 !D! 伤害，生成草原核：回合结束阶段对全体敌人造成 !M! 点伤害。可多次线性升级。",
-    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 伤害，生成草原核：回合结束阶段对全体敌人造成 !M! 点伤害。可多次线性升级。"
+    "DESCRIPTION": "造成 !D! 伤害，生成草原核：回合结束阶段对全体敌人造成 !M! 点伤害。可多次线性升级。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 伤害，生成草原核：回合结束阶段对全体敌人造成 !M! 点伤害。可多次线性升级。"
   },
   "ApinFurina:Vaporize": {
     "NAME": "蒸发",
-    "DESCRIPTION": "对敌人造成 !D! 点伤害。可多次线性升级。",
-    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 点伤害。可多次线性升级。"
+    "DESCRIPTION": "造成 !D! 点伤害。可多次线性升级。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。可多次线性升级。"
   },
   "ApinFurina:WolfFang": {
     "NAME": "狼牙",
-    "DESCRIPTION": "对敌人造成 !D! 点伤害。获得 !M! furina_mod:气氛值 。",
-    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 点伤害。获得 !M! furina_mod:气氛值 。"
+    "DESCRIPTION": "造成 !D! 点伤害。获得 !M! furina_mod:气氛值 。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。获得 !M! furina_mod:气氛值 。"
   },
   "ApinFurina:TheDockhandsAssistant": {
     "NAME": "船坞长剑",
-    "DESCRIPTION": "对敌人造成 !D! 点伤害。获得 !M! 点 furina_mod:元素能量 。",
-    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 点伤害。获得 !M! 点 furina_mod:元素能量 。"
+    "DESCRIPTION": "造成 !D! 点伤害。获得 !M! 点 furina_mod:元素能量 。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。获得 !M! 点 furina_mod:元素能量 。"
   },
   "ApinFurina:FleuveCendreFerryman": {
     "NAME": "灰河渡手",
-    "DESCRIPTION": "对敌人造成 !D! 点伤害。获得 !M! furina_mod:气氛值 和3点 furina_mod:元素能量 。",
-    "UPGRADE_DESCRIPTION": "对敌人造成 !D! 点伤害。获得 !M! furina_mod:气氛值 和3点 furina_mod:元素能量 。"
+    "DESCRIPTION": "造成 !D! 点伤害。获得 !M! furina_mod:气氛值 和3点 furina_mod:元素能量 。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。获得 !M! furina_mod:气氛值 和3点 furina_mod:元素能量 。"
   },
   "ApinFurina:Order": {
     "NAME": "秩序",
@@ -76,8 +76,8 @@
   },
   "ApinFurina:WaterAndJustice": {
     "NAME": "水与正义",
-    "DESCRIPTION": "对敌人造成当前 furina_mod:气氛值 60%的伤害，回复当前 furina_mod:气氛值 30%的生命。",
-    "UPGRADE_DESCRIPTION": "对敌人造成当前 furina_mod:气氛值 80%的伤害，回复当前 furina_mod:气氛值 30%的生命。"
+    "DESCRIPTION": "造成当前 furina_mod:气氛值 60%的伤害，回复当前 furina_mod:气氛值 30%的生命。",
+    "UPGRADE_DESCRIPTION": "造成当前 furina_mod:气氛值 80%的伤害，回复当前 furina_mod:气氛值 30%的生命。"
   },
   "ApinFurina:KeyOfKhajNisut": {
     "NAME": "圣显之钥",
@@ -106,8 +106,8 @@
   },
   "ApinFurina:EndlessWaltz": {
     "NAME": "停不了的圆舞",
-    "DESCRIPTION": "对敌人造成当前 furina_mod:气氛值 的伤害。抽 !M! 张牌。",
-    "UPGRADE_DESCRIPTION": "对敌人造成当前 furina_mod:气氛值 的伤害。抽 !M! 张牌。"
+    "DESCRIPTION": "造成当前 furina_mod:气氛值 的伤害。抽 !M! 张牌。",
+    "UPGRADE_DESCRIPTION": "造成当前 furina_mod:气氛值 的伤害。抽 !M! 张牌。"
   },
   "ApinFurina:UnheardConfession": {
     "NAME": "无人听的自白",
@@ -116,13 +116,13 @@
   },
   "ApinFurina:TheSeaIsMyStage": {
     "NAME": "瀚海亦舞台",
-    "DESCRIPTION": "对敌人造成当前 furina_mod:气氛值 的伤害，给予 !M! 层易伤和虚弱。",
-    "UPGRADE_DESCRIPTION": "对敌人造成当前 furina_mod:气氛值 的伤害，给予 !M! 层易伤和虚弱。"
+    "DESCRIPTION": "造成当前 furina_mod:气氛值 的伤害，给予 !M! 层易伤和虚弱。",
+    "UPGRADE_DESCRIPTION": "造成当前 furina_mod:气氛值 的伤害，给予 !M! 层易伤和虚弱。"
   },
   "ApinFurina:SplendorOfTranquilWaters": {
     "NAME": "静水流涌之辉",
-    "DESCRIPTION": "对敌人造成当前X次 furina_mod:气氛值 的伤害。此外，依据当前的 furina_mod:形态 ，额外造成当前 furina_mod:气氛值 的回复（荒）或伤害（芒）。",
-    "UPGRADE_DESCRIPTION": "对敌人造成当前X+1次 furina_mod:气氛值 的伤害。此外，依据当前的 furina_mod:形态 ，额外造成当前 furina_mod:气氛值 的回复（荒）或伤害（芒）。"
+    "DESCRIPTION": "造成当前X次 furina_mod:气氛值 的伤害。此外，依据当前的 furina_mod:形态 ，额外造成当前 furina_mod:气氛值 的回复（荒）或伤害（芒）。",
+    "UPGRADE_DESCRIPTION": "造成当前X+1次 furina_mod:气氛值 的伤害。此外，依据当前的 furina_mod:形态 ，额外造成当前 furina_mod:气氛值 的回复（荒）或伤害（芒）。"
   },
   "ApinFurina:Dodge": {
     "NAME": "闪避",
@@ -131,13 +131,13 @@
   },
   "ApinFurina:SpiritbreathThorn": {
     "NAME": "灵息之刺",
-    "DESCRIPTION": "虚无 。 消耗 。对敌人造成 !D! 点伤害，并附属 furina_mod:芒性能量 。",
-    "UPGRADE_DESCRIPTION": "虚无 。 消耗 。对敌人造成 !D! 点伤害，并附属 furina_mod:芒性能量 。"
+    "DESCRIPTION": "虚无 。 消耗 。造成 !D! 点伤害，并附属 furina_mod:芒性能量 。",
+    "UPGRADE_DESCRIPTION": "虚无 。 消耗 。造成 !D! 点伤害，并附属 furina_mod:芒性能量 。"
   },
   "ApinFurina:SurgingBlade": {
     "NAME": "流涌之刃",
-    "DESCRIPTION": "虚无 。 消耗 。对敌人造成 !D! 点伤害，并附属 furina_mod:荒性能量 。",
-    "UPGRADE_DESCRIPTION": "虚无 。 消耗 。对敌人造成 !D! 点伤害，并附属 furina_mod:荒性能量 。"
+    "DESCRIPTION": "虚无 。 消耗 。造成 !D! 点伤害，并附属 furina_mod:荒性能量 。",
+    "UPGRADE_DESCRIPTION": "虚无 。 消耗 。造成 !D! 点伤害，并附属 furina_mod:荒性能量 。"
   },
   "ApinFurina:SeatsSacredAndSecular": {
     "NAME": "圣俗杂座",
@@ -166,8 +166,8 @@
   },
   "ApinFurina:OratriceMecaniquedAnalyseCardinale": {
     "NAME": "谕示裁定枢机",
-    "DESCRIPTION": "消耗所有 furina_mod:气氛值 ，对敌人造成当前 furina_mod:气氛值 的伤害。",
-    "UPGRADE_DESCRIPTION": "消耗所有 furina_mod:气氛值 ，对敌人造成当前 furina_mod:气氛值 的伤害。"
+    "DESCRIPTION": "消耗所有 furina_mod:气氛值 ，造成当前 furina_mod:气氛值 的伤害。",
+    "UPGRADE_DESCRIPTION": "消耗所有 furina_mod:气氛值 ，造成当前 furina_mod:气氛值 的伤害。"
   },
   "ApinFurina:Cake": {
     "NAME": "蛋糕",
@@ -391,13 +391,13 @@
   },
   "ApinFurina:WhoDweltInTheNetherworld": {
     "NAME": "若非处幽冥",
-    "DESCRIPTION": "固有 。 获得 !M! 点 furina_mod:元素能量 。回合开始阶段：获得 !M! 点 furina_mod:元素能量 ；若 furina_mod:元素能量 不低于5，将一张虚无的 *万众狂欢 临时加入到手牌。",
-    "UPGRADE_DESCRIPTION": "固有 。 获得 !M! 点 furina_mod:元素能量 。回合开始阶段：获得 !M! 点 furina_mod:元素能量 ；若 furina_mod:元素能量 不低于5，将一张虚无的 *万众狂欢+ 临时加入到手牌。"
+    "DESCRIPTION": "固有 。 获得 !M! 点 furina_mod:元素能量 。回合开始阶段：获得 !M! 点 furina_mod:元素能量 ；若 furina_mod:元素能量 不低于5，将一张虚无消耗的 *万众狂欢 临时加入到手牌。",
+    "UPGRADE_DESCRIPTION": "固有 。 获得 !M! 点 furina_mod:元素能量 。回合开始阶段：获得 !M! 点 furina_mod:元素能量 ；若 furina_mod:元素能量 不低于5，将一张虚无消耗的 *万众狂欢+ 临时加入到手牌。"
   },
   "ApinFurina:INowKnowItIs": {
     "NAME": "我已有觉察",
-    "DESCRIPTION": "孤心沙龙造成的伤害和回复量提升50%。",
-    "UPGRADE_DESCRIPTION": "孤心沙龙造成的伤害和回复量提升70%。"
+    "DESCRIPTION": "孤心沙龙造成的伤害和回复量提升30%。",
+    "UPGRADE_DESCRIPTION": "孤心沙龙造成的伤害和回复量提升40%。"
   },
   "ApinFurina:HearMe": {
     "NAME": "诸君听我颂",

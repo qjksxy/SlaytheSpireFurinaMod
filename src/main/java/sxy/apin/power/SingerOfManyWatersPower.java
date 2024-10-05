@@ -68,15 +68,7 @@ public class SingerOfManyWatersPower extends AbstractPower {
     @Override
     public void atEndOfTurn(boolean isPlayer) {
         int revelry = Furina.getRevelry();
-        INowKnowItIsPower power = (INowKnowItIsPower) FurinaHelper.getPower(INowKnowItIsPower.POWER_ID);
-        double factor = 1.0;
-        if (power != null) {
-            if (power.isUpgraded()) {
-                factor = 1.5;
-            } else {
-                factor = 1.7;
-            }
-        }
+        double factor = INowKnowItIsPower.getINowKnowItIsPowerFactor();
         AbstractPlayer player = AbstractDungeon.player;
         AbstractDungeon.actionManager.addToBottom(
                 new ReducePowerAction(player, player, SingerOfManyWatersPower.POWER_ID, 1)

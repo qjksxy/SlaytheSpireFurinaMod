@@ -54,10 +54,6 @@ public class Dewdrop extends AbstractPower {
         this.amount = Math.min(this.amount, getLimit());
     }
 
-    public int getLimit() {
-        return FurinaHelper.getPlayer().maxHealth / 5;
-    }
-
     @Override
     public int onHeal(int healAmount) {
         this.amount += healAmount;
@@ -65,6 +61,9 @@ public class Dewdrop extends AbstractPower {
         return healAmount;
     }
 
+    public int getLimit() {
+        return (int) (FurinaHelper.getPlayer().maxHealth * 0.25);
+    }
     @Override
     public void atStartOfTurn() {
         AbstractPlayer player = FurinaHelper.getPlayer();
