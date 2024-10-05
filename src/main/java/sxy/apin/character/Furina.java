@@ -201,9 +201,9 @@ public class Furina extends CustomPlayer {
         MySecretIsHiddenWithinMePower power = (MySecretIsHiddenWithinMePower) FurinaHelper.getPower(MySecretIsHiddenWithinMePower.POWER_ID);
         if (power != null) {
             if (power.isUpgraded()) {
-                revelry = (int) (revelry * 2.2);
+                revelry = (int) (revelry * 1.6);
             } else {
-                revelry = (int) (revelry * 1.8);
+                revelry = (int) (revelry * 1.3);
             }
         }
         return revelry;

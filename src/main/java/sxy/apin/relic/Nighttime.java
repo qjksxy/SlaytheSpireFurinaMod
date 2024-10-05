@@ -7,6 +7,10 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
+import sxy.apin.cards.basic.Bloom;
+import sxy.apin.cards.basic.ElectroCharged;
+import sxy.apin.cards.basic.Frozen;
+import sxy.apin.cards.basic.Swirl;
 import sxy.apin.cards.common.*;
 import sxy.apin.helper.FurinaHelper;
 

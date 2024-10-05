@@ -46,7 +46,7 @@ public class GymnopediesOfLune extends CustomCard {
         for (AbstractPower power : abstractPlayer.powers) {
             if (power.type == AbstractPower.PowerType.DEBUFF) {
                 FurinaHelper.removePlayerPower(power.ID);
-                return;
+                break;
             }
         }
 //        FurinaHelper.addToBottom(new ExhaustAction(this.magicNumber, true));

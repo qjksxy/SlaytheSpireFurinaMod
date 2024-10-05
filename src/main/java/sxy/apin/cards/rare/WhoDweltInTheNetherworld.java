@@ -37,6 +37,7 @@ public class WhoDweltInTheNetherworld extends CustomCard {
         this.magicNumber = 4;
         ElementalBurst elementalBurst = new ElementalBurst();
         elementalBurst.isEthereal = true;
+        elementalBurst.exhaust = true;
         this.cardsToPreview = elementalBurst;
     }
 

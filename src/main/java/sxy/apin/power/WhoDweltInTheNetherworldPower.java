@@ -47,6 +47,8 @@ public class WhoDweltInTheNetherworldPower extends AbstractPower {
     public void atStartOfTurn() {
         Furina.gainElementEnergy(this.num);
         if (Furina.getRevelry() >= 5) {
+            this.card.isEthereal = true;
+            this.card.exhaust = true;
             AbstractDungeon.actionManager.addToBottom(
                     new MakeTempCardInHandAction(card, 1)
             );

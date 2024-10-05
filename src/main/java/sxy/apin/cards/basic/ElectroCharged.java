@@ -1,4 +1,4 @@
-package sxy.apin.cards.common;
+package sxy.apin.cards.basic;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -27,7 +27,7 @@ public class ElectroCharged extends CustomCard {
     private static final int COST = 2;
     private static final CardType TYPE = CardType.ATTACK;
     private static final CardColor COLOR = FURINA_BLUE;
-    private static final CardRarity RARITY = CardRarity.COMMON;
+    private static final CardRarity RARITY = CardRarity.BASIC;
     private static final CardTarget TARGET = CardTarget.ENEMY;
 
     public ElectroCharged() {

@@ -60,7 +60,7 @@ public class ElementalSkill extends CustomCard {
                             new SingerOfManyWatersPower(abstractPlayer, magicNumber), magicNumber)
             );
         }
-        Furina.gainElementEnergy(magicNumber);
+        Furina.gainElementEnergy(magicNumber + 1);
 
         // 6命效果  打出此牌时获得 CenterOfAttentionPower
         HearMePower power = (HearMePower) FurinaHelper.getPower(HearMePower.POWER_ID);
