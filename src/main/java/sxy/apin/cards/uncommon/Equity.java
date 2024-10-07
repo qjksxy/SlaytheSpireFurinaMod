@@ -22,7 +22,7 @@ public class Equity extends CustomCard {
     private static final String NAME = CARD_STRINGS.NAME;
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final String IMG_PATH = "sxy/apin/img/cards/attack/card_raw_22.png";
-    private static final int COST = 2;
+    private static final int COST = 1;
     private static final CardType TYPE = CardType.ATTACK;
     private static final CardColor COLOR = FURINA_BLUE;
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
@@ -30,7 +30,7 @@ public class Equity extends CustomCard {
 
     public Equity() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.damage = this.baseDamage = 15;
+        this.damage = this.baseDamage = 12;
         this.magicNumber = 1;
         this.baseMagicNumber = 1;
         this.tags.add(CardTags.STRIKE);
@@ -40,7 +40,7 @@ public class Equity extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeDamage(6);
+            this.upgradeDamage(4);
         }
         this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
         this.initializeDescription();

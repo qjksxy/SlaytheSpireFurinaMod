@@ -28,7 +28,7 @@ public class Bloom extends CustomCard {
 
     public Bloom() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.damage = this.baseDamage = 6;
+        this.damage = this.baseDamage = 9;
         this.magicNumber = 6;
         this.baseMagicNumber = 6;
         this.tags.add(CardTags.STRIKE);

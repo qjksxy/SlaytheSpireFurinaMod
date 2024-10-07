@@ -76,6 +76,18 @@ public class FurinaHelper {
         for (AbstractMonster monster : monsters) {
             if (!monster.isDeadOrEscaped() && monster.currentHealth > 0) {
                 mon = monster;
+                break;
+            }
+        }
+        return mon;
+    }
+
+    public static AbstractMonster getFarthestMonster() {
+        ArrayList<AbstractMonster> monsters = getMonsters();
+        AbstractMonster mon = null;
+        for (AbstractMonster monster : monsters) {
+            if (!monster.isDeadOrEscaped() && monster.currentHealth > 0) {
+                mon = monster;
             }
         }
         return mon;

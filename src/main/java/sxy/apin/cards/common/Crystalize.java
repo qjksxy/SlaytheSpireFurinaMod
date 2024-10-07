@@ -29,9 +29,9 @@ public class Crystalize extends CustomCard {
     public Crystalize() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.damage = this.baseDamage = 9;
-        this.baseBlock = 6;
-        this.block = 6;
-        this.magicNumber = this.baseMagicNumber = 6;
+        this.baseBlock = 9;
+        this.block = 9;
+        this.magicNumber = this.baseMagicNumber = 9;
         this.tags.add(CardTags.STARTER_DEFEND);
         this.tags.add(CardTags.STRIKE);
     }

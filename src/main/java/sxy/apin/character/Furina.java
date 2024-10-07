@@ -166,6 +166,15 @@ public class Furina extends CustomPlayer {
         }
     }
 
+    public static int getElementEnergy() {
+        AbstractPower power = FurinaHelper.getPower(ElementEnergy.POWER_ID);
+        if (power != null) {
+            return power.amount;
+        } else {
+            return 0;
+        }
+    }
+
     public static void gainRevelry(int amount) {
         AbstractPlayer player = FurinaHelper.getPlayer();
         if (player == null) {

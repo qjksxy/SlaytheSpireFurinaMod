@@ -21,7 +21,7 @@ public class WaterAndJustice extends CustomCard {
     private static final String NAME = CARD_STRINGS.NAME;
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final String IMG_PATH = "sxy/apin/img/cards/attack/card_raw_78.png";
-    private static final int COST = 2;
+    private static final int COST = 1;
     private static final CardType TYPE = CardType.ATTACK;
     private static final CardColor COLOR = FURINA_BLUE;
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
@@ -46,9 +46,9 @@ public class WaterAndJustice extends CustomCard {
         int damage = Furina.getRevelry();
         int extraDamage = HearMe.getExtraDamage();
         if (this.upgraded) {
-            damage = (int) (damage * 0.6);
+            damage = (int) (damage * 0.4);
         } else {
-            damage = (int) (damage * 0.8);
+            damage = (int) (damage * 0.55);
         }
         FurinaHelper.damage(abstractMonster, abstractPlayer, damage + extraDamage, DamageInfo.DamageType.NORMAL);
     }

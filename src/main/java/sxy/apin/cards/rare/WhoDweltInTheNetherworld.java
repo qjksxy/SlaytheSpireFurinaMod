@@ -7,7 +7,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import sxy.apin.cards.common.ElementalBurst;
+import sxy.apin.cards.basic.ElementalBurstBasic;
 import sxy.apin.character.Furina;
 import sxy.apin.helper.FurinaHelper;
 import sxy.apin.power.WhoDweltInTheNetherworldPower;
@@ -35,10 +35,7 @@ public class WhoDweltInTheNetherworld extends CustomCard {
         this.isInnate = true;
         this.baseMagicNumber = 4;
         this.magicNumber = 4;
-        ElementalBurst elementalBurst = new ElementalBurst();
-        elementalBurst.isEthereal = true;
-        elementalBurst.exhaust = true;
-        this.cardsToPreview = elementalBurst;
+        this.cardsToPreview = new ElementalBurstBasic();
     }
 
     @Override

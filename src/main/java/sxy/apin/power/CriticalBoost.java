@@ -86,7 +86,7 @@ public class CriticalBoost extends AbstractPower {
     }
 
     public void effect() {
-        AbstractMonster mon = FurinaHelper.getNearestMonster();
+        AbstractMonster mon = FurinaHelper.getFarthestMonster();
         if (mon == null) {
             return;
         }

@@ -6,7 +6,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import sxy.apin.character.Furina;
+import sxy.apin.action.ModifyMagicNumberAction;
 import sxy.apin.helper.FurinaHelper;
 
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
@@ -28,8 +28,8 @@ public class FleuveCendreFerryman extends CustomCard {
 
     public FleuveCendreFerryman() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.damage = this.baseDamage = 8;
-        this.magicNumber = this.baseMagicNumber = 5;
+        this.damage = this.baseDamage = 18;
+        this.magicNumber = this.baseMagicNumber = 1;
         this.tags.add(CardTags.STRIKE);
     }
 
@@ -37,7 +37,7 @@ public class FleuveCendreFerryman extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeDamage(5);
+            this.upgradeDamage(6);
         }
         this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
         this.initializeDescription();
@@ -46,7 +46,11 @@ public class FleuveCendreFerryman extends CustomCard {
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         FurinaHelper.damage(abstractMonster, abstractPlayer, this.damage, DamageInfo.DamageType.NORMAL);
-        Furina.gainElementEnergy(3);
-        Furina.gainRevelry(this.magicNumber);
+        for (int i = 0; i < this.magicNumber; i++) {
+            FurinaHelper.damage(abstractPlayer, abstractPlayer, 6, DamageInfo.DamageType.NORMAL);
+        }
+        FurinaHelper.addToBottom(
+                new ModifyMagicNumberAction(this.uuid, 1)
+        );
     }
 }
