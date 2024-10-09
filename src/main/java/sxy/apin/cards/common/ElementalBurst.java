@@ -81,7 +81,7 @@ public class ElementalBurst extends CustomCard {
                         new DamageInfo(abstractPlayer, damage, DamageInfo.DamageType.NORMAL))
         );
         if (FurinaHelper.hasPower(AWomanAdaptsPower.POWER_ID)) {
-            Furina.gainRevelry(10);
+            Furina.gainRevelry(15);
         }
     }
 }

@@ -28,7 +28,7 @@ public class FleuveCendreFerryman extends CustomCard {
 
     public FleuveCendreFerryman() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.damage = this.baseDamage = 18;
+        this.damage = this.baseDamage = 15;
         this.magicNumber = this.baseMagicNumber = 1;
         this.tags.add(CardTags.STRIKE);
     }
@@ -37,7 +37,7 @@ public class FleuveCendreFerryman extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeDamage(6);
+            this.upgradeDamage(5);
         }
         this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
         this.initializeDescription();
