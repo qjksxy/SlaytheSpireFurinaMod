@@ -49,6 +49,9 @@ public class WhoDweltInTheNetherworldPower extends AbstractPower {
         if (Furina.getElementEnergy() >= 5) {
             this.flash();
             AbstractCard tempCard = this.card.makeCopy();
+            if (this.num == 6) {
+                tempCard.upgrade();
+            }
             AbstractDungeon.actionManager.addToBottom(
                     new MakeTempCardInHandAction(tempCard, 1)
             );
