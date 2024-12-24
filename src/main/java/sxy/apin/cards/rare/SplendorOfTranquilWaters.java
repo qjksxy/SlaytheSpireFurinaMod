@@ -47,6 +47,10 @@ public class SplendorOfTranquilWaters extends CustomCard {
         FurinaHelper.addToBottom(new LoseEnergyAction(this.energyOnUse));
         int damage = Furina.getRevelry();
         int energy = this.energyOnUse;
+        // TODO 如果玩家拥有遗物 化学物X 则此处+2
+        if (abstractPlayer.hasRelic("Chemical X")) {
+            energy += 2;
+        }
         int extraDamage = HearMe.getExtraDamage();
         if (this.upgraded) {
             energy += 1;
