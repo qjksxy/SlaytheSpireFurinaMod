@@ -3,7 +3,7 @@
   "name": "原神芙宁娜角色模组/Genshin Furina Character",
   "author_list": ["Apin"],
   "description": "加入新角色芙宁娜和对应卡牌、遗物",
-  "version": "0.1.0",
+  "version": "1.1.0",
   "sts_version": "12-22-2020",
   "mts_version": "3.23.2",
   "dependencies": ["basemod"]
