@@ -45,7 +45,7 @@ public class Blubberbeast extends CustomCard {
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         if (this.upgraded) {
-            FurinaHelper.damage(abstractPlayer, abstractPlayer, 6, DamageInfo.DamageType.NORMAL);
+            FurinaHelper.damage(abstractPlayer, abstractPlayer, 6, DamageInfo.DamageType.HP_LOSS);
         } else {
             FurinaHelper.damage(abstractPlayer, abstractPlayer, 4, DamageInfo.DamageType.NORMAL);
         }

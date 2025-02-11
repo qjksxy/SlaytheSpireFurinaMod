@@ -29,6 +29,7 @@ public class LeSouvenirAvecLeCrepuscule extends CustomCard {
         this.exhaust = true;
         this.magicNumber = 3;
         this.baseMagicNumber = 3;
+        this.tags.add(CardTags.HEALING);
     }
 
     @Override
