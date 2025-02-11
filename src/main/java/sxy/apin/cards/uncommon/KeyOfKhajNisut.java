@@ -30,6 +30,7 @@ public class KeyOfKhajNisut extends CustomCard {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.damage = this.baseDamage = 18;
         this.tags.add(CardTags.STRIKE);
+        this.tags.add(CardTags.HEALING);
     }
 
     @Override

@@ -47,7 +47,7 @@ public class MademoiselleCrabaletta extends CustomCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        FurinaHelper.damage(abstractPlayer, abstractPlayer, this.magicNumber, DamageInfo.DamageType.NORMAL);
+        FurinaHelper.damage(abstractPlayer, abstractPlayer, this.magicNumber, DamageInfo.DamageType.HP_LOSS);
         Furina.gainRevelry(this.magicNumber);
     }
 }

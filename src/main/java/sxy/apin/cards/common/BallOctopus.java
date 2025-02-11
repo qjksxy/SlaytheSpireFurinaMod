@@ -44,7 +44,7 @@ public class BallOctopus extends CustomCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        FurinaHelper.damage(abstractPlayer, abstractPlayer, 1, DamageInfo.DamageType.NORMAL);
+        FurinaHelper.damage(abstractPlayer, abstractPlayer, 1, DamageInfo.DamageType.HP_LOSS);
 
         if (FurinaHelper.getDiscardPile().isEmpty()) {
             return;

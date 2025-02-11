@@ -44,7 +44,7 @@ public class TheLittleOceanid extends CustomCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        FurinaHelper.damage(abstractPlayer, abstractPlayer, 10, DamageInfo.DamageType.NORMAL);
+        FurinaHelper.damage(abstractPlayer, abstractPlayer, 10, DamageInfo.DamageType.HP_LOSS);
         FurinaHelper.addToBottom(new GainEnergyAction(this.magicNumber));
     }
 }
