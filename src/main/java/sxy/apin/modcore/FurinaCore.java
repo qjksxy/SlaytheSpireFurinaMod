@@ -201,5 +201,6 @@ public class FurinaCore implements EditCardsSubscriber, EditStringsSubscriber, E
         BaseMod.addRelicToCustomPool(new SongOfDaysPast(), FURINA_BLUE);
         BaseMod.addRelicToCustomPool(new TenacityOfTheMillelith(), FURINA_BLUE);
         BaseMod.addRelicToCustomPool(new VourukashasGlow(), FURINA_BLUE);
+        BaseMod.addRelicToCustomPool(new EmblemOfSeveredFate(), FURINA_BLUE);
     }
 }
