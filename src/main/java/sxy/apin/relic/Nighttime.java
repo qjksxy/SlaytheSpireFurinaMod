@@ -71,7 +71,7 @@ public class Nighttime extends CustomRelic {
             if (AbstractDungeon.cardRng.random() < this.proba) {
                 this.flash();
                 card.upgrade();
-                this.proba *= 0.85;
+                this.proba *= 0.9;
             }
         }
     }

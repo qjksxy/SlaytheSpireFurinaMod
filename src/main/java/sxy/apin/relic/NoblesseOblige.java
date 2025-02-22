@@ -34,7 +34,7 @@ public class NoblesseOblige extends CustomRelic {
         if (player.currentHealth > (int) (player.maxHealth * 0.8)) {
             this.flash();
             int extraHealth = player.currentHealth - (int) (player.maxHealth * 0.8);
-            FurinaHelper.damage(player, player, extraHealth, DamageInfo.DamageType.NORMAL);
+            FurinaHelper.damage(player, player, extraHealth, DamageInfo.DamageType.HP_LOSS);
             FurinaHelper.addToBottom(new GainBlockAction(player, extraHealth * 2));
         }
     }
