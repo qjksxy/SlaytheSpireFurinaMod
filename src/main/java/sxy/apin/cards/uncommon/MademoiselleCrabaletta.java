@@ -12,7 +12,7 @@ import sxy.apin.helper.FurinaHelper;
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
 
 /**
- * 谢贝蕾妲小姐 消耗 !M! 生命，获得 !M! 气氛值。
+ * 谢贝蕾妲小姐 失去 !M! 生命， 获得 9 气氛值。
  */
 public class MademoiselleCrabaletta extends CustomCard {
     public static final String ID = FurinaHelper.makeCardID(MademoiselleCrabaletta.class.getSimpleName());
@@ -32,14 +32,14 @@ public class MademoiselleCrabaletta extends CustomCard {
         // CardRarity：有 BASIC, SPECIAL, COMMON, UNCOMMON, RARE, CURSE 六种，分别代表不同的卡牌稀有度
         // CardTarget：有 ENEMY, ALL_ENEMY, SELF, NONE, SELF_AND_ENEMY, ALL，分别代表单个敌人，所有敌人，自身，无，自身和敌人，所有，六种卡牌目标。
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.magicNumber = this.baseMagicNumber = 6;
+        this.magicNumber = this.baseMagicNumber = 9;
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(3);
+            this.upgradeMagicNumber(-3);
         }
         this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
         this.initializeDescription();
@@ -48,6 +48,6 @@ public class MademoiselleCrabaletta extends CustomCard {
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         FurinaHelper.damage(abstractPlayer, abstractPlayer, this.magicNumber, DamageInfo.DamageType.HP_LOSS);
-        Furina.gainRevelry(this.magicNumber);
+        Furina.gainRevelry(9);
     }
 }

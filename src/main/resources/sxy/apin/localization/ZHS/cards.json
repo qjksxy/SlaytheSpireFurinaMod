@@ -226,8 +226,8 @@
   },
   "ApinFurina:MademoiselleCrabaletta": {
     "NAME": "谢贝蕾妲小姐",
-    "DESCRIPTION": "失去 !M! 生命，获得 !M! furina_mod:气氛值 。",
-    "UPGRADE_DESCRIPTION": "失去 !M! 生命，获得 !M! furina_mod:气氛值 。"
+    "DESCRIPTION": "失去 !M! 生命，获得 9 furina_mod:气氛值 。",
+    "UPGRADE_DESCRIPTION": "失去 !M! 生命，获得 9 furina_mod:气氛值 。"
   },
   "ApinFurina:MelusineSupport": {
     "NAME": "美露莘的声援",
