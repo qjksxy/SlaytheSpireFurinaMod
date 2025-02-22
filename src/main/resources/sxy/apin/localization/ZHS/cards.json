@@ -346,8 +346,8 @@
   },
   "ApinFurina:AllWaters": {
     "NAME": "众水",
-    "DESCRIPTION": "每当你获得5次 furina_mod:气氛值 时，便在下回合获得 [E] 。",
-    "UPGRADE_DESCRIPTION": "每当你获得4次 furina_mod:气氛值 时，便在下回合获得 [E] 。"
+    "DESCRIPTION": "每当获得4次 furina_mod:气氛值 时，便在下回合获得 [E] 。每回合最多生效3次。",
+    "UPGRADE_DESCRIPTION": "每当获得3次 furina_mod:气氛值 时，便在下回合获得 [E] 。每回合最多生效3次。"
   },
   "ApinFurina:AllKindreds": {
     "NAME": "众方",
@@ -356,8 +356,8 @@
   },
   "ApinFurina:AllPeople": {
     "NAME": "众民",
-    "DESCRIPTION": "每当你获得 furina_mod:气氛值 时，对随机敌人造成 5 点伤害。每回合至多生效6次。",
-    "UPGRADE_DESCRIPTION": "每当你获得 furina_mod:气氛值 时，对随机敌人造成 5 点伤害。每回合至多生效6次。"
+    "DESCRIPTION": "每当你获得 furina_mod:气氛值 时，对随机敌人造成 5 点伤害。每回合至多生效5次。",
+    "UPGRADE_DESCRIPTION": "固有 。每当你获得 furina_mod:气氛值 时，对随机敌人造成 5 点伤害。每回合至多生效5次。"
   },
   "ApinFurina:AllLaws": {
     "NAME": "众律法",

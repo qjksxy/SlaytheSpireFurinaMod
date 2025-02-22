@@ -13,7 +13,7 @@ import sxy.apin.helper.FurinaHelper;
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
 
 /**
- * 停不了的圆舞 对敌人造成当前 furina_mod:气氛值  70% 的伤害。抽1张牌。
+ * 停不了的圆舞 对敌人造成当前 furina_mod:气氛值 的伤害。抽 2 张牌。
  */
 public class EndlessWaltz extends CustomCard {
     public static final String ID = FurinaHelper.makeCardID(EndlessWaltz.class.getSimpleName());
@@ -29,7 +29,7 @@ public class EndlessWaltz extends CustomCard {
 
     public EndlessWaltz() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.magicNumber = this.baseMagicNumber = 1;
+        this.magicNumber = this.baseMagicNumber = 2;
         this.tags.add(CardTags.STRIKE);
     }
 
@@ -37,7 +37,7 @@ public class EndlessWaltz extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(1);
+            this.upgradeMagicNumber(2);
         }
         this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
         this.initializeDescription();

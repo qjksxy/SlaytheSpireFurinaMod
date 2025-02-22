@@ -48,13 +48,16 @@ public class AllWatersPower extends AbstractPower {
     @Override
     public void atStartOfTurn() {
         int t = 0;
-        if (this.flag && this.count >= 4) {
+        if (this.flag && this.count >= 3) {
+            t = count / 3;
+            this.count -= t * 3;
+        }
+        if (this.count >= 4) {
             t = count / 4;
             this.count -= t * 4;
         }
-        if (this.count >= 5) {
-            t = count / 5;
-            this.count -= t * 5;
+        if (t > 3) {
+            t = 3;
         }
         FurinaHelper.addToBottom(new GainEnergyAction(t));
         this.flash();

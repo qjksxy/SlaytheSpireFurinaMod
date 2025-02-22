@@ -140,7 +140,7 @@
   "ApinFurina:AllWatersPower": {
     "NAME": "众水",
     "DESCRIPTIONS": [
-      "每当你获得5次气氛值时，便在下回合获得1能量。"
+      "每当你获得4次气氛值时，便在下回合获得1能量。"
     ]
   },
   "ApinFurina:AllKindredsPower": {
@@ -152,7 +152,7 @@
   "ApinFurina:AllPeoplePower": {
     "NAME": "众民",
     "DESCRIPTIONS": [
-      "每当你获得气氛值时，对随机敌人造成5点伤害。"
+      "每当你获得气氛值时，对随机敌人造成5点伤害。每回合至多生效5次。"
     ]
   },
   "ApinFurina:AllLawsPower": {

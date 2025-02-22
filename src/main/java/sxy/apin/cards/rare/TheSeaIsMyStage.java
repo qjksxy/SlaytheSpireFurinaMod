@@ -39,7 +39,7 @@ public class TheSeaIsMyStage extends CustomCard {
     @Override
     public void upgrade() {
         if (!this.upgraded) {
-            this.upgradeMagicNumber(1);
+            this.upgradeMagicNumber(2);
             this.upgradeName();
         }
         this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;

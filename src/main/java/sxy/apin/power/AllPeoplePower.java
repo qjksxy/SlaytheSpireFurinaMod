@@ -43,7 +43,7 @@ public class AllPeoplePower extends AbstractPower {
 
     @Override
     public void atStartOfTurn() {
-        this.num = 6;
+        this.num = 5;
     }
 
 }

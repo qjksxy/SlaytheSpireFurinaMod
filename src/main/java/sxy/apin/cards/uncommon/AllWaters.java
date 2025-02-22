@@ -11,7 +11,7 @@ import sxy.apin.power.AllWatersPower;
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
 
 /**
- * 众水 每当你获得5次气氛值时，便在下回合获得1能量。
+ * 众水 每当你获得 4 次气氛值时，便在下回合获得1能量。
  */
 public class AllWaters extends CustomCard {
     public static final String ID = FurinaHelper.makeCardID(AllWaters.class.getSimpleName());
