@@ -24,18 +24,17 @@ public class ElementalBurst extends CustomCard {
     private static final String NAME = CARD_STRINGS.NAME;
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final String IMG_PATH = "sxy/apin/img/cards/skill/card_raw_1.png";
-    private static final int COST = 1;
+    private static final int COST = 0;
     private static final CardType TYPE = CardType.SKILL;
     private static final CardColor COLOR = FURINA_BLUE;
     private static final CardRarity RARITY = CardRarity.COMMON;
     // 是否指向敌人
-    private static final CardTarget TARGET = CardTarget.ENEMY;
+    private static final CardTarget TARGET = CardTarget.SELF;
 
     public ElementalBurst() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseMagicNumber = 3;
         this.magicNumber = 3;
-        this.baseDamage = 12;
     }
 
     @Override
@@ -75,10 +74,6 @@ public class ElementalBurst extends CustomCard {
         AbstractDungeon.actionManager.addToBottom(
                 new ApplyPowerAction(abstractPlayer, abstractPlayer,
                         new UniversalRevelry(abstractPlayer, amount), amount)
-        );
-        AbstractDungeon.actionManager.addToBottom(
-                new DamageAction(abstractMonster,
-                        new DamageInfo(abstractPlayer, damage, DamageInfo.DamageType.NORMAL))
         );
         if (FurinaHelper.hasPower(AWomanAdaptsPower.POWER_ID)) {
             Furina.gainRevelry(15);

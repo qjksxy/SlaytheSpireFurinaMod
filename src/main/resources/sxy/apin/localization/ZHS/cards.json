@@ -191,8 +191,8 @@
   },
   "ApinFurina:ElementalBurst": {
     "NAME": "万众狂欢",
-    "DESCRIPTION": "每消耗 !M! 点 furina_mod:元素能量 获得1层 furina_mod:普世欢腾 ，至多获得3层。造成 !D! 点伤害。",
-    "UPGRADE_DESCRIPTION": "每消耗 !M! 点 furina_mod:元素能量 获得1层 furina_mod:普世欢腾 ，至多获得3层。造成 !D! 点伤害。"
+    "DESCRIPTION": "每消耗 !M! 点 furina_mod:元素能量 获得1层 furina_mod:普世欢腾 ，至多获得3层。",
+    "UPGRADE_DESCRIPTION": "每消耗 !M! 点 furina_mod:元素能量 获得1层 furina_mod:普世欢腾 ，至多获得3层。"
   },
   "ApinFurina:SlowingWater": {
     "NAME": "迟滞之水",
