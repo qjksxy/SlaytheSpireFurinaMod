@@ -47,13 +47,13 @@ public class AllWaters extends CustomCard {
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         AllWatersPower power = (AllWatersPower) FurinaHelper.getPower(AllWatersPower.POWER_ID);
         if (power == null) {
-            FurinaHelper.applyPower(abstractPlayer, abstractPlayer, new AllWatersPower(abstractPlayer, this.upgraded), 1);
+            FurinaHelper.applyPower(abstractPlayer, abstractPlayer, new AllWatersPower(abstractPlayer, this.upgraded, 1), 1);
         } else {
             if (!power.flag && this.upgraded) {
                 power.setFlag(this.upgraded);
                 power.flash();
             } else {
-                FurinaHelper.applyPower(abstractPlayer, abstractPlayer, new AllWatersPower(abstractPlayer, this.upgraded), 1);
+                FurinaHelper.applyPower(abstractPlayer, abstractPlayer, new AllWatersPower(abstractPlayer, this.upgraded, 1), 1);
             }
         }
 

@@ -25,13 +25,13 @@ public class AllWatersPower extends AbstractPower {
     public boolean flag;
     private int count = 0;
 
-    public AllWatersPower(AbstractCreature owner, boolean flag) {
+    public AllWatersPower(AbstractCreature owner, boolean flag, int amount) {
         this.name = NAME;
         this.ID = POWER_ID;
         this.owner = owner;
         this.type = PowerType.BUFF;
         this.flag = flag;
-        this.amount = -1;
+        this.amount = amount;
         // 添加一大一小两张能力图
         String path128 = "sxy/apin/img/powers/power_128/power_raw_29.png";
         String path48 = "sxy/apin/img/powers/power_48/power_raw_29.png";
@@ -65,5 +65,9 @@ public class AllWatersPower extends AbstractPower {
 
     public void setFlag(boolean flag) {
         this.flag = flag;
+    }
+
+    public void stackCount(int count) {
+        this.count += count;
     }
 }

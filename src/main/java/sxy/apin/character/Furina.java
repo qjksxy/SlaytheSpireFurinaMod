@@ -197,9 +197,9 @@ public class Furina extends CustomPlayer {
             FurinaHelper.addToBottom(new DrawCardAction(1));
         }
         // 众水：获得 1 层
-        AbstractPower watersPower = FurinaHelper.getPower(AllWatersPower.POWER_ID);
+         AllWatersPower watersPower = (AllWatersPower) FurinaHelper.getPower(AllWatersPower.POWER_ID);
         if (watersPower != null) {
-            watersPower.stackPower(1);
+            watersPower.stackCount(1);
         }
     }
 
