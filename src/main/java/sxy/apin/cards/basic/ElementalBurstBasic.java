@@ -2,9 +2,7 @@ package sxy.apin.cards.basic;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -24,18 +22,17 @@ public class ElementalBurstBasic extends CustomCard {
     private static final String NAME = CARD_STRINGS.NAME;
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final String IMG_PATH = "sxy/apin/img/cards/skill/card_raw_1.png";
-    private static final int COST = 1;
+    private static final int COST = 0;
     private static final CardType TYPE = CardType.SKILL;
     private static final CardColor COLOR = FURINA_BLUE;
     private static final CardRarity RARITY = CardRarity.BASIC;
     // 是否指向敌人
-    private static final CardTarget TARGET = CardTarget.ENEMY;
+    private static final CardTarget TARGET = CardTarget.SELF;
 
     public ElementalBurstBasic() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseMagicNumber = 3;
         this.magicNumber = 3;
-        this.baseDamage = 12;
         this.exhaust = true;
         this.isEthereal = true;
     }
@@ -67,8 +64,8 @@ public class ElementalBurstBasic extends CustomCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        int amount = 0;
-        int ee_consume = 0;
+        int amount;
+        int ee_consume;
         amount = Math.min(3, abstractPlayer.getPower(ElementEnergy.POWER_ID).amount / this.magicNumber);
         ee_consume = amount * this.magicNumber;
         AbstractDungeon.actionManager.addToBottom(
@@ -77,10 +74,6 @@ public class ElementalBurstBasic extends CustomCard {
         AbstractDungeon.actionManager.addToBottom(
                 new ApplyPowerAction(abstractPlayer, abstractPlayer,
                         new UniversalRevelry(abstractPlayer, amount), amount)
-        );
-        AbstractDungeon.actionManager.addToBottom(
-                new DamageAction(abstractMonster,
-                        new DamageInfo(abstractPlayer, damage, DamageInfo.DamageType.NORMAL))
         );
         if (FurinaHelper.hasPower(AWomanAdaptsPower.POWER_ID)) {
             Furina.gainRevelry(15);
