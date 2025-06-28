@@ -342,11 +342,11 @@
   "ApinFurina:MemberOfTheCast": {
     "NAME": "「戏中人」",
     "DESCRIPTION": "获得1层无实体和 !M! 层人工制品。此牌每打出1次，本场战斗中的耗能增加1。",
-    "UPGRADE_DESCRIPTION": "获得1层无实体和 !M! 层人工制品。此牌每打出1次，在本场战斗中的耗能增加1。"
+    "UPGRADE_DESCRIPTION": "获得1层无实体和 !M! 层人工制品。此牌每打出1次，本场战斗中的耗能增加1。"
   },
   "ApinFurina:AllWaters": {
     "NAME": "众水",
-    "DESCRIPTION": "每当获得4次 furina_mod:气氛值 时，便在下回合获得 [E] 。每回合最多生效3次。",
+    "DESCRIPTION": "每当获得3次 furina_mod:气氛值 时，便在下回合获得 [E] 。每回合最多生效3次。",
     "UPGRADE_DESCRIPTION": "每当获得3次 furina_mod:气氛值 时，便在下回合获得 [E] 。每回合最多生效3次。"
   },
   "ApinFurina:AllKindreds": {

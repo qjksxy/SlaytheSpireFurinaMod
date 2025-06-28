@@ -11,7 +11,7 @@ import sxy.apin.power.AllWatersPower;
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
 
 /**
- * 众水 每当你获得 4 次气氛值时，便在下回合获得1能量。
+ * 众水 每当你获得 3 次气氛值时，便在下回合获得1能量。
  */
 public class AllWaters extends CustomCard {
     public static final String ID = FurinaHelper.makeCardID(AllWaters.class.getSimpleName());
@@ -19,7 +19,7 @@ public class AllWaters extends CustomCard {
     private static final String NAME = CARD_STRINGS.NAME;
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final String IMG_PATH = "sxy/apin/img/cards/power/card_raw_62.png";
-    private static final int COST = 1;
+    private static final int COST = 2;
     private static final CardType TYPE = CardType.POWER;
     private static final CardColor COLOR = FURINA_BLUE;
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
@@ -38,6 +38,7 @@ public class AllWaters extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
+            this.updateCost(-1);
         }
         this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
         this.initializeDescription();
@@ -47,15 +48,7 @@ public class AllWaters extends CustomCard {
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         AllWatersPower power = (AllWatersPower) FurinaHelper.getPower(AllWatersPower.POWER_ID);
         if (power == null) {
-            FurinaHelper.applyPower(abstractPlayer, abstractPlayer, new AllWatersPower(abstractPlayer, this.upgraded, 1), 1);
-        } else {
-            if (!power.flag && this.upgraded) {
-                power.setFlag(this.upgraded);
-                power.flash();
-            } else {
-                FurinaHelper.applyPower(abstractPlayer, abstractPlayer, new AllWatersPower(abstractPlayer, this.upgraded, 1), 1);
-            }
+            FurinaHelper.applyPower(abstractPlayer, abstractPlayer, new AllWatersPower(abstractPlayer, 0), 0);
         }
-
     }
 }

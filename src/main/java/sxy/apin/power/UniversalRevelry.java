@@ -1,17 +1,15 @@
 package sxy.apin.power;
 
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
-import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import sxy.apin.character.Furina;
 import sxy.apin.helper.FurinaHelper;
 
 /**
@@ -78,10 +76,7 @@ public class UniversalRevelry extends AbstractPower {
                 damageAmount > 0) {
             // 能力闪烁一下
             this.flash();
-            AbstractPlayer player = AbstractDungeon.player;
-            // 给玩家添加一层气氛值
-            this.addToTop(new ApplyPowerAction(player, player,
-                    new Revelry(player, 3), 3));
+            Furina.gainRevelry(3);
         }
         // 如果该能力不会修改受到伤害的数值，按原样返回即可
         return damageAmount;
@@ -92,10 +87,7 @@ public class UniversalRevelry extends AbstractPower {
         if (this.owner.isPlayer && this.owner.currentHealth < this.owner.maxHealth && healAmount > 0) {
             // 能力闪烁一下
             this.flash();
-            AbstractPlayer player = AbstractDungeon.player;
-            // 给玩家添加一层气氛值
-            this.addToTop(new ApplyPowerAction(player, player,
-                    new Revelry(player, 3), 3));
+            Furina.gainRevelry(3);
         }
         return healAmount;
     }
