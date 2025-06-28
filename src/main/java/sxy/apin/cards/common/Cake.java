@@ -28,14 +28,15 @@ public class Cake extends CustomCard {
     public Cake() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseHeal = 5;
-        this.tags.add(CardTags.HEALING);
+        this.heal = 5;
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName(); // 卡牌名字变为绿色并添加“+”，且标为升级过的卡牌，之后不能再升级。
-            this.updateCost(-1);
+            this.heal = 7;
+            this.baseHeal = 7;
         }
         // 加上以下两行就能使用UPGRADE_DESCRIPTION了（如果你写了的话）
         this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;

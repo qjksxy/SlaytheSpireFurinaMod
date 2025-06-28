@@ -54,6 +54,6 @@ public class UnheardConfession extends CustomCard {
         }
         DamageAllEnemiesAction action = new DamageAllEnemiesAction(abstractPlayer, damage + extraDamage, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.NONE);
         FurinaHelper.addToBottom(action);
-        FurinaHelper.addToBottom(new ExhaustAction(1, this.upgraded));
+        FurinaHelper.addToBottom(new ExhaustAction(1, true));
     }
 }

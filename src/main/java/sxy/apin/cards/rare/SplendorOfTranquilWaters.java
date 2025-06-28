@@ -14,7 +14,7 @@ import sxy.apin.helper.FurinaHelper;
 import static sxy.apin.character.Furina.Enums.FURINA_BLUE;
 
 /**
- * 静水流涌之辉 对敌人造成当前气氛值的伤害。
+ * 静水流涌之辉 对敌人造成50%气氛值的伤害。
  */
 public class SplendorOfTranquilWaters extends CustomCard {
     public static final String ID = FurinaHelper.makeCardID(SplendorOfTranquilWaters.class.getSimpleName());
@@ -45,7 +45,7 @@ public class SplendorOfTranquilWaters extends CustomCard {
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         FurinaHelper.addToBottom(new LoseEnergyAction(this.energyOnUse));
-        int damage = Furina.getRevelry();
+        int damage = Furina.getRevelry() / 2;
         int energy = this.energyOnUse;
         // TODO 如果玩家拥有遗物 化学物X 则此处+2
         if (abstractPlayer.hasRelic("Chemical X")) {
@@ -62,9 +62,9 @@ public class SplendorOfTranquilWaters extends CustomCard {
             FurinaHelper.damage(abstractMonster, abstractPlayer, extraDamage, DamageInfo.DamageType.NORMAL);
         }
         if (Furina.getArkhe() == Furina.OUSIA) {
-            FurinaHelper.addToBottom(new HealAction(abstractPlayer, abstractPlayer, damage));
+            FurinaHelper.addToBottom(new HealAction(abstractPlayer, abstractPlayer, Furina.getRevelry()));
         } else {
-            FurinaHelper.damage(abstractMonster, abstractPlayer, damage, DamageInfo.DamageType.NORMAL);
+            FurinaHelper.damage(abstractMonster, abstractPlayer, Furina.getRevelry(), DamageInfo.DamageType.NORMAL);
         }
     }
 }

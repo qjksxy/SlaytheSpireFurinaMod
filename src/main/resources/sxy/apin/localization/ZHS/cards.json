@@ -111,7 +111,7 @@
   },
   "ApinFurina:UnheardConfession": {
     "NAME": "无人听的自白",
-    "DESCRIPTION": "对所有敌人造成当前60% furina_mod:气氛值 的伤害。消耗1张牌。",
+    "DESCRIPTION": "对所有敌人造成当前60% furina_mod:气氛值 的伤害。至多消耗1张牌。",
     "UPGRADE_DESCRIPTION": "对所有敌人造成当前80% furina_mod:气氛值 的伤害。至多消耗1张牌。"
   },
   "ApinFurina:TheSeaIsMyStage": {
@@ -121,8 +121,8 @@
   },
   "ApinFurina:SplendorOfTranquilWaters": {
     "NAME": "静水流涌之辉",
-    "DESCRIPTION": "造成X次当前 furina_mod:气氛值 的伤害。此外，依据当前的 furina_mod:形态 ，额外造成当前 furina_mod:气氛值 的回复（荒）或伤害（芒）。",
-    "UPGRADE_DESCRIPTION": "造成X+1次当前 furina_mod:气氛值 的伤害。此外，依据当前的 furina_mod:形态 ，额外造成当前 furina_mod:气氛值 的回复（荒）或伤害（芒）。"
+    "DESCRIPTION": "造成X次50% furina_mod:气氛值 的伤害。此外，依据当前 furina_mod:形态 ，造成当前 furina_mod:气氛值 的回复（荒）或伤害（芒）。",
+    "UPGRADE_DESCRIPTION": "造成X+1次50% furina_mod:气氛值 的伤害。此外，依据当前 furina_mod:形态 ，造成当前 furina_mod:气氛值 的回复（荒）或伤害（芒）。"
   },
   "ApinFurina:Dodge": {
     "NAME": "闪避",
@@ -256,8 +256,8 @@
   },
   "ApinFurina:PalaisMermonia": {
     "NAME": "沫芒宫",
-    "DESCRIPTION": "消耗1张牌，回复50% furina_mod:气氛值 生命。",
-    "UPGRADE_DESCRIPTION": "消耗1张牌，回复50% furina_mod:气氛值 生命。"
+    "DESCRIPTION": "消耗 。回复 !M! 点生命，然后将两张治疗量少2的卡牌放入抽牌堆。",
+    "UPGRADE_DESCRIPTION": "消耗 。回复 !M! 点生命，然后将两张治疗量少2的卡牌放入抽牌堆。"
   },
   "ApinFurina:WeepingWillowOfTheLake": {
     "NAME": "湖中垂柳",
